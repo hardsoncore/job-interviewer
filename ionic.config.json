@@ -1,0 +1,7 @@
+{
+  "name": "job-interviewer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
