@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Quiz
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Quiz</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Вопрос №{{ question.id }}</ion-card-subtitle>
+      <ion-card-title>{{ question.name }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+        <ul>
+          <li *ngFor="let tag of question.tags">{{ tag }}</li>
+        </ul>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

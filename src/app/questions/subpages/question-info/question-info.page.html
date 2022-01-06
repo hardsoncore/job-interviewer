@@ -1,0 +1,16 @@
+<ion-header>
+  <!-- хедер, если перешли к конкретным настройкам с возможностью возврата -->
+  <ion-toolbar *ngIf="canGoBack">
+    <ion-button fill="clear" shape="round" size="small" slot="start" (click)="backToPreviousPage()">
+      <ion-icon slot="icon-only" ios="arrow-back-outline" md="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    <ion-title>Вопрос №{{ question.id }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>{{ question.name }}</h1>
+  <p>
+    {{ question.answer }}
+  </p>
+</ion-content>

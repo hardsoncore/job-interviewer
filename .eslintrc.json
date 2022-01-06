@@ -35,6 +35,12 @@
             "prefix": "app",
             "style": "camelCase"
           }
+        ],
+        "no-underscore-dangle": [
+          "error",
+          {
+            "allowAfterThis": true
+          }
         ]
       }
     },

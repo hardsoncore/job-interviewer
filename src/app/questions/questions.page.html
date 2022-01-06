@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Questions list
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Questions 111</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item *ngFor="let question of questions" button (click)="clickOnQuestion(question)" detail>
+    <ion-label>
+      {{ question.name }}
+    </ion-label>
+  </ion-item>
+</ion-content>
