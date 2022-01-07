@@ -5,6 +5,7 @@ import { Location } from '@angular/common';
 import { QuestionsService } from 'src/app/services/questions.service';
 import { Question, Results } from 'src/app/models/question.model';
 import { QueryParams } from 'src/app/models/app.model';
+import { ResultsService } from 'src/app/services/results.service';
 
 @Component({
   selector: 'app-answer-structure',
@@ -20,6 +21,7 @@ export class AnswerStructurePage implements OnInit {
     private route: ActivatedRoute,
     private questionsService: QuestionsService,
     private location: Location,
+    private resultsService: ResultsService,
   ) { }
 
   ngOnInit() {
@@ -39,7 +41,7 @@ export class AnswerStructurePage implements OnInit {
     const correctness = this._calculateCorrectness();
     this._updateResults(correctness);
 
-    localStorage.setItem('results', JSON.stringify(this.results));
+    this.resultsService.setResults(this.results);
   }
 
   private _initQuestion(): void {
@@ -49,7 +51,7 @@ export class AnswerStructurePage implements OnInit {
   }
 
   private _getResults(): void {
-    this.results = JSON.parse(localStorage.getItem('results')) || [];
+    this.results = this.resultsService.getResults();
   }
 
   private _calculateCorrectness(): number {
