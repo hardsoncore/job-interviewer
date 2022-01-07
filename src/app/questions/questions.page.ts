@@ -19,7 +19,7 @@ export class QuestionsPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.questions = this.questionsService.getAllQuestions();
+    this.questionsService.questions.subscribe(questions => this.questions = questions);
   }
 
   public clickOnQuestion(question: Question): void {
