@@ -4,8 +4,13 @@
 
   &__avatar {
     margin: auto;
-    width: 50%;
+    width: 50vw;
     max-width: 300px;
-    height: fit-content;
+    height: 50vw;
+    max-height: 300px;
   }
+}
+
+.not-displayed {
+  display: none;
 }

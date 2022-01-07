@@ -7,18 +7,16 @@ import { NavigationExtras, Router } from '@angular/router';
   styleUrls: ['profile.page.scss']
 })
 export class ProfilePage {
+  imgLoaded = false;
 
   constructor(
     private router: Router,
   ) {}
 
-  public goToPage(pageName: string) {
-    const navigationExtras: NavigationExtras = {
-      queryParams: {
-        canGoBack: true,
-      }
-    };
-
-    this.router.navigate([`tabs/profile/${pageName}`], navigationExtras);
+  public onImageLoad(): void {
+    // will work without a timeout, but it looks more intresting with a timeout
+    setTimeout(() => {
+      this.imgLoaded = true;
+    }, 1000);
   }
 }

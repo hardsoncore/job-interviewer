@@ -1,8 +1,8 @@
 {
   "name": "job-interviewer",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Yehor Niestierov",
+  "homepage": "https://github.com/hardsoncore/job-interviewer",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

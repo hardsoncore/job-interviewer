@@ -14,15 +14,20 @@
   </ion-header>
 
   <div class="profile-info">
-    <ion-avatar class="profile-info__avatar">
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    <ion-avatar class="profile-info__avatar" [ngClass]="{'not-displayed': !imgLoaded}">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" (load)="onImageLoad()">
     </ion-avatar>
+    <div *ngIf="!imgLoaded">
+      <ion-avatar class="profile-info__avatar">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-avatar>
+    </div>
     <ion-text color="primary">
       <h1>Egor</h1>
     </ion-text>
   </div>
 
-  <ion-item (click)="goToPage('change-profile')">
+  <ion-item routerLink="change-profile">
     <ion-label>Изменить профиль</ion-label>
     <ion-icon name="brush" slot="end"></ion-icon>
   </ion-item>
