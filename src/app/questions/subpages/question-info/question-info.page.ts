@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 
 import { Question } from 'src/app/models/question.model';
 import { QuestionsService } from 'src/app/services/questions.service';
+import { QueryParams } from 'src/app/models/app.model';
 
 @Component({
   selector: 'app-question-info',
@@ -22,7 +23,7 @@ export class QuestionInfoPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.queryParams.subscribe((params: any) => {
+    this.route.queryParams.subscribe((params: QueryParams) => {
       this.canGoBack = params.canGoBack;
       this.questionId = +params.questionId;
 

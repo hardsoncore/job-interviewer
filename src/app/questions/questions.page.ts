@@ -3,6 +3,7 @@ import { QuestionsService } from '../services/questions.service';
 
 import { Question } from '../models/question.model';
 import { NavigationExtras, Router } from '@angular/router';
+import { QueryParams } from '../models/app.model';
 
 @Component({
   selector: 'app-questions',
@@ -21,12 +22,12 @@ export class QuestionsPage implements OnInit {
     this.questions = this.questionsService.getAllQuestions();
   }
 
-  public clickOnQuestion(question: Question) {
+  public clickOnQuestion(question: Question): void {
     const navigationExtras: NavigationExtras = {
       queryParams: {
         canGoBack: true,
         questionId: question.id,
-      }
+      } as QueryParams
     };
 
     this.router.navigate(['tabs/questions/question-info'], navigationExtras);
