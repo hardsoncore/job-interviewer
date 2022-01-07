@@ -3,4 +3,10 @@ export interface Question {
   name: string;
   answer: string;
   tags: string[];
+  structure: Step[];
+}
+
+export interface Step {
+  name: string;
+  isChecked: boolean;
 }
