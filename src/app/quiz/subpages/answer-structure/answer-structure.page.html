@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button fill="clear" shape="round" size="small" slot="start" (click)="backToPreviousPage()">
+      <ion-icon slot="icon-only" ios="arrow-back-outline" md="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    <ion-title>Вопрос №{{ question?.id }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="content">{{ question?.name }}</h1>
+
+  <ion-list>
+    <ion-item *ngFor="let step of question?.structure">
+      <ion-label>{{ step?.name }}</ion-label>
+      <ion-checkbox [(ngModel)]="step.isChecked" slot="end" color="success"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <div class="button-block">
+    <ion-button (click)="saveResult()" size="large" color="success">
+      <ion-icon slot="start" name="star"></ion-icon>
+      Сохранить результат
+    </ion-button>
+  </div>
+</ion-content>

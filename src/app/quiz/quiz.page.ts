@@ -34,7 +34,13 @@ export class QuizPage implements OnInit {
   }
 
   public submitAnswer(): void {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        questionId: this.question.id,
+      } as QueryParams
+    };
 
+    this.router.navigate(['tabs/quiz/answer-structure'], navigationExtras);
   }
 
   public getNextQuestion(): void {

@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: QuizPage,
+  },
+  {
+    path: 'answer-structure',
+    loadChildren: () => import('./subpages/answer-structure/answer-structure.module').then( m => m.AnswerStructurePageModule)
   }
 ];
 
