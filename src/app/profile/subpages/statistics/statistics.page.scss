@@ -1,0 +1,58 @@
+.results {
+  height: 55vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  &__top {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  &__score {
+    text-align: center;
+    font-size: 9rem;
+
+    animation: color-change 15s infinite;
+  }
+
+  &__percent {
+    font-size: 5rem;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: rgb(255, 21, 0);
+  }
+  10% {
+    color: #ff7b00;
+  }
+  20% {
+    color: #fbff00;
+  }
+  30% {
+    color: #5bf303;
+  }
+  40% {
+    color: rgb(0, 255, 213);
+  }
+  50% {
+    color: #2b08f3;
+  }
+  60% {
+    color: rgb(140, 0, 255);
+  }
+  70% {
+    color: #e600fb;
+  }
+  80% {
+    color: #f10f93;
+  }
+  90% {
+    color: #f50418;
+  }
+  100% {
+    color: rgb(251, 6, 6);
+  }
+}
