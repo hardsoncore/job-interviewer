@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+
 import { Question } from '../models/question.model';
 import { QuestionsService } from '../services/questions.service';
 
@@ -8,7 +10,7 @@ import { QuestionsService } from '../services/questions.service';
   styleUrls: ['quiz.page.scss']
 })
 export class QuizPage implements OnInit {
-  question: Question;
+  question: Observable<Question>;
 
   constructor(private questionsService: QuestionsService) {}
 

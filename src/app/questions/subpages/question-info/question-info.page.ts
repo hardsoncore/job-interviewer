@@ -36,6 +36,8 @@ export class QuestionInfoPage implements OnInit {
   }
 
   private initQuestion() {
-    this.question = this.questionsService.getQuestionById(this.questionId);
+    this.questionsService.questions.subscribe(() => {
+      this.question = this.questionsService.getQuestionById(this.questionId);
+    });
   }
 }

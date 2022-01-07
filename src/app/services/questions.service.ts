@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Question } from '../models/question.model';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 import { questions } from 'src/assets/questions';
 
@@ -7,19 +8,31 @@ import { questions } from 'src/assets/questions';
   providedIn: 'root'
 })
 export class QuestionsService {
-  questions = questions;
+  private _questions: BehaviorSubject<Question[]> = new BehaviorSubject([]);
 
-  constructor() { }
+  constructor() {
+    this.setQuestions();
+  }
 
-  public getRandomQuestion(): Question {
-    return this.questions[0];
+  get questions(): Observable<Question[]> {
+    return this._questions.asObservable();
+  }
+
+  setQuestions() {
+    this._questions.next(questions);
+  }
+
+  public getRandomQuestion(): Observable<Question> {
+    const resSubj = new BehaviorSubject<Question>({} as Question);
+
+    this.questions.subscribe(qs => {
+      resSubj.next(qs[Math.floor(Math.random() * qs.length)]);
+    });
+
+    return resSubj.asObservable();
   }
 
   public getQuestionById(id: number): Question {
-    return this.questions.find(q => q.id === id);
-  }
-
-  public getAllQuestions(): Question[] {
-    return this.questions;
+    return this._questions.getValue().find(q => q.id === id);
   }
 }

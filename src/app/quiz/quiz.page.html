@@ -15,13 +15,13 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-subtitle>Вопрос №{{ question.id }}</ion-card-subtitle>
-      <ion-card-title>{{ question.name }}</ion-card-title>
+      <ion-card-subtitle>Вопрос №{{ (question | async)?.id }}</ion-card-subtitle>
+      <ion-card-title>{{ (question | async)?.name }}</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
         <ul>
-          <li *ngFor="let tag of question.tags">{{ tag }}</li>
+          <li *ngFor="let tag of (question | async)?.tags">{{ tag }}</li>
         </ul>
     </ion-card-content>
   </ion-card>
