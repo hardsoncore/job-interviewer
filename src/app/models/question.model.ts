@@ -10,3 +10,8 @@ export interface Step {
   name: string;
   isChecked: boolean;
 }
+
+export interface Results {
+  id: number;
+  correctness: number;
+}
