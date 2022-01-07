@@ -26,9 +26,9 @@ export class QuestionInfoPage implements OnInit {
     this.route.queryParams.subscribe((params: QueryParams) => {
       this.canGoBack = params.canGoBack;
       this.questionId = +params.questionId;
-
-      this.initQuestion();
     });
+
+    this.initQuestion();
   }
 
   public backToPreviousPage() {
