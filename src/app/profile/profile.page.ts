@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavigationExtras, Router } from '@angular/router';
+import { Themes, ThemeType } from '../models/app.model';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-profile',
@@ -10,8 +11,16 @@ export class ProfilePage {
   imgLoaded = false;
 
   constructor(
-    private router: Router,
+    private theme: ThemeService,
   ) {}
+
+  get currentTheme(): ThemeType {
+    return this.theme.currentTheme;
+  }
+
+  set currentTheme(value: ThemeType) {
+    this.theme.toggleDarkTheme(value === Themes.dark);
+  }
 
   public onImageLoad(): void {
     // will work without a timeout, but it looks more intresting with a timeout

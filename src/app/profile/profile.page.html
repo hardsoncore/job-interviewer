@@ -45,7 +45,7 @@
   </ion-item>
   <ion-item>
     <ion-label>Тема</ion-label>
-    <ion-select placeholder="Select theme">
+    <ion-select placeholder="Select theme" [(ngModel)]="currentTheme">
       <ion-select-option value="light">Светлая</ion-select-option>
       <ion-select-option value="dark">Тёмная</ion-select-option>
     </ion-select>

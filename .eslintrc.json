@@ -41,6 +41,9 @@
           {
             "allowAfterThis": true
           }
+        ],
+        "curly": [
+          "error", "multi-line"
         ]
       }
     },
