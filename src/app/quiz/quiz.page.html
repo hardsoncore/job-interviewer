@@ -14,15 +14,47 @@
   </ion-header>
 
   <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Вопрос №{{ (question | async)?.id }}</ion-card-subtitle>
-      <ion-card-title>{{ (question | async)?.name }}</ion-card-title>
+    <ion-card-header *ngIf="question">
+      <ion-card-subtitle>Вопрос №{{ question.id }}</ion-card-subtitle>
+      <ion-card-title>{{ question.name }}</ion-card-title>
+    </ion-card-header>
+    <!-- skeleton -->
+    <ion-card-header *ngIf="!question">
+      <ion-card-subtitle>
+        <ion-skeleton-text style="width: 20%; max-width: 100px;" animated></ion-skeleton-text>
+      </ion-card-subtitle>
+      <ion-card-title>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-card-title>
     </ion-card-header>
 
-    <ion-card-content>
-        <ul>
-          <li *ngFor="let tag of (question | async)?.tags">{{ tag }}</li>
-        </ul>
+    <ion-card-content *ngIf="question">
+      <ion-button (click)="visitTheoryPage()" color="light">Читать теорию</ion-button>
+      <ul class="tags">
+        <li *ngFor="let tag of question.tags">
+          <ion-badge color="warning">{{ tag }}</ion-badge>
+        </li>
+      </ul>
     </ion-card-content>
+    <!-- skeleton -->
+    <ion-card-content *ngIf="!question">
+      <ion-button color="light">
+        <ion-skeleton-text style="width: 30vw; max-width: 130px;" animated></ion-skeleton-text>
+      </ion-button>
+      <ul class="tags">
+        <li>
+          <ion-badge color="warning">
+            <ion-skeleton-text style="width: 10vw; max-width: 50px;" animated></ion-skeleton-text>
+          </ion-badge>
+        </li>
+      </ul>
+    </ion-card-content>
+
+    <div class="buttons">
+      <ion-button (click)="getNextQuestion()" color="tertiary">Next</ion-button>
+      <ion-button (click)="submitAnswer()" color="success">К ответу</ion-button>
+    </div>
   </ion-card>
 </ion-content>
