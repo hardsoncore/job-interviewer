@@ -15,13 +15,15 @@
 
   <ion-card>
     <ion-card-header *ngIf="question">
-      <ion-card-subtitle>Вопрос №{{ question.id }}</ion-card-subtitle>
+      <ion-card-subtitle>
+        Вопрос №{{ question.id }} - ( {{ getPercentById(question.id) }}% )
+      </ion-card-subtitle>
       <ion-card-title>{{ question.name }}</ion-card-title>
     </ion-card-header>
     <!-- skeleton -->
     <ion-card-header *ngIf="!question">
       <ion-card-subtitle>
-        <ion-skeleton-text style="width: 20%; max-width: 100px;" animated></ion-skeleton-text>
+        <ion-skeleton-text style="width: 40%; max-width: 150px;" animated></ion-skeleton-text>
       </ion-card-subtitle>
       <ion-card-title>
         <ion-skeleton-text animated></ion-skeleton-text>

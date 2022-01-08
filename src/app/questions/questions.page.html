@@ -9,13 +9,12 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Questions 111</ion-title>
+      <ion-title size="large">Questions</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-item *ngFor="let question of questions" button (click)="clickOnQuestion(question)" detail>
-    <ion-label>
-      {{ question.name }}
-    </ion-label>
+    <ion-label>{{ question.name }}</ion-label>
+    <ion-badge [color]="getPercentById(question.id) < 33 && 'danger' || getPercentById(question.id) < 66 && 'warning' || 'success'" slot="end">{{ getPercentById(question.id) }}%</ion-badge>
   </ion-item>
 </ion-content>
