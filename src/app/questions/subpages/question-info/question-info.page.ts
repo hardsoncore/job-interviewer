@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { Question } from 'src/app/models/question.model';
 import { QuestionsService } from 'src/app/services/questions.service';
@@ -19,7 +18,7 @@ export class QuestionInfoPage implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private questionsService: QuestionsService,
-    private location: Location,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -32,7 +31,7 @@ export class QuestionInfoPage implements OnInit {
   }
 
   public backToPreviousPage() {
-    this.location.back();
+    this.router.navigate(['tabs/questions']);
   }
 
   private initQuestion() {

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
+import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 
 import { QuestionsService } from 'src/app/services/questions.service';
 import { Question, Results } from 'src/app/models/question.model';
@@ -19,8 +18,8 @@ export class AnswerStructurePage implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private questionsService: QuestionsService,
-    private location: Location,
     private resultsService: ResultsService,
   ) { }
 
@@ -33,8 +32,14 @@ export class AnswerStructurePage implements OnInit {
     this._getResults();
   }
 
-  public backToPreviousPage(): void {
-    this.location.back();
+  public backToPreviousPage(useParams = false): void {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        needToUpdate: true
+      } as QueryParams
+    };
+
+    this.router.navigate(['tabs/quiz'], useParams && navigationExtras);
   }
 
   public saveResult(): void {
@@ -42,6 +47,7 @@ export class AnswerStructurePage implements OnInit {
     this._updateResults(correctness);
 
     this.resultsService.setResults(this.results);
+    this.backToPreviousPage(true);
   }
 
   private _initQuestion(): void {
