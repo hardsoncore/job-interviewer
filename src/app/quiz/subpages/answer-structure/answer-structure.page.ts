@@ -32,7 +32,7 @@ export class AnswerStructurePage implements OnInit {
     this._getResults();
   }
 
-  public backToPreviousPage(useParams = false): void {
+  public backToQuiz(useParams = false): void {
     const navigationExtras: NavigationExtras = {
       queryParams: {
         needToUpdate: true
@@ -47,7 +47,7 @@ export class AnswerStructurePage implements OnInit {
     this._updateResults(correctness);
 
     this.resultsService.setResults(this.results);
-    this.backToPreviousPage(true);
+    this.backToQuiz(true);
   }
 
   private _initQuestion(): void {

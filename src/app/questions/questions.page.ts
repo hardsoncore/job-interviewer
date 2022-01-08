@@ -33,7 +33,6 @@ export class QuestionsPage implements OnInit {
   public clickOnQuestion(question: Question): void {
     const navigationExtras: NavigationExtras = {
       queryParams: {
-        canGoBack: true,
         questionId: question.id,
       } as QueryParams
     };
