@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationExtras, Router } from '@angular/router';
+import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 
 import { QueryParams } from '../models/app.model';
 import { Question } from '../models/question.model';
@@ -16,9 +16,14 @@ export class QuizPage implements OnInit {
   constructor(
     private questionsService: QuestionsService,
     private router: Router,
+    private route: ActivatedRoute,
   ) {}
 
   ngOnInit() {
+    this.route.queryParams.subscribe((params: QueryParams) => {
+      if (params.needToUpdate) this.getNextQuestion();
+    });
+
     this.getNextQuestion();
   }
 
