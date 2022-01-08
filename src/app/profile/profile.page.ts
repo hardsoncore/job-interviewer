@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
+
 import { Themes, ThemeType } from '../models/app.model';
 import { ThemeService } from '../services/theme.service';
 
@@ -12,6 +14,7 @@ export class ProfilePage {
 
   constructor(
     private theme: ThemeService,
+    private alertController: AlertController,
   ) {}
 
   get currentTheme(): ThemeType {
@@ -27,5 +30,32 @@ export class ProfilePage {
     setTimeout(() => {
       this.imgLoaded = true;
     }, 1000);
+  }
+
+  public async clearStorage() {
+    const usersChoise = await this._presentAlert();
+    if (usersChoise === 'ok') {
+      localStorage.clear();
+      location.reload();
+    }
+  }
+
+  private async _presentAlert(): Promise<string> {
+    const alert = await this.alertController.create({
+      header: 'Сбросить данные приложения?',
+      message: 'Весь ваш прогресс и настройки будут утеряны.',
+      buttons: [
+        'Не нужно',
+        {
+          text: 'Сбросить',
+          role: 'ok'
+        }
+      ]
+    });
+
+    await alert.present();
+
+    const { role } = await alert.onDidDismiss();
+    return role;
   }
 }
