@@ -5,7 +5,7 @@ import { Results } from '../models/question.model';
   providedIn: 'root'
 })
 export class ResultsService {
-  results: Results[];
+  private results: Results[];
 
   constructor() {
     this.results = JSON.parse(localStorage.getItem('results')) || [];
@@ -25,6 +25,6 @@ export class ResultsService {
   }
 
   getPercentById(id: number): number {
-    return this.results.find(result => result.id === id).correctness;
+    return this.results.find(result => result.id === id)?.correctness || 0;
   }
 }

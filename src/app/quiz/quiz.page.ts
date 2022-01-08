@@ -4,6 +4,7 @@ import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 import { QueryParams } from '../models/app.model';
 import { Question } from '../models/question.model';
 import { QuestionsService } from '../services/questions.service';
+import { ResultsService } from '../services/results.service';
 
 @Component({
   selector: 'app-quiz',
@@ -17,6 +18,7 @@ export class QuizPage implements OnInit {
     private questionsService: QuestionsService,
     private router: Router,
     private route: ActivatedRoute,
+    private resultsService: ResultsService,
   ) {}
 
   ngOnInit() {
@@ -55,5 +57,9 @@ export class QuizPage implements OnInit {
     setTimeout(() => {
       this.questionsService.getRandomQuestion().subscribe(q => this.question = q);
     }, 1000);
+  }
+
+  public getPercentById(id: number): number {
+    return this.resultsService.getPercentById(id);
   }
 }
