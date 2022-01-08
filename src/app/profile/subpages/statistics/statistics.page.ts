@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 import { ResultsService } from 'src/app/services/results.service';
 import { Results } from 'src/app/models/question.model';
@@ -14,7 +14,7 @@ export class StatisticsPage implements OnInit {
   avPercent: number;
 
   constructor(
-    private location: Location,
+    private router: Router,
     private resultsService: ResultsService,
   ) { }
 
@@ -23,6 +23,6 @@ export class StatisticsPage implements OnInit {
   }
 
   public backToPreviousPage() {
-    this.location.back();
+    this.router.navigate(['tabs/profile']);
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { AppService } from 'src/app/services/app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -13,6 +14,7 @@ export class AboutPage implements OnInit {
   constructor(
     private location: Location,
     private appService: AppService,
+    private router: Router,
   ) {
     this.appVersion = appService.appVersion;
    }
@@ -21,6 +23,7 @@ export class AboutPage implements OnInit {
   }
 
   public backToPreviousPage() {
-    this.location.back();
+    // this.location.back();
+    this.router.navigate(['tabs/profile']);
   }
 }

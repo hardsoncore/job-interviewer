@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-achievements',
@@ -9,13 +9,13 @@ import { Location } from '@angular/common';
 export class AchievementsPage implements OnInit {
 
   constructor(
-    private location: Location,
+    private router: Router,
   ) { }
 
   ngOnInit() {
   }
 
   public backToPreviousPage() {
-    this.location.back();
+    this.router.navigate(['tabs/profile']);
   }
 }

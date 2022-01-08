@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { QuestionsService } from 'src/app/services/questions.service';
@@ -19,6 +19,7 @@ export class AnswerStructurePage implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private questionsService: QuestionsService,
     private location: Location,
     private resultsService: ResultsService,
@@ -34,7 +35,7 @@ export class AnswerStructurePage implements OnInit {
   }
 
   public backToPreviousPage(): void {
-    this.location.back();
+    this.router.navigate(['tabs/quiz']);
   }
 
   public saveResult(): void {
@@ -42,6 +43,7 @@ export class AnswerStructurePage implements OnInit {
     this._updateResults(correctness);
 
     this.resultsService.setResults(this.results);
+    this.backToPreviousPage();
   }
 
   private _initQuestion(): void {
