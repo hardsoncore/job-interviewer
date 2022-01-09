@@ -24,7 +24,10 @@ export class QuizPage implements OnInit {
 
   ngOnInit() {
     this.route.queryParams.subscribe((params: QueryParams) => {
-      if (params.needToUpdate) this.getNextQuestion();
+      if (params.needToUpdate) {
+        this.getNextQuestion();
+        this._clearQueryParams();
+      }
     });
 
     this.getNextQuestion();
@@ -33,7 +36,6 @@ export class QuizPage implements OnInit {
   public visitTheoryPage(): void {
     const navigationExtras: NavigationExtras = {
       queryParams: {
-        canGoBack: true,
         questionId: this.question.id,
       } as QueryParams
     };
@@ -62,5 +64,9 @@ export class QuizPage implements OnInit {
 
   public getPercentById(id: number): Observable<number> {
     return this.resultsService.getPercentById(id);
+  }
+
+  private _clearQueryParams(): void {
+    this.router.navigate(['.'], { relativeTo: this.route, queryParams: {} });
   }
 }

@@ -22,9 +22,9 @@ export class QuestionInfoPage implements OnInit {
   ngOnInit() {
     this.route.queryParams.subscribe((params: QueryParams) => {
       this.questionId = +params.questionId;
-    });
 
-    this.initQuestion();
+      this.initQuestion();
+    });
   }
 
   private initQuestion() {
