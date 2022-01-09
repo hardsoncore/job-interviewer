@@ -57,7 +57,7 @@ export class AnswerStructurePage implements OnInit {
   }
 
   private _getResults(): void {
-    this.results = this.resultsService.getResults();
+    this.resultsService.results.subscribe(res => this.results = res);
   }
 
   private _calculateCorrectness(): number {

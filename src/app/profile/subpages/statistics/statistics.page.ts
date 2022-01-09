@@ -10,13 +10,13 @@ import { Results } from 'src/app/models/question.model';
 })
 export class StatisticsPage implements OnInit {
   results: Results[];
-  avPercent: number;
+  avPercent = 0;
 
   constructor(
     private resultsService: ResultsService,
   ) { }
 
   ngOnInit() {
-    this.avPercent = this.resultsService.getAveragePercent();
+    this.resultsService.getAveragePercent().subscribe(percent => this.avPercent = percent);
   }
 }

@@ -16,7 +16,7 @@
   <ion-card>
     <ion-card-header *ngIf="question">
       <ion-card-subtitle>
-        Вопрос №{{ question.id }} - ( {{ getPercentById(question.id) }}% )
+        Вопрос №{{ question.id }} - ( {{ getPercentById(question.id) | async }}% )
       </ion-card-subtitle>
       <ion-card-title>{{ question.name }}</ion-card-title>
     </ion-card-header>
