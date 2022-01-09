@@ -15,6 +15,11 @@
 
   <ion-item *ngFor="let question of questions" button (click)="clickOnQuestion(question)" detail>
     <ion-label>{{ question.id }}. {{ question.name }}</ion-label>
-    <ion-badge [color]="getPercentById(question.id) < 33 && 'danger' || getPercentById(question.id) < 66 && 'warning' || 'success'" slot="end">{{ getPercentById(question.id) }}%</ion-badge>
+    <ion-badge
+      [color]="(getPercentById(question.id) | async) < 33 && 'danger' ||
+               (getPercentById(question.id) | async) < 66 && 'warning' || 'success'"
+      slot="end">
+        {{ (getPercentById(question.id) | async) }}%
+    </ion-badge>
   </ion-item>
 </ion-content>
