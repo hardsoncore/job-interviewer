@@ -1,9 +1,22 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Изменить профиль</ion-title>
+
+    <ion-button fill="clear" shape="round" slot="end" (click)="saveChanges()" [disabled]="!canSave">
+      <ion-icon name="save"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <app-explore-container name="Profile page"></app-explore-container>
+  <ion-item>
+    <ion-label position="floating">Имя профиля</ion-label>
+    <ion-input [(ngModel)]="profile.username" (ngModelChange)="canSave = true;"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Аватар профиля</ion-label>
+    <ion-input [(ngModel)]="profile.avatarUrl" (ngModelChange)="canSave = true;"></ion-input>
+  </ion-item>
+
+  <app-explore-container name="Change profile page"></app-explore-container>
 </ion-content>

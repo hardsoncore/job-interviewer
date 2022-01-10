@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 
 import { Themes, ThemeType } from '../models/app.model';
+import { Profile } from '../models/profile.model';
+import { ProfileService } from '../services/profile.service';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
@@ -9,12 +11,14 @@ import { ThemeService } from '../services/theme.service';
   templateUrl: 'profile.page.html',
   styleUrls: ['profile.page.scss']
 })
-export class ProfilePage {
+export class ProfilePage implements OnInit {
   imgLoaded = false;
+  profile: Profile;
 
   constructor(
     private theme: ThemeService,
     private alertController: AlertController,
+    private profileService: ProfileService,
   ) {}
 
   get currentTheme(): ThemeType {
@@ -23,6 +27,10 @@ export class ProfilePage {
 
   set currentTheme(value: ThemeType) {
     this.theme.toggleDarkTheme(value === Themes.dark);
+  }
+
+  ngOnInit(): void {
+    this.profileService.profile.subscribe(profile => this.profile = profile);
   }
 
   public onImageLoad(): void {

@@ -16,7 +16,7 @@
 
   <div class="profile-info">
     <ion-avatar class="profile-info__avatar" [ngClass]="{'not-displayed': !imgLoaded}">
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" (load)="onImageLoad()">
+      <img [src]="profile.avatarUrl" (load)="onImageLoad()">
     </ion-avatar>
     <div *ngIf="!imgLoaded">
       <ion-avatar class="profile-info__avatar">
@@ -24,7 +24,7 @@
       </ion-avatar>
     </div>
     <ion-text color="primary">
-      <h1>Egor</h1>
+      <h1>{{ profile.username }}</h1>
     </ion-text>
   </div>
 
