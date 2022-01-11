@@ -1,0 +1,28 @@
+.pre-text {
+  font-family: sans-serif;
+  white-space: inherit;
+}
+
+
+:host ::ng-deep .code {
+  display: block;
+  background-color: #ababab26;
+  color: #0eef0e;
+  white-space: pre;
+  overflow: auto;
+  margin-left: -40px;
+}
+
+:host ::ng-deep .info {
+  background-color: #ababab26;
+  padding: 1rem;
+  border-left: 4px solid;
+
+  &.info--orange {
+    border-color: #ffc409;
+  }
+
+  &.info--blue {
+    border-color: #4854e0;
+  }
+}
