@@ -7,6 +7,6 @@
 <ion-content>
   <section class="content">
     <h1>{{ question?.name }}</h1>
-    <p>{{ question?.answer }}</p>
+    <pre class="pre-text" [innerHTML]="question?.answer"></pre>
   </section>
 </ion-content>
