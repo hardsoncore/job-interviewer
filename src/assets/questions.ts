@@ -8,7 +8,7 @@ export const questions: Question[] = [
       <p>Процесс отображения страниц браузером можно разбить на следующие основные этапы:</p>
 
       <ol>
-        <li>Начало разбора HTML</li>
+        <li>Парсинг HTML, построение DOM</li>
         <li>Получение внешних ресурсов</li>
         <li>Разбор CSS и создание CSSOM</li>
         <li>Выполнение JavaScript</li>
@@ -17,7 +17,7 @@ export const questions: Question[] = [
       </ol>
 
       <h3>
-        1. Начало разбора HTML
+        1. Парсинг HTML, построение DOM
       </h3>
 
       <p>
@@ -223,13 +223,29 @@ export const questions: Question[] = [
     tags: ['markup', 'browser'],
     structure: [
       {
-        name: 'Парсинг HTML',
+        name: 'Парсинг HTML, построение DOM',
         isChecked: false,
       },
-        {
-        name: 'Построение DOM',
+      {
+        name: 'Получение внешних ресурсов (JS, CSS)',
         isChecked: false,
-      }
+      },
+      {
+        name: 'Разбор CSS и создание CSSOM',
+        isChecked: false,
+      },
+      {
+        name: 'Выполнение JavaScript',
+        isChecked: false,
+      },
+      {
+        name: 'Объединение DOM и CSSOM для построения дерево рендеринга',
+        isChecked: false,
+      },
+      {
+        name: 'Расчет макета и отрисовка результата',
+        isChecked: false,
+      },
     ],
   },
   {
