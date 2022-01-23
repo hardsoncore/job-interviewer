@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 
 import { Question } from 'src/app/models/question.model';
 import { QuestionsService } from 'src/app/services/questions.service';
@@ -15,6 +15,7 @@ export class QuestionInfoPage implements OnInit {
   question: Question;
 
   constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private questionsService: QuestionsService,
   ) { }
@@ -23,11 +24,21 @@ export class QuestionInfoPage implements OnInit {
     this.route.queryParams.subscribe((params: QueryParams) => {
       this.questionId = +params.questionId;
 
-      this.initQuestion();
+      this._initQuestion();
     });
   }
 
-  private initQuestion() {
+  public submitAnswer(): void {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        questionId: this.question.id,
+      } as QueryParams
+    };
+
+    this.router.navigate(['tabs/quiz/answer-structure'], navigationExtras);
+  }
+
+  private _initQuestion() {
     this.questionsService.questions.subscribe(() => {
       this.question = this.questionsService.getQuestionById(this.questionId);
     });

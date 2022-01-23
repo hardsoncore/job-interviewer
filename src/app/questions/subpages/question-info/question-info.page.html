@@ -9,4 +9,7 @@
     <h1>{{ question?.name }}</h1>
     <pre class="pre-text" [innerHTML]="question?.answer"></pre>
   </section>
+
+  <ion-button (click)="submitAnswer()" color="success" expand="block">Проверить себя</ion-button>
+  <br>
 </ion-content>
