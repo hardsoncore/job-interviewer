@@ -26,9 +26,10 @@ export class AnswerStructurePage implements OnInit {
   ngOnInit() {
     this.route.queryParams.subscribe((params: QueryParams) => {
       this.questionId = +params.questionId;
+
+      this._initQuestion();
     });
 
-    this._initQuestion();
     this._getResults();
   }
 
