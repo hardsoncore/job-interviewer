@@ -665,9 +665,17 @@ export const questions: Question[] = [
     tags: ['HTML', 'markup'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Что такое семантическая вёрстка и зачем она нужна',
         isChecked: false,
-      }
+      },
+      {
+        name: 'Основные семантические теги HTML',
+        isChecked: false,
+      },
+      {
+        name: 'Как разметить страницу с точки зрения семантики',
+        isChecked: false,
+      },
     ],
   },
   {
