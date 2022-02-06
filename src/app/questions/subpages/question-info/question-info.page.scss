@@ -46,3 +46,9 @@
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+:host ::ng-deep img {
+  display: block;
+  margin: 1rem auto;
+  min-width: 70%;
+}
