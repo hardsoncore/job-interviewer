@@ -1177,13 +1177,519 @@ export const questions: Question[] = [
   {
     id: 34,
     name: 'Основные методы массивов, которые вы используете',
-    answer: ``,
-    tags: ['JavaScript', 'Data types', 'Structures', 'Iterable'],
+    answer: `
+      <p>
+        Массивы предоставляют множество методов. Чтобы было проще, разобьем их на группы.
+      </p>
+
+      <h3>
+        <strong>Добавление/удаление элементов</strong>
+      </h3>
+
+      <p>
+        Базовые методы, которые добавляют и удаляют элементы из начала или конца:
+      </p>
+
+      <ul>
+        <li><code>arr.pop()</code> - извлекает элемент из конца,</li>
+        <li><code>arr.push(...items)</code> - добавляет элементы в конец,</li>
+        <li><code>arr.shift()</code> - извлекает элемент из начала,</li>
+        <li><code>arr.unshift(...items)</code> - добавляет элементы в начало.</li>
+      </ul>
+
+      <p>
+        Но есть и другие методы для добавления и извлечения...
+      </p>
+
+      <h3>
+        splice
+      </h3>
+
+      <p>
+        Как удалить элементы из массива? Да, можно использовать метод delete (поскольку массивы - это тоже объекты).
+        Но delete отработает не совсем корректно: он удалит значение элемента, но не сам элемент.
+        А нам такое не подходит. Поэтому...
+      </p>
+
+      <p>
+        Метод arr.splice(str) – это универсальный «швейцарский нож» для работы с массивами.
+        Умеет всё: добавлять, удалять и заменять элементы.
+      </p>
+
+      <code class="code">
+        arr.splice(index[, deleteCount, elem1, ..., elemN]);
+      </code>
+
+      <p>
+        Он начинает с позиции index, удаляет deleteCount элементов и вставляет elem1, ..., elemN на их место.
+        Возвращает массив из удалённых элементов.
+      </p>
+
+      <code class="code">
+        let arr = ["Я", "изучаю", "JavaScript", "прямо", "сейчас"];
+
+        // удалить 3 первых элемента и заменить их другими
+        let removed = arr.splice(0, 3, "Давай", "танцевать");
+
+        alert( arr ) // теперь ["Давай", "танцевать", "прямо", "сейчас"]
+        alert( removed ) // "Я", "изучаю", "JavaScript" <-- массив из удалённых элементов
+      </code>
+
+      <p class="info info--blue">
+        В этом и в других методах массива допускается использование отрицательного индекса. Он позволяет начать отсчёт элементов с конца.
+      </p>
+
+      <h3>
+        slice
+      </h3>
+
+      <p>
+        Метод arr.slice намного проще, чем похожий на него arr.splice.
+      </p>
+      <code class="code">
+        arr.slice([start], [end]);
+      </code>
+      <p>
+        Он возвращает новый массив, в который копирует элементы, начиная с индекса start и до end (не включая end).
+        Оба индекса start и end могут быть отрицательными. В таком случае отсчёт будет осуществляться с конца массива.
+      </p>
+
+      <code class="code">
+        let arr = ["t", "e", "s", "t"];
+
+        alert( arr.slice(1, 3) ); // e,s (копирует с 1 до 3)
+
+        alert( arr.slice(-2) ); // s,t (копирует с -2 до конца)
+      </code>
+
+      <p class="info info--blue">
+        Можно вызвать slice и вообще без аргументов: arr.slice() создаёт копию массива arr.
+        Это часто используют, чтобы создать копию массива для дальнейших преобразований, которые не должны менять исходный массив.
+      </p>
+
+      <h3>
+        concat
+      </h3>
+
+      <p>
+        Метод arr.concat создаёт новый массив, в который копирует данные из других массивов и дополнительные значения.
+      </p>
+      <code class="code">
+        arr.concat(arg1, arg2...);
+      </code>
+
+      <p>
+        Он принимает любое количество аргументов, которые могут быть как массивами, так и простыми значениями.
+      </p>
+      <p>
+        В результате мы получаем новый массив, включающий в себя элементы из&nbsp;<code>arr</code>,
+        а также&nbsp;<code>arg1</code>,&nbsp;<code>arg2</code>&nbsp;и так далее&hellip;
+      </p>
+      <p>
+        Если аргумент&nbsp;<code>argN</code>&nbsp;&ndash; массив, то все его элементы копируются. Иначе скопируется сам аргумент.
+      </p>
+
+      <code class="code">
+        let arr = [1, 2];
+
+        // создать массив из: arr и [3,4]
+        alert( arr.concat([3, 4]) ); // 1,2,3,4
+
+        // создать массив из: arr и [3,4] и [5,6]
+        alert( arr.concat([3, 4], [5, 6]) ); // 1,2,3,4,5,6
+
+        // создать массив из: arr и [3,4], потом добавить значения 5 и 6
+        alert( arr.concat([3, 4], 5, 6) ); // 1,2,3,4,5,6
+      </code>
+
+      <p>
+        Обычно он просто копирует элементы из массивов. Другие объекты, даже если они выглядят как массивы, добавляются как есть:
+      </p>
+      <code class="code">
+        let arr = [1, 2];
+
+        let arrayLike = {
+          0: "что-то",
+          length: 1
+        };
+
+        alert( arr.concat(arrayLike) ); // 1,2,[object Object]
+      </code>
+
+      <p>
+        Но если объект имеет специальное свойство&nbsp;<code>Symbol.isConcatSpreadable</code>, то он обрабатывается&nbsp;
+        <code>concat</code>&nbsp;как массив: вместо него добавляются его числовые свойства.
+      </p>
+      <p>Для корректной обработки в объекте должны быть числовые свойства и&nbsp;<code>length</code>:</p>
+      <code class="code">
+        let arr = [1, 2];
+
+        let arrayLike = {
+          0: "что-то",
+          1: "ещё",
+          [Symbol.isConcatSpreadable]: true,
+          length: 2
+        };
+
+        alert( arr.concat(arrayLike) ); // 1,2,что-то,ещё
+      </code>
+
+      <h3>
+        Перебор: forEach
+      </h3>
+
+      <p>
+        Метод arr.forEach позволяет запускать функцию для каждого элемента массива.
+      </p>
+      <code class="code">
+        arr.forEach(function(item, index, array) {
+          // ... делать что-то с item
+        });
+      </code>
+
+      <p class="info info--blue">
+        Результат функции (если она вообще что-то возвращает) отбрасывается и игнорируется.
+      </p>
+
+      <h3>
+        <strong>Поиск в массиве</strong>
+      </h3>
+
+      <p>
+        Методы arr.indexOf,  arr.lastIndexOf и arr.includes имеют одинаковый синтаксис и
+        делают по сути то же самое, что и их строковые аналоги, но работают с элементами вместо символов:
+      </p>
+
+      <ul>
+        <li>
+          <code>arr.indexOf(item, from)</code> ищет <code>item</code>, начиная с индекса <code>from</code>,
+          и возвращает индекс, на котором был найден искомый элемент, в противном случае <code>-1</code>.
+        </li>
+        <li>
+          <code>arr.lastIndexOf(item, from)</code> - то же самое, но ищет справа налево.
+        </li>
+        <li>
+          <code>arr.includes(item, from)</code> - ищет <code>item</code>, начиная с индекса <code>from</code>,
+          и возвращает <code>true</code>, если поиск успешен.
+        </li>
+      </ul>
+
+      <h3>
+        find и findIndex
+      </h3>
+
+      <p>
+        Представьте, что у нас есть массив объектов. Как нам найти объект с определённым условием?
+        Здесь пригодится метод arr.find.
+      </p>
+      <code class="code">
+        let result = arr.find(function(item, index, array) {
+          // если true - возвращается текущий элемент и перебор прерывается
+          // если все итерации оказались ложными, возвращается undefined
+        });
+      </code>
+      <p>
+        Метод arr.findIndex – по сути, то же самое, но возвращает индекс, на котором был найден элемент,
+        а не сам элемент, и -1, если ничего не найдено.
+      </p>
+
+      <h3>
+        filter
+      </h3>
+      <p>
+        Метод find ищет один (первый попавшийся) элемент, на котором функция-колбэк вернёт true.
+        На тот случай, если найденных элементов может быть много, предусмотрен метод arr.filter(fn).
+        </br>
+        Синтаксис этого метода схож с find, но filter возвращает массив из всех подходящих элементов:
+      </p>
+      <code class="code">
+        let results = arr.filter(function(item, index, array) {
+          // если true - элемент добавляется к результату, и перебор продолжается
+          // возвращается пустой массив в случае, если ничего не найдено
+        });
+      </code>
+
+      <h3>
+        <strong>Преобразование массива</strong>
+      </h3>
+
+      <h3>
+        map
+      </h3>
+
+      <p>
+        Метод arr.map является одним из наиболее полезных и часто используемых.
+      </p>
+      <p>
+        Он вызывает функцию для каждого элемента массива и возвращает массив результатов выполнения этой функции.
+      </p>
+      <code class="code">
+        let result = arr.map(function(item, index, array) {
+          // возвращается новое значение вместо элемента
+        });
+      </code>
+
+      <p>
+        Например, здесь мы преобразуем каждый элемент в его длину:
+      </p>
+      <code class="code">
+        let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+        alert(lengths); // 5,7,6
+      </code>
+
+      <h3>
+        sort(fn)
+      </h3>
+      <p>
+        Вызов arr.sort() сортирует массив на месте, меняя в нём порядок элементов.
+      </p>
+      <p class="info info--orange">
+        Он возвращает отсортированный массив, но обычно возвращаемое значение игнорируется, так как изменяется сам входной массив.
+      </p>
+      <code class="code">
+        let arr = [ 1, 2, 15 ];
+
+        // метод сортирует содержимое arr
+        arr.sort();
+
+        alert( arr );  // 1, 15, 2
+      </code>
+
+      <p>
+        Не заметили ничего странного в этом примере?
+        Порядок стал 1, 15, 2. Это неправильно! Но почему?
+      </p>
+
+      <p class="info info--blue">
+        По умолчанию элементы сортируются как строки.
+      </p>
+
+      <p>
+        Чтобы использовать наш собственный порядок сортировки, нам нужно предоставить функцию в качестве аргумента arr.sort().
+      </p>
+
+      <p class="info info--blue">
+        На самом деле от функции сравнения требуется любое положительное число, чтобы сказать «больше»,
+        и отрицательное число, чтобы сказать «меньше».
+      </p>
+
+      <p>
+        Это позволяет писать более короткие функции:
+      </p>
+      <code class="code">
+        let arr = [ 1, 2, 15 ];
+
+        arr.sort( (a, b) => a - b );
+
+        alert(arr);  // 1, 2, 15
+      </code>
+
+      <h3>
+        reverse
+      </h3>
+      <p>
+        Метод arr.reverse меняет порядок элементов в arr на обратный.
+      </p>
+      <code class="code">
+        let arr = [1, 2, 3, 4, 5];
+        arr.reverse();
+
+        alert( arr ); // 5,4,3,2,1
+      </code>
+      <p class="info info--blue">
+        Он также возвращает массив arr с изменённым порядком элементов.
+      </p>
+
+      <h3>
+        split и join
+      </h3>
+      <p>
+        Методы-антагонисты. split делит строку на массив по заданному разделителю.
+      </p>
+      <code class="code">
+        let names = 'Вася, Петя, Маша';
+
+        let arr = names.split(', '); // ['Вася', 'Петя', 'Маша']
+      </code>
+
+      <p>
+        У метода split есть необязательный второй числовой аргумент – ограничение на количество элементов в массиве.
+        Если их больше, чем указано, то остаток массива будет отброшен. На практике это редко используется:
+      </p>
+      <code class="code">
+        let arr = 'Вася, Петя, Маша, Саша'.split(', ', 2);
+
+        alert(arr); // Вася, Петя
+      </code>
+
+      <p class="info info--blue">
+        Вызов split(s) с пустым аргументом s разбил бы строку на массив букв и пробелов.
+      </p>
+      <code class="code">
+        'ff f gggg hhhh'.split('');
+          // ['f', 'f', ' ', 'f', ' ', 'g', 'g', 'g', 'g', ' ', 'h', 'h', 'h', 'h']
+      </code>
+
+      <p>
+        Вызов arr.join(glue) делает в точности противоположное split. Он создаёт строку из элементов arr, вставляя разделитель между ними.
+      </p>
+      <code class="code">
+        let arr = ['Вася', 'Петя', 'Маша'];
+
+        let str = arr.join(';'); // объединить массив в строку через: [Вася;Петя;Маша]
+      </code>
+
+      <h3>
+        reduce/reduceRight
+      </h3>
+      <p>
+        Методы arr.reduce и arr.reduceRight похожи на методы выше, но они немного сложнее.
+        Они используются для вычисления какого-нибудь единого значения на основе всего массива.
+      </p>
+      <code class="code">
+        let value = arr.reduce(function(previousValue, item, index, array) {
+          // ...
+        }, [initial]);
+      </code>
+      <p>
+        Функция применяется по очереди ко всем элементам массива и «переносит» свой результат на следующий вызов.
+      </p>
+      <p>Аргументы:</p>
+
+      <ul>
+        <li>
+          <code>previousValue</code> - результат предыдущего вызова этой функции, равен
+          <code>initial</code> при первом вызове (если передан <code>initial</code>),
+        </li>
+        <li><code>item</code> - очередной элемент массива,</li>
+        <li><code>index</code> - его индекс,</li>
+        <li><code>array</code> - сам массив.</li>
+      </ul>
+
+      <p>
+        При вызове функции результат её вызова на предыдущем элементе массива передаётся как первый аргумент.
+        Он становится как-бы «аккумулирующим» результат предыдущих вызовов функции. По окончании он становится результатом reduce.
+      </p>
+
+      <p>
+        Тут мы получим сумму всех элементов массива всего одной строкой:
+      </p>
+      <code class="code">
+        let arr = [1, 2, 3, 4, 5];
+
+        let result = arr.reduce((sum, current) => sum + current, 0); // result = 15
+      </code>
+
+      <h3>
+        <strong>Array.isArray</strong>
+      </h3>
+      <p>
+        Массивы не образуют отдельный тип языка. Они основаны на объектах.
+        </br>
+        Поэтому typeof не может отличить простой объект от массива:
+      </p>
+      <code class="code">
+        alert(typeof {}); // object
+        alert(typeof []); // тоже object
+      </code>
+
+      <p>
+        …Но массивы используются настолько часто, что для этого придумали специальный метод:
+        Array.isArray(value). Он возвращает true, если value массив, и false, если нет.
+      </p>
+      <code class="code">
+        alert(Array.isArray({})); // false
+        alert(Array.isArray([])); // true
+      </code>
+
+      <h3>
+        <strong>Большинство методов поддерживают «thisArg»</strong>
+      </h3>
+
+      <p>
+        Почти все методы массива, которые вызывают функции –
+        такие как find, filter, map, за исключением метода sort, принимают необязательный параметр thisArg.
+      </p>
+      <code class="code">
+        arr.find(func, thisArg);
+          // thisArg - это необязательный последний аргумент
+      </code>
+
+      <p>
+        Значение параметра thisArg становится this для func.
+      </p>
+
+      <h3>
+        Источники:
+      </h3>
+      <ul>
+        <li>
+          <a href="https://learn.javascript.ru/array-methods#slice">Источник 1</a>
+        </li>
+      </ul>
+    `,
+    tags: ['JavaScript', 'Data types', 'Structures', 'Iterable', 'Array'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'pop/push и shift/unshift, их различия',
         isChecked: false,
-      }
+      },
+      {
+        name: 'splice',
+        isChecked: false,
+      },
+      {
+        name: 'slice',
+        isChecked: false,
+      },
+      {
+        name: 'concat',
+        isChecked: false,
+      },
+      {
+        name: 'forEach',
+        isChecked: false,
+      },
+      {
+        name: 'indexOf/lastIndexOf и includes, их различия',
+        isChecked: false,
+      },
+      {
+        name: 'find и findIndex, их различия',
+        isChecked: false,
+      },
+      {
+        name: 'filter',
+        isChecked: false,
+      },
+      {
+        name: 'map',
+        isChecked: false,
+      },
+      {
+        name: 'sort(fn)',
+        isChecked: false,
+      },
+      {
+        name: 'reverse',
+        isChecked: false,
+      },
+      {
+        name: 'split и join',
+        isChecked: false,
+      },
+      {
+        name: 'reduce',
+        isChecked: false,
+      },
+      {
+        name: 'Array.isArray',
+        isChecked: false,
+      },
+      {
+        name: '«thisArg»',
+        isChecked: false,
+      },
     ],
   },
   {
@@ -1417,13 +1923,295 @@ export const questions: Question[] = [
   {
     id: 54,
     name: 'Promises. Зачем нужны? Какую проблему решали?',
-    answer: ``,
+    answer: `
+      <p>
+        <code>Promise</code> (по англ. promise, будем называть такой объект «промис») – это специальный объект в JavaScript
+        (добавленный в ES6),
+        который связывает «создающий» и «потребляющий» коды вместе. «Создающий» код может выполняться сколько потребуется,
+        чтобы получить результат. А промис делает результат доступным для кода, который подписан на него, когда результат готов.
+      </p>
+
+      <p>
+        Синтаксис создания <code>Promise</code>:
+      </p>
+      <code class="code">
+        let promise = new Promise(function(resolve, reject) {
+          // функция-исполнитель (executor)
+          // "певец"
+        });
+      </code>
+
+      <p>
+        Функция, переданная в конструкцию <code>new Promise</code>, называется исполнитель (executor).
+        Когда <code>Promise</code> создаётся, она запускается автоматически.
+        Она должна содержать «создающий» код, который когда-нибудь создаст результат.
+      </p>
+      <p>
+        Её аргументы <code>resolve</code> и <code>reject</code> – это колбэки, которые предоставляет сам JavaScript.
+        Наш код – только внутри исполнителя.
+      </p>
+
+      <p>
+        Когда он получает результат, сейчас или позже – не важно, он должен вызвать один из этих колбэков:
+      </p>
+      <ul>
+        <li><code>resolve(value)</code> - если работа завершилась успешно, с результатом <code>value</code>.</li>
+        <li><code>reject(error)</code> - если произошла ошибка, <code>error</code> &ndash; объект ошибки.</li>
+      </ul>
+
+      <p>
+        У объекта <code>Promise</code>, возвращаемого конструктором <code>new Promise</code>, есть внутренние свойства:
+      </p>
+      <ul>
+        <li>
+          <code>state</code> ("состояние") - вначале <code>&quot;pending&quot;</code> ("ожидание"),
+          потом меняется на <code>&quot;fulfilled&quot;</code> ("выполнено успешно") при вызове
+          <code>resolve</code> или на <code>&quot;rejected&quot;</code> ("выполнено с ошибкой") при вызове <code>reject</code>.
+        </li>
+        <li>
+          <code>result</code> ("результат") - вначале <code>undefined</code>, далее изменяется на <code>value</code>
+          при вызове <code>resolve(value)</code> или на <code>error</code> при вызове
+          <code>reject(error)</code>.
+        </li>
+      </ul>
+
+      <p>
+        Так что исполнитель по итогу переводит promise в одно из двух состояний:
+      </p>
+      <img src="../assets/img/promise.jpg">
+
+      <p>
+        Ниже пример конструктора Promise и простого исполнителя с кодом, дающим результат с задержкой (через setTimeout):
+      </p>
+      <code class="code">
+        let promise = new Promise(function(resolve, reject) {
+          // эта функция выполнится автоматически, при вызове new Promise
+
+          // через 1 секунду сигнализировать, что задача выполнена с результатом "done"
+          setTimeout(() => resolve("done"), 1000);
+        });
+      </code>
+
+      <p>
+        А теперь пример, в котором исполнитель сообщит, что задача выполнена с ошибкой:
+      </p>
+      <code class="code">
+        let promise = new Promise(function(resolve, reject) {
+          // спустя одну секунду будет сообщено, что задача выполнена с ошибкой
+          setTimeout(() => reject(new Error("Whoops!")), 1000);
+        });
+      </code>
+
+      <p class="info info--blue">
+        <strong>Может быть что-то одно: либо результат, либо ошибка</strong></br>
+        Исполнитель должен вызвать что-то одно: resolve или reject. Состояние промиса может быть изменено только один раз.
+      </p>
+
+      <p class="info info--blue">
+        <strong>Вызов resolve/reject сразу</strong></br>
+        Обычно исполнитель делает что-то асинхронное и после этого вызывает resolve/reject,
+        то есть через какое-то время. Но это не обязательно, resolve или reject могут быть вызваны сразу:
+      </p>
+      <code class="code">
+        let promise = new Promise(function(resolve, reject) {
+          // задача, не требующая времени
+          resolve(123); // мгновенно выдаст результат: 123
+        });
+      </code>
+
+      <h3>
+        Потребители: then, catch, finally
+      </h3>
+      <p>
+        Объект Promise служит связующим звеном между исполнителем («создающим» кодом или «певцом») и функциями-потребителями («фанатами»),
+        которые получат либо результат, либо ошибку. Функции-потребители могут быть зарегистрированы (подписаны) с помощью методов
+        .then, .catch и .finally.
+      </p>
+
+      <h3>
+        then
+      </h3>
+      <p>
+        Наиболее важный и фундаментальный метод – .then.
+      </p>
+      <code class="code">
+        promise.then(
+          function(result) { /* обработает успешное выполнение */ },
+          function(error) { /* обработает ошибку */ }
+        );
+      </code>
+      <p>
+        Если мы заинтересованы только в результате успешного выполнения задачи, то в then можно передать только одну функцию:
+      </p>
+
+      <h3>
+        catch
+      </h3>
+      <p>
+        Если мы хотели бы только обработать ошибку, то можно использовать null в качестве первого аргумента:
+        <code>.then(null, errorHandlingFunction)</code>. Или можно воспользоваться методом
+        <code>.catch(errorHandlingFunction)</code>, который сделает то же самое
+      </p>
+      <code class="code">
+        let promise = new Promise((resolve, reject) => {
+          setTimeout(() => reject(new Error("Ошибка!")), 1000);
+        });
+
+        // .catch(f) это то же самое, что promise.then(null, f)
+        promise.catch(alert); // выведет "Error: Ошибка!" спустя одну секунду
+      </code>
+
+      <h3>
+        finally
+      </h3>
+
+      <p>
+        По аналогии с блоком <code>finally</code> из обычного <code>try {...} catch {...}</code>,
+        у промисов также есть метод <code>finally</code>.
+      </p>
+
+      <p>
+        Вызов <code>.finally(f)</code> похож на <code>.then(f, f)</code>, в том смысле, что <code>f</code>
+        выполнится в любом случае, когда промис завершится: успешно или с ошибкой.
+      </p>
+
+      <p>
+        <code>finally</code> хорошо подходит для очистки, например остановки индикатора загрузки,
+        его ведь нужно остановить вне зависимости от результата.
+      </p>
+      <code class="code">
+        new Promise((resolve, reject) => {
+          /* сделать что-то, что займёт время, и после вызвать resolve/reject */
+        })
+          // выполнится, когда промис завершится, независимо от того, успешно или нет
+          .finally(() => остановить индикатор загрузки)
+          .then(result => показать результат, err => показать ошибку)
+      </code>
+
+      <p>Но это не совсем псевдоним <code>then(f,f)</code>, как можно было подумать. Существует несколько важных отличий:</p>
+
+      <ol>
+        <li>
+          <p>
+            Обработчик, вызываемый из <code>finally</code>, не имеет аргументов. В <code>finally</code> мы не знаем, к
+            ак был завершён промис. И это нормально, потому что обычно наша задача -
+            выполнить "общие" завершающие процедуры.
+          </p>
+        </li>
+        <li>
+          <p>Обработчик <code>finally</code> "пропускает" результат или ошибку дальше, к последующим обработчикам.</p>
+        </li>
+      </ol>
+
+      <h3>
+        Цепочка вызовов
+      </h3>
+      <p>
+        Общая нужда - выполнять две или более асинхронных операции одна за другой, причём каждая следующая начинается
+        при успешном завершении предыдущей и использует результат её выполнения.
+      </p>
+      <code class="code">
+        let promise = doSomething();
+
+        doSomething()
+          .then(result => doSomethingElse(result))
+          .then(newResult => doThirdThing(newResult))
+          .then(finalResult => {
+            console.log('Итоговый результат: \${ finalResult }');
+          })
+          .catch(failureCallback);
+      </code>
+
+      <p class="info info--blue">
+        <strong>Можно продолжить цепочку вызовов после ошибки</strong></br>
+        Т.е. после catch, что полезно для выполнения новых действий даже
+        после того, как действие вернёт ошибку в цепочке вызовов.
+      </p>
+
+      <code class="code">
+        new Promise((resolve, reject) => {
+          console.log('Начало');
+
+          resolve();
+        })
+        .then(() => {
+          throw new Error('Где-то произошла ошибка');
+
+          console.log('Выведи это');
+        })
+        .catch(() => {
+          console.log('Выведи то');
+        })
+        .then(() => {
+          console.log('Выведи это, несмотря ни на что');
+        });
+      </code>
+      <p>
+        В результате получим:
+      </p>
+      <code class="code">
+        Начало
+        Выведи то
+        Выведи это, несмотря ни на что
+      </code>
+
+      <p class="info info--blue">
+        <strong>Можно строить такие цепочки и с finally.</strong></br>
+        Обработчик <code>finally</code> "пропускает" результат или ошибку дальше, к последующим обработчикам.
+      </p>
+
+      <h3>
+        Какую проблему решали промисы
+      </h3>
+      <p>
+        До появления «обещаний» асинхронные задачи можно было решать с помощью функций обратного вызова или с помощью обработки событий.
+        Универсальный подход к решению асинхронных задач – обработка событий.
+        Вариант решения задач с помощью «обещаний», скорее, призван заменить подход к функциями обратного вызова.
+      </p>
+
+      <p>
+        В использовании функций обратного вызова есть существенный недостаток с точки зрения организации кода: "callback hell".
+        Этот недостаток заключается в том, что в функции обратного вызова есть параметр, который, в свою очередь,
+        также является функцией обратного вызова – и так может продолжаться до бесконечности.
+      </p>
+
+      <p>
+        Может образоваться несколько уровней таких вложенностей. Это приводит к плохому чтению кода и запутанности между вызовами
+        функций обратного вызова. Это, в свою очередь, приведет к ошибкам. С такой структурой кода найти ошибки очень сложно.
+      </p>
+
+      <h3>
+        Источники:
+      </h3>
+      <ul>
+        <li>
+          <a href="https://learn.javascript.ru/promise-basics">Источник 1 (теория)</a>
+          <a href="https://habr.com/ru/company/zerotech/blog/317256/">Источник 2 (зачем нужны)</a>
+        </li>
+      </ul>
+    `,
     tags: ['JavaScript', 'JS mechanics', 'Promise', 'Async'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Что такое Promise, в какой версии ES появился',
         isChecked: false,
-      }
+      },
+      {
+        name: 'Неизменность результата после завершения промиса',
+        isChecked: false,
+      },
+      {
+        name: 'then, catch, finally',
+        isChecked: false,
+      },
+      {
+        name: 'Цепочка вызовов',
+        isChecked: false,
+      },
+      {
+        name: 'Какую проблему решали промисы',
+        isChecked: false,
+      },
     ],
   },
   {
@@ -2183,12 +2971,12 @@ export const questions: Question[] = [
       </p>
 
       <p>
-        Однако, в этом подходе также есть пара моментов, которые стоит учитывать. Во-первых,&nbsp;
-        <code>getData()</code>&nbsp;
-        не ленив, как большинство наблюдаемых, он немедленно создаст базовый источник данных&nbsp;
-        <code>SomeWeirdDataSource</code>&nbsp;
-        (и, предположительно, некоторые побочные эффекты).&nbsp;
-        Во-вторых, на выходе&nbsp;<code>getData()</code> возвращает <code>return subject.asObservable();</code>,
+        Однако, в этом подходе также есть пара моментов, которые стоит учитывать. Во-первых,
+        <code>getData()</code>
+        не ленив, как большинство наблюдаемых, он немедленно создаст базовый источник данных
+        <code>SomeWeirdDataSource</code>
+        (и, предположительно, некоторые побочные эффекты).
+        Во-вторых, на выходе <code>getData()</code> возвращает <code>return subject.asObservable();</code>,
         которое каждый раз будет новым наблюдаемым.;
       </p>
 
@@ -2365,6 +3153,418 @@ export const questions: Question[] = [
     structure: [
       {
         name: 'Теги HTML',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 83,
+    name: 'SQL. Основные команды',
+    answer: `
+      <h3>Структура sql-запросов</h3>
+
+      <p>Общая структура запроса выглядит следующим образом:</p>
+      <code class="code">
+        SELECT ('столбцы или * для выбора всех столбцов; обязательно')
+        FROM ('таблица; обязательно')
+        WHERE ('условие/фильтрация, например, city = 'Moscow'; необязательно')
+        GROUP BY ('столбец, по которому хотим сгруппировать данные; необязательно')
+        HAVING ('условие/фильтрация на уровне сгруппированных данных; необязательно')
+        ORDER BY ('столбец, по которому хотим отсортировать вывод; необязательно')
+      </code>
+      </br>
+
+      <h3>Команды SQL, которые должен знать каждый программист:</h3>
+
+      <code>
+        SELECT, FROM
+      </code>
+      <p>
+        SELECT, FROM — обязательные элементы запроса, которые определяют выбранные столбцы, их порядок и источник данных.
+      </p>
+      <code class="code">
+        SELECT &lt;col_name1>, &lt;col_name2>, …
+          FROM &lt;table_name>;
+      </code>
+      <p>
+        Выбрать все (обозначается как *) из таблицы Customers:
+      </p>
+      <code class="code">
+        SELECT * FROM Customers
+      </code>
+      </br>
+
+      <code>
+        SELECT DISTINCT
+      </code>
+      <p>
+        В столбцах таблицы могут содержаться повторяющиеся данные. Используйте SELECT DISTINCT для получения только неповторяющихся данных.
+      </p>
+      <code class="code">
+        SELECT DISTINCT &lt;col_name1>, &lt;col_name2>, …
+          FROM &lt;table_name>;
+      </code>
+      </br>
+
+      <code>
+        WHERE
+      </code>
+      <p>
+        WHERE — необязательный элемент запроса, который используется, когда нужно отфильтровать данные по нужному условию.
+        Очень часто внутри элемента where используются IN / NOT IN для фильтрации столбца по нескольким значениям,
+        AND / OR для фильтрации таблицы по нескольким столбцам.
+        </br>
+        Можно использовать ключевое слово WHERE в SELECT для указания условий в запросе:
+      </p>
+      <code class="code">
+        SELECT &lt;col_name1>, &lt;col_name2>, …
+          FROM &lt;table_name>
+          WHERE &lt;condition>;
+      </code>
+      <p>
+        В запросе можно задавать следующие условия:
+      </p>
+      <ul>
+        <li>сравнение текста;</li>
+        <li>сравнение численных значений;</li>
+        <li>логические операции AND (и), OR (или) и NOT (отрицание).</li>
+      </ul>
+
+      <p>
+        Фильтрация по одному условию и одному значению:
+      </p>
+      <code class="code">
+        SELECT * FROM Customers
+          WHERE City = 'London'
+      </code>
+      <p>
+        Фильтрация по одному условию и нескольким значениям с применением IN (включение) или NOT IN (исключение):
+      </p>
+      <code class="code">
+        SELECT * FROM Customers
+          WHERE City IN ('London', 'Berlin')
+      </code>
+      </br>
+      <code class="code">
+        SELECT * FROM Customers
+          WHERE City NOT IN ('Madrid', 'Berlin','Bern')
+      </code>
+
+      <p>
+        Фильтрация по нескольким условиям с применением AND (выполняются все условия)
+        или OR (выполняется хотя бы одно условие) и нескольким значениям:
+      </p>
+      <code class="code">
+        SELECT * FROM Customers
+          WHERE Country = 'Germany' AND City NOT IN ('Berlin', 'Aachen') AND CustomerID > 15
+      </code>
+      </br>
+      <code class="code">
+        SELECT * FROM Customers
+          WHERE City IN ('London', 'Berlin') OR CustomerID > 4
+      </code>
+      </br>
+
+      <code>
+        GROUP BY
+      </code>
+      <p>
+        GROUP BY — необязательный элемент запроса, с помощью которого можно задать агрегацию по нужному столбцу
+        (например, если нужно узнать какое количество клиентов живет в каждом из городов).
+      </p>
+      <p>
+        При использовании GROUP BY обязательно:
+      </p>
+
+      <ol>
+        <li>
+          перечень столбцов, по которым делается разрез, был одинаковым внутри SELECT и внутри GROUP BY;
+        </li>
+        <li>
+          агрегатные функции (SUM, AVG, COUNT, MAX, MIN) должны быть также указаны внутри SELECT с указанием столбца,
+          к которому такая функция применяется.
+        </li>
+      </ol>
+
+      <p>
+        Группировка количества клиентов по городу:
+      </p>
+      <code class="code">
+        SELECT City, COUNT(CustomerID) FROM Customers
+          GROUP BY City
+      </code>
+
+      <p>
+        Группировка количества клиентов по стране и городу:
+      </p>
+      <code class="code">
+        SELECT Country, City, COUNT(CustomerID) FROM Customers
+          GROUP BY Country, City
+      </code>
+
+      <p>
+        Группировка продаж по ID товара с разными агрегатными функциями:
+        количество заказов с данным товаром и количество проданных штук товара:
+      </p>
+      <code class="code">
+        SELECT ProductID, COUNT(OrderID), SUM(Quantity) FROM OrderDetails
+          GROUP BY ProductID
+      </code>
+
+      <p>
+        Группировка продаж с фильтрацией исходной таблицы.
+        В данном случае на выходе будет таблица с количеством клиентов по городам Германии:
+      </p>
+      <code class="code">
+        SELECT City, COUNT(CustomerID) FROM Customers
+          WHERE Country = 'Germany'
+          GROUP BY City
+      </code>
+
+      <p>
+        Переименование столбца с агрегацией с помощью оператора AS.
+        По умолчанию название столбца с агрегацией равно примененной агрегатной функции,
+        что далее может быть не очень удобно для восприятия.
+      </p>
+      <code class="code">
+        SELECT City, COUNT(CustomerID) AS Number_of_clients FROM Customers
+          GROUP BY City
+      </code>
+      </br>
+
+      <code>
+        HAVING
+      </code>
+      <p>
+        HAVING — необязательный элемент запроса, который отвечает за фильтрацию на уровне сгруппированных данных
+        (по сути, WHERE, но только на уровень выше).
+      </p>
+      <p>
+        Ключевое слово HAVING было добавлено в SQL по той причине, что WHERE не может использоваться для работы с агрегатными функциями.
+      </p>
+
+      <p>
+        Фильтрация агрегированной таблицы с количеством клиентов по городам,
+        в данном случае оставляем в выгрузке только те города, в которых не менее 5 клиентов:
+      </p>
+      <code class="code">
+        SELECT City, COUNT(CustomerID) FROM Customers
+          GROUP BY City
+          HAVING COUNT(CustomerID) >= 5
+      </code>
+
+      <p>
+        В случае с переименованным столбцом внутри HAVING можно указать как и саму агрегирующую конструкцию
+        count(CustomerID), так и новое название столбца number_of_clients:
+      </p>
+      <code class="code">
+        SELECT City, COUNT(CustomerID) AS number_of_clients FROM Customers
+          GROUP BY City
+          HAVING number_of_clients >= 5
+      </code>
+
+      <p>
+        Пример запроса, содержащего WHERE и HAVING.
+        В данном запросе сначала фильтруется исходная таблица по пользователям,
+        рассчитывается количество клиентов по городам и остаются только те города, где количество клиентов не менее 5:
+      </p>
+      <code class="code">
+        SELECT City, COUNT(CustomerID) AS number_of_clients FROM Customers
+          WHERE CustomerName NOT IN ('Around the Horn','Drachenblut Delikatessend')
+          GROUP BY City
+          HAVING number_of_clients >= 5
+      </code>
+      </br>
+
+      <code>
+        ORDER BY
+      </code>
+      <p>
+        ORDER BY используется для сортировки результатов запроса по убыванию или возрастанию.
+        ORDER BY отсортирует по возрастанию, если не будет указан способ сортировки ASC или DESC.
+      </p>
+      <code class="code">
+        SELECT &lt;col_name1>, &lt;col_name2>, …
+          FROM &lt;table_name>
+          ORDER BY &lt;col_name1>, &lt;col_name2>, … ASC|DESC;
+      </code>
+
+      <p>
+        Простой пример сортировки по одному столбцу. В данном запросе осуществляется сортировка по городу, который указал клиент:
+      </p>
+      <code class="code">
+        SELECT * FROM Customers
+          ORDER BY City
+      </code>
+
+      <p>
+        Осуществлять сортировку можно и по нескольким столбцам, в этом случае сортировка происходит по порядку указанных столбцов:
+      </p>
+      <code class="code">
+        SELECT * FROM Customers
+          ORDER BY Country, City
+      </code>
+
+      <p>
+        По умолчанию сортировка происходит по возрастанию для чисел и в алфавитном порядке для текстовых значений.
+        Если нужна обратная сортировка, то в конструкции ORDER BY после названия столбца надо добавить DESC:
+      </p>
+      <code class="code">
+        SELECT * FROM Customers
+          ORDER BY CustomerID DESC
+      </code>
+
+      <p>
+        Обратная сортировка по одному столбцу и сортировка по умолчанию по второму:
+      </p>
+      <code class="code">
+        SELECT * FROM Customers
+          ORDER BY Country DESC, City
+      </code>
+      </br>
+
+      <code>
+        BETWEEN
+      </code>
+      <p>
+        BETWEEN используется для выбора значений данных из определённого промежутка.
+        Могут быть использованы числовые и текстовые значения, а также даты.
+      </p>
+      <code class="code">
+        SELECT &lt;col_name1>, &lt;col_name2>, …
+          FROM &lt;table_name>
+          WHERE &lt;col_namex> BETWEEN &lt;value1> AND &lt;value2>;
+      </code>
+      </br>
+
+      <code>
+        LIKE
+      </code>
+      <p>
+        Оператор LIKE используется в WHERE, чтобы задать шаблон поиска похожего значения.
+      </p>
+      <p>
+        Есть два свободных оператора, которые используются в LIKE:
+      </p>
+
+      <ul>
+        <li>% (ни одного, один или несколько символов);</li>
+        <li>_ (один символ).</li>
+      </ul>
+
+      <code class="code">
+        SELECT &lt;col_name1>, &lt;col_name2>, …
+          FROM &lt;table_name>
+          WHERE &lt;col_namex> LIKE &lt;pattern>;
+      </code>
+      </br>
+
+      <code>
+        IN
+      </code>
+      <p>
+        С помощью IN можно указать несколько значений для оператора WHERE:
+      </p>
+      <code class="code">
+        SELECT &lt;col_name1>, &lt;col_name2>, …
+          FROM &lt;table_name>
+          WHERE &lt;col_namen> IN (&lt;value1>, &lt;value2>, …);
+      </code>
+      </br>
+
+      <code>
+        JOIN
+      </code>
+      <p>
+        JOIN — необязательный элемент, используется для объединения таблиц (двух и более) по ключу, который присутствует в обеих таблицах.
+        Перед ключом ставится оператор ON.
+      </p>
+
+      <p>
+        Запрос, в котором соединяем таблицы Order и Customer по ключу CustomerID,
+        при этом перед названиям столбца ключа добавляется название таблицы через точку:
+      </p>
+      <code class="code">
+        SELECT * FROM Orders
+          JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+      </code>
+
+      <p>
+        Нередко может возникать ситуация, когда надо промэппить одну таблицу значениями из другой.
+        В зависимости от задачи, могут использоваться разные типы присоединений.
+        INNER JOIN — пересечение, RIGHT/LEFT JOIN для мэппинга одной таблицы знаениями из другой.
+      </p>
+
+      <p>
+        Внутри всего запроса JOIN встраивается после элемента FROM до элемента WHERE, пример запроса:
+      </p>
+      <code class="code">
+        SELECT * FROM Orders
+          JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+          WHERE Customers.CustomerID >10
+      </code>
+
+      <p>
+        Другие типы JOIN'ов можно увидеть на замечательной картинке ниже:
+      </p>
+      <img src="../assets/img/join.png">
+
+      <p>
+        Более подробно про JOIN можно прочитать в прикрепленном материале (см. Источник 2).
+      </p>
+
+      <code>
+        VIEW
+      </code>
+      <p>
+        VIEW — это виртуальная таблица SQL, созданная в результате выполнения выражения.
+        Она содержит строки и столбцы и очень похожа на обычную SQL-таблицу. VIEW всегда показывает самую свежую информацию из базы данных.
+      </p>
+
+      <h3>
+        Источники:
+      </h3>
+
+      <ul>
+        <li>
+          <a href="https://habr.com/ru/post/480838/">Источник 1 (основоной)</a>
+        </li>
+        <li>
+          <a href="https://function-x.ru/sql_join.html">Источник 2 (про JOIN и его разновидности)</a>
+        </li>
+        <li>
+          <a href="https://tproger.ru/translations/sql-recap/">Источник 3 (очень краткий конспект с перечнем функций)</a>
+        </li>
+      </ul>
+    `,
+    tags: ['СУБД (системы управления базами данных)', 'databases', 'SQL'],
+    structure: [
+      {
+        name: 'SELECT, FROM',
+        isChecked: false,
+      },
+      {
+        name: 'SELECT DISTINCT',
+        isChecked: false,
+      },
+      {
+        name: 'WHERE',
+        isChecked: false,
+      },
+      {
+        name: 'GROUP BY',
+        isChecked: false,
+      },
+      {
+        name: 'HAVING',
+        isChecked: false,
+      },
+      {
+        name: 'ORDER BY',
+        isChecked: false,
+      },
+      {
+        name: 'JOIN и его варианты',
         isChecked: false,
       }
     ],
