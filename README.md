@@ -1,10 +1,13 @@
 # job-interviewer
-Думаю, каждый frontend разработчик (даже junior уровня) хотя бы раз задавался вопросом, как готовиться к собеседованию. 
+job-interviewer
+I think every frontend developer (even at the junior level) has wondered at least once how to prepare for a job interview.
 
-Это моя небольшая попытка дать ответ на этот вопрос. 
-Я собрал в приложении самые частые вопросы из рубрик: 
- - собеседование Front-end разработчика, 
- - вопросы по Angular на собеседовании,
- - ответы на вопросы собеседования по HTML, CSS.
- 
-Надеюсь, кому-то ещё будет полезно.
+This is my small attempt to answer that question. And also my pet project based on Angular, Typescrypt and Ionic.
+I have collected in the app the most common questions from the following categories:
+
+ - Front-end developer interview questions,
+ - Angular interview questions,
+ - Interview answers for HTML and CSS questions.
+
+
+I hope it will be helpful to someone else as well.
