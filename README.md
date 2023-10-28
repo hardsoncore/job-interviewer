@@ -1,5 +1,5 @@
 # job-interviewer
-job-interviewer
+
 I think every frontend developer (even at the junior level) has wondered at least once how to prepare for a job interview.
 
 This is my small attempt to answer that question. And also my pet project based on Angular, Typescrypt and Ionic.
