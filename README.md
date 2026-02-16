@@ -1,8 +1,11 @@
 # Job Interviewer
 
-<p align="center">
-  <strong>This is an old version of the app made in 2021 year (waiting for updates)</strong>
+<p align="left">
+  <img src="https://img.shields.io/badge/Status-Legacy%202021-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Maintenance-Minor%20Changes-yellow?style=for-the-badge" />
 </p>
+
+**Note:** I'm open to discuss improvements! Feel free to open a PR.
 
 ## 📖 About
 
@@ -12,9 +15,10 @@ Job Interviewer is a mobile application designed to help frontend developers pre
 
 The app provides curated interview questions and answers for:
 
+- **HTML & CSS** - Core web technologies questions
 - **Frontend Developer** - General frontend development concepts
 - **Angular Framework** - Angular-specific questions and best practices
-- **HTML & CSS** - Core web technologies questions
+- **Technologies related to Web**
 
 ## 🛠️ Tech Stack
 
@@ -52,8 +56,6 @@ npm install
 3. Start the development server:
 ```bash
 npm start
-# or
-ng serve
 ```
 
 4. Open your browser and navigate to `http://localhost:4200`
@@ -89,7 +91,9 @@ job-interviewer/
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/hardsoncore/job-interviewer/issues).
+Feel free to communicate and discuss.
+<br/>
+Contributions, issues, and feature requests are welcome! 
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
