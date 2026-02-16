@@ -965,13 +965,54 @@ export const questions: Question[] = [
   {
     id: 12,
     name: 'Псевдоэлементы',
-    answer: ``,
+    answer: `<span class="accent">Псевдоэлементы</span> — это способ стилизовать те части элемента, которых нет в HTML-разметке (в DOM-дереве), но которые браузер отрисовывает визуально.
+    <h3>Основные виды псевдоэлементов</h3>
+    Их довольно много, но в реальной работе ты будешь использовать эти 5-6 штук в 90% случаев:
+
+    </br>
+
+    1. Генерируемый контент (<code>::before</code> и <code>::after</code>)
+    <p>Самые мощные инструменты верстальщика. Они создают виртуальный элемент, который находится внутри родителя, в самом начале (<code>::before</code>) или в самом конце (<code>::after</code>).</p>
+
+    <p>Для чего: Иконки, декоративные элементы, хлебные крошки, кастомные чекбоксы, очистка потока (clearfix).</p>
+
+    <p>Обязательное условие: Свойство content. Без него (даже если оно пустое <code>content: '';</code>) псевдоэлемент не появится.</p>
+    2. Текстовые (<code>::first-letter</code> и <code>::first-line</code>)
+    <p><code>::first-letter</code>: Стилизует первую букву блочного элемента (эффект буквицы в книгах).</p>
+
+    <p><code>::first-line</code>: Стилизует первую строку текста. Учти, что длина строки зависит от ширины окна браузера, поэтому стили применяются динамически.</p>
+
+    3. Интерфейсные
+    <p><code>::placeholder</code>: Отвечает за стиль текста-подсказки в <code>input</code> и <code>textarea</code>.</p>
+
+    <p><code>::selection</code>: То, как выглядит текст, когда пользователь выделяет его мышкой (обычно меняют <code>background</code> и <code>color</code>).</p>
+    <p><code>::marker</code>: Стилизует маркеры (точки/цифры) в списках <code>ul</code> и <code>ol</code>.</p>
+
+    <p>4. Продвинутые (реже используются, но полезны)</p>
+    <p><code>::backdrop</code>: Фон, который появляется под элементами в полноэкранном режиме (например, под открытым <code>dialog</code> или видео).</p>
+    <p><code>::file-selector-button</code>: Кнопка "Выберите файл" внутри <code>input type="file"</code>.</p>`,
     tags: ['HTML', 'markup', 'CSS'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Что такое псевдоэлементы?',
         isChecked: false,
-      }
+      },
+      {
+        name: 'Генерируемый контент (::before и ::after)',
+        isChecked: false,
+      },
+      {
+        name: 'Текстовые (::first-letter и ::first-line)',
+        isChecked: false,
+      },
+      {
+        name: 'Интерфейсные (::placeholder, ::selection, ::marker)',
+        isChecked: false,
+      },
+      {
+        name: 'Продвинутые (::backdrop, ::file-selector-button)',
+        isChecked: false,
+      },
     ],
   },
   {
