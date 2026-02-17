@@ -1309,11 +1309,61 @@ export const questions: Question[] = [
   {
     id: 24,
     name: 'SVG. Анимации svg',
-    answer: ``,
+    answer: `
+      <p>
+        <strong>SVG (Scalable Vector Graphics)</strong> — это открытый формат двумерной векторной графики,
+        основанный на XML, который описывает изображения с помощью линий, кривых, фигур и текста.
+        В отличие от растровых форматов (<code>JPG</code>, <code>PNG</code>), SVG масштабируется
+        без потери качества.
+      </p>
+
+      <p>
+        SVG-файлы — это код, который можно редактировать, встраивать прямо в HTML, стилизовать
+        с помощью CSS и анимировать через JavaScript или SMIL.
+      </p>
+
+      <h3>Ключевые особенности и анимация SVG:</h3>
+
+      <ul>
+        <li>
+          <strong>Масштабируемость и четкость:</strong>
+          изображения остаются резкими на любых экранах (Retina, мобильные устройства).
+        </li>
+        <li>
+          <strong>Малый размер файла:</strong>
+          обычно весят меньше растровых аналогов, так как состоят из текста.
+        </li>
+        <li>
+          <strong>Интерактивность и анимация:</strong>
+          <ul>
+            <li>
+              <strong>CSS:</strong> позволяет легко анимировать свойства, такие как
+              <code>fill</code>, <code>stroke</code>, прозрачность, вращение и масштабирование.
+            </li>
+            <li>
+              <strong>JavaScript:</strong> используется для сложной, интерактивной анимации
+              (по клику, скроллу).
+            </li>
+            <li>
+              <strong>SMIL (Synchronized Multimedia Integration Language):</strong>
+              встроенные в SVG теги
+              <code>&lt;animate&gt;</code>, <code>&lt;set&gt;</code>,
+              <code>&lt;animateTransform&gt;</code>, позволяющие создавать анимацию
+              внутри самого файла без использования внешних стилей.
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    `,
     tags: ['SVG', 'markup', 'animations'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Что такое SVG?',
+        isChecked: false,
+      },
+      {
+        name: 'Ключевые особенности SVG',
         isChecked: false,
       }
     ],
