@@ -1432,11 +1432,18 @@ export const questions: Question[] = [
   {
     id: 26,
     name: 'Custom properties',
-    answer: ``,
+    answer: `
+      <p>
+        <strong>Custom properties</strong> (пользовательские свойства CSS) — это CSS-переменные, определяемые пользователем,
+        которые хранят специфические значения (цвета, размеры) для многократного использования в стилях. </br>
+        Они начинаются с двойного дефиса (например, <code>--main-color: #000;</code>), чувствительны к регистру,
+        поддерживают каскадирование, наследование и реактивно обновляются через функцию <code>var()</code>.
+      </p>
+    `,
     tags: ['markup', 'CSS'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Custom properties - что это?',
         isChecked: false,
       }
     ],
