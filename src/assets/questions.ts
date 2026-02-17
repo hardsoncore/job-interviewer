@@ -2262,6 +2262,9 @@ export const questions: Question[] = [
       <p>
         Он вызывает функцию для каждого элемента массива и возвращает массив результатов выполнения этой функции.
       </p>
+      <p class="info info--orange">
+        Метод arr.map не изменяет исходный массив, а возвращает новый массив с результатами вызова функции для каждого элемента.
+      </p>
       <code class="code">
         let result = arr.map(function(item, index, array) {
           // возвращается новое значение вместо элемента
@@ -2329,15 +2332,16 @@ export const questions: Question[] = [
       <p>
         Метод arr.reverse меняет порядок элементов в arr на обратный.
       </p>
+      <p class="info info--orange">
+        Метод arr.reverse мутирует входной массив arr. </br>
+        Но также возвращает массив arr с изменённым порядком элементов.
+      </p>
       <code class="code">
         let arr = [1, 2, 3, 4, 5];
         arr.reverse();
 
         alert( arr ); // 5,4,3,2,1
       </code>
-      <p class="info info--blue">
-        Он также возвращает массив arr с изменённым порядком элементов.
-      </p>
 
       <h3>
         split и join
