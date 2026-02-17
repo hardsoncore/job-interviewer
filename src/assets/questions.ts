@@ -1022,23 +1022,114 @@ export const questions: Question[] = [
   {
     id: 10,
     name: 'Псевдоклассы элементов',
-    answer: ``,
+    answer: `
+      <h2>1. Псевдоклассы состояния (Интерактив)</h2>
+      <p>Эти селекторы реагируют на действия пользователя:</p>
+
+      <ul>
+          <li><code>:hover</code> — когда курсор мыши находится над элементом.</li>
+          <li><code>:active</code> — момент клика (удержание кнопки мыши).</li>
+          <li><code>:focus</code> — когда элемент выбран (например, через Tab или клик).</li>
+          <li><code>:focus-visible</code> — срабатывает только при навигации с клавиатуры.</li>
+      </ul>
+
+      <h2>2. Структурные псевдоклассы</h2>
+      <p>Помогают стилизовать элементы в зависимости от их положения в DOM:</p>
+
+      <table>
+          <thead>
+              <tr>
+                  <th>Псевдокласс</th>
+                  <th>Описание</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><code>:first-child</code></td>
+                  <td>Первый ребенок своего родителя.</td>
+              </tr>
+              <tr>
+                  <td><code>:last-child</code></td>
+                  <td>Последний ребенок своего родителя.</td>
+              </tr>
+              <tr>
+                  <td><code>:nth-child(n)</code></td>
+                  <td>Выбор по номеру или формуле (напр. 2n — четные).</td>
+              </tr>
+              <tr>
+                  <td><code>:only-child</code></td>
+                  <td>Если элемент — единственный ребенок.</td>
+              </tr>
+              <tr>
+                  <td><code>:not(selector)</code></td>
+                  <td>Исключение: выбирает всё, кроме указанного.</td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h2>3. Продвинутые селекторы (Modern CSS)</h2>
+
+      <p><code>:has()</code> — «родительский селектор». Позволяет стилизовать родителя, если внутри него есть определенный элемент.</p>
+
+      <p>Пример: <code>div:has(img)</code> — выберет только те <code>div</code>, внутри которых есть картинка.</p>
+
+      <p>
+        <code>:is()</code> — группировка селекторов для чистоты кода.
+        Он позволяет группировать селекторы вместо того чтобы перечислять длинные цепочки через запятую
+      </p>
+
+      <code class="code">
+        /* Без :is() */
+        .content h1,
+        .content h2,
+        .content h3,
+        .section h1,
+        .section h2,
+        .section h3 {
+          color: red;
+        }
+
+        /* С :is() */
+        :is(.content, .section) :is(h1, h2, h3) {
+          color: red;
+        }
+      </code>
+
+      <p><code>:where()</code> — аналог <code>:is()</code>, но с нулевой специфичностью (легко перебивается другими стилями).</p>
+    `,
     tags: ['HTML', 'markup', 'CSS'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Псевдоклассы состояния (Интерактив)',
         isChecked: false,
-      }
+      },
+      {
+        name: 'Структурные псевдоклассы',
+        isChecked: false,
+      },
+      {
+        name: 'Продвинутые селекторы (Modern CSS)',
+        isChecked: false,
+      },
     ],
   },
   {
     id: 11,
     name: 'Псевдоклассы форм',
-    answer: ``,
+    answer: `
+      <p><code>:disabled</code> — если поле заблокировано.</p>
+
+      <p><code>:required</code> — если у поля есть атрибут обязательного заполнения.</p>
+
+      <p><code>:invalid</code> / <code>:valid</code> — автоматическая проверка (например, если в type="email" введено что-то другое).</p>
+      <p><code>:checked</code> — для выбранных чекбоксов и радиокнопок.</p>
+
+      <p><code>:placeholder-shown</code> — стиль поля, пока в нем ничего не написано.</p>
+    `,
     tags: ['HTML', 'markup', 'CSS'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: ':disabled, :required, :invalid, :valid, :checked, :placeholder-shown',
         isChecked: false,
       }
     ],
