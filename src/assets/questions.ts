@@ -1210,11 +1210,39 @@ export const questions: Question[] = [
   {
     id: 22,
     name: 'Способы подключить JS на страницу',
-    answer: ``,
+    answer: `
+      <h3>1. Внешний файл (наилучший способ)</h3>
+      JS-код размещается в отдельном файле с расширением .js. Это помогает отделить логику от структуры.
+      <code class="code">
+        &lt;script src="path/to/script.js">&lt;/script>
+      </code>
+
+      <p>Рекомендуется использовать атрибуты defer (скрипт выполняется после загрузки HTML) или async (скрипт выполняется асинхронно,
+      как только загрузится) для повышения производительности.</p>
+
+      <code class="code">
+        &lt;script src="script.js" defer>&lt;/script>
+      </code>
+
+      <h3>2. Встроенный скрипт (Inline JS)</h3>
+      Код размещается непосредственно внутри HTML-документа между тегами &lt;script> и &lt;/script>.
+
+      <code class="code">
+        &lt;script>console.log('Привет, мир!')&lt;/script>
+      </code>
+
+      Можно размещать в &lt;head&gt; или в конце &lt;body&gt;.
+      <h3>3. Инлайновый скрипт (в атрибутах HTML)</h3>
+      Скрипт добавляется прямо в HTML-теги, обычно в обработчики событий (например, onclick, onmouseover).
+      <code class="code">
+        &lt;button onclick="alert('Нажали!')">Нажми меня&lt;/button>
+      </code>
+        * Не рекомендуется для больших скриптов, так как это усложняет поддержку кода.
+    `,
     tags: ['HTML', 'markup', 'JavaScript'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: '3 способа подключения JS на страницу',
         isChecked: false,
       }
     ],
