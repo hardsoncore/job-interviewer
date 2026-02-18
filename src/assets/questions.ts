@@ -1937,6 +1937,42 @@ export const questions: Question[] = [
   },
   {
     id: 33,
+    name: 'Let, const и var. Различия',
+    answer: ``,
+    tags: ['JavaScript', 'JS mechanics'],
+    structure: [
+      {
+        name: 'Теги HTML',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 34,
+    name: '“Поднятие” переменных и объявлений функций.',
+    answer: ``,
+    tags: ['JavaScript', 'JS mechanics'],
+    structure: [
+      {
+        name: 'Теги HTML',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 35,
+    name: 'Функции: function declaration, function expression',
+    answer: ``,
+    tags: ['JavaScript', 'JS mechanics', 'functions'],
+    structure: [
+      {
+        name: 'Теги HTML',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 36,
     name: 'Структуры данных (массив, объект, set, map)',
     answer: `
       <h3>1. Массив (Array) []</h3>
@@ -2105,7 +2141,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 34,
+    id: 37,
     name: 'Основные методы массивов, которые вы используете',
     answer: `
       <p>
@@ -2627,7 +2663,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 35,
+    id: 38,
     name: 'Итераторы и генераторы',
     answer: `
       <h3>1. Итераторы: Механика под капотом</h3>
@@ -2703,6 +2739,43 @@ export const questions: Question[] = [
       и ты хочешь пробежаться по всем сотрудникам простым for...of. Ты можешь добавить свойство [Symbol.iterator]
       с генератором в этот объект.</p>
 
+      <code class="code">
+        const company = {
+          name: "My Tech Corp",
+          departments: [
+            {
+              name: "Frontend",
+              staff: ["Alex", "Anna", "Dmitry"] // Массив строк для простоты
+            },
+            {
+              name: "Backend",
+              staff: ["John", "Sarah"]
+            },
+            {
+              name: "QA",
+              staff: [] // Пустой отдел
+            }
+          ],
+
+          // ВОТ ОНА, МАГИЯ:
+          // Этот генератор позволяет нам итерироваться по всем сотрудникам компании, независимо от их расположения в структуре
+          // Когда сотрудники Frontend закончились, внутренний цикл генератора завершается, и он переходит к следующей итерации внешнего цикла
+          *[Symbol.iterator]() {
+            // 1. Пробегаем по отделам
+            for (const dept of this.departments) {
+              // 2. Пробегаем по сотрудникам внутри отдела
+              for (const employee of dept.staff) {
+                // 3. Отдаем сотрудника наружу и ЖДЕМ
+                yield {
+                  name: employee,
+                  dept: dept.name
+                };
+              }
+            }
+          }
+        };
+      </code>
+
       <h4>В. Асинхронные потоки (Async/Await)</h4>
       <p>Это, пожалуй, самое важное. Механизм async/await, который мы используем каждый день, под капотом построен
       на идее генераторов (в связке с промисами). Генератор "ждет" (yield) промис, а когда тот резолвится, продолжает выполнение.</p>
@@ -2711,6 +2784,14 @@ export const questions: Question[] = [
       если только при работе со специфическими библиотеками вроде Redux-Saga (она вся построена на генераторах) или для
       сложных утилит обработки потоков данных. Однако понимание yield критически важно для глубокого
       понимания того, как работает асинхронность в JS.</p>
+
+      <p class="info info--orange">
+        Резюме по использованию <code>yield</code> и <code>next()</code>.
+        </br>
+        Ты пишешь <code>yield</code> внутри, чтобы сказать: "Я хочу вернуть вот это значение и подождать".
+        </br>
+        Ты пишешь <code>next()</code> снаружи, чтобы сказать: "Эй, просыпайся и работай до следующего yield!".
+      </p>
     `,
     tags: ['JavaScript', 'Iterable', 'JS mechanics', 'Generators'],
     structure: [
@@ -2729,46 +2810,17 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 36,
-    name: 'Область видимости (Scope)',
-    answer: ``,
-    tags: ['JavaScript', 'JS mechanics'],
-    structure: [
-      {
-        name: 'Теги HTML',
-        isChecked: false,
-      }
-    ],
-  },
-  {
-    id: 37,
-    name: 'Замыкание (Closure)',
-    answer: ``,
-    tags: ['JavaScript', 'JS mechanics'],
-    structure: [
-      {
-        name: 'Теги HTML',
-        isChecked: false,
-      }
-    ],
-  },
-  {
-    id: 38,
-    name: '“Поднятие” переменных и объявлений функций.',
-    answer: ``,
-    tags: ['JavaScript', 'JS mechanics'],
-    structure: [
-      {
-        name: 'Теги HTML',
-        isChecked: false,
-      }
-    ],
-  },
-  {
     id: 39,
-    name: 'Функции: function declaration, function expression',
-    answer: ``,
-    tags: ['JavaScript', 'JS mechanics', 'functions'],
+    name: 'Область видимости (Scope, Lexical Environment)',
+    answer: `
+      <p class="info info--orange">
+        Разница между <span class="accent">Scope (Область видимости)</span> и <span class="accent">Lexical Environment
+        (Лексическое окружение)</span> заключается в уровне абстракции. </br>
+        Если коротко: Scope — это правила (теория), а Lexical Environment — это механизм (реализация под капотом),
+        который обеспечивает работу этих правил.
+      </p>
+    `,
+    tags: ['JavaScript', 'JS mechanics'],
     structure: [
       {
         name: 'Теги HTML',
@@ -2778,7 +2830,7 @@ export const questions: Question[] = [
   },
   {
     id: 40,
-    name: 'Let, const и var. Различия',
+    name: 'Замыкание (Closure)',
     answer: ``,
     tags: ['JavaScript', 'JS mechanics'],
     structure: [
