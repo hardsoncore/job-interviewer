@@ -23,8 +23,9 @@
   color: #0eef0e;
   white-space: pre;
   overflow: auto;
-  margin-left: -4rem;
+  margin-left: -2rem;
   padding: 0;
+  font-family: monospace;
 }
 
 :host ::ng-deep .info {
