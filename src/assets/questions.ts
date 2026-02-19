@@ -3427,12 +3427,48 @@ export const questions: Question[] = [
   },
   {
     id: 46,
-    name: 'Частичное применение',
-    answer: ``,
-    tags: ['JavaScript', 'JS mechanics'],
+    name: 'Частичное применение (Partial Application)',
+    answer: `
+      <p>
+        <span class="accent">Частичное применение</span> — это процесс создания новой функции путем
+        фиксации (предустановки) одного или нескольких аргументов существующей функции.
+      </p>
+      <p>
+        Простыми словами: у нас есть функция, принимающая несколько аргументов. Мы "замораживаем"
+        часть из них и получаем новую функцию, которая принимает только оставшиеся аргументы.
+      </p>
+
+      <p class="info info--blue">
+        Частичное применение основано на каррировании, но не требует всех аргументов.
+      </p>
+
+      <code class="code">
+        function curry(f) { // curry(f) выполняет каррирование
+          return function(a) {
+            return function(b) {
+              return f(a, b);
+            };
+          };
+        }
+
+        function sum(a, b) {
+          return a + b;
+        }
+
+        const curriedSum = curry(sum);
+        const plusTwo = curriedSum(2); // возвращает функцию, которая ждет второй аргумент
+
+        alert( plusTwo(3) ); // 5
+      </code>
+    `,
+    tags: ['JavaScript', 'JS mechanics', 'functions', 'closures'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Частичное применение (основано на каррировании)',
+        isChecked: false,
+      },
+      {
+        name: 'Реализация частичного применения',
         isChecked: false,
       }
     ],
