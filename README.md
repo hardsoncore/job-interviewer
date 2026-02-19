@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Maintenance-Minor%20Changes-yellow?style=for-the-badge" />
 </p>
 
-**Note:** I'm open to discuss improvements! Feel free to open a PR.
+**Note:** I'm open to discuss improvements! Feel free to open a PR or contact me.
 
 ## 📖 About
 
