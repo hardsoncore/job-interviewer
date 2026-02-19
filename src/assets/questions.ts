@@ -1719,11 +1719,6 @@ export const questions: Question[] = [
            и другим инструментам. В общем, сейчас это, можно сказать, нишевая история.
         </li>
       </ul>
-
-
-
-
-
     `,
     tags: ['HTML', 'markup'],
     structure: [
@@ -1747,6 +1742,18 @@ export const questions: Question[] = [
   },
   {
     id: 31,
+    name: 'CORS. Что это такое и с чем его едят?',
+    answer: ``,
+    tags: ['browser', 'security'],
+    structure: [
+      {
+        name: 'CORS - что это?',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 32,
     name: 'Типы данных (задачи: строка + число)',
     answer: `
       <h2>Типы данных в JavaScript</h2>
@@ -1832,7 +1839,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 32,
+    id: 33,
     name: 'Преобразование (приведение) типов в JavaScript',
     answer: `
       <p>
@@ -1936,7 +1943,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 33,
+    id: 34,
     name: 'Let, const и var. Различия + Hoisting ',
     answer: ``,
     tags: ['JavaScript', 'JS mechanics'],
@@ -1952,7 +1959,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 34,
+    id: 35,
     name: 'Функции: function declaration, function expression',
     answer: ``,
     tags: ['JavaScript', 'JS mechanics', 'functions'],
@@ -1964,7 +1971,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 35,
+    id: 36,
     name: 'Структуры данных (массив, объект, set, map)',
     answer: `
       <h3>1. Массив (Array) []</h3>
@@ -2133,7 +2140,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 36,
+    id: 37,
     name: 'Основные методы массивов, которые вы используете',
     answer: `
       <p>
@@ -2655,7 +2662,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 37,
+    id: 38,
     name: 'Итераторы и генераторы',
     answer: `
       <h3>1. Итераторы: Механика под капотом</h3>
@@ -2802,7 +2809,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 38,
+    id: 39,
     name: 'Область видимости (Scope, Lexical Environment)',
     answer: `
       <p class="info info--orange">
@@ -2866,7 +2873,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 39,
+    id: 40,
     name: 'Замыкание (Closure)',
     answer: `
       <h3>Простая модель (для понимания)</h3>
@@ -2982,7 +2989,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 40,
+    id: 41,
     name: 'Сборщик мусора (Garbage Collector). Что это такое и для чего нужно?',
     answer: `
       <p>
@@ -3016,7 +3023,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 41,
+    id: 42,
     name: 'Рекурсия. Что это такое и для чего нужно?',
     answer: `
       <p>
@@ -3071,71 +3078,6 @@ export const questions: Question[] = [
       },
       {
         name: 'Плюсы и минусы рекурсии',
-        isChecked: false,
-      }
-    ],
-  },
-  {
-    id: 42,
-    name: 'Декораторы функций. Что это такое и для чего?',
-    answer: `
-      <p class="info info--blue">
-        Декоратор — это структурный паттерн проектирования.
-      </p>
-
-      <h3>Что такое декоратор?</h3>
-      <p>
-        <span class="accent">Декоратор</span> — это функция-обёртка (wrapper), которая принимает другую функцию и
-        расширяет или изменяет её поведение, не вмешиваясь в её исходный код.
-      </p>
-
-      <p>
-        <strong>Зачем нужен</strong>: Позволяет разделить основную бизнес-логику и вспомогательный
-        функционал (например, кэширование, логирование, проверки типов).
-      </p>
-
-      <h3>Пример использования</h3>
-
-      <p>
-        Допустим, у нас есть функция <code>slow(x)</code>, которая выполняет ресурсоёмкие вычисления. Мы хотим оптимизировать её,
-        добавив кэширование результатов, чтобы при повторных вызовах с теми же аргументами она возвращала результат из кэша.
-      </p>
-
-      <code class="code">
-        function slow(x) {
-          // здесь могут быть ресурсоёмкие вычисления
-          alert(\`Called with \${x}\`);
-          return x;
-        }
-
-        function cachingDecorator(func) {
-          let cache = new Map();
-
-          return function(x) {
-            if (cache.has(x)) {    // если кеш содержит такой x,
-              return cache.get(x); // читаем из него результат
-            }
-
-            let result = func(x); // иначе, вызываем функцию
-
-            cache.set(x, result); // и кешируем (запоминаем) результат
-            return result;
-          };
-        }
-
-        slow = cachingDecorator(slow);
-
-        alert( slow(1) ); // slow(1) кешируем
-        alert( "Again: " + slow(1) ); // возвращаем из кеша
-
-        alert( slow(2) ); // slow(2) кешируем
-        alert( "Again: " + slow(2) ); // возвращаем из кеша
-      </code>
-    `,
-    tags: ['JavaScript', 'Паттерны проектирования'],
-    structure: [
-      {
-        name: 'Декоратор',
         isChecked: false,
       }
     ],
@@ -4363,9 +4305,9 @@ export const questions: Question[] = [
   },
   {
     id: 78,
-    name: 'Знания в архитектуре - паттерны проектирования',
+    name: 'Паттерны проектирования',
     answer: ``,
-    tags: ['programming', 'best-practice'],
+    tags: ['Patterns', 'best-practice'],
     structure: [
       {
         name: 'Теги HTML',
@@ -4375,6 +4317,71 @@ export const questions: Question[] = [
   },
   {
     id: 79,
+    name: 'Декораторы функций. Что это такое и для чего?',
+    answer: `
+      <p class="info info--blue">
+        Декоратор — это структурный паттерн проектирования.
+      </p>
+
+      <h3>Что такое декоратор?</h3>
+      <p>
+        <span class="accent">Декоратор</span> — это функция-обёртка (wrapper), которая принимает другую функцию и
+        расширяет или изменяет её поведение, не вмешиваясь в её исходный код.
+      </p>
+
+      <p>
+        <strong>Зачем нужен</strong>: Позволяет разделить основную бизнес-логику и вспомогательный
+        функционал (например, кэширование, логирование, проверки типов).
+      </p>
+
+      <h3>Пример использования</h3>
+
+      <p>
+        Допустим, у нас есть функция <code>slow(x)</code>, которая выполняет ресурсоёмкие вычисления. Мы хотим оптимизировать её,
+        добавив кэширование результатов, чтобы при повторных вызовах с теми же аргументами она возвращала результат из кэша.
+      </p>
+
+      <code class="code">
+        function slow(x) {
+          // здесь могут быть ресурсоёмкие вычисления
+          alert(\`Called with \${x}\`);
+          return x;
+        }
+
+        function cachingDecorator(func) {
+          let cache = new Map();
+
+          return function(x) {
+            if (cache.has(x)) {    // если кеш содержит такой x,
+              return cache.get(x); // читаем из него результат
+            }
+
+            let result = func(x); // иначе, вызываем функцию
+
+            cache.set(x, result); // и кешируем (запоминаем) результат
+            return result;
+          };
+        }
+
+        slow = cachingDecorator(slow);
+
+        alert( slow(1) ); // slow(1) кешируем
+        alert( "Again: " + slow(1) ); // возвращаем из кеша
+
+        alert( slow(2) ); // slow(2) кешируем
+        alert( "Again: " + slow(2) ); // возвращаем из кеша
+      </code>
+    `,
+    tags: ['JavaScript', 'Patterns', 'best-practice'],
+    structure: [
+      {
+        name: 'Декоратор',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 80,
     name: 'SOLID. Что это такое и зачем?',
     answer: ``,
     tags: ['programming', 'best-practice', 'ООП'],
@@ -4386,22 +4393,10 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 80,
+    id: 81,
     name: 'Протокол HTTP. Что это такое и с чем его едят?',
     answer: ``,
     tags: ['protocol', 'internet'],
-    structure: [
-      {
-        name: 'Теги HTML',
-        isChecked: false,
-      }
-    ],
-  },
-  {
-    id: 81,
-    name: 'CORS. Что это такое и с чем его едят?',
-    answer: ``,
-    tags: ['internet'],
     structure: [
       {
         name: 'Теги HTML',
