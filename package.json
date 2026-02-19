@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node git-version.js && ng serve",
-    "build": "ng build",
+    "build": "node git-version.js && ng build",
     "build-apk": "node git-version.js && ionic capacitor build android",
     "build-apk-release": "node git-version.js && ionic capacitor build android --prod --release",
     "test": "ng test",
