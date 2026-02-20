@@ -4028,11 +4028,117 @@ export const questions: Question[] = [
   {
     id: 55,
     name: 'Promise chaining. Можно ли вызывать promise.then().finally().then() или promise.catch().then()? Что получим?',
-    answer: ``,
+    answer: `
+      <p class="info info--orange">
+        Если коротко - оба варианта допустимы и работают. Важно понимать, что <code>.then()</code>,
+        <code>.catch()</code> и <code>.finally()</code> возвращают новый промис.
+        Поэтому мы можем строить цепочки вызовов, комбинируя эти методы в любом порядке.
+      </p>
+      <h3>
+        Цепочка вызовов (Promise chaining)
+      </h3>
+      <p>
+        Общая нужда - выполнять две или более асинхронных операции одна за другой, причём каждая следующая начинается
+        при успешном завершении предыдущей и использует результат её выполнения.
+      </p>
+      <code class="code">
+        let promise = doSomething();
+
+        doSomething()
+          .then(result => doSomethingElse(result))
+          .then(newResult => doThirdThing(newResult))
+          .then(finalResult => {
+            console.log('Итоговый результат: \${ finalResult }');
+          })
+          .catch(failureCallback);
+      </code>
+
+      <p>
+        <strong>Можно продолжить цепочку вызовов после ошибки</strong></br>
+        Т.е. после <code>catch</code>, что полезно для выполнения новых действий даже
+        после того, как действие вернёт ошибку в цепочке вызовов.
+      </p>
+
+      <code class="code">
+        new Promise((resolve, reject) => {
+          console.log('Начало');
+
+          resolve();
+        })
+        .then(() => {
+          throw new Error('Где-то произошла ошибка');
+
+          console.log('Выведи это');
+        })
+        .catch(() => {
+          console.log('Выведи то');
+        })
+        .then(() => {
+          console.log('Выведи это, несмотря ни на что');
+        });
+      </code>
+      <p>
+        В результате получим:
+      </p>
+      <code class="code">
+        Начало
+        Выведи то
+        Выведи это, несмотря ни на что
+      </code>
+
+      <p>
+        <strong>Можно строить такие цепочки и с <code>finally</code>.</strong>
+        </br>
+        Метод <code>finally</code> задуман как абсолютно прозрачный промежуточный этап.
+        Он не принимает аргументов (вы не знаете внутри него, успешно завершился промис или нет) и
+        пропускает результат или ошибку сквозь себя дальше по цепочке.
+      </p>
+
+      <p class="info info--blue">
+        Важно понимать, что <code>finally</code> предназначен для выполнения действий, которые должны
+        произойти в любом случае, независимо от результата промиса,
+        поэтому он не должен влиять на результат, который будет передан дальше по цепочке.
+      </p>
+
+      <code class="code">
+        Promise.resolve('Секретный код')
+          .then(data => {
+            console.log(data);
+            return data + ' расшифрован';
+          })
+          .finally(() => {
+            // Выполнится в любом случае.
+            // Обратите внимание: тут нет аргументов.
+            console.log('Очистка памяти...');
+            return 'Новые данные из finally'; // Этот return БУДЕТ ПРОИГНОРИРОВАН
+          })
+          .then(result => {
+            // Сюда придут данные из ПЕРВОГО .then(), а не из finally
+            console.log(result); // Выведет: "Секретный код расшифрован"
+          });
+      </code>
+
+      <p>
+        В результате получим:
+      </p>
+      <code class="code">
+        Секретный код
+        Очистка памяти...
+        Секретный код расшифрован
+      </code>
+    `,
     tags: ['JavaScript', 'JS mechanics', 'Promise', 'Async'],
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Promise chaining',
+        isChecked: false,
+      },
+      {
+        name: 'Можно продолжить цепочку вызовов после ошибки',
+        isChecked: false,
+      },
+      {
+        name: 'Можно строить такие цепочки и с finally',
         isChecked: false,
       }
     ],
