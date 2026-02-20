@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>Profile</ion-title>
     <ion-button fill="clear" shape="round" slot="end" (click)="clearStorage()">
-      <ion-icon name="trash"></ion-icon>
+      <ion-icon name="save"></ion-icon>
     </ion-button>
   </ion-toolbar>
 </ion-header>
@@ -28,27 +28,19 @@
     </ion-text>
   </div>
 
-  <ion-item routerLink="change-profile">
-    <ion-label>Изменить профиль</ion-label>
-    <ion-icon name="brush" slot="end"></ion-icon>
-  </ion-item>
-  <ion-item routerLink="statistics">
-    <ion-label>Статистика</ion-label>
-    <ion-icon name="stats-chart" slot="end"></ion-icon>
-  </ion-item>
-  <ion-item routerLink="achievements">
-    <ion-label>Награды</ion-label>
-    <ion-icon name="trophy" slot="end"></ion-icon>
-  </ion-item>
-  <ion-item routerLink="about">
-    <ion-label>О приложении</ion-label>
-    <ion-icon name="extension-puzzle" slot="end"></ion-icon>
+  <ion-item>
+    <ion-label>Progress</ion-label>
+    <span slot="end">{{ avPercent }}%</span>
   </ion-item>
   <ion-item>
-    <ion-label>Тема</ion-label>
+    <ion-label>App version</ion-label>
+    <span slot="end">{{ appVersion }}</span>
+  </ion-item>
+  <ion-item>
+    <ion-label>Theme</ion-label>
     <ion-select placeholder="Select theme" [(ngModel)]="currentTheme">
-      <ion-select-option value="light">Светлая</ion-select-option>
-      <ion-select-option value="dark">Тёмная</ion-select-option>
+      <ion-select-option value="light">Light</ion-select-option>
+      <ion-select-option value="dark">Dark</ion-select-option>
     </ion-select>
   </ion-item>
 </ion-content>

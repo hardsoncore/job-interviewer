@@ -5,6 +5,8 @@ import { Themes, ThemeType } from '../models/app.model';
 import { Profile } from '../models/profile.model';
 import { ProfileService } from '../services/profile.service';
 import { ThemeService } from '../services/theme.service';
+import { ResultsService } from '../services/results.service';
+import { AppService } from '../services/app.service';
 
 @Component({
   selector: 'app-profile',
@@ -14,12 +16,18 @@ import { ThemeService } from '../services/theme.service';
 export class ProfilePage implements OnInit {
   imgLoaded = false;
   profile: Profile;
+  avPercent: number;
+  appVersion: string;
 
   constructor(
     private theme: ThemeService,
     private alertController: AlertController,
     private profileService: ProfileService,
-  ) {}
+    private resultsService: ResultsService,
+    private appService: AppService
+  ) {
+    this.appVersion = this.appService.appVersion;
+  }
 
   get currentTheme(): ThemeType {
     return this.theme.currentTheme;
@@ -31,6 +39,7 @@ export class ProfilePage implements OnInit {
 
   ngOnInit(): void {
     this.profileService.profile.subscribe(profile => this.profile = profile);
+    this.resultsService.getAveragePercent().subscribe(percent => this.avPercent = percent);
   }
 
   public onImageLoad(): void {
@@ -50,12 +59,12 @@ export class ProfilePage implements OnInit {
 
   private async _presentAlert(): Promise<string> {
     const alert = await this.alertController.create({
-      header: 'Сбросить данные приложения?',
-      message: 'Весь ваш прогресс и настройки будут утеряны.',
+      header: 'Clear application data?',
+      message: 'All your progress and settings will be lost.',
       buttons: [
-        'Не нужно',
+        'Cancel',
         {
-          text: 'Сбросить',
+          text: 'Clear',
           role: 'ok'
         }
       ]

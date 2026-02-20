@@ -7,22 +7,6 @@ const routes: Routes = [
     path: '',
     component: ProfilePage,
   },
-  {
-    path: 'change-profile',
-    loadChildren: () => import('./subpages/change-profile/change-profile.module').then( m => m.ChangeProfilePageModule)
-  },
-  {
-    path: 'statistics',
-    loadChildren: () => import('./subpages/statistics/statistics.module').then( m => m.StatisticsPageModule)
-  },
-  {
-    path: 'achievements',
-    loadChildren: () => import('./subpages/achievements/achievements.module').then( m => m.AchievementsPageModule)
-  },
-  {
-    path: 'about',
-    loadChildren: () => import('./subpages/about/about.module').then( m => m.AboutPageModule)
-  }
 ];
 
 @NgModule({
