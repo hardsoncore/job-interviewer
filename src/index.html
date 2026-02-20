@@ -12,31 +12,9 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="msapplication-tap-highlight" content="no" />
 
-  <script type="text/javascript">
-    (function () {
-      // fix for GitHub Pages when app is deployed to a subfolder like /job-interviewer/
-      // and user opens the app with a deeper link like /job-interviewer/some/page
-      var segmentCount = 0;
-      var l = window.location;
-      if (l.protocol !== 'file:') {
-        var path = l.pathname.split('/').slice(1);
-        segmentCount = path.length;
-        if (path[0] && path[0].indexOf('index.html') > -1) {
-          segmentCount = 0;
-        }
-      }
-
-      if (segmentCount > 1) {
-        var newPath = l.pathname.substring(0, l.pathname.lastIndexOf('/') + 1);
-        var search = l.search ? l.search : '';
-        window.location.href = l.protocol + '//' + l.host + newPath + 'index.html' + search + '#/' + l.pathname.slice(newPath.length).replace(/&/g, '~and~') + (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '');
-      }
-    }());
-  </script>
-
   <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
 
-  <!-- Добавьте в домашний экран для iOS -->
+  <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 </head>
