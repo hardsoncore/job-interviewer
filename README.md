@@ -11,14 +11,26 @@
 
 Job Interviewer is a mobile application designed to help frontend developers prepare for job interviews. This pet project collects the most common and important interview questions across multiple categories to help you succeed in your next technical interview.
 
-## ✨ Features
+## 🚀 Live Demo
 
-The app provides curated interview questions and answers for:
+The project is deployed and available online:  
+👉 **[https://hardsoncore.github.io/job-interviewer](https://hardsoncore.github.io/job-interviewer)**
 
-- **HTML & CSS** - Core web technologies questions
-- **Frontend Developer** - General frontend development concepts
-- **Angular Framework** - Angular-specific questions and best practices
-- **Technologies related to Web**
+You can follow the link to jump right in and start practicing.
+
+### 📱 Mobile Usage
+
+For quick and easy access, you can save the application directly to your smartphone's home screen. 
+
+* **For iOS (iPhone / iPad):**
+  1. Open the link in the **Safari** browser.
+  2. Tap the **Share** icon at the bottom of the screen.
+  3. Scroll down and select **Add to Home Screen**.
+  
+* **For Android:**
+  1. Open the link in the **Chrome** browser.
+  2. Tap the menu icon (three dots in the top right corner).
+  3. Select **Add to Home screen**.
 
 ## 🛠️ Tech Stack
 
@@ -59,20 +71,6 @@ npm start
 ```
 
 4. Open your browser and navigate to `http://localhost:4200`
-
-## 📱 Building for Mobile
-
-### Android
-
-Build APK for development:
-```bash
-npm run build-apk
-```
-
-Build APK for production release:
-```bash
-npm run build-apk-release
-```
 
 ## 📂 Project Structure
 
