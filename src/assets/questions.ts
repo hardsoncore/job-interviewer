@@ -35,7 +35,7 @@ export const questions: Question[] = [
         теги (start tags), конечные теги (end tags) и их содержимое (contents). Из этого он строит DOM.
       </p>
 
-      <img src="/assets/img/step-1.png">
+      <img src="assets/img/step-1.png">
 
       <h3>
         2. Получение внешних ресурсов
@@ -90,7 +90,7 @@ export const questions: Question[] = [
         &lt;link href="style.css" rel="preload" as="style" />
       </code>
 
-      <img src="/assets/img/step-2.png">
+      <img src="assets/img/step-2.png">
 
       <h3>
         3. Разбор CSS и создание CSSOM
@@ -125,7 +125,7 @@ export const questions: Question[] = [
         проанализирован и не будет построен CSSOM, браузер не может знать, где и как разместить каждый элемент на экране.
       </p>
 
-      <img src="/assets/img/step-3.jpeg">
+      <img src="assets/img/step-3.jpeg">
 
       <h3>
         4. Выполнение JavaScript
@@ -168,7 +168,7 @@ export const questions: Question[] = [
 
       <br>
 
-      <img src="/assets/img/step-4.png">
+      <img src="assets/img/step-4.png">
 
       <h3>
         5. Объединение DOM и CSSOM, построение дерева рендеринга
@@ -187,7 +187,7 @@ export const questions: Question[] = [
         Как и в случае с движками JavaScript, разные браузеры имеют разные механизмы рендеринга.
       </p>
 
-      <img src="/assets/img/step-5.png">
+      <img src="assets/img/step-5.png">
 
       <h3>
         6. Расчет макета и отрисовка результата
@@ -208,7 +208,7 @@ export const questions: Question[] = [
         И вуаля! В конце концов, у нас есть полностью отрисованная веб-страница!
       </p>
 
-      <img src="/assets/img/step-6.png">
+      <img src="assets/img/step-6.png">
 
       <h3>
         Источники:
@@ -3776,7 +3776,7 @@ export const questions: Question[] = [
         фоновых задач обратно в основной поток JS.
       </p>
 
-      <img src="/assets/img/event-loop.png">
+      <img src="assets/img/event-loop.png">
 
       <p>Чтобы понять цикл, нужно знать основные сущности:</p>
 
@@ -3969,7 +3969,7 @@ export const questions: Question[] = [
         <li><b>Rejected (Отклонено)</b>: Операция завершилась с ошибкой. Вызываются обработчики внутри .catch().</li>
       </ul>
 
-      <img src="/assets/img/promise.jpg">
+      <img src="assets/img/promise.jpg">
 
       <p class="info info--orange">
         Важное правило: Промис может поменять состояние только один раз. Если он перешел в <code>Fulfilled</code> или <code>Rejected</code>,
@@ -5676,7 +5676,7 @@ export const questions: Question[] = [
       <p>
         Другие типы JOIN'ов можно увидеть на замечательной картинке ниже:
       </p>
-      <img src="/assets/img/join.png">
+      <img src="assets/img/join.png">
 
       <p>
         Более подробно про JOIN можно прочитать в прикрепленном материале (см. Источник 2).
