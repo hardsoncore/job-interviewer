@@ -1872,10 +1872,18 @@ export const questions: Question[] = [
         Возвращает строку с именем типа, например <code>"string"</code>.
       </p>
 
-      <p>
-        Для значения <code>null</code> возвращается <code>"object"</code> —
-        это историческая ошибка в языке, на самом деле <code>null</code> не является объектом.
-      </p>
+      <h3>Особые случаи оператора typeof</h3>
+
+      <ul>
+        <li><code>typeof null</code> возвращает <code>"object"</code> — это историческая ошибка, которая сохраняется для совместимости.</li>
+        <li><code>typeof []</code> возвращает <code>"object"</code> — массивы являются объектами. У массивов есть отдельная проверка - <code>Array.isArray(value)</code></li>
+        <li>
+          <code>typeof NaN</code> возвращает <code>"number"</code> — NaN (Not-a-Number) считается числом, хотя это особое значение,
+          обозначающее результат неудачных математических операций. Есть специальная проверка  <code>isNaN(value)</code>, чтобы проверить на NaN.</li>
+        <li><code>typeof undefined</code> возвращает <code>"undefined"</code>.</li>
+        <li><code>typeof function() {}</code> возвращает <code>"function"</code>, хотя функции являются объектами.</li>
+        <li>Классы также возвращают <code>"function"</code>, потому что классы — это синтаксический сахар над функциями-конструкторами.</li>
+      </ul>
 
     `,
     tags: ['JavaScript', 'Data types'],
@@ -1889,7 +1897,7 @@ export const questions: Question[] = [
         isChecked: false,
       },
       {
-        name: 'Оператор typeof',
+        name: 'typeof и его особенности',
         isChecked: false,
       }
     ],
