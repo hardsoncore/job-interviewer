@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Question } from '../models/question.model';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { questions } from 'src/assets/questions';
+import { questions as listOfQandA } from 'src/assets/questions';
 
 @Injectable({
   providedIn: 'root'
@@ -18,8 +18,8 @@ export class QuestionsService {
     return this._questions.asObservable();
   }
 
-  setQuestions() {
-    this._questions.next(questions);
+  private setQuestions() {
+    this._questions.next(listOfQandA);
   }
 
   public getRandomQuestion(): Observable<Question> {
