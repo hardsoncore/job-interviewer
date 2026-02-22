@@ -5234,7 +5234,7 @@ export const questions: Question[] = [
   },
   {
     id: 82,
-    name: 'Специальные селекторы. Псевдоклассы :host, :host-context и псевдоэлемент ::ng-deep',
+    name: 'Специальные селекторы Angular. Псевдоклассы :host, :host-context и псевдоэлемент ::ng-deep',
     answer: `
       <p>
         Стили компонентов имеют несколько специальных селекторов из мира shadow DOM
