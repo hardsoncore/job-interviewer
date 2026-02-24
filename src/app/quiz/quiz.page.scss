@@ -12,6 +12,7 @@
     &:nth-child(n) {
       margin-right: .5rem;
     }
+    
     &:nth-last-child(1) {
       margin-right: 0;
     }
@@ -22,9 +23,11 @@
   padding: 1rem;
 
   ion-progress-bar {
-    height: .5rem;
+    border-radius: 5px;
+    height: 1rem;
   }
 }
+
 .buttons {
   display: flex;
   justify-content: space-between;
