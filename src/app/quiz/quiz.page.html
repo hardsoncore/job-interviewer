@@ -13,10 +13,10 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card>
+  <ion-card (click)="visitTheoryPage()">
     <ion-card-header *ngIf="question">
       <ion-card-subtitle>
-        Вопрос №{{ question.id }} - ( {{ getPercentById(question.id) | async }}% )
+        Вопрос №{{ question.id }}
       </ion-card-subtitle>
       <ion-card-title>{{ question.name }}</ion-card-title>
     </ion-card-header>
@@ -24,8 +24,13 @@
     <ion-card-header *ngIf="!question">
       <ion-card-subtitle>
         <ion-skeleton-text style="width: 40%; max-width: 150px;" animated></ion-skeleton-text>
+        <ion-skeleton-text style="width: 40%; max-width: 150px;" animated></ion-skeleton-text>
+
       </ion-card-subtitle>
       <ion-card-title>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
         <ion-skeleton-text animated></ion-skeleton-text>
         <ion-skeleton-text animated></ion-skeleton-text>
         <ion-skeleton-text animated></ion-skeleton-text>
@@ -33,7 +38,6 @@
     </ion-card-header>
 
     <ion-card-content *ngIf="question">
-      <ion-button (click)="visitTheoryPage()" color="light">Читать теорию</ion-button>
       <ul class="tags">
         <li *ngFor="let tag of question.tags">
           <ion-badge color="warning">{{ tag }}</ion-badge>
@@ -42,9 +46,6 @@
     </ion-card-content>
     <!-- skeleton -->
     <ion-card-content *ngIf="!question">
-      <ion-button color="light">
-        <ion-skeleton-text style="width: 30vw; max-width: 130px;" animated></ion-skeleton-text>
-      </ion-button>
       <ul class="tags">
         <li>
           <ion-badge color="warning">
@@ -54,9 +55,15 @@
       </ul>
     </ion-card-content>
 
+    <div class="progress-wrapper">
+      <p>Progress: {{ question ? (getPercentById(question.id) | async) : 0 }}%</p>
+      <ion-progress-bar *ngIf="question" [value]="getPercentById(question.id) | async"></ion-progress-bar>
+      <ion-progress-bar *ngIf="!question" type="indeterminate"></ion-progress-bar>
+    </div>
+
     <div class="buttons">
-      <ion-button (click)="getNextQuestion()" color="tertiary">Next</ion-button>
-      <ion-button (click)="submitAnswer()" color="success">К ответу</ion-button>
+      <ion-button (click)="getNextQuestion(); $event.stopPropagation();" color="tertiary" fill="outline">Skip</ion-button>
+      <ion-button (click)="submitAnswer(); $event.stopPropagation();" color="tertiary">Answer</ion-button>
     </div>
   </ion-card>
 </ion-content>

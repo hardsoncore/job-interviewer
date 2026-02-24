@@ -5,6 +5,10 @@
   & li {
     display: inline-block;
 
+    & ion-badge {
+      font-size: 1rem;
+    }
+
     &:nth-child(n) {
       margin-right: .5rem;
     }
@@ -14,8 +18,20 @@
   }
 }
 
+.progress-wrapper {
+  padding: 1rem;
+
+  ion-progress-bar {
+    height: .5rem;
+  }
+}
 .buttons {
   display: flex;
   justify-content: space-between;
+  gap: .5rem;
   padding: 1rem;
+
+  & ion-button {
+    flex: 1;
+  }
 }
