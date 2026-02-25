@@ -6379,4 +6379,294 @@ export const questions: Question[] = [
       }
     ],
   },
+  {
+    id: 89,
+    name: 'Shadow DOM. Инкапсуляция стилей',
+    answer: `
+      <h3>Что это такое:</h3>
+      <p>
+        <span class="accent">Shadow DOM (Теневой DOM)</span> - это браузерный стандарт (часть спецификации Web Components),
+        который позволяет прикрепить скрытое, отделенное дерево DOM к элементу.
+      </p>
+
+      <h3>Главная проблема, которую решает:</h3>
+      <p>
+        Отсутствие инкапсуляции в стандартном <code>HTML/CSS</code>. Без <span class="accent">Shadow DOM</span> стили и скрипты могут конфликтовать друг
+        с другом (глобальная область видимости CSS).
+      </p>
+
+      <p class="info info--blue">
+        <span class="accent">Shadow DOM</span> был придуман в рамках спецификации Web Components чтобы создать надежную границу и позволить инкапсуляцию стилей в рамках компонентов.
+      </p>
+      <h3>Ключевые особенности:</h3>
+
+      <p>
+        <strong>Инкапсуляция стилей:</strong> CSS-правила, написанные внутри <span class="accent">Shadow DOM</span>, не утекают наружу,
+        а глобальные стили страницы не влияют на внутренние элементы (кроме наследуемых свойств, вроде <code>font-family</code>).
+      </p>
+
+      <p>
+        <strong>Скрытие разметки:</strong> Внутренняя структура компонента скрыта от основного дерева страницы (<code>Light DOM</code> - обычного DOM).
+        Это можно увидеть на примере стандартного тега <code>&lt;video&gt;</code> — внутри него есть кнопки play/pause, ползунки и таймеры,
+        которые реализованы именно через <span class="accent">Shadow DOM</span>.
+      </p>
+
+      <p>
+        <strong>Реализация:</strong> Это нативная технология браузера. Фреймворки могут ее использовать, но она работает и без них.
+        <br>
+        В <b>Angular</b>, например,
+        механизмы инкапсуляции стилей (<code>ViewEncapsulation.ShadowDom</code> или эмуляция) построены именно вокруг этой концепции.
+      </p>
+    `,
+    tags: ['web development', 'shadow DOM'],
+    structure: [
+      {
+        name: 'Shadow DOM - что это такое',
+        isChecked: false,
+      },
+      {
+        name: 'Проблема, которую решает Shadow DOM',
+        isChecked: false,
+      },
+      {
+        name: 'Ключевые особенности Shadow DOM',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 90,
+    name: 'Virtual DOM. Оптимизация на уровне фреймворка',
+    answer: `
+      <h3>Что это такое:</h3>
+      <p class="info info--blue">
+        <span class="accent">Virtual DOM (Виртуальный DOM)</span> - это программный паттерн и концепция.
+        Это легковесная JavaScript-копия реального DOM-дерева, которая хранится в оперативной памяти.
+      </p>
+
+      <h3>Главная проблема, которую решает:</h3>
+      <p>
+        Прямые манипуляции с реальным DOM (добавление, удаление, изменение узлов) — это очень "дорогие" и медленные операции для браузера, так как они вызывают перерисовку страницы (Reflow и Repaint).
+      </p>
+      <h3>Как это работает (на примере экосистемы Vue 2 / React):</h3>
+      <p>
+        При изменении состояния приложения создается новое дерево <span class="accent">Virtual DOM</span>.
+      </p>
+      <p>
+        <strong>Diffing:</strong> Фреймворк сравнивает новое виртуальное дерево со старым виртуальным деревом.
+      </p>
+      <p>
+        <strong>Patching:</strong> Вычисляется минимальный набор изменений, который необходим для обновления реального DOM.
+      </p>
+      <p>
+        Эти изменения применяются к реальному DOM за один раз (батчинг), что минимизирует количество тяжелых операций в браузере.
+      </p>
+      <h3>Ключевые особенности:</h3>
+      <p>
+        <strong>Скорость:</strong> Операции в памяти с обычными JS-объектами происходят мгновенно по сравнению с обращением к <code>DOM API</code>.
+      </p>
+      <p>
+        <strong>Декларативность:</strong> Разработчик просто описывает, как должен выглядеть интерфейс при текущем состоянии (State),
+        а алгоритмы фреймворка сами решают, как оптимально обновить реальный DOM.
+      </p>
+      <p>
+        <strong>Независимость от платформы:</strong> Поскольку <span class="accent">Virtual DOM</span> — это просто абстракция, интерфейсы можно рендерить не только в браузере, но и на мобильных устройствах или сервере (SSR).
+      </p>
+    `,
+    tags: ['web development', 'virtual DOM', 'Vue', 'React'],
+    structure: [
+      {
+        name: 'Virtual DOM - что это такое',
+        isChecked: false,
+      },
+      {
+        name: 'Проблема, которую решает Virtual DOM',
+        isChecked: false,
+      },
+      {
+        name: 'Как работает Virtual DOM',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 91,
+    name: 'RxJS и асинхронность',
+    answer: ``,
+    tags: ['rxjs', 'asynchronous', 'reactive programming'],
+    structure: [
+      {
+        name: 'Основы RxJS',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 92,
+    name: 'DI в Angular',
+    answer: ``,
+    tags: ['angular', 'di', 'dependency injection'],
+    structure: [
+      {
+        name: 'DI в Angular, что это такое',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 93,
+    name: 'State management в Angular. NgRx',
+    answer: ``,
+    tags: ['angular', 'state management', 'reactive programming'],
+    structure: [
+      {
+        name: 'State management в Angular. NgRx, что это такое',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 94,
+    name: 'Signals in Angular. В чем фундаментальная разница между Signals и RxJS, и почему команда Angular решила внедрить этот паттерн?',
+    answer: ``,
+    tags: ['angular', 'signals', 'reactive programming'],
+    structure: [
+      {
+        name: 'Signals в Angular, что это такое',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 95,
+    name: 'Как работают computed и effect? В каких случаях безопасно использовать effect, а когда это считается антипаттерном?',
+    answer: ``,
+    tags: ['angular', 'signals', 'reactive programming'],
+    structure: [
+      {
+        name: 'computed и effect - что это',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 96,
+    name: 'Signal Inputs и Model: Чем новые функции input() и model() (появившиеся в v17.1+) отличаются от классических декораторов @Input() и паттерна [(ngModel)]?',
+    answer: ``,
+    tags: ['angular', 'signals', 'reactive programming'],
+    structure: [
+      {
+        name: 'Signal Inputs и Model - что это',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 97,
+    name: 'Интероперабельность с RxJS: Как правильно "подружить" существующий код на потоках с сигналами, используя функции toSignal и toObservable? Утечки памяти при таком переходе?',
+    answer: ``,
+    tags: ['angular', 'signals', 'RxJS', 'reactive programming'],
+    structure: [
+      {
+        name: 'Интероперабельность с RxJS - что это',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 98,
+    name: 'Zoneless Angular: Как Signals открывают дорогу к отказу от Zone.js? Что такое локальная детекция изменений (Local Change Detection)?',
+    answer: ``,
+    tags: ['angular', 'signals', 'zone.js', 'change detection'],
+    structure: [
+      {
+        name: 'Zoneless Angular - что это',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 99,
+    name: 'Концепция Standalone: Как отсутствие NgModule меняет архитектуру приложения? Как теперь организовывать логические блоки кода?',
+    answer: ``,
+    tags: ['angular', 'standalone', 'architecture'],
+    structure: [
+      {
+        name: 'Концепция Standalone',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 100,
+    name: 'Функция inject(): Почему функциональный подход с inject() вытесняет классическую инъекцию зависимостей (DI) через конструктор? Какие у него ограничения (где его нельзя вызывать)?',
+    answer: ``,
+    tags: ['angular', 'standalone', 'architecture'],
+    structure: [
+      {
+        name: 'Функция inject()',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 101,
+    name: 'Новый Control Flow (@if, @for, @switch): В чем преимущества нового встроенного синтаксиса шаблонов перед структурными директивами *ngIf и *ngFor (особенно под капотом)?',
+    answer: ``,
+    tags: ['angular', 'syntax', 'architecture'],
+    structure: [
+      {
+        name: 'Новый Control Flow',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 102,
+    name: 'Оптимизация рендеринга: Почему в новом цикле @for свойство track стало строго обязательным, и как это влияет на производительность DOM?',
+    answer: ``,
+    tags: ['angular', 'syntax', 'architecture'],
+    structure: [
+      {
+        name: 'Оптимизация рендеринга',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 103,
+    name: 'Управление отписками: Как использовать DestroyRef и takeUntilDestroyed вместо старого паттерна с ngOnDestroy и Subject?',
+    answer: ``,
+    tags: ['angular', 'subscriptions'],
+    structure: [
+      {
+        name: 'Управление отписками',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 104,
+    name: 'Deferrable Views (@defer): Как работает этот механизм? Какие встроенные триггеры (on viewport, on interaction, on idle) существуют для ленивой загрузки кусков шаблона?',
+    answer: ``,
+    tags: ['angular', 'performance'],
+    structure: [
+      {
+        name: 'Deferrable Views',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 105,
+    name: 'Lazy Loading маршрутов: Как изменился синтаксис ленивой загрузки компонентов в роутере при использовании Standalone архитектуры (без loadChildren с модулями)?',
+    answer: ``,
+    tags: ['angular', 'routing', 'performance', 'lazy loading'],
+    structure: [
+      {
+        name: 'Lazy Loading маршрутов',
+        isChecked: false,
+      }
+    ],
+  },
 ];
