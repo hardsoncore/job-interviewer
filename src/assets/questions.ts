@@ -6609,18 +6609,6 @@ export const questions: Question[] = [
   },
   {
     id: 92,
-    name: 'DI в Angular',
-    answer: ``,
-    tags: ['angular', 'di', 'dependency injection'],
-    structure: [
-      {
-        name: 'DI в Angular, что это такое',
-        isChecked: false,
-      }
-    ],
-  },
-  {
-    id: 93,
     name: 'State management в Angular. NgRx',
     answer: ``,
     tags: ['angular', 'state management', 'reactive programming'],
@@ -6632,7 +6620,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 94,
+    id: 93,
     name: 'Signals in Angular. В чем фундаментальная разница между Signals и RxJS, и почему команда Angular решила внедрить этот паттерн?',
     answer: ``,
     tags: ['angular', 'signals', 'reactive programming'],
@@ -6644,7 +6632,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 95,
+    id: 94,
     name: 'Как работают computed и effect? В каких случаях безопасно использовать effect, а когда это считается антипаттерном?',
     answer: ``,
     tags: ['angular', 'signals', 'reactive programming'],
@@ -6656,7 +6644,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 96,
+    id: 95,
     name: 'Signal Inputs и Model: Чем новые функции input() и model() (появившиеся в v17.1+) отличаются от классических декораторов @Input() и паттерна [(ngModel)]?',
     answer: ``,
     tags: ['angular', 'signals', 'reactive programming'],
@@ -6668,7 +6656,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 97,
+    id: 96,
     name: 'Интероперабельность с RxJS: Как правильно "подружить" существующий код на потоках с сигналами, используя функции toSignal и toObservable? Утечки памяти при таком переходе?',
     answer: ``,
     tags: ['angular', 'signals', 'RxJS', 'reactive programming'],
@@ -6680,7 +6668,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 98,
+    id: 97,
     name: 'Zoneless Angular: Как Signals открывают дорогу к отказу от Zone.js? Что такое локальная детекция изменений (Local Change Detection)?',
     answer: ``,
     tags: ['angular', 'signals', 'zone.js', 'change detection'],
@@ -6692,7 +6680,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 99,
+    id: 98,
     name: 'Концепция Standalone: Как отсутствие NgModule меняет архитектуру приложения? Как теперь организовывать логические блоки кода?',
     answer: ``,
     tags: ['angular', 'standalone', 'architecture'],
@@ -6704,7 +6692,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 100,
+    id: 99,
     name: 'Функция inject(): Почему функциональный подход с inject() вытесняет классическую инъекцию зависимостей (DI) через конструктор? Какие у него ограничения (где его нельзя вызывать)?',
     answer: ``,
     tags: ['angular', 'standalone', 'architecture'],
@@ -6716,7 +6704,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 101,
+    id: 100,
     name: 'Новый Control Flow (@if, @for, @switch): В чем преимущества нового встроенного синтаксиса шаблонов перед структурными директивами *ngIf и *ngFor (особенно под капотом)?',
     answer: ``,
     tags: ['angular', 'syntax', 'architecture'],
@@ -6728,7 +6716,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 102,
+    id: 101,
     name: 'Оптимизация рендеринга: Почему в новом цикле @for свойство track стало строго обязательным, и как это влияет на производительность DOM?',
     answer: ``,
     tags: ['angular', 'syntax', 'architecture'],
@@ -6740,7 +6728,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 103,
+    id: 102,
     name: 'Управление отписками: Как использовать DestroyRef и takeUntilDestroyed вместо старого паттерна с ngOnDestroy и Subject?',
     answer: ``,
     tags: ['angular', 'subscriptions'],
@@ -6752,7 +6740,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 104,
+    id: 103,
     name: 'Deferrable Views (@defer): Как работает этот механизм? Какие встроенные триггеры (on viewport, on interaction, on idle) существуют для ленивой загрузки кусков шаблона?',
     answer: ``,
     tags: ['angular', 'performance'],
@@ -6764,13 +6752,49 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 105,
+    id: 104,
     name: 'Lazy Loading маршрутов: Как изменился синтаксис ленивой загрузки компонентов в роутере при использовании Standalone архитектуры (без loadChildren с модулями)?',
     answer: ``,
     tags: ['angular', 'routing', 'performance', 'lazy loading'],
     structure: [
       {
         name: 'Lazy Loading маршрутов',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 105,
+    name: 'Functional Guards: Как написать функциональный Guard (например, canActivateFn) и почему классовые Guards были объявлены deprecated?',
+    answer: ``,
+    tags: ['angular', 'routing', 'guards'],
+    structure: [
+      {
+        name: 'Functional Guards',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 106,
+    name: 'Functional Interceptors: Как настроить перехватчики HTTP-запросов (Interceptors) в Standalone-приложении без использования модулей и HTTP_INTERCEPTORS?',
+    answer: ``,
+    tags: ['angular', 'routing', 'interceptors'],
+    structure: [
+      {
+        name: 'Functional Interceptors',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 107,
+    name: 'Жизненный цикл (Lifecycle Hooks): Как появление inject(), Signals и Standalone компонентов повлияло на то, как мы используем ngOnInit и ngOnChanges? (Спойлер: ngOnChanges уходит в прошлое).',
+    answer: ``,
+    tags: ['angular', 'lifecycle', 'hooks'],
+    structure: [
+      {
+        name: 'Lifecycle Hooks',
         isChecked: false,
       }
     ],
