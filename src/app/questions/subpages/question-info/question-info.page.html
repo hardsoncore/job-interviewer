@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Вопрос №{{ question?.id }}</ion-title>
+    <ion-title>Question №{{ question?.id }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,6 +10,6 @@
     <pre class="pre-text" [innerHTML]="question?.answer"></pre>
   </section>
 
-  <ion-button (click)="submitAnswer()" color="success" expand="block">Проверить себя</ion-button>
+  <ion-button (click)="submitAnswer()" color="tertiary" fill="outline" expand="block" size="large">Take Answer</ion-button>
   <br>
 </ion-content>
