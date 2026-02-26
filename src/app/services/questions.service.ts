@@ -18,15 +18,10 @@ export class QuestionsService {
     return this._questions.asObservable();
   }
 
-  private setQuestions() {
-    this._questions.next(listOfQandA);
-  }
-
   public getRandomQuestion(): Observable<Question> {
     const resSubj = new BehaviorSubject<Question>({} as Question);
 
     this.questions.subscribe(qs => {
-      // const randomQuestion = qs.filter(q;
       resSubj.next(qs[Math.floor(Math.random() * qs.length)]);
     });
 
@@ -35,5 +30,9 @@ export class QuestionsService {
 
   public getQuestionById(id: number): Question {
     return this._questions.getValue().find(q => q.id === id);
+  }
+
+  private setQuestions() {
+    this._questions.next(listOfQandA);
   }
 }
