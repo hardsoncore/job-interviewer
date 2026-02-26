@@ -5039,8 +5039,83 @@ export const questions: Question[] = [
   {
     id: 69,
     name: 'Zone.js. Что это и для чего нужно?',
-    answer: ``,
-    tags: ['TypeScript', 'TS mechanics', 'Async'],
+    answer: `
+      <h3>Что такое Zone.js?</h3>
+      <p>
+        <span class="accent">Zone.js</span> — это библиотека, которая создает так называемые "зоны выполнения" (execution contexts) для JavaScript.
+      </p>
+
+      <p>
+        В ванильном JS, если ты запускаешь асинхронную операцию (например, <code>setTimeout</code>), контекст теряется — коллбек выполнится
+        когда-то потом, в глобальной области видимости. <code>Zone.js</code> решает эту проблему путем <strong>monkey-patching</strong> (подмены) всех стандартных
+        асинхронных API браузера.
+      </p>
+
+      <p>
+        <code>Zone.js</code> перехватывает и оборачивает в свой контекст:
+      </p>
+
+      <ul>
+        <li>Таймеры (<code>setTimeout</code>, <code>setInterval</code>).</li>
+        <li>Сетевые запросы (<code>XMLHttpRequest</code>, <code>fetch</code>).</li>
+        <li>Пользовательские события (<code>addEventListener</code> — клики, скроллы, ввод текста).</li>
+        <li><code>Promise</code>.</li>
+      </ul>
+
+      <p>
+        Благодаря этому, когда происходит асинхронное событие, <code>Zone.js</code> знает, что оно произошло в контексте Angular приложения,
+        и может сообщить об изменениях Angular, чтобы обновить UI.
+      </p>
+
+      <p>
+        Angular запускает цикл <code>Change Detection</code> и проверяет <strong>всё дерево компонентов сверху вниз</strong>, сравнивая старые значения в
+        шаблонах с новыми, чтобы найти, что изменилось.
+      </p>
+
+      <p class="info info--blue">
+        Именно поэтому Angular может автоматически обновлять UI при изменении данных, даже если эти изменения произошли с переменной, которая не была явно связана
+        с шаблоном или помечена как динамическая. <code>Zone.js</code> обеспечивает эту магию, отслеживая все асинхронные операции.
+
+        <br>
+
+        Вот почему в том же Vue мы должны явно указывать, что данные динамические, а в Angular это происходит автоматически благодаря <code>Zone.js</code>.
+      </p>
+
+      <h3>Почему от Zone.js решили избавиться?</h3>
+
+      <p>
+        <strong>Оверхед производительности:</strong> Фреймворк выполняет колоссальную лишнюю работу. Изменилась одна переменная в футере —
+        Angular проверяет всё дерево компонентов, даже если оно не связано с этим изменением.
+      </p>
+
+      <p>
+        <strong>Размер бандла:</strong> Сама библиотека <code>Zone.js</code> весит около 100 КБ (в неминифицированном виде),
+        что бьет по скорости первоначальной загрузки.
+      </p>
+
+      <p>
+        <strong>Проблемы с отладкой:</strong> Из-за того, что <code>Zone.js</code> оборачивает все асинхронные операции, стек-трейсы
+        при ошибках становятся запутанными и сложными для понимания.
+      </p>
+
+      <p>
+        <strong>Утечки производительности на событиях:</strong> События вроде scroll или mousemove стреляют сотни раз в секунду.
+        <code>Zone.js</code> дергает Angular на каждое из них, убивая FPS. Разработчикам приходилось вручную выносить такой код в
+        <code>this.ngZone.runOutsideAngular()</code>, чтобы спасти производительность.
+      </p>
+
+      <h3>Современные реалии: Zoneless Angular</h3>
+
+      <p>
+        С внедрением <code>Signals</code> у Angular (16 версия) наконец-то появилась та самая точечная реактивность (Fine-grained Reactivity). Сигналы сами
+        знают, когда их значение изменилось, и сами говорят фреймворку, какой именно кусок DOM нужно обновить.
+      </p>
+      <p>
+        Необходимость в глобальном "шпионе", который дергает проверки всего приложения, отпала. Angular перешел в эру <strong>Zoneless</strong>
+        (приложений без <code>Zone.js</code>).
+      </p>
+    `,
+    tags: ['Angular', 'Change Detection', 'Async'],
     structure: [
       {
         name: 'Теги HTML',
@@ -5050,9 +5125,10 @@ export const questions: Question[] = [
   },
   {
     id: 70,
-    name: 'Механизм Change Detection',
-    answer: ``,
-    tags: ['TypeScript', 'TS mechanics'],
+    name: 'Какие Utility Types (Утилиты типов) ты используешь на практике?',
+    answer: `
+    `,
+    tags: ['TypeScript', 'Typization'],
     structure: [
       {
         name: 'Теги HTML',
@@ -5062,9 +5138,9 @@ export const questions: Question[] = [
   },
   {
     id: 71,
-    name: 'Lifecycle Angular (Жизненный цикл компонента)',
+    name: 'Что такое Type Guards и Type Assertions (Сужение типов)?',
     answer: ``,
-    tags: ['TypeScript', 'Angular'],
+    tags: ['TypeScript', 'TS mechanics', 'Typization'],
     structure: [
       {
         name: 'Теги HTML',
@@ -5076,7 +5152,7 @@ export const questions: Question[] = [
     id: 72,
     name: 'Что такое Enums? Их применение',
     answer: ``,
-    tags: ['TypeScript', 'Angular'],
+    tags: ['TypeScript', 'Typization'],
     structure: [
       {
         name: 'Теги HTML',
@@ -5086,9 +5162,9 @@ export const questions: Question[] = [
   },
   {
     id: 73,
-    name: 'Class, Interface. Различия и применение',
+    name: 'Class, Interface, Type. Различия и применение',
     answer: ``,
-    tags: ['TypeScript', 'Angular', 'ООП'],
+    tags: ['TypeScript', 'Typization'],
     structure: [
       {
         name: 'Теги HTML',
@@ -5100,7 +5176,7 @@ export const questions: Question[] = [
     id: 74,
     name: 'Что такое Generics? Их применение',
     answer: ``,
-    tags: ['TypeScript', 'Angular'],
+    tags: ['TypeScript', 'Typization'],
     structure: [
       {
         name: 'Теги HTML',
@@ -5110,9 +5186,9 @@ export const questions: Question[] = [
   },
   {
     id: 75,
-    name: 'Что такое never в TypeScript?',
+    name: 'Разница между any, unknown и never.',
     answer: ``,
-    tags: ['TypeScript', 'Angular'],
+    tags: ['TypeScript', 'Typization'],
     structure: [
       {
         name: 'Теги HTML',
@@ -6682,6 +6758,10 @@ export const questions: Question[] = [
       <p><span class="accent">Сигнал (Signal)</span> — это реактивный примитив, который хранит значение и уведомляет всех своих «потребителей»
       (шаблоны компонентов, вычисляемые свойства или эффекты) о его изменении.</p>
 
+      <p>
+        <code>Signals</code> появились в Angular 16.
+      </p>
+
       <p class="info info--blue">
         Пока что сигналы в Angular — это только написанный TypeScript-код (userland-решение), который поставляется вместе с фреймворком. Однако API спроектировано с прицелом на будущее.
         Так как на данный момент (2025) существует инициатива, направленная на добавление реактивного <code>Signal</code> как встроенного примитива прямо в язык.
@@ -6926,9 +7006,9 @@ export const questions: Question[] = [
   },
   {
     id: 107,
-    name: 'Жизненный цикл (Lifecycle Hooks): Как появление inject(), Signals и Standalone компонентов повлияло на то, как мы используем ngOnInit и ngOnChanges? (Спойлер: ngOnChanges уходит в прошлое).',
+    name: 'Lifecycle Angular (Жизненный цикл компонента). Современный подход',
     answer: ``,
-    tags: ['angular', 'lifecycle', 'hooks'],
+    tags: ['Angular', 'Lifecycle', 'Hooks'],
     structure: [
       {
         name: 'Lifecycle Hooks',
