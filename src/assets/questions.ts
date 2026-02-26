@@ -6950,24 +6950,31 @@ export const questions: Question[] = [
       </p>
 
       <p>
-        <strong>Сигналы</strong> не предназначены для замены <code>RxJS</code>. Они оптимизированы для точечной реактивности в рамках шаблонов Angular и компонентов.
-        Сигналы — это простой способ управлять состоянием и реактивностью внутри компонентов, без необходимости создавать сложные потоки данных.
+        <strong>Сигналы</strong> не предназначены для замены <code>RxJS</code>. Они оптимизированы для точечной реактивности в
+        рамках шаблонов Angular и компонентов.
+        <br>
+        Сигналы — это простой способ управлять состоянием и реактивностью внутри компонентов, без необходимости создавать сложные
+        потоки данных.
       </p>
 
       <p>
-        Команда Angular четко позиционирует совместное использование <code>Signals</code> и <code>RxJS</code>. Это инструменты для разных задач:
+        Команда Angular четко позиционирует совместное использование <code>Signals</code> и <code>RxJS</code>. Это инструменты для
+        разных задач:
       </p>
       <p>
-        <code>Signals</code> идеально подходят для хранения и отображения синхронного состояния UI (данные формы, текущий пользователь, счетчики, флаги загрузки).
+        <code>Signals</code> идеально подходят для хранения и отображения синхронного состояния UI (данные формы, текущий пользователь,
+        счетчики, флаги загрузки).
       </p>
       <p>
-        <code>RxJS</code> остается абсолютным стандартом для сложной асинхронной логики: оркестрация HTTP-запросов (<code>switchMap</code>, <code>mergeMap</code>),
+        <code>RxJS</code> остается абсолютным стандартом для сложной асинхронной логики: оркестрация HTTP-запросов (<code>switchMap</code>,
+        <code>mergeMap</code>),
         фильтрация спама от пользователя (<code>debounceTime</code>), работа с вебсокетами.
       </p>
 
       <h3>Что решают Signals:</h3>
       <p>
-        Сигналы открывают дорогу к <strong>Fine-grained Reactivity</strong> (Точечной реактивности) и приложениям без <code>Zone.js</code> (Zoneless Angular).
+        Сигналы открывают дорогу к <strong>Fine-grained Reactivity</strong> (Точечной реактивности) и приложениям без <code>Zone.js</code>
+        (Zoneless Angular).
       </p>
 
       <p>
@@ -6989,9 +6996,12 @@ export const questions: Question[] = [
 
       <h3>Проблема старого подхода (Zone.js):</h3>
       <p class="info info--orange">
-        <code>Zone.js</code> "магически" перехватывает все асинхронные API в браузере (клики, таймауты, HTTP-запросы). Как только что-то происходит, <code>Zone.js</code> дергает Angular и говорит: "Произошло событие. Кажется, данные могли измениться. Проверь всё приложение сверху вниз!".
+        <code>Zone.js</code> "магически" перехватывает все асинхронные API в браузере (клики, таймауты, HTTP-запросы).
+        Как только что-то происходит, <code>Zone.js</code> дергает Angular и говорит: "Произошло событие. Кажется, данные могли
+        измениться. Проверь всё приложение сверху вниз!".
         <br>
-        Это ресурсоемко. Если у тебя изменилась одна переменная в глубоко вложенном дочернем компоненте, Angular по умолчанию вынужден пробегаться по всему дереву компонентов, чтобы найти это изменение.
+        Это ресурсоемко. Если у тебя изменилась одна переменная в глубоко вложенном дочернем компоненте, Angular по умолчанию
+        вынужден пробегаться по всему дереву компонентов, чтобы найти это изменение.
       </p>
     `,
     tags: ['Angular', 'Signals', 'Reactive Programming'],
@@ -7032,30 +7042,6 @@ export const questions: Question[] = [
   },
   {
     id: 96,
-    name: 'Интероперабельность с RxJS: Как правильно "подружить" существующий код на потоках с сигналами, используя функции toSignal и toObservable? Утечки памяти при таком переходе?',
-    answer: ``,
-    tags: ['angular', 'signals', 'RxJS', 'reactive programming'],
-    structure: [
-      {
-        name: 'Интероперабельность с RxJS - что это',
-        isChecked: false,
-      }
-    ],
-  },
-  {
-    id: 97,
-    name: 'Zoneless Angular: Как Signals открывают дорогу к отказу от Zone.js? Что такое локальная детекция изменений (Local Change Detection)?',
-    answer: ``,
-    tags: ['angular', 'signals', 'zone.js', 'change detection'],
-    structure: [
-      {
-        name: 'Zoneless Angular - что это',
-        isChecked: false,
-      }
-    ],
-  },
-  {
-    id: 98,
     name: 'Концепция Standalone: Как отсутствие NgModule меняет архитектуру приложения? Как теперь организовывать логические блоки кода?',
     answer: ``,
     tags: ['angular', 'standalone', 'architecture'],
@@ -7067,7 +7053,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 99,
+    id: 97,
     name: 'Функция inject(): Почему функциональный подход с inject() вытесняет классическую инъекцию зависимостей (DI) через конструктор? Какие у него ограничения (где его нельзя вызывать)?',
     answer: ``,
     tags: ['angular', 'standalone', 'architecture'],
@@ -7079,7 +7065,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 100,
+    id: 98,
     name: 'Новый Control Flow (@if, @for, @switch): В чем преимущества нового встроенного синтаксиса шаблонов перед структурными директивами *ngIf и *ngFor (особенно под капотом)?',
     answer: ``,
     tags: ['angular', 'syntax', 'architecture'],
@@ -7091,7 +7077,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 101,
+    id: 99,
     name: 'Оптимизация рендеринга: Почему в новом цикле @for свойство track стало строго обязательным, и как это влияет на производительность DOM?',
     answer: ``,
     tags: ['angular', 'syntax', 'architecture'],
@@ -7103,7 +7089,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 102,
+    id: 100,
     name: 'Управление отписками: Как использовать DestroyRef и takeUntilDestroyed вместо старого паттерна с ngOnDestroy и Subject?',
     answer: ``,
     tags: ['angular', 'subscriptions'],
@@ -7115,7 +7101,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 103,
+    id: 101,
     name: 'Deferrable Views (@defer): Как работает этот механизм? Какие встроенные триггеры (on viewport, on interaction, on idle) существуют для ленивой загрузки кусков шаблона?',
     answer: ``,
     tags: ['angular', 'performance'],
@@ -7127,7 +7113,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 104,
+    id: 102,
     name: 'Lazy Loading маршрутов: Как изменился синтаксис ленивой загрузки компонентов в роутере при использовании Standalone архитектуры (без loadChildren с модулями)?',
     answer: ``,
     tags: ['angular', 'routing', 'performance', 'lazy loading'],
@@ -7139,7 +7125,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 105,
+    id: 103,
     name: 'Functional Guards: Как написать функциональный Guard (например, canActivateFn) и почему классовые Guards были объявлены deprecated?',
     answer: ``,
     tags: ['angular', 'routing', 'guards'],
@@ -7151,7 +7137,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 106,
+    id: 104,
     name: 'Functional Interceptors: Как настроить перехватчики HTTP-запросов (Interceptors) в Standalone-приложении без использования модулей и HTTP_INTERCEPTORS?',
     answer: ``,
     tags: ['angular', 'routing', 'interceptors'],
@@ -7163,7 +7149,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 107,
+    id: 105,
     name: 'Lifecycle Angular (Жизненный цикл компонента). Современный подход',
     answer: ``,
     tags: ['Angular', 'Lifecycle', 'Hooks'],
