@@ -5150,7 +5150,7 @@ export const questions: Question[] = [
 
         // Представь, что мы обновляем профиль питомца. Нам не нужно передавать
         // все поля заново.
-        function updateDogProfile(id: string, data: Partial<Dog>) {
+        function updateDogProfile(id: string, data: Partial&lt;Dog>) {
           // отправляем patch-запрос
         }
 
@@ -5178,7 +5178,7 @@ export const questions: Question[] = [
         const draftPolicy: CarOptions = { model: 'Audi A3' };
 
         // Но для финального оформления договора мы жестко требуем все данные:
-        const fullPolicy: Required<CarOptions> = {
+        const fullPolicy: Required&lt;CarOptions> = {
           model: 'Audi A3',
           year: 2015,
           tuning: 'Stock' // Если закомментировать это поле, TS выдаст ошибку
@@ -5248,6 +5248,23 @@ export const questions: Question[] = [
         <strong>Где применять:</strong> Самый популярный юзкейс — создание строго типизированных словарей (мап, хэш-таблиц).
         Заменяет устаревший подход с индексируемыми типами вроде <code>[key: string]: any</code>.
       </p>
+
+      <code class="code">
+        type Weekday = 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday' | 'sunday';
+
+        // Строго типизируем статистику: ключами могут быть только дни недели,
+        // а значениями - пройденные километры.
+        const cyclingStats: Record&lt;Weekday, number> = {
+          monday: 155,
+          tuesday: 0,
+          wednesday: 160,
+          thursday: 0,
+          friday: 0,
+          saturday: 180,
+          sunday: 0
+        };
+        // TS не позволит добавить ключ "someday" или передать строку вместо числа пробега.
+      </code>
     `,
     tags: ['TypeScript', 'Typization'],
     structure: [
