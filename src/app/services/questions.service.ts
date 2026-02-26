@@ -26,6 +26,7 @@ export class QuestionsService {
     const resSubj = new BehaviorSubject<Question>({} as Question);
 
     this.questions.subscribe(qs => {
+      // const randomQuestion = qs.filter(q;
       resSubj.next(qs[Math.floor(Math.random() * qs.length)]);
     });
 
