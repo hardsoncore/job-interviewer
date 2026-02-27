@@ -7086,8 +7086,8 @@ export const questions: Question[] = [
 
         @Component({...})
         export class ChildComponent {
-          // name имеет тип Signal<string>
-          name = input<string>();
+          // name имеет тип Signal&lt;string>
+          name = input&lt;string>();
 
           // computedName будет автоматически обновляться при изменении name
           computedName = computed(() => this.name() + '!');
@@ -7115,7 +7115,7 @@ export const questions: Question[] = [
         @Component({...})
         export class ChildComponent {
           // panelClosed имеет тип OutputEmitterRef<void>
-          panelClosed = output<void>();
+          panelClosed = output&lt;void>();
 
           close() {
             this.panelClosed.emit(); // Вызов метода emit
@@ -7145,8 +7145,8 @@ export const questions: Question[] = [
 
         @Component({...})
         export class ChildComponent {
-          // value имеет тип Signal<string> и может быть как входом, так и выходом
-          value = model<string>();
+          // value имеет тип Signal&lt;string> и может быть как входом, так и выходом
+          value = model&lt;string>();
         }
       </code>
     `,
