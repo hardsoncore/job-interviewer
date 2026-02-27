@@ -7247,24 +7247,75 @@ export const questions: Question[] = [
   },
   {
     id: 97,
-    name: 'Функция inject(): Почему функциональный подход с inject() вытесняет классическую инъекцию зависимостей (DI) через конструктор? Какие у него ограничения (где его нельзя вызывать)?',
-    answer: ``,
-    tags: ['angular', 'standalone', 'architecture'],
+    name: 'Функция inject() против Constructor DI',
+    answer: `
+      <h3>Что такое inject()?</h3>
+
+      <p>
+        <span class="accent">inject()</span> — это новая функция для внедрения зависимостей (Dependency Injection) в Angular,
+        которая работает в рамках Standalone Components.
+
+        Она позволяет получать сервисы и другие зависимости напрямую внутри тела компонента, без необходимости объявлять их в конструкторе.
+      </p>
+
+      <h3>Преимущества inject() по сравнению с Constructor DI:</h3>
+
+      <p>
+        <strong>Упрощение синтаксиса:</strong> С inject() тебе не нужно создавать конструктор и объявлять все зависимости там.
+        Это особенно полезно, когда у тебя много зависимостей, и ты хочешь избежать громоздкого конструктора.
+      </p>
+      <p>
+        <strong>Гибкость в использовании:</strong> inject() можно использовать не только в компонентах, но и в директивах, пайпах,
+        сервисах и даже в обычных функциях. Это открывает новые возможности для организации кода и повторного использования логики.
+      </p>
+      <p>
+        <strong>Совместимость с Standalone Components:</strong> inject() идеально вписывается в концепцию Standalone Components,
+        позволяя каждому компоненту самостоятельно управлять своими зависимостями без необходимости полагаться на NgModules.
+      </p>
+
+      <h3>Где МОЖНО использовать inject():</h3>
+
+      <p>
+        При инициализации полей класса (myService = inject(MyService)).
+      </p>
+      <p>
+        Внутри самого constructor().
+      </p>
+      <p>
+        В функциях-фабриках (в providers: [{ provide: Token, useFactory: () => ... }]).
+      </p>
+      <p>
+        Внутри функциональных роутер-гвардов (Guards) и резолверов.
+      </p>
+
+      <h3>Где НЕЛЬЗЯ использовать inject() (вызовет ошибку NG0203):</h3>
+
+      <p>
+        В методах жизненного цикла (например, внутри ngOnInit(), ngAfterViewInit()).
+      </p>
+      <p>
+        В обычных методах класса (например, updateUser()).
+      </p>
+      <p>
+        Внутри асинхронных коллбеков (setTimeout, Promise.then(), или внутри подписок RxJS).
+      </p>
+    `,
+    tags: ['Angular', 'Standalone', 'Architecture', 'Dependency Injection'],
     structure: [
       {
         name: 'Функция inject()',
         isChecked: false,
-      }
-    ],
-  },
-  {
-    id: 98,
-    name: 'Новый Control Flow (@if, @for, @switch): В чем преимущества нового встроенного синтаксиса шаблонов перед структурными директивами *ngIf и *ngFor (особенно под капотом)?',
-    answer: ``,
-    tags: ['angular', 'syntax', 'architecture'],
-    structure: [
+      },
       {
-        name: 'Новый Control Flow',
+        name: 'Преимущества inject() по сравнению с Constructor DI',
+        isChecked: false,
+      },
+      {
+        name: 'Где МОЖНО использовать inject()',
+        isChecked: false,
+      },
+      {
+        name: 'Где НЕЛЬЗЯ использовать inject()',
         isChecked: false,
       }
     ],
