@@ -7392,10 +7392,22 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 101,
+    id: 99,
+    name: 'Стратегии Change Detection (Default vs OnPush vs Zoneless)',
+    answer: ``,
+    tags: ['Angular', 'Change Detection'],
+    structure: [
+      {
+        name: 'Стратегии Change Detection',
+        isChecked: false,
+      }
+    ],
+  },
+  {
+    id: 100,
     name: 'Deferrable Views (@defer): Как работает этот механизм? Какие встроенные триггеры (on viewport, on interaction, on idle) существуют для ленивой загрузки кусков шаблона?',
     answer: ``,
-    tags: ['angular', 'performance'],
+    tags: ['Angular', 'Performance'],
     structure: [
       {
         name: 'Deferrable Views',
@@ -7404,20 +7416,8 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 102,
-    name: 'Lazy Loading маршрутов: Как изменился синтаксис ленивой загрузки компонентов в роутере при использовании Standalone архитектуры (без loadChildren с модулями)?',
-    answer: ``,
-    tags: ['angular', 'routing', 'performance', 'lazy loading'],
-    structure: [
-      {
-        name: 'Lazy Loading маршрутов',
-        isChecked: false,
-      }
-    ],
-  },
-  {
-    id: 103,
-    name: 'Functional Guards: Как написать функциональный Guard (например, canActivateFn) и почему классовые Guards были объявлены deprecated?',
+    id: 101,
+    name: 'Functional Guards - что это и почему классовые Guards были объявлены deprecated?',
     answer: ``,
     tags: ['angular', 'routing', 'guards'],
     structure: [
@@ -7428,7 +7428,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 104,
+    id: 102,
     name: 'Functional Interceptors: Как настроить перехватчики HTTP-запросов (Interceptors) в Standalone-приложении без использования модулей и HTTP_INTERCEPTORS?',
     answer: ``,
     tags: ['angular', 'routing', 'interceptors'],
@@ -7440,7 +7440,7 @@ export const questions: Question[] = [
     ],
   },
   {
-    id: 105,
+    id: 103,
     name: 'Lifecycle Angular (Жизненный цикл компонента). Современный подход',
     answer: ``,
     tags: ['Angular', 'Lifecycle', 'Hooks'],
