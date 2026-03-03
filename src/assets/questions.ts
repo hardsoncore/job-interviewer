@@ -4932,42 +4932,37 @@ export const questions: Question[] = [
     name: 'Observables VS Subject - различия',
     answer: `
       <p>
-        <span class="accent">Subject</span> - это разновидность объектов <code>Observable</code> в RxJS.
-        <code>Subject</code> одновременно является и зрителем и зрелищем - соответственно, имеет методы как зрелища, так и зрителя.
-        <br>
-        Особенность <code>Subject</code> состоит в том, что здесь обработчики исполняются не сразу в момент вызова
-        <code>subscribe()</code>, а после обращения к методам <code>next()</code>, <code>error()</code> или
-        <code>complete()</code> самого объекта.
+        Путаница между <code>Observable</code> и <code>Subject</code> — это своего рода обряд посвящения в реактивное программирование.
+        На первый згляд они действительно кажутся похожими, так как оба позволяют подписываться на поток данных (<code>subscribe()</code>).
       </p>
 
       <p>
-        <code>Subject</code> имеет несколько типов, поведение которых отличается между собой.
-        Соответственно, их использование зависит от конкретных целей.
+        Но архитектурно они решают совершенно разные задачи. Давай разберем это как инженеры.
+      </p>
+      <p>
+        Главное отличие: «Холодные» против «Горячих»
+        Вся суть сводится к двум концепциям: ленивость (Unicast) и вещание (Multicast).
       </p>
 
-      <ul>
-        <li>
-          <a href="https://rxjs.dev/api/index/class/BehaviorSubject"><code>BehaviorSubject</code></a> -
-          хранит в себе последнее отправленное им значение.
-        </li>
-        <li>
-          <a href="https://rxjs.dev/api/index/class/ReplaySubject"><code>ReplaySubject</code></a> -
-          способны хранить заданное количество последних значений, которое задается при создании объекта.
-        </li>
-        <li>
-          <a href="https://rxjs.dev/api/index/class/AsyncSubject"><code>AsyncSubject</code></a> -
-          возвращает только последнее значение объекта и только, когда он завершит свое выполнение (вызов complete()).
-        </li>
-      </ul>
+      <h3>1. new Observable — Ленивый эгоист (Холодный / Unicast)</h3>
+      <p>
+        Когда ты создаешь <code>new Observable</code>, ты описываешь рецепт того, как получить данные. Этот код не выполнится до тех пор,
+        пока кто-то не вызовет <code>subscribe()</code>.
+      </p>
+      <p>
+        Самое важное: каждый новый подписчик запускает выполнение кода с самого начала, создавая независимый поток.
+      </p>
 
       <p>
-        <span class="accent">Observable</span> - это просто некоторый асинхронный поток данных.
-        <br>
-        Данный механизм позволяет создавать объекты, инициирующие асинхронные потоки (stream или observable)
-        и объекты, которые за ними наблюдают (observer).
+        Аналогия: Это как просмотр фильма на Netflix. Ты нажимаешь Play, и фильм начинается для тебя с первой секунды.
+        Твой друг нажмет Play у себя дома — и для него фильм тоже начнется с первой секунды. Вы не смотрите один и тот же стрим.
+      </p>
+      <p>
+        Реальный пример: HTTP-запросы (в том же HttpClient в Angular). Если ты подпишешься на один и тот же Observable с
+        HTTP-запросом три раза — в сеть улетят три одинаковых независимых запроса.
       </p>
 
-      <code class="code">
+       <code class="code">
         import { Observable } from 'rxjs';
 
         const observable = new Observable(subscriber => {
@@ -5002,6 +4997,57 @@ export const questions: Question[] = [
         just after subscribe
         got value 4
         done
+      </code>
+
+      <h3>2. new Subject — Активный рупор (Горячий / Multicast)</h3>
+      <p>
+        <span class="accent">Subject</span> — это одновременно и Observable (на него можно подписаться), и Observer
+        (у него есть методы <code>.next()</code>, <code>.error()</code>, <code>.complete()</code>).
+      </p>
+      <p>
+        Он ничего не вычисляет сам, он просто берет значение, которое ты в него передал через <code>.next()</code>, и рассылает
+        его всем текущим подписчикам одновременно.
+      </p>
+
+      <p>
+        Аналогия: Это как прямой эфир на YouTube. Стрим идет независимо от того, смотрит его кто-то или нет.
+        Если ты подключишься к стриму на 15-й минуте, ты не увидишь то, что было в начале. Ты и все остальные зрители
+        видите один и тот же момент времени.
+      </p>
+
+      <p>
+        Реальный пример: Клик по кнопке, шина событий (Event Bus), или глобальное состояние авторизации пользователя,
+        на которое подписаны хедер, сайдбар и роутер.
+      </p>
+
+        <code class="code">
+        import { Subject } from 'rxjs';
+
+        const subject = new Subject();
+
+        subject.subscribe({
+          next: (v) => console.log('observerA: ' + v)
+        });
+        subject.subscribe({
+          next: (v) => console.log('observerB: ' + v)
+        });
+
+        subject.next(1);
+        subject.next(2);
+        subject.next(3);
+      </code>
+
+      <p>
+        Выполнение кода, описанного выше, выведет в консоли следующее:
+      </p>
+
+      <code class="code">
+        observerA: 1
+        observerB: 1
+        observerA: 2
+        observerB: 2
+        observerA: 3
+        observerB: 3
       </code>
 
       <h3>
