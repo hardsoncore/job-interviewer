@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Ответ на вопрос №{{ question?.id }}</ion-title>
+    <ion-title>Answer for question №{{ question?.id }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,10 +14,9 @@
     </ion-item>
   </ion-list>
 
-  <div class="button-block">
-    <ion-button (click)="saveResult()" size="large" color="success">
-      <ion-icon slot="start" name="star"></ion-icon>
-      Сохранить результат
-    </ion-button>
-  </div>
+  <br>
+
+  <ion-button (click)="saveResult()" color="tertiary" fill="outline" expand="block" size="large">
+    Save result
+  </ion-button>
 </ion-content>
