@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Question } from '../models/question.model';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 import { questions as listOfQandA } from 'src/assets/questions';
 
@@ -19,13 +20,9 @@ export class QuestionsService {
   }
 
   public getRandomQuestion(): Observable<Question> {
-    const resSubj = new BehaviorSubject<Question>({} as Question);
-
-    this.questions.subscribe(qs => {
-      resSubj.next(qs[Math.floor(Math.random() * qs.length)]);
-    });
-
-    return resSubj.asObservable();
+    return this.questions.pipe(
+      map(qs => qs[Math.floor(Math.random() * qs.length)])
+    );
   }
 
   public getQuestionById(id: number): Question {
