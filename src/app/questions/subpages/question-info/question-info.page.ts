@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 import { Question } from 'src/app/models/question.model';
 import { QuestionsService } from 'src/app/services/questions.service';
@@ -24,29 +23,26 @@ export class QuestionInfoPage implements OnInit, OnDestroy {
     private router: Router,
     private route: ActivatedRoute,
     private questionsService: QuestionsService,
-    private sanitizer: DomSanitizer,
     private http: HttpClient
   ) { }
 
   ngOnInit() {
-    // Подписываемся на комбинацию изменений параметров роута И обновления вопросов
+    // subscribe to both query params and questions list, so we can react to changes in either of them
     combineLatest([
       this.route.queryParams,
       this.questionsService.questions
     ]).pipe(
-      takeUntil(this.destroy$),
+      takeUntil(this.destroy$), // unsubscribe when component is destroyed
       map(([params, _]) => {
-        // Берем id из параметров
         this.questionId = +params.questionId;
-        // Достаем актуальный вопрос
         return this.questionsService.getQuestionById(this.questionId);
       }),
-      filter(question => !!question), // Пропускаем дальше только если вопрос найден
-      // distinctUntilChanged нужен, чтобы не перезапрашивать файл, если вопрос не поменялся
+      filter(question => !!question), // skip if question not found
+      // distinctUntilChanged is needed to prevent reloading the answer content if the same question is emitted again
       distinctUntilChanged((prev, curr) => prev.id === curr.id)
     ).subscribe((question) => {
       this.question = question;
-      this.loadAnswerContent(this.question.answer); // question.answer содержит путь
+      this.loadAnswerContent(this.question.answer); // TODO: ideally, need not to rewrite the field, but to have a separate one for content
     });
   }
 
