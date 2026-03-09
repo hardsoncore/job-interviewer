@@ -1,8 +1,8 @@
 export const questions = [
   {
     id: 1,
-    name: 'Как браузер парсит страницу?',
-    answer: 'assets/content/rus/answers/1-Kak-brauzer-parsit-stranitsu.md',
+    name: 'How does the browser parse a page?',
+    answer: 'eng/answers/1-How-does-the-browser-parse-a-page.md',
     tags: [
       'markup',
       'browser'
@@ -10,35 +10,35 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Парсинг HTML, построение DOM',
+        name: 'Parsing HTML, building the DOM',
         isChecked: false
       },
       {
-        name: 'Получение внешних ресурсов (JS, CSS)',
+        name: 'Fetching external resources (JS, CSS)',
         isChecked: false
       },
       {
-        name: 'Разбор CSS и создание CSSOM',
+        name: 'Parsing CSS and creating CSSOM',
         isChecked: false
       },
       {
-        name: 'Выполнение JavaScript',
+        name: 'Executing JavaScript',
         isChecked: false
       },
       {
-        name: 'Объединение DOM и CSSOM для построения дерево рендеринга',
+        name: 'Combining DOM and CSSOM to build the render tree',
         isChecked: false
       },
       {
-        name: 'Расчет макета и отрисовка результата',
+        name: 'Calculating layout and rendering the result',
         isChecked: false
       }
     ]
   },
   {
     id: 2,
-    name: 'Что такое <DOCTYPE>. Зачем он нужен?',
-    answer: 'assets/content/rus/answers/2-Chto-takoe-DOCTYPE-Zachem-on-nuzhen.md',
+    name: 'What is <DOCTYPE>. Why is it needed?',
+    answer: 'eng/answers/2-What-is-DOCTYPE-Why-is-it-needed.md',
     tags: [
       'HTML',
       'markup'
@@ -46,31 +46,31 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Что такое этот тег DOCTYPE',
+        name: 'What is this DOCTYPE tag',
         isChecked: false
       },
       {
-        name: 'Зачем нужен DOCTYPE',
+        name: 'Why is DOCTYPE needed',
         isChecked: false
       },
       {
-        name: 'Рассказать, про то что есть разные виды DOCTYPE',
+        name: 'Explain that there are different types of DOCTYPE',
         isChecked: false
       },
       {
-        name: 'Можно ли вообще обойтись без DOCTYPE?',
+        name: 'Is it possible to do without DOCTYPE?',
         isChecked: false
       },
       {
-        name: 'Сейчас практически всегда стоит юзать DOCTYPE HTML5',
+        name: 'Nowadays, it is almost always recommended to use DOCTYPE HTML5',
         isChecked: false
       }
     ]
   },
   {
     id: 3,
-    name: 'Теги HTML5. Семантика. Доступность.',
-    answer: 'assets/content/rus/answers/3-Tegi-HTML5-Semantika-Dostupnost.md',
+    name: 'HTML5 Tags. Semantics. Accessibility.',
+    answer: 'eng/answers/3-HTML5-Tags-Semantics-Accessibility.md',
     tags: [
       'HTML',
       'markup'
@@ -78,23 +78,23 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Что такое семантическая вёрстка и зачем она нужна',
+        name: 'What is semantic markup and why is it needed',
         isChecked: false
       },
       {
-        name: 'Основные семантические теги HTML',
+        name: 'Main semantic HTML tags',
         isChecked: false
       },
       {
-        name: 'Как разметить страницу с точки зрения семантики',
+        name: 'How to markup a page from a semantic perspective',
         isChecked: false
       }
     ]
   },
   {
     id: 4,
-    name: 'Какие есть способы подключить CSS на страницу?',
-    answer: 'assets/content/rus/answers/4-Kakie-est-sposoby-podklyuchit-CSS-na-stranitsu.md',
+    name: 'What are the ways to include CSS on a page?',
+    answer: 'eng/answers/4-What-are-the-ways-to-include-CSS-on-a-page.md',
     tags: [
       'HTML',
       'markup',
@@ -103,42 +103,42 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Подключение CSS через внешний файл стилей тегом link',
+        name: 'Including CSS through an external stylesheet using the link tag',
         isChecked: false
       },
       {
-        name: 'Добавление CSS с помощью тега style',
+        name: 'Adding CSS using the style tag',
         isChecked: false
       },
       {
-        name: 'Импорт CSS через команду @import',
+        name: 'Importing CSS using the @import rule',
         isChecked: false
       },
       {
-        name: 'Inline-стили CSS',
+        name: 'Inline CSS styles',
         isChecked: false
       },
       {
-        name: 'Стили CSS через JavaScript',
+        name: 'CSS styles through JavaScript',
         isChecked: false
       }
     ]
   },
   {
     id: 5,
-    name: 'Приоритет стилей. Каскадность.',
-    answer: 'assets/content/rus/answers/5-Prioritet-stilej-Kaskadnost.md',
+    name: 'CSS Priority. Cascade.',
+    answer: 'eng/answers/5-CSS-Priority-Cascade.md',
     tags: [
       'css'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Специфичность селекторов',
+        name: 'Specificity of selectors',
         isChecked: false
       },
       {
-        name: 'Порядок объявления',
+        name: 'Order of declaration',
         isChecked: false
       },
       {
@@ -146,15 +146,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Источник стилей',
+        name: 'Source of styles',
         isChecked: false
       }
     ]
   },
   {
     id: 6,
-    name: '“Вес” селекторов CSS',
-    answer: 'assets/content/rus/answers/6-“Ves”-selektorov-CSS.md',
+    name: 'CSS Selector Weight',
+    answer: 'eng/answers/6-CSS-Selector-Weight.md',
     tags: [
       'markup',
       'CSS'
@@ -166,7 +166,7 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Inline-стили',
+        name: 'Inline styles',
         isChecked: false
       },
       {
@@ -174,23 +174,23 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Классы, Атрибуты, Псевдоклассы',
+        name: 'Classes, Attributes, Pseudo-classes',
         isChecked: false
       },
       {
-        name: 'Теги, Псевдоэлементы',
+        name: 'Tags, Pseudo-elements',
         isChecked: false
       },
       {
-        name: 'Нулевой вес',
+        name: 'Zero weight',
         isChecked: false
       }
     ]
   },
   {
     id: 7,
-    name: 'Высокая специфичность селектора, есть ли у нее какие-то недостатки?',
-    answer: 'assets/content/rus/answers/7-Vysokaya-spetsifichnost-selektora-est-li-u-nee-kakie-to-nedostatki.md',
+    name: 'High specificity of a selector, are there any drawbacks?',
+    answer: 'eng/answers/7-High-specificity-of-a-selector-are-there-any-drawbacks.md',
     tags: [
       'markup',
       'CSS'
@@ -198,7 +198,7 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
@@ -206,7 +206,7 @@ export const questions = [
   {
     id: 8,
     name: '!important',
-    answer: 'assets/content/rus/answers/8-!important.md',
+    answer: 'eng/answers/8-!important.md',
     tags: [
       'markup',
       'CSS'
@@ -214,15 +214,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 9,
-    name: 'Селекторы: > + ~',
-    answer: 'assets/content/rus/answers/9-Selektory-+-~.md',
+    name: 'Selectors: > + ~',
+    answer: 'eng/answers/9-Selectors-+-~.md',
     tags: [
       'markup',
       'CSS'
@@ -245,8 +245,8 @@ export const questions = [
   },
   {
     id: 10,
-    name: 'Псевдоклассы элементов',
-    answer: 'assets/content/rus/answers/10-Psevdoklassy-elementov.md',
+    name: 'Element Pseudo-classes',
+    answer: 'eng/answers/10-Element-Pseudo-classes.md',
     tags: [
       'HTML',
       'markup',
@@ -255,23 +255,23 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Псевдоклассы состояния (Интерактив)',
+        name: 'State pseudo-classes (Interactive)',
         isChecked: false
       },
       {
-        name: 'Структурные псевдоклассы',
+        name: 'Structural pseudo-classes',
         isChecked: false
       },
       {
-        name: 'Продвинутые селекторы (Modern CSS)',
+        name: 'Advanced selectors (Modern CSS)',
         isChecked: false
       }
     ]
   },
   {
     id: 11,
-    name: 'Псевдоклассы форм',
-    answer: 'assets/content/rus/answers/11-Psevdoklassy-form.md',
+    name: 'Form Pseudo-classes',
+    answer: 'eng/answers/11-Form-Pseudo-classes.md',
     tags: [
       'HTML',
       'markup',
@@ -307,8 +307,8 @@ export const questions = [
   },
   {
     id: 12,
-    name: 'Псевдоэлементы',
-    answer: 'assets/content/rus/answers/12-Psevdoelementy.md',
+    name: 'Pseudo-elements',
+    answer: 'eng/answers/12-Pseudo-elements.md',
     tags: [
       'HTML',
       'markup',
@@ -317,31 +317,31 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Что такое псевдоэлементы?',
+        name: 'What are pseudo-elements?',
         isChecked: false
       },
       {
-        name: 'Генерируемый контент (::before и ::after)',
+        name: 'Generated content (::before and ::after)',
         isChecked: false
       },
       {
-        name: 'Текстовые (::first-letter и ::first-line)',
+        name: 'Text (::first-letter and ::first-line)',
         isChecked: false
       },
       {
-        name: 'Интерфейсные (::placeholder, ::selection, ::marker)',
+        name: 'Interface (::placeholder, ::selection, ::marker)',
         isChecked: false
       },
       {
-        name: 'Продвинутые (::backdrop, ::file-selector-button)',
+        name: 'Advanced (::backdrop, ::file-selector-button)',
         isChecked: false
       }
     ]
   },
   {
     id: 13,
-    name: 'Позиционирование элементов (absolute, fixed, relative etc.)',
-    answer: 'assets/content/rus/answers/13-Pozitsionirovanie-elementov-absolute-fixed-relative.md',
+    name: 'Positioning elements (absolute, fixed, relative etc.)',
+    answer: 'eng/answers/13-Positioning-elements-absolute-fixed-relative.md',
     tags: [
       'HTML',
       'markup',
@@ -373,8 +373,8 @@ export const questions = [
   },
   {
     id: 14,
-    name: 'Типы элементов (строчные, блочные и т.д.). Их различия',
-    answer: 'assets/content/rus/answers/14-Tipy-elementov-strochnye-blochnye-i-td-Ih-razlichiya.md',
+    name: 'Types of elements (inline, block, etc.). Their differences',
+    answer: 'eng/answers/14-Types-of-elements-inline-block-etc-Their-differences.md',
     tags: [
       'HTML',
       'markup',
@@ -383,19 +383,19 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Блочные элементы',
+        name: 'Block elements',
         isChecked: false
       },
       {
-        name: 'Строчные элементы',
+        name: 'Inline elements',
         isChecked: false
       },
     ]
   },
   {
     id: 15,
-    name: 'Центрирование (горизонтальное, вертикальное)',
-    answer: 'assets/content/rus/answers/15-Tsentrirovanie-gorizontalnoe-vertikalnoe.md',
+    name: 'Centering (horizontal, vertical)',
+    answer: 'eng/answers/15-Centering-horizontal-vertical.md',
     tags: [
       'HTML',
       'markup',
@@ -404,19 +404,19 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Горизонтальное центрирование',
+        name: 'Horizontal centering',
         isChecked: false
       },
       {
-        name: 'Вертикальное центрирование',
+        name: 'Vertical centering',
         isChecked: false
       }
     ]
   },
   {
     id: 16,
-    name: 'Боксовая модель(Box Model) и box-sizing',
-    answer: 'assets/content/rus/answers/16-Boksovaya-modelBox-Model-i-box-sizing.md',
+    name: 'Box Model and box-sizing',
+    answer: 'eng/answers/16-Box-Model-and-box-sizing.md',
     tags: [
       'HTML',
       'markup',
@@ -425,11 +425,11 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Боксовая модель (Box Model)',
+        name: 'Box Model',
         isChecked: false
       },
       {
-        name: 'box-sizing: content-box и box-sizing: border-box',
+        name: 'box-sizing: content-box and box-sizing: border-box',
         isChecked: false
       }
     ]
@@ -437,7 +437,7 @@ export const questions = [
   {
     id: 17,
     name: 'Flexbox VS Grid',
-    answer: 'assets/content/rus/answers/17-Flexbox-VS-Grid.md',
+    answer: 'eng/answers/17-Flexbox-VS-Grid.md',
     tags: [
       'HTML',
       'markup',
@@ -446,23 +446,23 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Что такое Flexbox',
+        name: 'What is Flexbox?',
         isChecked: false
       },
       {
-        name: 'Что такое Grid',
+        name: 'What is Grid?',
         isChecked: false
       },
       {
-        name: 'Основные отличия между Flexbox и Grid',
+        name: 'Main differences between Flexbox and Grid',
         isChecked: false
       },
     ]
   },
   {
     id: 18,
-    name: 'CSS анимации',
-    answer: 'assets/content/rus/answers/18-CSS-animatsii.md',
+    name: 'CSS animations',
+    answer: 'eng/answers/18-CSS-animations.md',
     tags: [
       'markup',
       'CSS',
@@ -471,23 +471,23 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Что такое CSS анимации?',
+        name: 'What are CSS animations?',
         isChecked: false
       },
       {
-        name: 'Основные свойства для создания анимаций',
+        name: 'Main properties for creating animations',
         isChecked: false
       },
       {
-        name: 'Преимущества и недостатки CSS анимаций',
+        name: 'Advantages and disadvantages of CSS animations',
         isChecked: false
       }
     ]
   },
   {
     id: 19,
-    name: 'Сброс стилей и \"нормализация\" (Reset VS Normilize). Их различия.',
-    answer: 'assets/content/rus/answers/19-Sbros-stilej-i-normalizatsiya-Reset-VS-Normilize-Ih-razlichiya.md',
+    name: 'Reset and Normalize (Reset VS Normalize). Their differences.',
+    answer: 'eng/answers/19-Reset-and-Normalize-Reset-VS-Normalize-Their-differences.md',
     tags: [
       'markup',
       'CSS'
@@ -495,23 +495,23 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Сброс стилей (Reset) - что это?',
+        name: 'Reset - what is it?',
         isChecked: false
       },
       {
-        name: 'Нормализация (Normalize) - что это?',
+        name: 'Normalize - what is it?',
         isChecked: false
       },
       {
-        name: 'Основные отличия между сбросом стилей и нормализацией',
+        name: 'Main differences between reset and normalize',
         isChecked: false
       }
     ]
   },
   {
     id: 20,
-    name: 'Единицы измерения (em, rem, %, px, vh, vw)',
-    answer: 'assets/content/rus/answers/20-Edinitsy-izmereniya-em-rem-px-vh-vw.md',
+    name: 'Units of measurement (em, rem, %, px, vh, vw)',
+    answer: 'eng/answers/20-Units-of-measurement-em-rem-px-vh-vw.md',
     tags: [
       'markup',
       'CSS'
@@ -519,15 +519,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 21,
-    name: 'Порядок подключения ресурсов. Скрипты в head, скрипты в конце body. В чем разница.',
-    answer: 'assets/content/rus/answers/21-Poryadok-podklyucheniya-resursov-Skripty-v-head-skripty-v-kontse-body-V-chem-raznitsa.md',
+    name: 'Order of resource loading. Scripts in head, scripts at the end of body. What is the difference?',
+    answer: 'eng/answers/21-Order-of-resource-loading-Scripts-in-head-scripts-at-the-end-of-body-What-is-the-difference.md',
     tags: [
       'markup',
       'CSS'
@@ -535,15 +535,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Порядок подключения ресурсов (скрипты в head, скрипты в конце body)',
+        name: 'Order of resource loading (scripts in head, scripts at the end of body)',
         isChecked: false
       }
     ]
   },
   {
     id: 22,
-    name: 'Способы подключить JS на страницу',
-    answer: 'assets/content/rus/answers/22-Sposoby-podklyuchit-JS-na-stranitsu.md',
+    name: 'Ways to include JS on a page',
+    answer: 'eng/answers/22-Ways-to-include-JS-on-a-page.md',
     tags: [
       'HTML',
       'markup',
@@ -552,15 +552,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: '3 способа подключения JS на страницу',
+        name: '3 ways to include JS on a page',
         isChecked: false
       }
     ]
   },
   {
     id: 23,
-    name: 'Атрибуты defer и async у тега script',
-    answer: 'assets/content/rus/answers/23-Atributy-defer-i-async-u-tega-script.md',
+    name: 'Defer and async attributes on the script tag',
+    answer: 'eng/answers/23-Defer-and-async-attributes-on-the-script-tag.md',
     tags: [
       'HTML',
       'markup',
@@ -577,15 +577,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Без атрибутов',
+        name: 'No attributes',
         isChecked: false
       }
     ]
   },
   {
     id: 24,
-    name: 'SVG. Анимации svg',
-    answer: 'assets/content/rus/answers/24-SVG-Animatsii-svg.md',
+    name: 'SVG. SVG animations',
+    answer: 'eng/answers/24-SVG-Animations.md',
     tags: [
       'SVG',
       'markup',
@@ -594,19 +594,19 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Что такое SVG?',
+        name: 'What is SVG?',
         isChecked: false
       },
       {
-        name: 'Ключевые особенности SVG',
+        name: 'Key features of SVG',
         isChecked: false
       }
     ]
   },
   {
     id: 25,
-    name: 'Canvas. Что это и зачем нужен?',
-    answer: 'assets/content/rus/answers/25-Canvas-Chto-eto-i-zachem-nuzhen.md',
+    name: 'Canvas. What is it and why is it needed?',
+    answer: 'eng/answers/25-Canvas-What-is-it-and-why-is-it-needed.md',
     tags: [
       'HTML',
       'markup',
@@ -615,19 +615,19 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Canvas - что это?',
+        name: 'Canvas - what is it?',
         isChecked: false
       },
       {
-        name: 'Зачем нужен Canvas?',
+        name: 'Why is Canvas needed?',
         isChecked: false
       },
       {
-        name: 'Основные сферы применения',
+        name: 'Main areas of application',
         isChecked: false
       },
       {
-        name: 'Преимущества Canvas',
+        name: 'Advantages of Canvas',
         isChecked: false
       }
     ]
@@ -635,7 +635,7 @@ export const questions = [
   {
     id: 26,
     name: 'Custom properties',
-    answer: 'assets/content/rus/answers/26-Custom-properties.md',
+    answer: 'eng/answers/26-Custom-properties.md',
     tags: [
       'markup',
       'CSS'
@@ -643,15 +643,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Custom properties - что это?',
+        name: 'Custom properties - what is it?',
         isChecked: false
       },
       {
-        name: 'Поддержка в браузерах и когда появились',
+        name: 'Browser support and when they appeared',
         isChecked: false
       },
       {
-        name: 'Главные отличия от переменных SASS/LESS',
+        name: 'Main differences from SASS/LESS variables',
         isChecked: false
       }
     ]
@@ -659,7 +659,7 @@ export const questions = [
   {
     id: 27,
     name: 'Pixel-perfect',
-    answer: 'assets/content/rus/answers/27-Pixel-perfect.md',
+    answer: 'eng/answers/27-Pixel-perfect.md',
     tags: [
       'HTML',
       'markup',
@@ -668,15 +668,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Pixel-perfect - что это?',
+        name: 'Pixel-perfect - what is it?',
         isChecked: false
       }
     ]
   },
   {
     id: 28,
-    name: 'Пре- и пост- процессоры CSS. Опыт работы с ними',
-    answer: 'assets/content/rus/answers/28-Pre--i-post--protsessory-CSS-Opyt-raboty-s-nimi.md',
+    name: 'Pre- and post- CSS processors. Experience with them',
+    answer: 'eng/answers/28-Pre--i-post--protsessory-CSS-Opyt-raboty-s-nimi.md',
     tags: [
       'markup',
       'CSS'
@@ -684,19 +684,19 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Пре- и пост- процессоры CSS - что это?',
+        name: 'Pre- and post- CSS processors - what is it?',
         isChecked: false
       },
       {
-        name: 'Актуальность в 2025-2026 годах',
+        name: 'Relevance in 2025-2026',
         isChecked: false
       }
     ]
   },
   {
     id: 29,
-    name: 'Методология БЭМ. Основные позиции, какие проблемы решает?',
-    answer: 'assets/content/rus/answers/29-Metodologiya-BEM-Osnovnye-pozitsii-kakie-problemy-reshaet.md',
+    name: 'BEM Methodology. Main positions, what problems does it solve?',
+    answer: 'eng/answers/29-BEM-Methodology-Main-positions-what-problems-does-it-solve.md',
     tags: [
       'HTML',
       'markup',
@@ -705,23 +705,23 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Методология БЭМ - что это?',
+        name: 'BEM Methodology - what is it?',
         isChecked: false
       },
       {
-        name: 'Основные позиции методологии БЭМ',
+        name: 'Main positions of BEM methodology',
         isChecked: false
       },
       {
-        name: 'Какие проблемы решает БЭМ',
+        name: 'What problems does BEM solve?',
         isChecked: false
       }
     ]
   },
   {
     id: 30,
-    name: 'HTML-шаблонизаторы/препроцессоры (handlebars, mustache, pug etc)',
-    answer: 'assets/content/rus/answers/30-HTML-shablonizatorypreprotsessory-handlebars-mustache-pug-etc.md',
+    name: 'HTML template engines/preprocessors (handlebars, mustache, pug etc)',
+    answer: 'eng/answers/30-HTML-template-engines-preprocessors-handlebars-mustache-pug-etc.md',
     tags: [
       'HTML',
       'markup'
@@ -729,27 +729,27 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'HTML-шаблонизаторы/препроцессоры - что это?',
+        name: 'HTML template engines/preprocessors - what is it?',
         isChecked: false
       },
       {
-        name: 'Примеры популярных инструментов',
+        name: 'Examples of popular tools',
         isChecked: false
       },
       {
-        name: 'В чем разница между шаблонизатором и препроцессором?',
+        name: 'What is the difference between a template engine and a preprocessor?',
         isChecked: false
       },
       {
-        name: 'Актуальны ли они сегодня?',
+        name: 'Are they relevant today?',
         isChecked: false
       }
     ]
   },
   {
     id: 31,
-    name: 'CORS. Что это такое и с чем его едят?',
-    answer: 'assets/content/rus/answers/31-CORS-Chto-eto-takoe-i-s-chem-ego-edyat.md',
+    name: 'CORS. What is it and how does it work?',
+    answer: 'eng/answers/31-CORS-What-is-it-and-how-does-it-work.md',
     tags: [
       'browser',
       'security'
@@ -757,15 +757,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'CORS - что это?',
+        name: 'CORS - what is it?',
         isChecked: false
       }
     ]
   },
   {
     id: 32,
-    name: 'Типы данных в JavaScript. typeof и его особенности',
-    answer: 'assets/content/rus/answers/32-Tipy-dannyh-zadachi-stroka-+-chislo.md',
+    name: 'Data types in JavaScript. typeof and its features',
+    answer: 'eng/answers/32-Data-types-in-JavaScript-typeof-and-its-features.md',
     tags: [
       'JavaScript',
       'Data types'
@@ -773,23 +773,23 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: '7 примитивных типов данных',
+        name: '7 primitive data types',
         isChecked: false
       },
       {
-        name: '1 непримитивный тип данных',
+        name: '1 non-primitive data type',
         isChecked: false
       },
       {
-        name: 'typeof и его особенности',
+        name: 'typeof and its features',
         isChecked: false
       }
     ]
   },
   {
     id: 33,
-    name: 'Преобразование (приведение) типов в JavaScript',
-    answer: 'assets/content/rus/answers/33-Preobrazovanie-privedenie-tipov-v-JavaScript.md',
+    name: 'Type conversion in JavaScript',
+    answer: 'eng/answers/33-Type-conversion-in-JavaScript.md',
     tags: [
       'JavaScript',
       'Data types'
@@ -797,34 +797,34 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Три основных типа преобразования',
+        name: 'Three main types of conversion',
         isChecked: false
       }
     ]
   },
   {
     id: 34,
-    name: 'Let, const и var. Различия + Hoisting ',
-    answer: 'assets/content/rus/answers/34-Let-const-i-var-Razlichiya-+-Hoisting-.md',
+    name: 'Let, const and var. Differences + Hoisting',
+    answer: 'eng/answers/34-Let-const-and-var-Differences-+-Hoisting.md',
     tags: [
       'JavaScript',
       'JS mechanics'
     ],
     structure: [
       {
-        name: 'Let, const и var - различия',
+        name: 'Let, const and var - differences',
         isChecked: false
       },
       {
-        name: 'Hoisting (всплытие или поднятие)',
+        name: 'Hoisting and its features for let, const and var',
         isChecked: false
       }
     ]
   },
   {
     id: 35,
-    name: 'Функции: function declaration, function expression',
-    answer: 'assets/content/rus/answers/35-Funktsii-function-declaration-function-expression.md',
+    name: 'Functions: function declaration, function expression',
+    answer: 'eng/answers/35-Functions-function-declaration-function-expression.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -833,15 +833,19 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Function declaration',
+        isChecked: false
+      },
+      {
+        name: 'Function expression',
         isChecked: false
       }
     ]
   },
   {
     id: 36,
-    name: 'Структуры данных (массив, объект, set, map)',
-    answer: 'assets/content/rus/answers/36-Struktury-dannyh-massiv-obekt-set-map.md',
+    name: 'Data structures (array, object, set, map)',
+    answer: 'eng/answers/36-Data-structures-array-object-set-map.md',
     tags: [
       'JavaScript',
       'Data types',
@@ -850,31 +854,31 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Массив (Array)',
+        name: 'Array',
         isChecked: false
       },
       {
-        name: 'Объект (Object)',
+        name: 'Object',
         isChecked: false
       },
       {
-        name: 'Map (Карта)',
+        name: 'Map',
         isChecked: false
       },
       {
-        name: 'Set (Множество)',
+        name: 'Set',
         isChecked: false
       },
       {
-        name: 'WeakMap и WeakSet',
+        name: 'WeakMap and WeakSet',
         isChecked: false
       }
     ]
   },
   {
     id: 37,
-    name: 'Основные методы массивов, которые вы используете',
-    answer: 'assets/content/rus/answers/37-Osnovnye-metody-massivov-kotorye-vy-ispolzuete.md',
+    name: 'Array methods you use',
+    answer: 'eng/answers/37-Array-methods-you-use.md',
     tags: [
       'JavaScript',
       'Data types',
@@ -885,7 +889,7 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'pop/push и shift/unshift, их различия',
+        name: 'pop/push and shift/unshift, their differences',
         isChecked: false
       },
       {
@@ -905,11 +909,11 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'indexOf/lastIndexOf и includes, их различия',
+        name: 'indexOf/lastIndexOf and includes, their differences',
         isChecked: false
       },
       {
-        name: 'find и findIndex, их различия',
+        name: 'find and findIndex, their differences',
         isChecked: false
       },
       {
@@ -948,8 +952,8 @@ export const questions = [
   },
   {
     id: 38,
-    name: 'Итераторы и генераторы',
-    answer: 'assets/content/rus/answers/38-Iteratory-i-generatory.md',
+    name: 'Iterators and Generators',
+    answer: 'eng/answers/38-Iterators-and-Generators.md',
     tags: [
       'JavaScript',
       'Iterable',
@@ -959,23 +963,23 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Итераторы: Механика под капотом',
+        name: 'Iterators: Mechanics under the hood',
         isChecked: false
       },
       {
-        name: 'Генераторы',
+        name: 'Generators',
         isChecked: false
       },
       {
-        name: 'Зачем это нужно на практике?',
+        name: 'Why is this useful in practice?',
         isChecked: false
       }
     ]
   },
   {
     id: 39,
-    name: 'Область видимости (Scope, Lexical Environment)',
-    answer: 'assets/content/rus/answers/39-Oblast-vidimosti-Scope-Lexical-Environment.md',
+    name: 'Scope, Lexical Environment',
+    answer: 'eng/answers/39-Scope-Lexical-Environment.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -987,19 +991,19 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Виды областей видимости: глобальная, функциональная, блочная',
+        name: 'Types of scopes: global, function, block',
         isChecked: false
       },
       {
-        name: 'Жизненный цикл переменной',
+        name: 'Variable lifecycle',
         isChecked: false
       }
     ]
   },
   {
     id: 40,
-    name: 'Замыкание (Closure)',
-    answer: 'assets/content/rus/answers/40-Zamykanie-Closure.md',
+    name: 'Closure',
+    answer: 'eng/answers/40-Closure.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1007,7 +1011,7 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Замыкание - что это и для чего нужно',
+        name: 'Closure - what it is and why it is needed',
         isChecked: false
       },
       {
@@ -1015,15 +1019,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Использование замыканий для создания приватных переменных',
+        name: 'Using closures to create private variables',
         isChecked: false
       }
     ]
   },
   {
     id: 41,
-    name: 'Сборщик мусора (Garbage Collector). Что это такое и для чего нужно?',
-    answer: 'assets/content/rus/answers/41-Sborshchik-musora-Garbage-Collector-Chto-eto-takoe-i-dlya-chego-nuzhno.md',
+    name: 'Garbage Collector. What it is and why it is needed?',
+    answer: 'eng/answers/41-Garbage-Collector-What-it-is-and-why-it-is-needed.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1037,8 +1041,8 @@ export const questions = [
   },
   {
     id: 42,
-    name: 'Рекурсия. Что это такое и для чего нужно?',
-    answer: 'assets/content/rus/answers/42-Rekursiya-Chto-eto-takoe-i-dlya-chego-nuzhno.md',
+    name: 'Recursion. What it is and why it is needed?',
+    answer: 'eng/answers/42-Recursion-What-it-is-and-why-it-is-needed.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1046,19 +1050,19 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Рекурсия - что это и для чего нужно',
+        name: 'Recursion - what it is and why it is needed',
         isChecked: false
       },
       {
-        name: 'Плюсы и минусы рекурсии',
+        name: 'Pros and cons of recursion',
         isChecked: false
       }
     ]
   },
   {
     id: 43,
-    name: 'Ключевое слово this. Контекст',
-    answer: 'assets/content/rus/answers/43-Klyuchevoe-slovo-this-Kontekst.md',
+    name: 'The "this" keyword. Context',
+    answer: 'eng/answers/43-The-this-keyword-Context.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1067,23 +1071,23 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Глобальный контекст и обычный вызов функции',
+        name: 'Global context and regular function call',
         isChecked: false
       },
       {
-        name: 'Вызов в качестве метода объекта',
+        name: 'Calling as an object method',
         isChecked: false
       },
       {
-        name: 'Стрелочные функции (Arrow Functions)',
+        name: 'Arrow functions',
         isChecked: false
       }
     ]
   },
   {
     id: 44,
-    name: 'Привязка контекста (явная, неявная). Bind, call, apply и их различия',
-    answer: 'assets/content/rus/answers/44-Privyazka-konteksta-yavnaya-neyavnaya-Bind-call-apply-i-ih-razlichiya.md',
+    name: 'Context binding (explicit, implicit). Bind, call, apply and their differences',
+    answer: 'eng/answers/44-Context-binding-explicit-implicit-Bind-call-apply-and-their-differences.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1092,23 +1096,23 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Неявная привязка (Implicit Binding)',
+        name: 'Implicit Binding',
         isChecked: false
       },
       {
-        name: 'Явная привязка (Explicit Binding)',
+        name: 'Explicit Binding',
         isChecked: false
       },
       {
-        name: 'Методы call, apply и bind и их различия',
+        name: 'Methods call, apply and bind and their differences',
         isChecked: false
       }
     ]
   },
   {
     id: 45,
-    name: 'Каррирование (Currying)',
-    answer: 'assets/content/rus/answers/45-Karrirovanie-Currying.md',
+    name: 'Currying',
+    answer: 'eng/answers/45-Currying.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1118,23 +1122,23 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Каррирование - что это и для чего нужно',
+        name: 'Currying - what it is and why it is needed',
         isChecked: false
       },
       {
-        name: 'Реализация каррирования',
+        name: 'Implementation of currying',
         isChecked: false
       },
       {
-        name: 'Зачем это нужно на практике?',
+        name: 'Why is this useful in practice?',
         isChecked: false
       }
     ]
   },
   {
     id: 46,
-    name: 'Частичное применение (Partial Application)',
-    answer: 'assets/content/rus/answers/46-Chastichnoe-primenenie-Partial-Application.md',
+    name: 'Partial Application',
+    answer: 'eng/answers/46-Partial-Application.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1144,19 +1148,19 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Частичное применение (основано на каррировании)',
+        name: 'Partial Application (based on currying)',
         isChecked: false
       },
       {
-        name: 'Реализация частичного применения',
+        name: 'Implementation of partial application',
         isChecked: false
       }
     ]
   },
   {
     id: 47,
-    name: 'Псевдомассив arguments (почему он псевдомассив?)',
-    answer: 'assets/content/rus/answers/47-Psevdomassiv-arguments-pochemu-on-psevdomassiv.md',
+    name: 'Arguments object (why is it called a pseudo-array?)',
+    answer: 'eng/answers/47-Arguments-object-why-is-it-called-a-pseudo-array.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1165,11 +1169,11 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Псевдомассив arguments',
+        name: 'Arguments object',
         isChecked: false
       },
       {
-        name: 'Почему он псевдомассив?',
+        name: 'Why is it called a pseudo-array?',
         isChecked: false
       },
       {
@@ -1177,15 +1181,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Современные альтернативы',
+        name: 'Modern alternatives',
         isChecked: false
       }
     ]
   },
   {
     id: 48,
-    name: 'Директива "use strict"',
-    answer: 'assets/content/rus/answers/48-Direktiva-use-strict.md',
+    name: '"use strict" directive',
+    answer: 'eng/answers/48-Use-strict-directive.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1193,23 +1197,23 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Директива "use strict" - что это и для чего нужно',
+        name: '"use strict" directive - what it is and why it is needed',
         isChecked: false
       },
       {
-        name: 'Главные изменения при включении строгого режима',
+        name: 'Main changes when strict mode is enabled',
         isChecked: false
       },
       {
-        name: 'Как включить строгий режим?',
+        name: 'How to enable strict mode?',
         isChecked: false
       }
     ]
   },
   {
     id: 49,
-    name: 'Преобразование объектов: toString и valueOf',
-    answer: 'assets/content/rus/answers/49-Preobrazovanie-obektov-toString-i-valueOf.md',
+    name: 'Object conversion: toString and valueOf',
+    answer: 'eng/answers/49-Object-conversion-toString-and-valueOf.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1217,19 +1221,19 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Преобразование объектов: toString и valueOf',
+        name: 'Object conversion: toString and valueOf',
         isChecked: false
       },
       {
-        name: 'Как движок решает, какой метод вызвать первым',
+        name: 'How the engine decides which method to call first',
         isChecked: false
       }
     ]
   },
   {
     id: 50,
-    name: 'Цикл событий (Event loop), microtasks, event queue',
-    answer: 'assets/content/rus/answers/50-Tsikl-sobytij-Event-loop-microtasks-event-queue.md',
+    name: 'Event loop, microtasks, event queue',
+    answer: 'eng/answers/50-Event-loop-microtasks-event-queue.md',
     tags: [
       'JavaScript',
       'Browser mechanics'
@@ -1237,19 +1241,19 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Зачем нужен Event Loop',
+        name: 'Why do we need the Event Loop?',
         isChecked: false
       },
       {
-        name: 'Основные сущности: Call Stack, Heap, Web APIs, Microtasks и Macrotasks',
+        name: 'Main entities: Call Stack, Heap, Web APIs, Microtasks and Macrotasks',
         isChecked: false
       }
     ]
   },
   {
     id: 51,
-    name: 'Наследование в JavaScript',
-    answer: 'assets/content/rus/answers/51-Nasledovanie-v-JavaScript.md',
+    name: 'Inheritance in JavaScript',
+    answer: 'eng/answers/51-Inheritance-in-JavaScript.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1257,19 +1261,19 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Наследование в JavaScript',
+        name: 'Inheritance in JavaScript',
         isChecked: false
       },
       {
-        name: 'Прототипное наследование и цепочка прототипов',
+        name: 'Prototype inheritance and prototype chain',
         isChecked: false
       }
     ]
   },
   {
     id: 52,
-    name: 'Ссылка __proto__. Что это и с чем его едят?',
-    answer: 'assets/content/rus/answers/52-Ssylka-__proto__-Chto-eto-i-s-chem-ego-edyat.md',
+    name: 'Reference __proto__. What is it and how to use it?',
+    answer: 'eng/answers/52-Reference-__proto__-What-is-it-and-how-to-use-it.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1277,15 +1281,15 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: '__proto__ - что это?',
+        name: '__proto__ - what is it?',
         isChecked: false
       }
     ]
   },
   {
     id: 53,
-    name: 'Свойство F.prototype и создание объектов через new',
-    answer: 'assets/content/rus/answers/53-Svojstvo-Fprototype-i-sozdanie-obektov-cherez-new.md',
+    name: 'F.prototype property and creating objects with new',
+    answer: 'eng/answers/53-Fprototype-property-and-creating-objects-with-new.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1300,8 +1304,8 @@ export const questions = [
   },
   {
     id: 54,
-    name: 'Promises. Зачем нужны? Какую проблему решали?',
-    answer: 'assets/content/rus/answers/54-Promises-Zachem-nuzhny-Kakuyu-problemu-reshali.md',
+    name: 'Promises. Why are they needed? What problem did they solve?',
+    answer: 'eng/answers/54-Promises-Why-are-they-needed-What-problem-did-they-solve.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1311,15 +1315,15 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Что такое Promise, в какой версии ES появился',
+        name: 'What is a Promise, in which version of ES did it appear',
         isChecked: false
       },
       {
-        name: 'Какую проблему решали промисы',
+        name: 'What problem did Promises solve?',
         isChecked: false
       },
       {
-        name: 'Неизменность результата после завершения промиса',
+        name: 'Immutability of the result after the Promise is settled',
         isChecked: false
       },
       {
@@ -1327,15 +1331,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Эволюция промисов и async/await',
+        name: 'Evolution of Promises and async/await',
         isChecked: false
       }
     ]
   },
   {
     id: 55,
-    name: 'Promise chaining. Можно ли вызывать promise.then().finally().then() или promise.catch().then()? Что получим?',
-    answer: 'assets/content/rus/answers/55-Promise-chaining-Mozhno-li-vyzyvat-promisethenfinallythen-ili-promisecatchthen-Chto-poluchim.md',
+    name: 'Promise chaining. Can we call promise.then().finally().then() or promise.catch().then()? What will we get?',
+    answer: 'eng/answers/55-Promise-chaining-Can-we-call-promisethenfinallythen-or-promisecatchthen-What-will-we-get.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1349,34 +1353,34 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Можно продолжить цепочку вызовов после ошибки',
+        name: 'We can continue the chain after an error',
         isChecked: false
       },
       {
-        name: 'Можно строить такие цепочки и с finally',
+        name: 'We can also build such chains with finally',
         isChecked: false
       }
     ]
   },
   {
     id: 56,
-    name: 'Try - Catch. Что это и для чего нужно?',
-    answer: 'assets/content/rus/answers/56-Try---Catch-Chto-eto-i-dlya-chego-nuzhno.md',
+    name: 'Try - Catch. What is it and why is it needed?',
+    answer: 'eng/answers/56-Try---Catch-What-is-it-and-why-is-it-needed.md',
     tags: [
       'JavaScript'
     ],
     category: 'JavaScript',
     structure: [
       {
-        name: 'Try - Catch - для чего нужно?',
+        name: 'Try - Catch - what is it for?',
         isChecked: false
       }
     ]
   },
   {
     id: 57,
-    name: 'Что нового появилось в языке в ES6?',
-    answer: 'assets/content/rus/answers/57-Chto-novogo-poyavilos-v-yazyke-v-ES6.md',
+    name: 'What is new in the language in ES6?',
+    answer: 'eng/answers/57-What-is-new-in-the-language-in-ES6.md',
     tags: [
       'JavaScript',
       'ES6'
@@ -1384,15 +1388,15 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 58,
-    name: 'Что нового появилось в языке ПОСЛЕ ES6?',
-    answer: 'assets/content/rus/answers/58-Chto-novogo-poyavilos-v-yazyke-POSLE-ES6.md',
+    name: 'What is new in the language after ES6?',
+    answer: 'eng/answers/58-What-is-new-in-the-language-after-ES6.md',
     tags: [
       'JavaScript',
       'ES6',
@@ -1401,15 +1405,15 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 59,
-    name: 'Async await. Какую проблему решают?',
-    answer: 'assets/content/rus/answers/59-Async-await-Kakuyu-problemu-reshayut.md',
+    name: 'Async await. What problem do they solve?',
+    answer: 'eng/answers/59-Async-await-What-problem-do-they-solve.md',
     tags: [
       'JavaScript',
       'ES6',
@@ -1419,11 +1423,11 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Эволюция асинхронного JS в ES8',
+        name: 'Evolution of asynchronous JS in ES8',
         isChecked: false
       },
       {
-        name: 'Зачем нужен async/await? Какую проблему решает?',
+        name: 'Why do we need async/await? What problem does it solve?',
         isChecked: false
       },
       {
@@ -1431,15 +1435,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'node.js и поддержка async/await',
+        name: 'node.js and support for async/await',
         isChecked: false
       }
     ]
   },
   {
     id: 60,
-    name: 'Методы управления группой промисов',
-    answer: 'assets/content/rus/answers/60-Metody-upravleniya-gruppoj-promisov.md',
+    name: 'Methods for managing a group of promises',
+    answer: 'eng/answers/60-Methods-for-managing-a-group-of-promises.md',
     tags: [
       'JavaScript',
       'ES6',
@@ -1449,31 +1453,31 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Какую проблему решают',
+        name: 'What problem do they solve?',
         isChecked: false
       },
       {
-        name: 'Promise.all() — «Все или ничего»',
+        name: 'Promise.all() — «All or nothing»',
         isChecked: false
       },
       {
-        name: 'Promise.allSettled() — «Дождаться всех, несмотря ни на что»',
+        name: 'Promise.allSettled() — «Wait for all, no matter what»',
         isChecked: false
       },
       {
-        name: 'Promise.race() — «Кто быстрее»',
+        name: 'Promise.race() — «Who is faster»',
         isChecked: false
       },
       {
-        name: 'Promise.any() — «Хоть кто-нибудь успешный»',
+        name: 'Promise.any() — «At least one successful»',
         isChecked: false
       }
     ]
   },
   {
     id: 61,
-    name: 'DOM - что это и зачем? DOM события. Всплытие, погружение. Делегирование',
-    answer: 'assets/content/rus/answers/61-DOM---chto-eto-i-zachem-DOM-sobytiya-Vsplytie-pogruzhenie-Delegirovanie.md',
+    name: 'DOM - what is it and why? DOM events. Bubbling, capturing. Delegation',
+    answer: 'eng/answers/61-DOM---what-is-it-and-why-DOM-events-Bubbling-capturing-Delegation.md',
     tags: [
       'markup',
       'markup',
@@ -1483,15 +1487,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 62,
-    name: 'LocalStorage VS SessionStorage. Различия, принцип работы',
-    answer: 'assets/content/rus/answers/62-LocalStorage-VS-SessionStorage-Razlichiya-printsip-raboty.md',
+    name: 'LocalStorage VS SessionStorage. Differences, working principle',
+    answer: 'eng/answers/62-LocalStorage-VS-SessionStorage-Differences-working-principle.md',
     tags: [
       'browser',
       'LocalStorage',
@@ -1512,7 +1516,7 @@ export const questions = [
   {
     id: 63,
     name: 'Code style, linters, prettier etc.',
-    answer: 'assets/content/rus/answers/63-Code-style-Linters-Prittier.md',
+    answer: 'eng/answers/63-Code-style-Linters-Prettier.md',
     tags: [
       'programming',
       'codestyle',
@@ -1521,15 +1525,15 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 64,
-    name: 'Мутабильность/иммутабильность (при работе с массивами etc)',
-    answer: 'assets/content/rus/answers/64-Mutabilnostimmutabilnost-pri-rabot-s-massivami-etc.md',
+    name: 'Mutability/Immutability (when working with arrays etc)',
+    answer: 'eng/answers/64-Mutability-Immutability-when-working-with-arrays-etc.md',
     tags: [
       'programming',
       'immutable'
@@ -1537,15 +1541,15 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 65,
-    name: 'Реактивное программирование. RxJs и основные методы',
-    answer: 'assets/content/rus/answers/65-Reaktivnoe-programmirovanie-RxJs-i-osnovnye-metody.md',
+    name: 'Reactive programming. RxJs and main methods',
+    answer: 'eng/answers/65-Reactive-programming-RxJs-and-main-methods.md',
     tags: [
       'TypeScript',
       'RxJs'
@@ -1553,15 +1557,15 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 66,
-    name: 'Что такое объект Observable в RxJs?',
-    answer: 'assets/content/rus/answers/66-Chto-takoe-obekt-Observable-v-RxJs.md',
+    name: 'What is an Observable object in RxJs?',
+    answer: 'eng/answers/66-What-is-an-Observable-object-in-RxJs.md',
     tags: [
       'TypeScript',
       'Observables',
@@ -1571,15 +1575,15 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Observable - что это?',
+        name: 'Observable - what is it?',
         isChecked: false
       }
     ]
   },
   {
     id: 67,
-    name: 'Что такое Subject? Какие бывают виды?',
-    answer: 'assets/content/rus/answers/67-Chto-takoe-Subject-Kakie-byvayut-vidy.md',
+    name: 'What is a Subject? What types are there?',
+    answer: 'eng/answers/67-What-is-a-Subject-What-types-are-there.md',
     tags: [
       'TypeScript',
       'Observables',
@@ -1589,15 +1593,15 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Subject - что это?',
+        name: 'Subject - what is it?',
         isChecked: false
       }
     ]
   },
   {
     id: 68,
-    name: 'Observables VS Subject - различия',
-    answer: 'assets/content/rus/answers/68-Observables-VS-Subject---razlichiya.md',
+    name: 'Observables VS Subject - differences',
+    answer: 'eng/answers/68-Observables-VS-Subject---differences.md',
     tags: [
       'TypeScript',
       'Observables',
@@ -1607,27 +1611,27 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Специфика Subject',
+        name: 'Subject specifics',
         isChecked: false
       },
       {
-        name: 'Различия поведения и виды Subject',
+        name: 'Behavior differences and types of Subject',
         isChecked: false
       },
       {
-        name: 'Специфика Observable',
+        name: 'Observable specifics',
         isChecked: false
       },
       {
-        name: 'Observable - только на получение данных, Subject - ещё и для распространения',
+        name: 'Observable - only for data retrieval, Subject - also for propagation',
         isChecked: false
       }
     ]
   },
   {
     id: 69,
-    name: 'Zone.js. Что это и для чего нужно?',
-    answer: 'assets/content/rus/answers/69-Zonejs-Chto-eto-i-dlya-chego-nuzhno.md',
+    name: 'Zone.js. What is it and why is it needed?',
+    answer: 'eng/answers/69-Zonejs-What-is-it-and-why-is-it-needed.md',
     tags: [
       'Angular',
       'Change Detection',
@@ -1636,15 +1640,15 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 70,
-    name: 'Какие Utility Types (Утилиты типов) ты используешь на практике?',
-    answer: 'assets/content/rus/answers/70-Kakie-Utility-Types-Utility-tipov-ty-ispolzuesh-na-praktike.md',
+    name: 'Which Utility Types (Утилиты типов) do you use in practice?',
+    answer: 'eng/answers/70-Which-Utility-Types-Utility-tipov-do-you-use-in-practice.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1652,31 +1656,31 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Partial&lt;Type> (Частичный)',
+        name: 'Partial&lt;Type>',
         isChecked: false
       },
       {
-        name: 'Required&lt;Type> (Обязательный)',
+        name: 'Required&lt;Type>',
         isChecked: false
       },
       {
-        name: 'Pick&lt;Type, Keys> (Выбрать)',
+        name: 'Pick&lt;Type, Keys>',
         isChecked: false
       },
       {
-        name: 'Omit&lt;Type, Keys> (Исключить)',
+        name: 'Omit&lt;Type, Keys>',
         isChecked: false
       },
       {
-        name: 'Record&lt;Keys, Type> (Запись / Словарь)',
+        name: 'Record&lt;Keys, Type>',
         isChecked: false
       }
     ]
   },
   {
     id: 71,
-    name: 'Что такое Type Guards и Type Assertions (Сужение типов)?',
-    answer: 'assets/content/rus/answers/71-Chto-takoe-Type-Guards-i-Type-Assertions-Suzhenie-tipov.md',
+    name: 'What are Type Guards and Type Assertions?',
+    answer: 'eng/answers/71-What-are-Type-Guards-and-Type-Assertions.md',
     tags: [
       'TypeScript',
       'TS mechanics',
@@ -1685,19 +1689,19 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Type Guards (Охранники типов)',
+        name: 'Type Guards',
         isChecked: false
       },
       {
-        name: 'Type Assertions (Утверждения типов)',
+        name: 'Type Assertions',
         isChecked: false
       }
     ]
   },
   {
     id: 72,
-    name: 'Что такое Enums? Их применение',
-    answer: 'assets/content/rus/answers/72-Chto-takoe-Enums-Ih-primenenie.md',
+    name: 'What are Enums? Their usage',
+    answer: 'eng/answers/72-What-are-Enums-Their-usage.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1705,15 +1709,15 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Enums (Перечисления)',
+        name: 'Enums',
         isChecked: false
       }
     ]
   },
   {
     id: 73,
-    name: 'Class, Interface, Type. Различия и применение',
-    answer: 'assets/content/rus/answers/73-Class-Interface-Type-Razlichiya-i-primenenie.md',
+    name: 'Class, Interface, Type. Differences and usage',
+    answer: 'eng/answers/73-Class-Interface-Type-Differences-and-usage.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1721,23 +1725,23 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Class (Реализация)',
+        name: 'Class (Implementation)',
         isChecked: false
       },
       {
-        name: 'Interface (Контракт)',
+        name: 'Interface (Contract)',
         isChecked: false
       },
       {
-        name: 'Type (Псевдоним)',
+        name: 'Type (Alias)',
         isChecked: false
       }
     ]
   },
   {
     id: 74,
-    name: 'Что такое Generics? Их применение',
-    answer: 'assets/content/rus/answers/74-Chto-takoe-Generics-Ih-primenenie.md',
+    name: 'What are Generics? Their usage',
+    answer: 'eng/answers/74-What-are-Generics-Their-usage.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1745,15 +1749,15 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Generics (Обобщения)',
+        name: 'Generics',
         isChecked: false
       }
     ]
   },
   {
     id: 75,
-    name: 'Разница между any, unknown и never.',
-    answer: 'assets/content/rus/answers/75-Raznitsa-mezhdu-any-unknown-i-never.md',
+    name: 'Difference between any, unknown, and never.',
+    answer: 'eng/answers/75-Difference-between-any-unknown-and-never.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1776,8 +1780,8 @@ export const questions = [
   },
   {
     id: 76,
-    name: 'Когда использовать .asObservable() в RxJs?',
-    answer: 'assets/content/rus/answers/76-Kogda-ispolzovat-asObservable-v-RxJs.md',
+    name: 'When to use .asObservable() in RxJs?',
+    answer: 'eng/answers/76-When-to-use-asObservable-in-RxJs.md',
     tags: [
       'TypeScript',
       'Angular',
@@ -1786,31 +1790,31 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'asObservable() - что это и для чего нужно?',
+        name: 'asObservable() - what it is and why it is needed?',
         isChecked: false
       }
     ]
   },
   {
     id: 77,
-    name: 'Основные принципы ООП',
-    answer: 'assets/content/rus/answers/77-Osnovnye-printsipy-OOP.md',
+    name: 'Main principles of OOP. What is it and why is it needed?',
+    answer: 'eng/answers/77-Main-principles-of-OOP-What-is-it-and-why-is-it-needed.md',
     tags: [
       'programming',
-      'ООП'
+      'OOP'
     ],
     category: 'programming',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 78,
-    name: 'Паттерны проектирования',
-    answer: 'assets/content/rus/answers/78-Patterny-proektirovaniya.md',
+    name: 'Design Patterns',
+    answer: 'eng/answers/78-Design-Patterns.md',
     tags: [
       'Patterns',
       'best-practice'
@@ -1818,15 +1822,15 @@ export const questions = [
     category: 'programming',
     structure: [
       {
-        name: 'Паттерны проектирования - что это и для чего нужны?',
+        name: 'Design Patterns - what they are and why they are needed?',
         isChecked: false
       }
     ]
   },
   {
     id: 79,
-    name: 'Декораторы функций. Что это такое и для чего?',
-    answer: 'assets/content/rus/answers/79-Dekoratory-funktsij-Chto-eto-takoe-i-dlya-chego.md',
+    name: 'Function Decorators. What they are and why they are needed?',
+    answer: 'eng/answers/79-Function-Decorators-What-they-are-and-why-they-are-needed.md',
     tags: [
       'JavaScript',
       'Patterns',
@@ -1835,52 +1839,52 @@ export const questions = [
     category: 'programming',
     structure: [
       {
-        name: 'Декоратор',
+        name: 'Decorator',
         isChecked: false
       }
     ]
   },
   {
     id: 80,
-    name: 'Принципы SOLID. Что это такое и зачем?',
-    answer: 'assets/content/rus/answers/80-Printsipy-SOLID-Chto-eto-takoe-i-zachem.md',
+    name: 'SOLID Principles. What they are and why they are needed?',
+    answer: 'eng/answers/80-SOLID-Principles-What-they-are-and-why-they-are-needed.md',
     tags: [
       'programming',
       'best-practice',
-      'ООП'
+      'OOP'
     ],
     category: 'programming',
     structure: [
       {
-        name: 'Принципы SOLID - это',
+        name: 'SOLID Principles - what they are and why they are needed',
         isChecked: false
       },
       {
-        name: 'Single Responsibility Principle (Принцип единой ответственности)',
+        name: 'Single Responsibility Principle',
         isChecked: false
       },
       {
-        name: 'Open-Closed Principle (Принцип открытости/закрытости)',
+        name: 'Open-Closed Principle',
         isChecked: false
       },
       {
-        name: 'Liskov Substitution Principle (Принцип подстановки Барбары Лисков)',
+        name: 'Liskov Substitution Principle',
         isChecked: false
       },
       {
-        name: 'Interface Segregation Principle (Принцип разделения интерфейса)',
+        name: 'Interface Segregation Principle',
         isChecked: false
       },
       {
-        name: 'Dependency Inversion Principle (Принцип инверсии зависимостей)',
+        name: 'Dependency Inversion Principle',
         isChecked: false
       }
     ]
   },
   {
     id: 81,
-    name: 'Протокол HTTP. Что это такое и с чем его едят?',
-    answer: 'assets/content/rus/answers/81-Protokol-HTTP-Chto-eto-takoe-i-s-chem-ego-edyat.md',
+    name: 'HTTP Protocol. What it is and what it is used for?',
+    answer: 'eng/answers/81-HTTP-Protocol-What-it-is-and-what-it-is-used-for.md',
     tags: [
       'protocol',
       'internet'
@@ -1888,15 +1892,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 82,
-    name: 'Специальные селекторы Angular. Псевдоклассы :host, :host-context и псевдоэлемент ::ng-deep',
-    answer: 'assets/content/rus/answers/82-Spetsialnye-selektory-Angular-Psevdoklassy-host-host-context-i-psevdoelement-ng-deep.md',
+    name: 'Special Angular selectors. Pseudo-classes :host, :host-context and pseudo-element ::ng-deep',
+    answer: 'eng/answers/82-Special-Angular-selectors-Pseudo-classes-host-host-context-and-pseudo-element-ng-deep.md',
     tags: [
       'Angular',
       'html',
@@ -1905,17 +1909,17 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'HTML tags',
         isChecked: false
       }
     ]
   },
   {
     id: 83,
-    name: 'SQL. Основные команды',
-    answer: 'assets/content/rus/answers/83-SQL-Osnovnye-komandy.md',
+    name: 'SQL. Basic commands',
+    answer: 'eng/answers/83-SQL-Basic-commands.md',
     tags: [
-      'СУБД (системы управления базами данных)',
+      'DBMS (Database Management Systems)',
       'databases',
       'SQL'
     ],
@@ -1946,15 +1950,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'JOIN и его варианты',
+        name: 'JOIN and its variants',
         isChecked: false
       }
     ]
   },
   {
     id: 84,
-    name: 'Формат JSON, метод toJSON',
-    answer: 'assets/content/rus/answers/84-Format-JSON-metod-toJSON.md',
+    name: 'JSON Format, toJSON method',
+    answer: 'eng/answers/84-JSON-Format-toJSON-method.md',
     tags: [
       'JSON',
       'Data Structures'
@@ -1962,19 +1966,19 @@ export const questions = [
     category: 'Databases',
     structure: [
       {
-        name: 'JSON - что это и для чего нужно',
+        name: 'JSON - what it is and why it is needed',
         isChecked: false
       },
       {
-        name: 'Метод toJSON',
+        name: 'toJSON method',
         isChecked: false
       }
     ]
   },
   {
     id: 85,
-    name: 'Аутентификация и авторизация. В чем разница?',
-    answer: 'assets/content/rus/answers/85-Autentifikatsiya-i-avtorizatsiya-V-chem-raznitsa.md',
+    name: 'Authentication and Authorization. What is the difference?',
+    answer: 'eng/answers/85-Authentication-and-Authorization-What-is-the-difference.md',
     tags: [
       'security',
       'authentication',
@@ -1983,19 +1987,19 @@ export const questions = [
     category: 'General',
     structure: [
       {
-        name: 'Аутентификация',
+        name: 'Authentication',
         isChecked: false
       },
       {
-        name: 'Авторизация',
+        name: 'Authorization',
         isChecked: false
       }
     ]
   },
   {
     id: 86,
-    name: 'Безопасность приложений (AppSec)',
-    answer: 'assets/content/rus/answers/86-Bezopasnost-prilozhenij-AppSec.md',
+    name: 'Application Security (AppSec)',
+    answer: 'eng/answers/86-Application-Security-AppSec.md',
     tags: [
       'security',
       'AppSec',
@@ -2019,8 +2023,8 @@ export const questions = [
   },
   {
     id: 87,
-    name: 'Деревья, графы, перевернутые деревья',
-    answer: 'assets/content/rus/answers/87-Derevya-grafy-perevernutye-derevya.md',
+    name: 'Trees, Graphs, Inverted Trees',
+    answer: 'eng/answers/87-Trees-Graphs-Inverted-Trees.md',
     tags: [
       'data structures',
       'trees',
@@ -2029,23 +2033,23 @@ export const questions = [
     category: 'General',
     structure: [
       {
-        name: 'Деревья',
+        name: 'Trees',
         isChecked: false
       },
       {
-        name: 'Графы',
+        name: 'Graphs',
         isChecked: false
       },
       {
-        name: 'Перевернутые деревья',
+        name: 'Inverted Trees',
         isChecked: false
       }
     ]
   },
   {
     id: 88,
-    name: 'Почему работа с DOM считается очень ресурсоемкой?',
-    answer: 'assets/content/rus/answers/88-Pochemu-rabota-s-DOM-schitaetsya-ochen-resursoemkoj.md',
+    name: 'Why is working with the DOM considered very resource-intensive?',
+    answer: 'eng/answers/88-Why-is-working-with-the-DOM-considered-very-resource-intensive.md',
     tags: [
       'DOM',
       'performance',
@@ -2054,23 +2058,23 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'DOM — это Web API, а не часть JavaScript',
+        name: 'DOM — Web API, not part of JavaScript',
         isChecked: false
       },
       {
-        name: 'DOM — это сложная иерархическая структура данных',
+        name: 'DOM — a complex hierarchical data structure',
         isChecked: false
       },
       {
-        name: 'Reflow и Repaint',
+        name: 'Reflow and Repaint',
         isChecked: false
       }
     ]
   },
   {
     id: 89,
-    name: 'Shadow DOM. Инкапсуляция стилей',
-    answer: 'assets/content/rus/answers/89-Shadow-DOM-Inkapsulyatsiya-stilej.md',
+    name: 'Shadow DOM. Style encapsulation',
+    answer: 'eng/answers/89-Shadow-DOM-Style-Encapsulation.md',
     tags: [
       'web development',
       'shadow DOM'
@@ -2078,23 +2082,23 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Shadow DOM - что это такое',
+        name: 'Shadow DOM - what it is',
         isChecked: false
       },
       {
-        name: 'Проблема, которую решает Shadow DOM',
+        name: 'The problem that Shadow DOM solves',
         isChecked: false
       },
       {
-        name: 'Ключевые особенности Shadow DOM',
+        name: 'Key features of Shadow DOM',
         isChecked: false
       }
     ]
   },
   {
     id: 90,
-    name: 'Virtual DOM. Оптимизация на уровне фреймворка',
-    answer: 'assets/content/rus/answers/90-Virtual-DOM-Optimizatsiya-na-urovne-frejmvorka.md',
+    name: 'Virtual DOM. Optimization at the framework level',
+    answer: 'eng/answers/90-Virtual-DOM-Optimization-at-the-framework-level.md',
     tags: [
       'web development',
       'virtual DOM',
@@ -2104,23 +2108,23 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Virtual DOM - что это такое',
+        name: 'Virtual DOM - what it is',
         isChecked: false
       },
       {
-        name: 'Проблема, которую решает Virtual DOM',
+        name: 'The problem that Virtual DOM solves',
         isChecked: false
       },
       {
-        name: 'Как работает Virtual DOM',
+        name: 'How Virtual DOM works',
         isChecked: false
       }
     ]
   },
   {
     id: 91,
-    name: 'RxJS и асинхронность',
-    answer: 'assets/content/rus/answers/91-RxJS-i-asinhronnost.md',
+    name: 'RxJS and Asynchronous Programming',
+    answer: 'eng/answers/91-RxJS-and-Asynchronous-Programming.md',
     tags: [
       'rxjs',
       'asynchronous',
@@ -2129,27 +2133,27 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Основы RxJS',
+        name: 'Basics of RxJS',
         isChecked: false
       },
       {
-        name: 'Ключевые строительные блоки RxJS',
+        name: 'Key building blocks of RxJS',
         isChecked: false
       },
       {
-        name: 'Операторы RxJS',
+        name: 'RxJS Operators',
         isChecked: false
       },
       {
-        name: 'Управление памятью в RxJS',
+        name: 'Memory Management in RxJS',
         isChecked: false
       }
     ]
   },
   {
     id: 92,
-    name: 'State management в Angular. NgRx',
-    answer: 'assets/content/rus/answers/92-State-management-v-Angular-NgRx.md',
+    name: 'State management in Angular. NgRx',
+    answer: 'eng/answers/92-State-management-in-Angular-NgRx.md',
     tags: [
       'angular',
       'state management',
@@ -2158,7 +2162,7 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'State management в Angular. NgRx, что это такое',
+        name: 'State management in Angular. NgRx, what it is',
         isChecked: false
       },
       {
@@ -2166,15 +2170,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Effects (Побочные эффекты и асинхронность)',
+        name: 'Effects (Side effects and asynchronicity)',
         isChecked: false
       }
     ]
   },
   {
     id: 93,
-    name: 'Signals in Angular. В чем фундаментальная разница между Signals и RxJS, и почему команда Angular решила внедрить этот паттерн?',
-    answer: 'assets/content/rus/answers/93-Signals-in-Angular-V-chem-fundamentalnaya-raznitsa-mezhdu-Signals-i-RxJS-i-pochemu-komanda-Angular-reshila-vnedrit-etot-pattern.md',
+    name: 'Signals in Angular. What is the fundamental difference between Signals and RxJS, and why did the Angular team decide to implement this pattern?',
+    answer: 'eng/answers/93-Signals-in-Angular-What-is-the-fundamental-difference-between-Signals-and-RxJS-and-why-did-the-Angular-team-decide-to-implement-this-pattern.md',
     tags: [
       'Angular',
       'Signals',
@@ -2183,19 +2187,19 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Signals в Angular, что это такое',
+        name: 'Signals in Angular, what it is',
         isChecked: false
       },
       {
-        name: 'Фундаментальная разница между Signals и RxJS',
+        name: 'The fundamental difference between Signals and RxJS',
         isChecked: false
       }
     ]
   },
   {
     id: 94,
-    name: 'Как работают computed и effect?',
-    answer: 'assets/content/rus/answers/94-Kak-rabotayut-computed-i-effect.md',
+    name: 'How do computed and effect work?',
+    answer: 'eng/answers/94-How-do-computed-and-effect-work.md',
     tags: [
       'Angular',
       'Signals',
@@ -2212,15 +2216,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Когда использовать Effect, а когда это антипаттерн',
+        name: 'When to use Effect, and when it is an anti-pattern',
         isChecked: false
       }
     ]
   },
   {
     id: 95,
-    name: 'Signal-based API: input(), output() и model()',
-    answer: 'assets/content/rus/answers/95-Signal-based-API-input-output-i-model.md',
+    name: 'Signal-based API: input(), output() and model()',
+    answer: 'eng/answers/95-Signal-based-API-input-output-and-model.md',
     tags: [
       'Angular',
       'Signals',
@@ -2229,15 +2233,15 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'input(), output() и model() - что это',
+        name: 'input(), output() and model() - what it is',
         isChecked: false
       }
     ]
   },
   {
     id: 96,
-    name: 'Standalone Components: Почему отказались от NgModules?',
-    answer: 'assets/content/rus/answers/96-Standalone-Components-Pochemu-otkazalis-ot-NgModules.md',
+    name: 'Standalone Components: Why did they abandon NgModules?',
+    answer: 'eng/answers/96-Standalone-Components-Why-did-they-abandon-NgModules.md',
     tags: [
       'Angular',
       'Standalone',
@@ -2246,19 +2250,19 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Концепция Standalone',
+        name: 'Standalone Concept',
         isChecked: false
       },
       {
-        name: 'Почему отказались от NgModules',
+        name: 'Why did they abandon NgModules',
         isChecked: false
       }
     ]
   },
   {
     id: 97,
-    name: 'Функция inject() против Constructor DI',
-    answer: 'assets/content/rus/answers/97-Funktsiya-inject-protiv-Constructor-DI.md',
+    name: 'inject() function vs Constructor DI',
+    answer: 'eng/answers/97-inject-function-vs-Constructor-DI.md',
     tags: [
       'Angular',
       'Standalone',
@@ -2268,27 +2272,27 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Функция inject()',
+        name: 'inject() function',
         isChecked: false
       },
       {
-        name: 'Преимущества inject() по сравнению с Constructor DI',
+        name: 'Advantages of inject() compared to Constructor DI',
         isChecked: false
       },
       {
-        name: 'Где МОЖНО использовать inject()',
+        name: 'Where you CAN use inject()',
         isChecked: false
       },
       {
-        name: 'Где НЕЛЬЗЯ использовать inject()',
+        name: 'Where you CANNOT use inject()',
         isChecked: false
       }
     ]
   },
   {
     id: 98,
-    name: 'Новый Control Flow (@if, @for) против Structural Directives (*ngIf, *ngFor)',
-    answer: 'assets/content/rus/answers/98-Novyj-Control-Flow-if-for-protiv-Structural-Directives-ngIf-ngFor.md',
+    name: 'New Control Flow (@if, @for) vs Structural Directives (*ngIf, *ngFor)',
+    answer: 'eng/answers/98-New-Control-Flow-if-for-vs-Structural-Directives-ngIf-ngFor.md',
     tags: [
       'Angular',
       'Syntax'
@@ -2296,19 +2300,19 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Новый Control Flow',
+        name: 'New Control Flow',
         isChecked: false
       },
       {
-        name: 'Преимущества нового Control Flow',
+        name: 'Advantages of the new Control Flow',
         isChecked: false
       }
     ]
   },
   {
     id: 99,
-    name: 'Стратегии Change Detection (Default vs OnPush vs Zoneless)',
-    answer: 'assets/content/rus/answers/99-Strategii-Change-Detection-Default-vs-OnPush-vs-Zoneless.md',
+    name: 'Change Detection Strategies (Default vs OnPush vs Zoneless)',
+    answer: 'eng/answers/99-Change-Detection-Strategies-Default-vs-OnPush-vs-Zoneless.md',
     tags: [
       'Angular',
       'Change Detection'
@@ -2332,7 +2336,7 @@ export const questions = [
   {
     id: 100,
     name: 'Deferrable Views (@defer): Как работает этот механизм? Какие встроенные триггеры (on viewport, on interaction, on idle) существуют для ленивой загрузки кусков шаблона?',
-    answer: 'assets/content/rus/answers/100-Deferrable-Views-defer-Kak-rabotaet-etot-mehanizm-Kakie-vstroennye-triggery-on-viewport-on-interaction-on-idle-sushchestvuyut-dlya-lenivoj-zagruzki-kuskov-shablona.md',
+    answer: 'eng/answers/100-Deferrable-Views-defer-Kak-rabotaet-etot-mehanizm-Kakie-vstroennye-triggery-on-viewport-on-interaction-on-idle-sushchestvuyut-dlya-lenivoj-zagruzki-kuskov-shablona.md',
     tags: [
       'Angular',
       'Performance'
@@ -2348,7 +2352,7 @@ export const questions = [
   {
     id: 101,
     name: 'Functional Guards - что это и почему классовые Guards были объявлены deprecated?',
-    answer: 'assets/content/rus/answers/101-Functional-Guards---chto-eto-i-pochemu-klassovye-Guards-byli-obyavleny-deprecated.md',
+    answer: 'eng/answers/101-Functional-Guards---chto-eto-i-pochemu-klassovye-Guards-byli-obyavleny-deprecated.md',
     tags: [
       'angular',
       'routing',
@@ -2365,7 +2369,7 @@ export const questions = [
   {
     id: 102,
     name: 'Functional Interceptors: Как настроить перехватчики HTTP-запросов (Interceptors) в Standalone-приложении без использования модулей и HTTP_INTERCEPTORS?',
-    answer: 'assets/content/rus/answers/102-Functional-Interceptors-Kak-nastroit-perehvatchiki-HTTP-zaprosov-Interceptors-v-Standalone-prilozhenii-bez-ispolzovaniya-modulej-i-HTTP_INTERCEPTORS.md',
+    answer: 'eng/answers/102-Functional-Interceptors-Kak-nastroit-perehvatchiki-HTTP-zaprosov-Interceptors-v-Standalone-prilozhenii-bez-ispolzovaniya-modulej-i-HTTP_INTERCEPTORS.md',
     tags: [
       'angular',
       'routing',
@@ -2382,7 +2386,7 @@ export const questions = [
   {
     id: 103,
     name: 'Lifecycle Angular (Жизненный цикл компонента). Современный подход',
-    answer: 'assets/content/rus/answers/103-Lifecycle-Angular-Zhiznennyj-tsikl-komponenta-Sovremennyj-podhod.md',
+    answer: 'eng/answers/103-Lifecycle-Angular-Lifecycle-Hooks-Modern-Approach.md',
     tags: [
       'Angular',
       'Lifecycle',
@@ -2390,11 +2394,11 @@ export const questions = [
     ],
     structure: [
       {
-        name: 'Lifecycle Hooks (Классические)',
+        name: 'Lifecycle Hooks (Classic)',
         isChecked: false
       },
       {
-        name: 'Современный подход',
+        name: 'Modern Approach',
         isChecked: false
       }
     ]
