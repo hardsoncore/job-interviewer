@@ -16,6 +16,7 @@ export class ProfileService {
   get profile(): Observable<Profile> {
     return this._profile.asObservable();
   }
+
   public setProfile(profile: Profile): void {
     this._profile.next(profile);
     localStorage.setItem('profile', JSON.stringify(profile));

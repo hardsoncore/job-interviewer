@@ -3,7 +3,7 @@ import { Question } from '../models/question.model';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { questions as listOfQandA } from 'src/assets/questions';
+import { questions as listOfQandA } from 'src/assets/content/rus/questions';
 
 @Injectable({
   providedIn: 'root'
