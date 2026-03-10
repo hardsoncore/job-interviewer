@@ -2,7 +2,7 @@ export const questions = [
   {
     id: 1,
     name: 'How does the browser parse a page?',
-    answer: 'eng/answers/1-How-does-the-browser-parse-a-page.md',
+    answer: 'assets/content/eng/answers/1-How-does-the-browser-parse-a-page.md',
     tags: [
       'markup',
       'browser'
@@ -38,7 +38,7 @@ export const questions = [
   {
     id: 2,
     name: 'What is <DOCTYPE>. Why is it needed?',
-    answer: 'eng/answers/2-What-is-DOCTYPE-Why-is-it-needed.md',
+    answer: 'assets/content/eng/answers/2-What-is-DOCTYPE-Why-is-it-needed.md',
     tags: [
       'HTML',
       'markup'
@@ -70,7 +70,7 @@ export const questions = [
   {
     id: 3,
     name: 'HTML5 Tags. Semantics. Accessibility.',
-    answer: 'eng/answers/3-HTML5-Tags-Semantics-Accessibility.md',
+    answer: 'assets/content/eng/answers/3-HTML5-Tags-Semantics-Accessibility.md',
     tags: [
       'HTML',
       'markup'
@@ -94,7 +94,7 @@ export const questions = [
   {
     id: 4,
     name: 'What are the ways to include CSS on a page?',
-    answer: 'eng/answers/4-What-are-the-ways-to-include-CSS-on-a-page.md',
+    answer: 'assets/content/eng/answers/4-What-are-the-ways-to-include-CSS-on-a-page.md',
     tags: [
       'HTML',
       'markup',
@@ -127,7 +127,7 @@ export const questions = [
   {
     id: 5,
     name: 'CSS Priority. Cascade.',
-    answer: 'eng/answers/5-CSS-Priority-Cascade.md',
+    answer: 'assets/content/eng/answers/5-CSS-Priority-Cascade.md',
     tags: [
       'css'
     ],
@@ -154,7 +154,7 @@ export const questions = [
   {
     id: 6,
     name: 'CSS Selector Weight',
-    answer: 'eng/answers/6-CSS-Selector-Weight.md',
+    answer: 'assets/content/eng/answers/6-CSS-Selector-Weight.md',
     tags: [
       'markup',
       'CSS'
@@ -190,7 +190,7 @@ export const questions = [
   {
     id: 7,
     name: 'High specificity of a selector, are there any drawbacks?',
-    answer: 'eng/answers/7-High-specificity-of-a-selector-are-there-any-drawbacks.md',
+    answer: 'assets/content/eng/answers/7-High-specificity-of-a-selector-are-there-any-drawbacks.md',
     tags: [
       'markup',
       'CSS'
@@ -206,7 +206,7 @@ export const questions = [
   {
     id: 8,
     name: '!important',
-    answer: 'eng/answers/8-!important.md',
+    answer: 'assets/content/eng/answers/8-!important.md',
     tags: [
       'markup',
       'CSS'
@@ -222,7 +222,7 @@ export const questions = [
   {
     id: 9,
     name: 'Selectors: > + ~',
-    answer: 'eng/answers/9-Selectors-+-~.md',
+    answer: 'assets/content/eng/answers/9-Selectors-+-~.md',
     tags: [
       'markup',
       'CSS'
@@ -246,7 +246,7 @@ export const questions = [
   {
     id: 10,
     name: 'Element Pseudo-classes',
-    answer: 'eng/answers/10-Element-Pseudo-classes.md',
+    answer: 'assets/content/eng/answers/10-Element-Pseudo-classes.md',
     tags: [
       'HTML',
       'markup',
@@ -271,7 +271,7 @@ export const questions = [
   {
     id: 11,
     name: 'Form Pseudo-classes',
-    answer: 'eng/answers/11-Form-Pseudo-classes.md',
+    answer: 'assets/content/eng/answers/11-Form-Pseudo-classes.md',
     tags: [
       'HTML',
       'markup',
@@ -308,7 +308,7 @@ export const questions = [
   {
     id: 12,
     name: 'Pseudo-elements',
-    answer: 'eng/answers/12-Pseudo-elements.md',
+    answer: 'assets/content/eng/answers/12-Pseudo-elements.md',
     tags: [
       'HTML',
       'markup',
@@ -341,7 +341,7 @@ export const questions = [
   {
     id: 13,
     name: 'Positioning elements (absolute, fixed, relative etc.)',
-    answer: 'eng/answers/13-Positioning-elements-absolute-fixed-relative.md',
+    answer: 'assets/content/eng/answers/13-Positioning-elements-absolute-fixed-relative.md',
     tags: [
       'HTML',
       'markup',
@@ -374,7 +374,7 @@ export const questions = [
   {
     id: 14,
     name: 'Types of elements (inline, block, etc.). Their differences',
-    answer: 'eng/answers/14-Types-of-elements-inline-block-etc-Their-differences.md',
+    answer: 'assets/content/eng/answers/14-Types-of-elements-inline-block-etc-Their-differences.md',
     tags: [
       'HTML',
       'markup',
@@ -395,7 +395,7 @@ export const questions = [
   {
     id: 15,
     name: 'Centering (horizontal, vertical)',
-    answer: 'eng/answers/15-Centering-horizontal-vertical.md',
+    answer: 'assets/content/eng/answers/15-Centering-horizontal-vertical.md',
     tags: [
       'HTML',
       'markup',
@@ -416,7 +416,7 @@ export const questions = [
   {
     id: 16,
     name: 'Box Model and box-sizing',
-    answer: 'eng/answers/16-Box-Model-and-box-sizing.md',
+    answer: 'assets/content/eng/answers/16-Box-Model-and-box-sizing.md',
     tags: [
       'HTML',
       'markup',
@@ -437,7 +437,7 @@ export const questions = [
   {
     id: 17,
     name: 'Flexbox VS Grid',
-    answer: 'eng/answers/17-Flexbox-VS-Grid.md',
+    answer: 'assets/content/eng/answers/17-Flexbox-VS-Grid.md',
     tags: [
       'HTML',
       'markup',
@@ -462,7 +462,7 @@ export const questions = [
   {
     id: 18,
     name: 'CSS animations',
-    answer: 'eng/answers/18-CSS-animations.md',
+    answer: 'assets/content/eng/answers/18-CSS-animations.md',
     tags: [
       'markup',
       'CSS',
@@ -487,7 +487,7 @@ export const questions = [
   {
     id: 19,
     name: 'Reset and Normalize (Reset VS Normalize). Their differences.',
-    answer: 'eng/answers/19-Reset-and-Normalize-Reset-VS-Normalize-Their-differences.md',
+    answer: 'assets/content/eng/answers/19-Reset-and-Normalize-Reset-VS-Normalize-Their-differences.md',
     tags: [
       'markup',
       'CSS'
@@ -511,7 +511,7 @@ export const questions = [
   {
     id: 20,
     name: 'Units of measurement (em, rem, %, px, vh, vw)',
-    answer: 'eng/answers/20-Units-of-measurement-em-rem-px-vh-vw.md',
+    answer: 'assets/content/eng/answers/20-Units-of-measurement-em-rem-px-vh-vw.md',
     tags: [
       'markup',
       'CSS'
@@ -527,7 +527,7 @@ export const questions = [
   {
     id: 21,
     name: 'Order of resource loading. Scripts in head, scripts at the end of body. What is the difference?',
-    answer: 'eng/answers/21-Order-of-resource-loading-Scripts-in-head-scripts-at-the-end-of-body-What-is-the-difference.md',
+    answer: 'assets/content/eng/answers/21-Order-of-resource-loading-Scripts-in-head-scripts-at-the-end-of-body-What-is-the-difference.md',
     tags: [
       'markup',
       'CSS'
@@ -543,7 +543,7 @@ export const questions = [
   {
     id: 22,
     name: 'Ways to include JS on a page',
-    answer: 'eng/answers/22-Ways-to-include-JS-on-a-page.md',
+    answer: 'assets/content/eng/answers/22-Ways-to-include-JS-on-a-page.md',
     tags: [
       'HTML',
       'markup',
@@ -560,7 +560,7 @@ export const questions = [
   {
     id: 23,
     name: 'Defer and async attributes on the script tag',
-    answer: 'eng/answers/23-Defer-and-async-attributes-on-the-script-tag.md',
+    answer: 'assets/content/eng/answers/23-Defer-and-async-attributes-on-the-script-tag.md',
     tags: [
       'HTML',
       'markup',
@@ -585,7 +585,7 @@ export const questions = [
   {
     id: 24,
     name: 'SVG. SVG animations',
-    answer: 'eng/answers/24-SVG-Animations.md',
+    answer: 'assets/content/eng/answers/24-SVG-Animations.md',
     tags: [
       'SVG',
       'markup',
@@ -606,7 +606,7 @@ export const questions = [
   {
     id: 25,
     name: 'Canvas. What is it and why is it needed?',
-    answer: 'eng/answers/25-Canvas-What-is-it-and-why-is-it-needed.md',
+    answer: 'assets/content/eng/answers/25-Canvas-What-is-it-and-why-is-it-needed.md',
     tags: [
       'HTML',
       'markup',
@@ -635,7 +635,7 @@ export const questions = [
   {
     id: 26,
     name: 'Custom properties',
-    answer: 'eng/answers/26-Custom-properties.md',
+    answer: 'assets/content/eng/answers/26-Custom-properties.md',
     tags: [
       'markup',
       'CSS'
@@ -659,7 +659,7 @@ export const questions = [
   {
     id: 27,
     name: 'Pixel-perfect',
-    answer: 'eng/answers/27-Pixel-perfect.md',
+    answer: 'assets/content/eng/answers/27-Pixel-perfect.md',
     tags: [
       'HTML',
       'markup',
@@ -676,7 +676,7 @@ export const questions = [
   {
     id: 28,
     name: 'Pre- and post- CSS processors. Experience with them',
-    answer: 'eng/answers/28-Pre--i-post--protsessory-CSS-Opyt-raboty-s-nimi.md',
+    answer: 'assets/content/eng/answers/28-Pre--i-post--protsessory-CSS-Opyt-raboty-s-nimi.md',
     tags: [
       'markup',
       'CSS'
@@ -696,7 +696,7 @@ export const questions = [
   {
     id: 29,
     name: 'BEM Methodology. Main positions, what problems does it solve?',
-    answer: 'eng/answers/29-BEM-Methodology-Main-positions-what-problems-does-it-solve.md',
+    answer: 'assets/content/eng/answers/29-BEM-Methodology-Main-positions-what-problems-does-it-solve.md',
     tags: [
       'HTML',
       'markup',
@@ -720,8 +720,8 @@ export const questions = [
   },
   {
     id: 30,
-    name: 'HTML template engines/preprocessors (handlebars, mustache, pug etc)',
-    answer: 'eng/answers/30-HTML-template-engines-preprocessors-handlebars-mustache-pug-etc.md',
+    name: 'HTML template assets/content/engines/preprocessors (handlebars, mustache, pug etc)',
+    answer: 'assets/content/eng/answers/30-HTML-template-assets/content/engines-preprocessors-handlebars-mustache-pug-etc.md',
     tags: [
       'HTML',
       'markup'
@@ -729,7 +729,7 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'HTML template engines/preprocessors - what is it?',
+        name: 'HTML template assets/content/engines/preprocessors - what is it?',
         isChecked: false
       },
       {
@@ -737,7 +737,7 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'What is the difference between a template engine and a preprocessor?',
+        name: 'What is the difference between a template assets/content/engine and a preprocessor?',
         isChecked: false
       },
       {
@@ -749,7 +749,7 @@ export const questions = [
   {
     id: 31,
     name: 'CORS. What is it and how does it work?',
-    answer: 'eng/answers/31-CORS-What-is-it-and-how-does-it-work.md',
+    answer: 'assets/content/eng/answers/31-CORS-What-is-it-and-how-does-it-work.md',
     tags: [
       'browser',
       'security'
@@ -765,7 +765,7 @@ export const questions = [
   {
     id: 32,
     name: 'Data types in JavaScript. typeof and its features',
-    answer: 'eng/answers/32-Data-types-in-JavaScript-typeof-and-its-features.md',
+    answer: 'assets/content/eng/answers/32-Data-types-in-JavaScript-typeof-and-its-features.md',
     tags: [
       'JavaScript',
       'Data types'
@@ -789,7 +789,7 @@ export const questions = [
   {
     id: 33,
     name: 'Type conversion in JavaScript',
-    answer: 'eng/answers/33-Type-conversion-in-JavaScript.md',
+    answer: 'assets/content/eng/answers/33-Type-conversion-in-JavaScript.md',
     tags: [
       'JavaScript',
       'Data types'
@@ -805,7 +805,7 @@ export const questions = [
   {
     id: 34,
     name: 'Let, const and var. Differences + Hoisting',
-    answer: 'eng/answers/34-Let-const-and-var-Differences-+-Hoisting.md',
+    answer: 'assets/content/eng/answers/34-Let-const-and-var-Differences-+-Hoisting.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -824,7 +824,7 @@ export const questions = [
   {
     id: 35,
     name: 'Functions: function declaration, function expression',
-    answer: 'eng/answers/35-Functions-function-declaration-function-expression.md',
+    answer: 'assets/content/eng/answers/35-Functions-function-declaration-function-expression.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -845,7 +845,7 @@ export const questions = [
   {
     id: 36,
     name: 'Data structures (array, object, set, map)',
-    answer: 'eng/answers/36-Data-structures-array-object-set-map.md',
+    answer: 'assets/content/eng/answers/36-Data-structures-array-object-set-map.md',
     tags: [
       'JavaScript',
       'Data types',
@@ -878,7 +878,7 @@ export const questions = [
   {
     id: 37,
     name: 'Array methods you use',
-    answer: 'eng/answers/37-Array-methods-you-use.md',
+    answer: 'assets/content/eng/answers/37-Array-methods-you-use.md',
     tags: [
       'JavaScript',
       'Data types',
@@ -953,7 +953,7 @@ export const questions = [
   {
     id: 38,
     name: 'Iterators and Generators',
-    answer: 'eng/answers/38-Iterators-and-Generators.md',
+    answer: 'assets/content/eng/answers/38-Iterators-and-Generators.md',
     tags: [
       'JavaScript',
       'Iterable',
@@ -979,7 +979,7 @@ export const questions = [
   {
     id: 39,
     name: 'Scope, Lexical Environment',
-    answer: 'eng/answers/39-Scope-Lexical-Environment.md',
+    answer: 'assets/content/eng/answers/39-Scope-Lexical-Environment.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1003,7 +1003,7 @@ export const questions = [
   {
     id: 40,
     name: 'Closure',
-    answer: 'eng/answers/40-Closure.md',
+    answer: 'assets/content/eng/answers/40-Closure.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1027,7 +1027,7 @@ export const questions = [
   {
     id: 41,
     name: 'Garbage Collector. What it is and why it is needed?',
-    answer: 'eng/answers/41-Garbage-Collector-What-it-is-and-why-it-is-needed.md',
+    answer: 'assets/content/eng/answers/41-Garbage-Collector-What-it-is-and-why-it-is-needed.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1042,7 +1042,7 @@ export const questions = [
   {
     id: 42,
     name: 'Recursion. What it is and why it is needed?',
-    answer: 'eng/answers/42-Recursion-What-it-is-and-why-it-is-needed.md',
+    answer: 'assets/content/eng/answers/42-Recursion-What-it-is-and-why-it-is-needed.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1062,7 +1062,7 @@ export const questions = [
   {
     id: 43,
     name: 'The "this" keyword. Context',
-    answer: 'eng/answers/43-The-this-keyword-Context.md',
+    answer: 'assets/content/eng/answers/43-The-this-keyword-Context.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1087,7 +1087,7 @@ export const questions = [
   {
     id: 44,
     name: 'Context binding (explicit, implicit). Bind, call, apply and their differences',
-    answer: 'eng/answers/44-Context-binding-explicit-implicit-Bind-call-apply-and-their-differences.md',
+    answer: 'assets/content/eng/answers/44-Context-binding-explicit-implicit-Bind-call-apply-and-their-differences.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1112,7 +1112,7 @@ export const questions = [
   {
     id: 45,
     name: 'Currying',
-    answer: 'eng/answers/45-Currying.md',
+    answer: 'assets/content/eng/answers/45-Currying.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1138,7 +1138,7 @@ export const questions = [
   {
     id: 46,
     name: 'Partial Application',
-    answer: 'eng/answers/46-Partial-Application.md',
+    answer: 'assets/content/eng/answers/46-Partial-Application.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1160,7 +1160,7 @@ export const questions = [
   {
     id: 47,
     name: 'Arguments object (why is it called a pseudo-array?)',
-    answer: 'eng/answers/47-Arguments-object-why-is-it-called-a-pseudo-array.md',
+    answer: 'assets/content/eng/answers/47-Arguments-object-why-is-it-called-a-pseudo-array.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1189,7 +1189,7 @@ export const questions = [
   {
     id: 48,
     name: '"use strict" directive',
-    answer: 'eng/answers/48-Use-strict-directive.md',
+    answer: 'assets/content/eng/answers/48-Use-strict-directive.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1213,7 +1213,7 @@ export const questions = [
   {
     id: 49,
     name: 'Object conversion: toString and valueOf',
-    answer: 'eng/answers/49-Object-conversion-toString-and-valueOf.md',
+    answer: 'assets/content/eng/answers/49-Object-conversion-toString-and-valueOf.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1225,7 +1225,7 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'How the engine decides which method to call first',
+        name: 'How the assets/content/engine decides which method to call first',
         isChecked: false
       }
     ]
@@ -1233,7 +1233,7 @@ export const questions = [
   {
     id: 50,
     name: 'Event loop, microtasks, event queue',
-    answer: 'eng/answers/50-Event-loop-microtasks-event-queue.md',
+    answer: 'assets/content/eng/answers/50-Event-loop-microtasks-event-queue.md',
     tags: [
       'JavaScript',
       'Browser mechanics'
@@ -1253,7 +1253,7 @@ export const questions = [
   {
     id: 51,
     name: 'Inheritance in JavaScript',
-    answer: 'eng/answers/51-Inheritance-in-JavaScript.md',
+    answer: 'assets/content/eng/answers/51-Inheritance-in-JavaScript.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1273,7 +1273,7 @@ export const questions = [
   {
     id: 52,
     name: 'Reference __proto__. What is it and how to use it?',
-    answer: 'eng/answers/52-Reference-__proto__-What-is-it-and-how-to-use-it.md',
+    answer: 'assets/content/eng/answers/52-Reference-__proto__-What-is-it-and-how-to-use-it.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1289,7 +1289,7 @@ export const questions = [
   {
     id: 53,
     name: 'F.prototype property and creating objects with new',
-    answer: 'eng/answers/53-Fprototype-property-and-creating-objects-with-new.md',
+    answer: 'assets/content/eng/answers/53-Fprototype-property-and-creating-objects-with-new.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1305,7 +1305,7 @@ export const questions = [
   {
     id: 54,
     name: 'Promises. Why are they needed? What problem did they solve?',
-    answer: 'eng/answers/54-Promises-Why-are-they-needed-What-problem-did-they-solve.md',
+    answer: 'assets/content/eng/answers/54-Promises-Why-are-they-needed-What-problem-did-they-solve.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1339,7 +1339,7 @@ export const questions = [
   {
     id: 55,
     name: 'Promise chaining. Can we call promise.then().finally().then() or promise.catch().then()? What will we get?',
-    answer: 'eng/answers/55-Promise-chaining-Can-we-call-promisethenfinallythen-or-promisecatchthen-What-will-we-get.md',
+    answer: 'assets/content/eng/answers/55-Promise-chaining-Can-we-call-promisethenfinallythen-or-promisecatchthen-What-will-we-get.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1365,7 +1365,7 @@ export const questions = [
   {
     id: 56,
     name: 'Try - Catch. What is it and why is it needed?',
-    answer: 'eng/answers/56-Try---Catch-What-is-it-and-why-is-it-needed.md',
+    answer: 'assets/content/eng/answers/56-Try---Catch-What-is-it-and-why-is-it-needed.md',
     tags: [
       'JavaScript'
     ],
@@ -1380,7 +1380,7 @@ export const questions = [
   {
     id: 57,
     name: 'What is new in the language in ES6?',
-    answer: 'eng/answers/57-What-is-new-in-the-language-in-ES6.md',
+    answer: 'assets/content/eng/answers/57-What-is-new-in-the-language-in-ES6.md',
     tags: [
       'JavaScript',
       'ES6'
@@ -1396,7 +1396,7 @@ export const questions = [
   {
     id: 58,
     name: 'What is new in the language after ES6?',
-    answer: 'eng/answers/58-What-is-new-in-the-language-after-ES6.md',
+    answer: 'assets/content/eng/answers/58-What-is-new-in-the-language-after-ES6.md',
     tags: [
       'JavaScript',
       'ES6',
@@ -1413,7 +1413,7 @@ export const questions = [
   {
     id: 59,
     name: 'Async await. What problem do they solve?',
-    answer: 'eng/answers/59-Async-await-What-problem-do-they-solve.md',
+    answer: 'assets/content/eng/answers/59-Async-await-What-problem-do-they-solve.md',
     tags: [
       'JavaScript',
       'ES6',
@@ -1443,7 +1443,7 @@ export const questions = [
   {
     id: 60,
     name: 'Methods for managing a group of promises',
-    answer: 'eng/answers/60-Methods-for-managing-a-group-of-promises.md',
+    answer: 'assets/content/eng/answers/60-Methods-for-managing-a-group-of-promises.md',
     tags: [
       'JavaScript',
       'ES6',
@@ -1477,7 +1477,7 @@ export const questions = [
   {
     id: 61,
     name: 'DOM - what is it and why? DOM events. Bubbling, capturing. Delegation',
-    answer: 'eng/answers/61-DOM---what-is-it-and-why-DOM-events-Bubbling-capturing-Delegation.md',
+    answer: 'assets/content/eng/answers/61-DOM---what-is-it-and-why-DOM-events-Bubbling-capturing-Delegation.md',
     tags: [
       'markup',
       'markup',
@@ -1495,7 +1495,7 @@ export const questions = [
   {
     id: 62,
     name: 'LocalStorage VS SessionStorage. Differences, working principle',
-    answer: 'eng/answers/62-LocalStorage-VS-SessionStorage-Differences-working-principle.md',
+    answer: 'assets/content/eng/answers/62-LocalStorage-VS-SessionStorage-Differences-working-principle.md',
     tags: [
       'browser',
       'LocalStorage',
@@ -1516,7 +1516,7 @@ export const questions = [
   {
     id: 63,
     name: 'Code style, linters, prettier etc.',
-    answer: 'eng/answers/63-Code-style-Linters-Prettier.md',
+    answer: 'assets/content/eng/answers/63-Code-style-Linters-Prettier.md',
     tags: [
       'programming',
       'codestyle',
@@ -1533,7 +1533,7 @@ export const questions = [
   {
     id: 64,
     name: 'Mutability/Immutability (when working with arrays etc)',
-    answer: 'eng/answers/64-Mutability-Immutability-when-working-with-arrays-etc.md',
+    answer: 'assets/content/eng/answers/64-Mutability-Immutability-when-working-with-arrays-etc.md',
     tags: [
       'programming',
       'immutable'
@@ -1549,7 +1549,7 @@ export const questions = [
   {
     id: 65,
     name: 'Reactive programming. RxJs and main methods',
-    answer: 'eng/answers/65-Reactive-programming-RxJs-and-main-methods.md',
+    answer: 'assets/content/eng/answers/65-Reactive-programming-RxJs-and-main-methods.md',
     tags: [
       'TypeScript',
       'RxJs'
@@ -1565,7 +1565,7 @@ export const questions = [
   {
     id: 66,
     name: 'What is an Observable object in RxJs?',
-    answer: 'eng/answers/66-What-is-an-Observable-object-in-RxJs.md',
+    answer: 'assets/content/eng/answers/66-What-is-an-Observable-object-in-RxJs.md',
     tags: [
       'TypeScript',
       'Observables',
@@ -1583,7 +1583,7 @@ export const questions = [
   {
     id: 67,
     name: 'What is a Subject? What types are there?',
-    answer: 'eng/answers/67-What-is-a-Subject-What-types-are-there.md',
+    answer: 'assets/content/eng/answers/67-What-is-a-Subject-What-types-are-there.md',
     tags: [
       'TypeScript',
       'Observables',
@@ -1601,7 +1601,7 @@ export const questions = [
   {
     id: 68,
     name: 'Observables VS Subject - differences',
-    answer: 'eng/answers/68-Observables-VS-Subject---differences.md',
+    answer: 'assets/content/eng/answers/68-Observables-VS-Subject---differences.md',
     tags: [
       'TypeScript',
       'Observables',
@@ -1631,7 +1631,7 @@ export const questions = [
   {
     id: 69,
     name: 'Zone.js. What is it and why is it needed?',
-    answer: 'eng/answers/69-Zonejs-What-is-it-and-why-is-it-needed.md',
+    answer: 'assets/content/eng/answers/69-Zonejs-What-is-it-and-why-is-it-needed.md',
     tags: [
       'Angular',
       'Change Detection',
@@ -1648,7 +1648,7 @@ export const questions = [
   {
     id: 70,
     name: 'Which Utility Types (Утилиты типов) do you use in practice?',
-    answer: 'eng/answers/70-Which-Utility-Types-Utility-tipov-do-you-use-in-practice.md',
+    answer: 'assets/content/eng/answers/70-Which-Utility-Types-Utility-tipov-do-you-use-in-practice.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1680,7 +1680,7 @@ export const questions = [
   {
     id: 71,
     name: 'What are Type Guards and Type Assertions?',
-    answer: 'eng/answers/71-What-are-Type-Guards-and-Type-Assertions.md',
+    answer: 'assets/content/eng/answers/71-What-are-Type-Guards-and-Type-Assertions.md',
     tags: [
       'TypeScript',
       'TS mechanics',
@@ -1701,7 +1701,7 @@ export const questions = [
   {
     id: 72,
     name: 'What are Enums? Their usage',
-    answer: 'eng/answers/72-What-are-Enums-Their-usage.md',
+    answer: 'assets/content/eng/answers/72-What-are-Enums-Their-usage.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1717,7 +1717,7 @@ export const questions = [
   {
     id: 73,
     name: 'Class, Interface, Type. Differences and usage',
-    answer: 'eng/answers/73-Class-Interface-Type-Differences-and-usage.md',
+    answer: 'assets/content/eng/answers/73-Class-Interface-Type-Differences-and-usage.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1741,7 +1741,7 @@ export const questions = [
   {
     id: 74,
     name: 'What are Generics? Their usage',
-    answer: 'eng/answers/74-What-are-Generics-Their-usage.md',
+    answer: 'assets/content/eng/answers/74-What-are-Generics-Their-usage.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1757,7 +1757,7 @@ export const questions = [
   {
     id: 75,
     name: 'Difference between any, unknown, and never.',
-    answer: 'eng/answers/75-Difference-between-any-unknown-and-never.md',
+    answer: 'assets/content/eng/answers/75-Difference-between-any-unknown-and-never.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1781,7 +1781,7 @@ export const questions = [
   {
     id: 76,
     name: 'When to use .asObservable() in RxJs?',
-    answer: 'eng/answers/76-When-to-use-asObservable-in-RxJs.md',
+    answer: 'assets/content/eng/answers/76-When-to-use-asObservable-in-RxJs.md',
     tags: [
       'TypeScript',
       'Angular',
@@ -1798,7 +1798,7 @@ export const questions = [
   {
     id: 77,
     name: 'Main principles of OOP. What is it and why is it needed?',
-    answer: 'eng/answers/77-Main-principles-of-OOP-What-is-it-and-why-is-it-needed.md',
+    answer: 'assets/content/eng/answers/77-Main-principles-of-OOP-What-is-it-and-why-is-it-needed.md',
     tags: [
       'programming',
       'OOP'
@@ -1814,7 +1814,7 @@ export const questions = [
   {
     id: 78,
     name: 'Design Patterns',
-    answer: 'eng/answers/78-Design-Patterns.md',
+    answer: 'assets/content/eng/answers/78-Design-Patterns.md',
     tags: [
       'Patterns',
       'best-practice'
@@ -1830,7 +1830,7 @@ export const questions = [
   {
     id: 79,
     name: 'Function Decorators. What they are and why they are needed?',
-    answer: 'eng/answers/79-Function-Decorators-What-they-are-and-why-they-are-needed.md',
+    answer: 'assets/content/eng/answers/79-Function-Decorators-What-they-are-and-why-they-are-needed.md',
     tags: [
       'JavaScript',
       'Patterns',
@@ -1847,7 +1847,7 @@ export const questions = [
   {
     id: 80,
     name: 'SOLID Principles. What they are and why they are needed?',
-    answer: 'eng/answers/80-SOLID-Principles-What-they-are-and-why-they-are-needed.md',
+    answer: 'assets/content/eng/answers/80-SOLID-Principles-What-they-are-and-why-they-are-needed.md',
     tags: [
       'programming',
       'best-practice',
@@ -1884,7 +1884,7 @@ export const questions = [
   {
     id: 81,
     name: 'HTTP Protocol. What it is and what it is used for?',
-    answer: 'eng/answers/81-HTTP-Protocol-What-it-is-and-what-it-is-used-for.md',
+    answer: 'assets/content/eng/answers/81-HTTP-Protocol-What-it-is-and-what-it-is-used-for.md',
     tags: [
       'protocol',
       'internet'
@@ -1900,7 +1900,7 @@ export const questions = [
   {
     id: 82,
     name: 'Special Angular selectors. Pseudo-classes :host, :host-context and pseudo-element ::ng-deep',
-    answer: 'eng/answers/82-Special-Angular-selectors-Pseudo-classes-host-host-context-and-pseudo-element-ng-deep.md',
+    answer: 'assets/content/eng/answers/82-Special-Angular-selectors-Pseudo-classes-host-host-context-and-pseudo-element-ng-deep.md',
     tags: [
       'Angular',
       'html',
@@ -1917,7 +1917,7 @@ export const questions = [
   {
     id: 83,
     name: 'SQL. Basic commands',
-    answer: 'eng/answers/83-SQL-Basic-commands.md',
+    answer: 'assets/content/eng/answers/83-SQL-Basic-commands.md',
     tags: [
       'DBMS (Database Management Systems)',
       'databases',
@@ -1958,7 +1958,7 @@ export const questions = [
   {
     id: 84,
     name: 'JSON Format, toJSON method',
-    answer: 'eng/answers/84-JSON-Format-toJSON-method.md',
+    answer: 'assets/content/eng/answers/84-JSON-Format-toJSON-method.md',
     tags: [
       'JSON',
       'Data Structures'
@@ -1978,7 +1978,7 @@ export const questions = [
   {
     id: 85,
     name: 'Authentication and Authorization. What is the difference?',
-    answer: 'eng/answers/85-Authentication-and-Authorization-What-is-the-difference.md',
+    answer: 'assets/content/eng/answers/85-Authentication-and-Authorization-What-is-the-difference.md',
     tags: [
       'security',
       'authentication',
@@ -1999,7 +1999,7 @@ export const questions = [
   {
     id: 86,
     name: 'Application Security (AppSec)',
-    answer: 'eng/answers/86-Application-Security-AppSec.md',
+    answer: 'assets/content/eng/answers/86-Application-Security-AppSec.md',
     tags: [
       'security',
       'AppSec',
@@ -2024,7 +2024,7 @@ export const questions = [
   {
     id: 87,
     name: 'Trees, Graphs, Inverted Trees',
-    answer: 'eng/answers/87-Trees-Graphs-Inverted-Trees.md',
+    answer: 'assets/content/eng/answers/87-Trees-Graphs-Inverted-Trees.md',
     tags: [
       'data structures',
       'trees',
@@ -2053,7 +2053,7 @@ export const questions = [
   {
     id: 88,
     name: 'Why is working with the DOM considered very resource-intensive?',
-    answer: 'eng/answers/88-Why-is-working-with-the-DOM-considered-very-resource-intensive.md',
+    answer: 'assets/content/eng/answers/88-Why-is-working-with-the-DOM-considered-very-resource-intensive.md',
     tags: [
       'DOM',
       'performance',
@@ -2078,7 +2078,7 @@ export const questions = [
   {
     id: 89,
     name: 'Shadow DOM. Style encapsulation',
-    answer: 'eng/answers/89-Shadow-DOM-Style-Encapsulation.md',
+    answer: 'assets/content/eng/answers/89-Shadow-DOM-Style-Encapsulation.md',
     tags: [
       'web development',
       'shadow DOM'
@@ -2102,7 +2102,7 @@ export const questions = [
   {
     id: 90,
     name: 'Virtual DOM. Optimization at the framework level',
-    answer: 'eng/answers/90-Virtual-DOM-Optimization-at-the-framework-level.md',
+    answer: 'assets/content/eng/answers/90-Virtual-DOM-Optimization-at-the-framework-level.md',
     tags: [
       'web development',
       'virtual DOM',
@@ -2128,7 +2128,7 @@ export const questions = [
   {
     id: 91,
     name: 'RxJS and Asynchronous Programming',
-    answer: 'eng/answers/91-RxJS-and-Asynchronous-Programming.md',
+    answer: 'assets/content/eng/answers/91-RxJS-and-Asynchronous-Programming.md',
     tags: [
       'rxjs',
       'asynchronous',
@@ -2157,7 +2157,7 @@ export const questions = [
   {
     id: 92,
     name: 'State management in Angular. NgRx',
-    answer: 'eng/answers/92-State-management-in-Angular-NgRx.md',
+    answer: 'assets/content/eng/answers/92-State-management-in-Angular-NgRx.md',
     tags: [
       'angular',
       'state management',
@@ -2182,7 +2182,7 @@ export const questions = [
   {
     id: 93,
     name: 'Signals in Angular. What is the fundamental difference between Signals and RxJS, and why did the Angular team decide to implement this pattern?',
-    answer: 'eng/answers/93-Signals-in-Angular-What-is-the-fundamental-difference-between-Signals-and-RxJS-and-why-did-the-Angular-team-decide-to-implement-this-pattern.md',
+    answer: 'assets/content/eng/answers/93-Signals-in-Angular-What-is-the-fundamental-difference-between-Signals-and-RxJS-and-why-did-the-Angular-team-decide-to-implement-this-pattern.md',
     tags: [
       'Angular',
       'Signals',
@@ -2203,7 +2203,7 @@ export const questions = [
   {
     id: 94,
     name: 'How do computed and effect work?',
-    answer: 'eng/answers/94-How-do-computed-and-effect-work.md',
+    answer: 'assets/content/eng/answers/94-How-do-computed-and-effect-work.md',
     tags: [
       'Angular',
       'Signals',
@@ -2228,7 +2228,7 @@ export const questions = [
   {
     id: 95,
     name: 'Signal-based API: input(), output() and model()',
-    answer: 'eng/answers/95-Signal-based-API-input-output-and-model.md',
+    answer: 'assets/content/eng/answers/95-Signal-based-API-input-output-and-model.md',
     tags: [
       'Angular',
       'Signals',
@@ -2245,7 +2245,7 @@ export const questions = [
   {
     id: 96,
     name: 'Standalone Components: Why did they abandon NgModules?',
-    answer: 'eng/answers/96-Standalone-Components-Why-did-they-abandon-NgModules.md',
+    answer: 'assets/content/eng/answers/96-Standalone-Components-Why-did-they-abandon-NgModules.md',
     tags: [
       'Angular',
       'Standalone',
@@ -2266,7 +2266,7 @@ export const questions = [
   {
     id: 97,
     name: 'inject() function vs Constructor DI',
-    answer: 'eng/answers/97-inject-function-vs-Constructor-DI.md',
+    answer: 'assets/content/eng/answers/97-inject-function-vs-Constructor-DI.md',
     tags: [
       'Angular',
       'Standalone',
@@ -2296,7 +2296,7 @@ export const questions = [
   {
     id: 98,
     name: 'New Control Flow (@if, @for) vs Structural Directives (*ngIf, *ngFor)',
-    answer: 'eng/answers/98-New-Control-Flow-if-for-vs-Structural-Directives-ngIf-ngFor.md',
+    answer: 'assets/content/eng/answers/98-New-Control-Flow-if-for-vs-Structural-Directives-ngIf-ngFor.md',
     tags: [
       'Angular',
       'Syntax'
@@ -2316,7 +2316,7 @@ export const questions = [
   {
     id: 99,
     name: 'Change Detection Strategies (Default vs OnPush vs Zoneless)',
-    answer: 'eng/answers/99-Change-Detection-Strategies-Default-vs-OnPush-vs-Zoneless.md',
+    answer: 'assets/content/eng/answers/99-Change-Detection-Strategies-Default-vs-OnPush-vs-Zoneless.md',
     tags: [
       'Angular',
       'Change Detection'
@@ -2340,7 +2340,7 @@ export const questions = [
   {
     id: 100,
     name: 'Deferrable Views (@defer): Как работает этот механизм? Какие встроенные триггеры (on viewport, on interaction, on idle) существуют для ленивой загрузки кусков шаблона?',
-    answer: 'eng/answers/100-Deferrable-Views-defer-Kak-rabotaet-etot-mehanizm-Kakie-vstroennye-triggery-on-viewport-on-interaction-on-idle-sushchestvuyut-dlya-lenivoj-zagruzki-kuskov-shablona.md',
+    answer: 'assets/content/eng/answers/100-Deferrable-Views-defer-Kak-rabotaet-etot-mehanizm-Kakie-vstroennye-triggery-on-viewport-on-interaction-on-idle-sushchestvuyut-dlya-lenivoj-zagruzki-kuskov-shablona.md',
     tags: [
       'Angular',
       'Performance'
@@ -2356,7 +2356,7 @@ export const questions = [
   {
     id: 101,
     name: 'Functional Guards - что это и почему классовые Guards были объявлены deprecated?',
-    answer: 'eng/answers/101-Functional-Guards---chto-eto-i-pochemu-klassovye-Guards-byli-obyavleny-deprecated.md',
+    answer: 'assets/content/eng/answers/101-Functional-Guards---chto-eto-i-pochemu-klassovye-Guards-byli-obyavleny-deprecated.md',
     tags: [
       'angular',
       'routing',
@@ -2373,7 +2373,7 @@ export const questions = [
   {
     id: 102,
     name: 'Functional Interceptors: Как настроить перехватчики HTTP-запросов (Interceptors) в Standalone-приложении без использования модулей и HTTP_INTERCEPTORS?',
-    answer: 'eng/answers/102-Functional-Interceptors-Kak-nastroit-perehvatchiki-HTTP-zaprosov-Interceptors-v-Standalone-prilozhenii-bez-ispolzovaniya-modulej-i-HTTP_INTERCEPTORS.md',
+    answer: 'assets/content/eng/answers/102-Functional-Interceptors-Kak-nastroit-perehvatchiki-HTTP-zaprosov-Interceptors-v-Standalone-prilozhenii-bez-ispolzovaniya-modulej-i-HTTP_INTERCEPTORS.md',
     tags: [
       'angular',
       'routing',
@@ -2390,7 +2390,7 @@ export const questions = [
   {
     id: 103,
     name: 'Lifecycle Angular (Жизненный цикл компонента). Современный подход',
-    answer: 'eng/answers/103-Lifecycle-Angular-Lifecycle-Hooks-Modern-Approach.md',
+    answer: 'assets/content/eng/answers/103-Lifecycle-Angular-Lifecycle-Hooks-Modern-Approach.md',
     tags: [
       'Angular',
       'Lifecycle',

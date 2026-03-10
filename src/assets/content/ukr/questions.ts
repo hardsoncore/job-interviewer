@@ -2,7 +2,7 @@ export const questions = [
   {
     id: 1,
     name: 'Як браузер парсить сторінку?',
-    answer: 'ukr/answers/1-Jak-brauzer-parsit-storinku.md',
+    answer: 'assets/content/ukr/answers/1-Jak-brauzer-parsit-storinku.md',
     tags: [
       'markup',
       'browser'
@@ -38,7 +38,7 @@ export const questions = [
   {
     id: 2,
     name: 'Що таке <DOCTYPE>. Навіщо він потрібен?',
-    answer: 'ukr/answers/2-Sho-take-DOCTYPE-Navishcho-vin-potriben.md',
+    answer: 'assets/content/ukr/answers/2-Sho-take-DOCTYPE-Navishcho-vin-potriben.md',
     tags: [
       'HTML',
       'markup'
@@ -70,7 +70,7 @@ export const questions = [
   {
     id: 3,
     name: 'Теги HTML5. Семантика. Доступність.',
-    answer: 'ukr/answers/3-Tegi-HTML5-Semantika-Dostupnost.md',
+    answer: 'assets/content/ukr/answers/3-Tegi-HTML5-Semantika-Dostupnost.md',
     tags: [
       'HTML',
       'markup'
@@ -94,7 +94,7 @@ export const questions = [
   {
     id: 4,
     name: 'Які є способи підключити CSS на сторінку?',
-    answer: 'ukr/answers/4-Jaki-ye-sposoby-pidklyuchyty-CSS-na-storinku.md',
+    answer: 'assets/content/ukr/answers/4-Jaki-ye-sposoby-pidklyuchyty-CSS-na-storinku.md',
     tags: [
       'HTML',
       'markup',
@@ -127,7 +127,7 @@ export const questions = [
   {
     id: 5,
     name: 'Пріоритет стилів. Каскадність.',
-    answer: 'ukr/answers/5-Prioritet-stiliv-Kaskadnist.md',
+    answer: 'assets/content/ukr/answers/5-Prioritet-stiliv-Kaskadnist.md',
     tags: [
       'css'
     ],
@@ -154,7 +154,7 @@ export const questions = [
   {
     id: 6,
     name: '“Вага” селекторів CSS',
-    answer: 'ukr/answers/6-“Vaga”-selektoriv-CSS.md',
+    answer: 'assets/content/ukr/answers/6-“Vaga”-selektoriv-CSS.md',
     tags: [
       'markup',
       'CSS'
@@ -190,7 +190,7 @@ export const questions = [
   {
     id: 7,
     name: 'Висока специфічність селектора, чи є у неї якісь недоліки?',
-    answer: 'ukr/answers/7-Vysoka-spetsifichnist-selektora-chi-ye-u-ne-ya-kaki-nedoliky.md',
+    answer: 'assets/content/ukr/answers/7-Vysoka-spetsifichnist-selektora-chi-ye-u-ne-ya-kaki-nedoliky.md',
     tags: [
       'markup',
       'CSS'
@@ -206,7 +206,7 @@ export const questions = [
   {
     id: 8,
     name: '!important',
-    answer: 'ukr/answers/8-!important.md',
+    answer: 'assets/content/ukr/answers/8-!important.md',
     tags: [
       'markup',
       'CSS'
@@ -222,7 +222,7 @@ export const questions = [
   {
     id: 9,
     name: 'Селектори: > + ~',
-    answer: 'ukr/answers/9-Selektory-+-~.md',
+    answer: 'assets/content/ukr/answers/9-Selektory-+-~.md',
     tags: [
       'markup',
       'CSS'
@@ -246,7 +246,7 @@ export const questions = [
   {
     id: 10,
     name: 'Псевдокласи елементів',
-    answer: 'ukr/answers/10-Psevdoklasy-elementiv.md',
+    answer: 'assets/content/ukr/answers/10-Psevdoklasy-elementiv.md',
     tags: [
       'HTML',
       'markup',
@@ -272,7 +272,7 @@ export const questions = [
   {
     id: 11,
     name: 'Псевдокласи форм',
-    answer: 'ukr/answers/11-Psevdoklasy-form.md',
+    answer: 'assets/content/ukr/answers/11-Psevdoklasy-form.md',
     tags: [
       'HTML',
       'markup',
@@ -309,7 +309,7 @@ export const questions = [
   {
     id: 12,
     name: 'Псевдоелементи',
-    answer: 'ukr/answers/12-Psevdoelementy.md',
+    answer: 'assets/content/ukr/answers/12-Psevdoelementy.md',
     tags: [
       'HTML',
       'markup',
@@ -342,7 +342,7 @@ export const questions = [
   {
     id: 13,
     name: 'Позиціонування елементів (absolute, fixed, relative etc.)',
-    answer: 'ukr/answers/13-Pozitsionuvannya-elementiv-absolute-fixed-relative.md',
+    answer: 'assets/content/ukr/answers/13-Pozitsionuvannya-elementiv-absolute-fixed-relative.md',
     tags: [
       'HTML',
       'markup',
@@ -375,7 +375,7 @@ export const questions = [
   {
     id: 14,
     name: 'Типи елементів (рядкові, блочні і т.д.). Їх відмінності',
-    answer: 'ukr/answers/14-Typy-elementiv-riadkovi-blochnyi-i-td-Ih-vidminnosti.md',
+    answer: 'assets/content/ukr/answers/14-Typy-elementiv-riadkovi-blochnyi-i-td-Ih-vidminnosti.md',
     tags: [
       'HTML',
       'markup',
@@ -396,7 +396,7 @@ export const questions = [
   {
     id: 15,
     name: 'Центрування (горизонтальне, вертикальне)',
-    answer: 'ukr/answers/15-Tsentruvannya-gorizontalne-vertikalne.md',
+    answer: 'assets/content/ukr/answers/15-Tsentruvannya-gorizontalne-vertikalne.md',
     tags: [
       'HTML',
       'markup',
@@ -417,7 +417,7 @@ export const questions = [
   {
     id: 16,
     name: 'Бокcова модель (Box Model) і box-sizing',
-    answer: 'ukr/answers/16-Boksova-modelBox-Model-i-box-sizing.md',
+    answer: 'assets/content/ukr/answers/16-Boksova-modelBox-Model-i-box-sizing.md',
     tags: [
       'HTML',
       'markup',
@@ -438,7 +438,7 @@ export const questions = [
   {
     id: 17,
     name: 'Flexbox VS Grid',
-    answer: 'ukr/answers/17-Flexbox-VS-Grid.md',
+    answer: 'assets/content/ukr/answers/17-Flexbox-VS-Grid.md',
     tags: [
       'HTML',
       'markup',
@@ -463,7 +463,7 @@ export const questions = [
   {
     id: 18,
     name: 'CSS анімації',
-    answer: 'ukr/answers/18-CSS-animatsii.md',
+    answer: 'assets/content/ukr/answers/18-CSS-animatsii.md',
     tags: [
       'markup',
       'CSS',
@@ -488,7 +488,7 @@ export const questions = [
   {
     id: 19,
     name: 'Сброс стилів і \"нормалізація\" (Reset VS Normilize). Їх відмінності.',
-    answer: 'ukr/answers/19-Sbros-stiliv-i-normalizatsiya-Reset-VS-Normilize-Ih-vidminnosti.md',
+    answer: 'assets/content/ukr/answers/19-Sbros-stiliv-i-normalizatsiya-Reset-VS-Normilize-Ih-vidminnosti.md',
     tags: [
       'markup',
       'CSS'
@@ -512,7 +512,7 @@ export const questions = [
   {
     id: 20,
     name: 'Одиниці вимірювання (em, rem, %, px, vh, vw)',
-    answer: 'ukr/answers/20-Odinitsi-vimiryuvannya-em-rem-px-vh-vw.md',
+    answer: 'assets/content/ukr/answers/20-Odinitsi-vimiryuvannya-em-rem-px-vh-vw.md',
     tags: [
       'markup',
       'CSS'
@@ -528,7 +528,7 @@ export const questions = [
   {
     id: 21,
     name: 'Порядок підключення ресурсів. Скрипти в head, скрипти в кінці body. У чому різниця.',
-    answer: 'ukr/answers/21-Poryadok-pidklyuchennya-resursiv-Skripty-v-head-skripty-v-kontsi-body-U-chomu-riznitsya.md',
+    answer: 'assets/content/ukr/answers/21-Poryadok-pidklyuchennya-resursiv-Skripty-v-head-skripty-v-kontsi-body-U-chomu-riznitsya.md',
     tags: [
       'markup',
       'CSS'
@@ -544,7 +544,7 @@ export const questions = [
   {
     id: 22,
     name: 'Способи підключення JS на сторінку',
-    answer: 'ukr/answers/22-Sposoby-pidklyuchennya-JS-na-storinku.md',
+    answer: 'assets/content/ukr/answers/22-Sposoby-pidklyuchennya-JS-na-storinku.md',
     tags: [
       'HTML',
       'markup',
@@ -561,7 +561,7 @@ export const questions = [
   {
     id: 23,
     name: 'Атрибути defer і async у тега script',
-    answer: 'ukr/answers/23-Atributy-defer-i-async-u-tega-script.md',
+    answer: 'assets/content/ukr/answers/23-Atributy-defer-i-async-u-tega-script.md',
     tags: [
       'HTML',
       'markup',
@@ -586,7 +586,7 @@ export const questions = [
   {
     id: 24,
     name: 'SVG. Анімації svg',
-    answer: 'ukr/answers/24-SVG-Animatsii-svg.md',
+    answer: 'assets/content/ukr/answers/24-SVG-Animatsii-svg.md',
     tags: [
       'SVG',
       'markup',
@@ -607,7 +607,7 @@ export const questions = [
   {
     id: 25,
     name: 'Canvas. Що це і навіщо потрібен?',
-    answer: 'ukr/answers/25-Canvas-Chto-eto-i-zachem-nuzhen.md',
+    answer: 'assets/content/ukr/answers/25-Canvas-Chto-eto-i-zachem-nuzhen.md',
     tags: [
       'HTML',
       'markup',
@@ -636,7 +636,7 @@ export const questions = [
   {
     id: 26,
     name: 'Custom properties',
-    answer: 'ukr/answers/26-Custom-properties.md',
+    answer: 'assets/content/ukr/answers/26-Custom-properties.md',
     tags: [
       'markup',
       'CSS'
@@ -660,7 +660,7 @@ export const questions = [
   {
     id: 27,
     name: 'Pixel-perfect',
-    answer: 'ukr/answers/27-Pixel-perfect.md',
+    answer: 'assets/content/ukr/answers/27-Pixel-perfect.md',
     tags: [
       'HTML',
       'markup',
@@ -677,7 +677,7 @@ export const questions = [
   {
     id: 28,
     name: 'Пре- и пост- процесори CSS. Досвід роботи з ними',
-    answer: 'ukr/answers/28-Pre--i-post--protsesory-CSS--dosvid-roboty-z-nymy.md',
+    answer: 'assets/content/ukr/answers/28-Pre--i-post--protsesory-CSS--dosvid-roboty-z-nymy.md',
     tags: [
       'markup',
       'CSS'
@@ -697,7 +697,7 @@ export const questions = [
   {
     id: 29,
     name: 'Методологія БЕМ. Основні позиції, які проблеми вирішує?',
-    answer: 'ukr/answers/29-Metodologiya-BEM-Osnovni-pozitsii-yaki-problemy-virishuye.md',
+    answer: 'assets/content/ukr/answers/29-Metodologiya-BEM-Osnovni-pozitsii-yaki-problemy-virishuye.md',
     tags: [
       'HTML',
       'markup',
@@ -722,7 +722,7 @@ export const questions = [
   {
     id: 30,
     name: 'HTML-шаблонизатори/препроцесори (handlebars, mustache, pug etc)',
-    answer: 'ukr/answers/30-HTML-shablonizatorypreprotsesory-handlebars-mustache-pug-etc.md',
+    answer: 'assets/content/ukr/answers/30-HTML-shablonizatorypreprotsesory-handlebars-mustache-pug-etc.md',
     tags: [
       'HTML',
       'markup'
@@ -750,7 +750,7 @@ export const questions = [
   {
     id: 31,
     name: 'CORS. Що це таке і з чим його їдять?',
-    answer: 'ukr/answers/31-CORS-Sho-ce-take-i-z-chym-yoho-iediat.md',
+    answer: 'assets/content/ukr/answers/31-CORS-Sho-ce-take-i-z-chym-yoho-iediat.md',
     tags: [
       'browser',
       'security'
@@ -766,7 +766,7 @@ export const questions = [
   {
     id: 32,
     name: 'Типи даних в JavaScript. typeof і його особливості',
-    answer: 'ukr/answers/32-Typy-danyh-zadachi-stroka-+-chislo.md',
+    answer: 'assets/content/ukr/answers/32-Typy-danyh-zadachi-stroka-+-chislo.md',
     tags: [
       'JavaScript',
       'Data types'
@@ -790,7 +790,7 @@ export const questions = [
   {
     id: 33,
     name: 'Преобразування (приведення) типів в JavaScript',
-    answer: 'ukr/answers/33-Preobrazuvannya-privedennya-tipiv-v-JavaScript.md',
+    answer: 'assets/content/ukr/answers/33-Preobrazuvannya-privedennya-tipiv-v-JavaScript.md',
     tags: [
       'JavaScript',
       'Data types'
@@ -806,7 +806,7 @@ export const questions = [
   {
     id: 34,
     name: 'Let, const і var. Різниці + Hoisting ',
-    answer: 'ukr/answers/34-Let-const-i-var-Riznytsi-+-Hoisting-.md',
+    answer: 'assets/content/ukr/answers/34-Let-const-i-var-Riznytsi-+-Hoisting-.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -825,7 +825,7 @@ export const questions = [
   {
     id: 35,
     name: 'Функції: function declaration, function expression',
-    answer: 'ukr/answers/35-Funktsii-function-declaration-function-expression.md',
+    answer: 'assets/content/ukr/answers/35-Funktsii-function-declaration-function-expression.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -846,7 +846,7 @@ export const questions = [
   {
     id: 36,
     name: 'Структури даних (масив, об\'єкт, set, map)',
-    answer: 'ukr/answers/36-Struktury-danyh-masyv-obekt-set-map.md',
+    answer: 'assets/content/ukr/answers/36-Struktury-danyh-masyv-obekt-set-map.md',
     tags: [
       'JavaScript',
       'Data types',
@@ -879,7 +879,7 @@ export const questions = [
   {
     id: 37,
     name: 'Основні методи масивів, які ви використовуєте',
-    answer: 'ukr/answers/37-Osnovni-metody-masyviv-yaki-vy-vykorystovujete.md',
+    answer: 'assets/content/ukr/answers/37-Osnovni-metody-masyviv-yaki-vy-vykorystovujete.md',
     tags: [
       'JavaScript',
       'Data types',
@@ -954,7 +954,7 @@ export const questions = [
   {
     id: 38,
     name: 'Ітератори та генератори',
-    answer: 'ukr/answers/38-Iteratory-ta-generatory.md',
+    answer: 'assets/content/ukr/answers/38-Iteratory-ta-generatory.md',
     tags: [
       'JavaScript',
       'Iterable',
@@ -980,7 +980,7 @@ export const questions = [
   {
     id: 39,
     name: 'Область видимості (Scope, Lexical Environment)',
-    answer: 'ukr/answers/39-Oblast-vydymosti-Scope-Lexical-Environment.md',
+    answer: 'assets/content/ukr/answers/39-Oblast-vydymosti-Scope-Lexical-Environment.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1004,7 +1004,7 @@ export const questions = [
   {
     id: 40,
     name: 'Замикання (Closure)',
-    answer: 'ukr/answers/40-Closure.md',
+    answer: 'assets/content/ukr/answers/40-Closure.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1028,7 +1028,7 @@ export const questions = [
   {
     id: 41,
     name: 'Збірка сміття (Garbage Collector). Що це таке і для чого потрібно?',
-    answer: 'ukr/answers/41-Zbirka-smittya-Garbage-Collector-Sho-tse-take-i-dlya-chogo-potribno.md',
+    answer: 'assets/content/ukr/answers/41-Zbirka-smittya-Garbage-Collector-Sho-tse-take-i-dlya-chogo-potribno.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1043,7 +1043,7 @@ export const questions = [
   {
     id: 42,
     name: 'Рекурсія. Що це таке і для чого потрібно?',
-    answer: 'ukr/answers/42-Rekursiya-Sho-tse-take-i-dlya-chogo-potribno.md',
+    answer: 'assets/content/ukr/answers/42-Rekursiya-Sho-tse-take-i-dlya-chogo-potribno.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1063,7 +1063,7 @@ export const questions = [
   {
     id: 43,
     name: 'Ключове слово this. Контекст',
-    answer: 'ukr/answers/43-Klyuchove-slovo-this-Kontekst.md',
+    answer: 'assets/content/ukr/answers/43-Klyuchove-slovo-this-Kontekst.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1088,7 +1088,7 @@ export const questions = [
   {
     id: 44,
     name: 'Прив\'язка контекста (явна, неявна). Bind, call, apply і їх різниці',
-    answer: 'ukr/answers/44-Privyazka-konteksta-yavna-neyavna-Bind-call-apply-i-ih-riznitsi.md',
+    answer: 'assets/content/ukr/answers/44-Privyazka-konteksta-yavna-neyavna-Bind-call-apply-i-ih-riznitsi.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1113,7 +1113,7 @@ export const questions = [
   {
     id: 45,
     name: 'Каррування (Currying)',
-    answer: 'ukr/answers/45-Karruvannya-Currying.md',
+    answer: 'assets/content/ukr/answers/45-Karruvannya-Currying.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1139,7 +1139,7 @@ export const questions = [
   {
     id: 46,
     name: 'Часткове застосування (Partial Application)',
-    answer: 'ukr/answers/46-Chastkove-zastosuvannya-Partial-Application.md',
+    answer: 'assets/content/ukr/answers/46-Chastkove-zastosuvannya-Partial-Application.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1161,7 +1161,7 @@ export const questions = [
   {
     id: 47,
     name: 'Псевдомасив arguments (чому він псевдомасив?)',
-    answer: 'ukr/answers/47-Psevdomasiv-arguments-chomu-vin-psevdomasiv.md',
+    answer: 'assets/content/ukr/answers/47-Psevdomasiv-arguments-chomu-vin-psevdomasiv.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1190,7 +1190,7 @@ export const questions = [
   {
     id: 48,
     name: 'Директива "use strict"',
-    answer: 'ukr/answers/48-Direktiva-use-strict.md',
+    answer: 'assets/content/ukr/answers/48-Direktiva-use-strict.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1214,7 +1214,7 @@ export const questions = [
   {
     id: 49,
     name: 'Перетворення об\'єктів: toString і valueOf',
-    answer: 'ukr/answers/49-Peretvorennya-obektiv-toString-i-valueOf.md',
+    answer: 'assets/content/ukr/answers/49-Peretvorennya-obektiv-toString-i-valueOf.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1234,7 +1234,7 @@ export const questions = [
   {
     id: 50,
     name: 'Цикл подій (Event loop), microtasks, event queue',
-    answer: 'ukr/answers/50-Tsikl-podiy-Event-loop-microtasks-event-queue.md',
+    answer: 'assets/content/ukr/answers/50-Tsikl-podiy-Event-loop-microtasks-event-queue.md',
     tags: [
       'JavaScript',
       'Browser mechanics'
@@ -1254,7 +1254,7 @@ export const questions = [
   {
     id: 51,
     name: 'Наслідування в JavaScript',
-    answer: 'ukr/answers/51-Nasliduvannya-v-JavaScript.md',
+    answer: 'assets/content/ukr/answers/51-Nasliduvannya-v-JavaScript.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1274,7 +1274,7 @@ export const questions = [
   {
     id: 52,
     name: 'Посилання __proto__. Що це і з чим його їдять?',
-    answer: 'ukr/answers/52-Ssylka-__proto__-shcho-tse-i-z-chym-yoho-yidyat.md',
+    answer: 'assets/content/ukr/answers/52-Ssylka-__proto__-shcho-tse-i-z-chym-yoho-yidyat.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1290,7 +1290,7 @@ export const questions = [
   {
     id: 53,
     name: 'Властивість F.prototype і створення об\'єктів через new',
-    answer: 'ukr/answers/53-Vlastyvist-Fprototype-i-stvorennya-obektiv-cherez-new.md',
+    answer: 'assets/content/ukr/answers/53-Vlastyvist-Fprototype-i-stvorennya-obektiv-cherez-new.md',
     tags: [
       'JavaScript',
       'JS mechanics'
@@ -1306,7 +1306,7 @@ export const questions = [
   {
     id: 54,
     name: 'Promises. Навіщо потрібні? Яку проблему вирішували?',
-    answer: 'ukr/answers/54-Promises-Navishcho-potribni-Yaku-problemu-vyrishuvaly.md',
+    answer: 'assets/content/ukr/answers/54-Promises-Navishcho-potribni-Yaku-problemu-vyrishuvaly.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1340,7 +1340,7 @@ export const questions = [
   {
     id: 55,
     name: 'Promise chaining. Можна ли викликати promise.then().finally().then() або promise.catch().then()? Що отримаємо?',
-    answer: 'ukr/answers/55-Promise-chaining.md',
+    answer: 'assets/content/ukr/answers/55-Promise-chaining.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1366,7 +1366,7 @@ export const questions = [
   {
     id: 56,
     name: 'Try - Catch. Що це і для чого потрібно?',
-    answer: 'ukr/answers/56-Try---Catch-shcho-tse-i-dlya-chogo-potribno.md',
+    answer: 'assets/content/ukr/answers/56-Try---Catch-shcho-tse-i-dlya-chogo-potribno.md',
     tags: [
       'JavaScript'
     ],
@@ -1381,7 +1381,7 @@ export const questions = [
   {
     id: 57,
     name: 'Що нового з\'явилося в мові в ES6?',
-    answer: 'ukr/answers/57-Scho-novoho-z-yavylosya-v-movi-v-ES6.md',
+    answer: 'assets/content/ukr/answers/57-Scho-novoho-z-yavylosya-v-movi-v-ES6.md',
     tags: [
       'JavaScript',
       'ES6'
@@ -1397,7 +1397,7 @@ export const questions = [
   {
     id: 58,
     name: 'Що нового з\'явилося в мові ПІСЛЯ ES6?',
-    answer: 'ukr/answers/58-Scho-novoho-z-yavylosya-v-movi-PISLYA-ES6.md',
+    answer: 'assets/content/ukr/answers/58-Scho-novoho-z-yavylosya-v-movi-PISLYA-ES6.md',
     tags: [
       'JavaScript',
       'ES6',
@@ -1414,7 +1414,7 @@ export const questions = [
   {
     id: 59,
     name: 'Async await. Яку проблему вирішують?',
-    answer: 'ukr/answers/59-Async-await-Yaku-problemu-vyrishuyut.md',
+    answer: 'assets/content/ukr/answers/59-Async-await-Yaku-problemu-vyrishuyut.md',
     tags: [
       'JavaScript',
       'ES6',
@@ -1444,7 +1444,7 @@ export const questions = [
   {
     id: 60,
     name: 'Методи управління групою промісів',
-    answer: 'ukr/answers/60-Metody-upravlinnya-gruppoju-promisiv.md',
+    answer: 'assets/content/ukr/answers/60-Metody-upravlinnya-gruppoju-promisiv.md',
     tags: [
       'JavaScript',
       'ES6',
@@ -1478,7 +1478,7 @@ export const questions = [
   {
     id: 61,
     name: 'DOM - що це і навіщо? DOM події. Спливання, занурення. Делегування',
-    answer: 'ukr/answers/61-DOM---shcho-tse-i-navishcho-DOM-podiyi-Splivannya-zanurennya-Deleguvannya.md',
+    answer: 'assets/content/ukr/answers/61-DOM---shcho-tse-i-navishcho-DOM-podiyi-Splivannya-zanurennya-Deleguvannya.md',
     tags: [
       'markup',
       'markup',
@@ -1496,7 +1496,7 @@ export const questions = [
   {
     id: 62,
     name: 'LocalStorage VS SessionStorage. Різниця, принцип роботи',
-    answer: 'ukr/answers/62-LocalStorage-VS-SessionStorage-Riznitsya-printsip-roboty.md',
+    answer: 'assets/content/ukr/answers/62-LocalStorage-VS-SessionStorage-Riznitsya-printsip-roboty.md',
     tags: [
       'browser',
       'LocalStorage',
@@ -1517,7 +1517,7 @@ export const questions = [
   {
     id: 63,
     name: 'Code style, linters, prettier etc.',
-    answer: 'ukr/answers/63-Code-style-Linters-Prettier.md',
+    answer: 'assets/content/ukr/answers/63-Code-style-Linters-Prettier.md',
     tags: [
       'programming',
       'codestyle',
@@ -1534,7 +1534,7 @@ export const questions = [
   {
     id: 64,
     name: 'Мутабильність/іммутабельність (при роботі з масивами etc)',
-    answer: 'ukr/answers/64-Mutabilnist-immutabilnist-pri-roboti-z-masivami-etc.md',
+    answer: 'assets/content/ukr/answers/64-Mutabilnist-immutabilnist-pri-roboti-z-masivami-etc.md',
     tags: [
       'programming',
       'immutable'
@@ -1550,7 +1550,7 @@ export const questions = [
   {
     id: 65,
     name: 'Реактивне програмування. RxJs і основні методи',
-    answer: 'ukr/answers/65-Reaktyvne-programuvannya-RxJs-i-osnovni-metody.md',
+    answer: 'assets/content/ukr/answers/65-Reaktyvne-programuvannya-RxJs-i-osnovni-metody.md',
     tags: [
       'TypeScript',
       'RxJs'
@@ -1566,7 +1566,7 @@ export const questions = [
   {
     id: 66,
     name: 'Що таке об\'єкт Observable в RxJs?',
-    answer: 'ukr/answers/66-Shcho-take-obekt-Observable-v-RxJs.md',
+    answer: 'assets/content/ukr/answers/66-Shcho-take-obekt-Observable-v-RxJs.md',
     tags: [
       'TypeScript',
       'Observables',
@@ -1584,7 +1584,7 @@ export const questions = [
   {
     id: 67,
     name: 'Що таке Subject? Які бувають види?',
-    answer: 'ukr/answers/67-Shcho-take-Subject-Yaki-buvayut-vidy.md',
+    answer: 'assets/content/ukr/answers/67-Shcho-take-Subject-Yaki-buvayut-vidy.md',
     tags: [
       'TypeScript',
       'Observables',
@@ -1602,7 +1602,7 @@ export const questions = [
   {
     id: 68,
     name: 'Observables VS Subject - різниця',
-    answer: 'ukr/answers/68-Observables-VS-Subject---riznitsya.md',
+    answer: 'assets/content/ukr/answers/68-Observables-VS-Subject---riznitsya.md',
     tags: [
       'TypeScript',
       'Observables',
@@ -1632,7 +1632,7 @@ export const questions = [
   {
     id: 69,
     name: 'Zone.js. Що це і для чого потрібно?',
-    answer: 'ukr/answers/69-Zonejs-Shcho-tse-i-dlya-chogo-potribno.md',
+    answer: 'assets/content/ukr/answers/69-Zonejs-Shcho-tse-i-dlya-chogo-potribno.md',
     tags: [
       'Angular',
       'Change Detection',
@@ -1649,7 +1649,7 @@ export const questions = [
   {
     id: 70,
     name: 'Які Utility Types (Утиліти типів) ти використовуєш на практиці?',
-    answer: 'ukr/answers/70-Yaki-Utility-Types-Utility-tipiv-ty-vykorystovuesh-na-praktytsi.md',
+    answer: 'assets/content/ukr/answers/70-Yaki-Utility-Types-Utility-tipiv-ty-vykorystovuesh-na-praktytsi.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1681,7 +1681,7 @@ export const questions = [
   {
     id: 71,
     name: 'Що таке Type Guards і Type Assertions (Суження типів)?',
-    answer: 'ukr/answers/71-Shcho-take-Type-Guards-i-Type-Assertions-Suzhennya-typiv.md',
+    answer: 'assets/content/ukr/answers/71-Shcho-take-Type-Guards-i-Type-Assertions-Suzhennya-typiv.md',
     tags: [
       'TypeScript',
       'TS mechanics',
@@ -1702,7 +1702,7 @@ export const questions = [
   {
     id: 72,
     name: 'Що таке Enums? Їх застосування',
-    answer: 'ukr/answers/72-Shcho-take-Enums-Ih-zastosuvannya.md',
+    answer: 'assets/content/ukr/answers/72-Shcho-take-Enums-Ih-zastosuvannya.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1718,7 +1718,7 @@ export const questions = [
   {
     id: 73,
     name: 'Class, Interface, Type. Різниця та застосування',
-    answer: 'ukr/answers/73-Class-Interface-Type-Riznitsya-ta-zastosuvannya.md',
+    answer: 'assets/content/ukr/answers/73-Class-Interface-Type-Riznitsya-ta-zastosuvannya.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1742,7 +1742,7 @@ export const questions = [
   {
     id: 74,
     name: 'Що таке Generics? Їх застосування',
-    answer: 'ukr/answers/74-Shcho-take-Generics-Ih-zastosuvannya.md',
+    answer: 'assets/content/ukr/answers/74-Shcho-take-Generics-Ih-zastosuvannya.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1758,7 +1758,7 @@ export const questions = [
   {
     id: 75,
     name: 'Різниця між any, unknown і never.',
-    answer: 'ukr/answers/75-Riznitsya-mizh-any-unknown-i-never.md',
+    answer: 'assets/content/ukr/answers/75-Riznitsya-mizh-any-unknown-i-never.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -1782,7 +1782,7 @@ export const questions = [
   {
     id: 76,
     name: 'Коли використовувати .asObservable() в RxJs?',
-    answer: 'ukr/answers/76-Koly-vykorystovuvaty-asObservable-v-RxJs.md',
+    answer: 'assets/content/ukr/answers/76-Koly-vykorystovuvaty-asObservable-v-RxJs.md',
     tags: [
       'TypeScript',
       'Angular',
@@ -1799,7 +1799,7 @@ export const questions = [
   {
     id: 77,
     name: 'Основні принципи ООП',
-    answer: 'ukr/answers/77-Osnovni-printsypy-OOP.md',
+    answer: 'assets/content/ukr/answers/77-Osnovni-printsypy-OOP.md',
     tags: [
       'programming',
       'ООП'
@@ -1815,7 +1815,7 @@ export const questions = [
   {
     id: 78,
     name: 'Паттерни проектування',
-    answer: 'ukr/answers/78-Patterny-proektirovannya.md',
+    answer: 'assets/content/ukr/answers/78-Patterny-proektirovannya.md',
     tags: [
       'Patterns',
       'best-practice'
@@ -1831,7 +1831,7 @@ export const questions = [
   {
     id: 79,
     name: 'Декоратори функцій. Що це таке і для чого?',
-    answer: 'ukr/answers/79-Dekoratory-funktsij-Shcho-tse-take-i-dlya-chego.md',
+    answer: 'assets/content/ukr/answers/79-Dekoratory-funktsij-Shcho-tse-take-i-dlya-chego.md',
     tags: [
       'JavaScript',
       'Patterns',
@@ -1848,7 +1848,7 @@ export const questions = [
   {
     id: 80,
     name: 'Принципи SOLID. Що це таке і навіщо?',
-    answer: 'ukr/answers/80-Printsypy-SOLID-Shcho-tse-take-i-navishcho.md',
+    answer: 'assets/content/ukr/answers/80-Printsypy-SOLID-Shcho-tse-take-i-navishcho.md',
     tags: [
       'programming',
       'best-practice',
@@ -1885,7 +1885,7 @@ export const questions = [
   {
     id: 81,
     name: 'Протокол HTTP. Що це таке і з чим його їдять?',
-    answer: 'ukr/answers/81-Protokol-HTTP-Shcho-tse-take-i-z-chym-yoho-idyat.md',
+    answer: 'assets/content/ukr/answers/81-Protokol-HTTP-Shcho-tse-take-i-z-chym-yoho-idyat.md',
     tags: [
       'protocol',
       'internet'
@@ -1901,7 +1901,7 @@ export const questions = [
   {
     id: 82,
     name: 'Спеціальні селектори Angular. Псевдокласи :host, :host-context і псевдоелемент ::ng-deep',
-    answer: 'ukr/answers/82-Spetsialni-selektory-Angular-Psevdoklasy-host-host-context-i-psevdoelement-ng-deep.md',
+    answer: 'assets/content/ukr/answers/82-Spetsialni-selektory-Angular-Psevdoklasy-host-host-context-i-psevdoelement-ng-deep.md',
     tags: [
       'Angular',
       'html',
@@ -1918,7 +1918,7 @@ export const questions = [
   {
     id: 83,
     name: 'SQL. Основні команди',
-    answer: 'ukr/answers/83-SQL-Osnovni-komandy.md',
+    answer: 'assets/content/ukr/answers/83-SQL-Osnovni-komandy.md',
     tags: [
       'СУБД (системи управління базами даних)',
       'databases',
@@ -1959,7 +1959,7 @@ export const questions = [
   {
     id: 84,
     name: 'Формат JSON, метод toJSON',
-    answer: 'ukr/answers/84-Format-JSON-metod-toJSON.md',
+    answer: 'assets/content/ukr/answers/84-Format-JSON-metod-toJSON.md',
     tags: [
       'JSON',
       'Data Structures'
@@ -1979,7 +1979,7 @@ export const questions = [
   {
     id: 85,
     name: 'Аутентифікація і авторизація. У чому різниця?',
-    answer: 'ukr/answers/85-Autentifikatsiya-i-avtorizatsiya-V-chem-raznitsa.md',
+    answer: 'assets/content/ukr/answers/85-Autentifikatsiya-i-avtorizatsiya-V-chem-raznitsa.md',
     tags: [
       'security',
       'authentication',
@@ -2000,7 +2000,7 @@ export const questions = [
   {
     id: 86,
     name: 'Безпека додатків (AppSec)',
-    answer: 'ukr/answers/86-Bezpeka-dodatkiv-AppSec.md',
+    answer: 'assets/content/ukr/answers/86-Bezpeka-dodatkiv-AppSec.md',
     tags: [
       'security',
       'AppSec',
@@ -2025,7 +2025,7 @@ export const questions = [
   {
     id: 87,
     name: 'Дерева, графи, перевернуті дерева',
-    answer: 'ukr/answers/87-Dereva-grafy-perevernutі-dereva.md',
+    answer: 'assets/content/ukr/answers/87-Dereva-grafy-perevernutі-dereva.md',
     tags: [
       'data structures',
       'trees',
@@ -2054,7 +2054,7 @@ export const questions = [
   {
     id: 88,
     name: 'Чому робота з DOM вважається дуже ресурсоємною?',
-    answer: 'ukr/answers/88-Chomu-robota-z-DOM-vvazhayetsya-duzhe-resursojemnoyu.md',
+    answer: 'assets/content/ukr/answers/88-Chomu-robota-z-DOM-vvazhayetsya-duzhe-resursojemnoyu.md',
     tags: [
       'DOM',
       'performance',
@@ -2079,7 +2079,7 @@ export const questions = [
   {
     id: 89,
     name: 'Shadow DOM. Інкапсуляція стилів',
-    answer: 'ukr/answers/89-Shadow-DOM-Inkapsulyatsiya-stiliv.md',
+    answer: 'assets/content/ukr/answers/89-Shadow-DOM-Inkapsulyatsiya-stiliv.md',
     tags: [
       'web development',
       'shadow DOM'
@@ -2103,7 +2103,7 @@ export const questions = [
   {
     id: 90,
     name: 'Virtual DOM. Оптимізація на рівні фреймворка',
-    answer: 'ukr/answers/90-Virtual-DOM-Optimizatsiya-na-rivni-frejmvorka.md',
+    answer: 'assets/content/ukr/answers/90-Virtual-DOM-Optimizatsiya-na-rivni-frejmvorka.md',
     tags: [
       'web development',
       'virtual DOM',
@@ -2129,7 +2129,7 @@ export const questions = [
   {
     id: 91,
     name: 'RxJS і асинхронність',
-    answer: 'ukr/answers/91-RxJS-i-asinhronnist.md',
+    answer: 'assets/content/ukr/answers/91-RxJS-i-asinhronnist.md',
     tags: [
       'rxjs',
       'asynchronous',
@@ -2158,7 +2158,7 @@ export const questions = [
   {
     id: 92,
     name: 'State management в Angular. NgRx',
-    answer: 'ukr/answers/92-State-management-v-Angular-NgRx.md',
+    answer: 'assets/content/ukr/answers/92-State-management-v-Angular-NgRx.md',
     tags: [
       'angular',
       'state management',
@@ -2183,7 +2183,7 @@ export const questions = [
   {
     id: 93,
     name: 'Signals in Angular. В чому фундаментальна різниця між Signals і RxJS, і чому команда Angular вирішила впровадити цей паттерн?',
-    answer: 'ukr/answers/93-Signals-in-Angular-V-chomu-fundamentalna-riznitsya-mizhdu-Signals-i-RxJS-i-chomu-komanda-Angular-virishila-vprovaditi-tsey-pattern.md',
+    answer: 'assets/content/ukr/answers/93-Signals-in-Angular-V-chomu-fundamentalna-riznitsya-mizhdu-Signals-i-RxJS-i-chomu-komanda-Angular-virishila-vprovaditi-tsey-pattern.md',
     tags: [
       'Angular',
       'Signals',
@@ -2204,7 +2204,7 @@ export const questions = [
   {
     id: 94,
     name: 'Як працюють computed і effect?',
-    answer: 'ukr/answers/94-Yak-pratsyuyut-computed-i-effect.md',
+    answer: 'assets/content/ukr/answers/94-Yak-pratsyuyut-computed-i-effect.md',
     tags: [
       'Angular',
       'Signals',
@@ -2229,7 +2229,7 @@ export const questions = [
   {
     id: 95,
     name: 'Signal-based API: input(), output() і model()',
-    answer: 'ukr/answers/95-Signal-based-API-input-output-i-model.md',
+    answer: 'assets/content/ukr/answers/95-Signal-based-API-input-output-i-model.md',
     tags: [
       'Angular',
       'Signals',
@@ -2246,7 +2246,7 @@ export const questions = [
   {
     id: 96,
     name: 'Standalone Components: Чому відмовилися від NgModules?',
-    answer: 'ukr/answers/96-Standalone-Components-Chomu-vidmovylysya-vid-NgModules.md',
+    answer: 'assets/content/ukr/answers/96-Standalone-Components-Chomu-vidmovylysya-vid-NgModules.md',
     tags: [
       'Angular',
       'Standalone',
@@ -2267,7 +2267,7 @@ export const questions = [
   {
     id: 97,
     name: 'Функція inject() проти Constructor DI',
-    answer: 'ukr/answers/97-Funktsiya-inject-protiv-Constructor-DI.md',
+    answer: 'assets/content/ukr/answers/97-Funktsiya-inject-protiv-Constructor-DI.md',
     tags: [
       'Angular',
       'Standalone',
@@ -2297,7 +2297,7 @@ export const questions = [
   {
     id: 98,
     name: 'Новий Control Flow (@if, @for) проти Structural Directives (*ngIf, *ngFor)',
-    answer: 'ukr/answers/98-Novyj-Control-Flow-if-for-protiv-Structural-Directives-ngIf-ngFor.md',
+    answer: 'assets/content/ukr/answers/98-Novyj-Control-Flow-if-for-protiv-Structural-Directives-ngIf-ngFor.md',
     tags: [
       'Angular',
       'Syntax'
@@ -2317,7 +2317,7 @@ export const questions = [
   {
     id: 99,
     name: 'Стратегії Change Detection (Default vs OnPush vs Zoneless)',
-    answer: 'ukr/answers/99-Strategii-Change-Detection-Default-vs-OnPush-vs-Zoneless.md',
+    answer: 'assets/content/ukr/answers/99-Strategii-Change-Detection-Default-vs-OnPush-vs-Zoneless.md',
     tags: [
       'Angular',
       'Change Detection'
@@ -2341,7 +2341,7 @@ export const questions = [
   {
     id: 100,
     name: 'Deferrable Views (@defer): Як працює цей механізм? Які вбудовані тригери (on viewport, on interaction, on idle) існують для лінивої завантаження шматків шаблону?',
-    answer: 'ukr/answers/100-Deferrable-Views-defer.md',
+    answer: 'assets/content/ukr/answers/100-Deferrable-Views-defer.md',
     tags: [
       'Angular',
       'Performance'
@@ -2357,7 +2357,7 @@ export const questions = [
   {
     id: 101,
     name: 'Functional Guards - що це і чому класові Guards були оголошені deprecated?',
-    answer: 'ukr/answers/101-Functional-Guards---scho-tse-i-chomu-klasovi-Guards-buly-ogolosheni-deprecated.md',
+    answer: 'assets/content/ukr/answers/101-Functional-Guards---scho-tse-i-chomu-klasovi-Guards-buly-ogolosheni-deprecated.md',
     tags: [
       'angular',
       'routing',
@@ -2374,7 +2374,7 @@ export const questions = [
   {
     id: 102,
     name: 'Functional Interceptors: Як налаштувати перехоплювачі HTTP-запитів (Interceptors) у Standalone-додатку без використання модулів і HTTP_INTERCEPTORS?',
-    answer: 'ukr/answers/102-Functional-Interceptors-Yak-nalashtuvaty-perekhoplyuvachi-HTTP-zapytiv-Interceptors-u-Standalone-dodatku-bez-vykorystannya-moduliv-i-HTTP_INTERCEPTORS.md',
+    answer: 'assets/content/ukr/answers/102-Functional-Interceptors-Yak-nalashtuvaty-perekhoplyuvachi-HTTP-zapytiv-Interceptors-u-Standalone-dodatku-bez-vykorystannya-moduliv-i-HTTP_INTERCEPTORS.md',
     tags: [
       'angular',
       'routing',
@@ -2391,7 +2391,7 @@ export const questions = [
   {
     id: 103,
     name: 'Lifecycle Angular (Життєвий цикл компонента). Сучасний підхід',
-    answer: 'ukr/answers/103-Lifecycle-Angular-Zhyttievyj-tsikl-komponenta-Suchasnyj-pidhid.md',
+    answer: 'assets/content/ukr/answers/103-Lifecycle-Angular-Zhyttievyj-tsikl-komponenta-Suchasnyj-pidhid.md',
     tags: [
       'Angular',
       'Lifecycle',
