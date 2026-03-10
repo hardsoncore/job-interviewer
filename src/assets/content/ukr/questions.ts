@@ -2038,11 +2038,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Графи',
+        name: 'Перевернуті дерева',
         isChecked: false
       },
       {
-        name: 'Перевернуті дерева',
+        name: 'Бінарні дерева',
+        isChecked: false
+      },
+      {
+        name: 'Графи',
         isChecked: false
       }
     ]

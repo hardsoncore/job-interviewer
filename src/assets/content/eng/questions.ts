@@ -2037,11 +2037,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Graphs',
+        name: 'Inverted Trees',
         isChecked: false
       },
       {
-        name: 'Inverted Trees',
+        name: 'Binary Trees',
+        isChecked: false
+      },
+      {
+        name: 'Graphs',
         isChecked: false
       }
     ]
