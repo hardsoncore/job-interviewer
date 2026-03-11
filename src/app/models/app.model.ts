@@ -10,3 +10,9 @@ export interface QueryParams {
   questionId?: string | number; // because number converts to string in parameters
   needToUpdate?: boolean;
 }
+
+export enum Languages {
+  eng = 'eng',
+  ukr = 'ukr',
+  rus = 'rus'
+}

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { versionInfo } from 'get-version';
-import { ThemeService } from './theme.service';
+import { Languages } from '../models/app.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,5 +13,39 @@ export class AppService {
 
   public get appVersion(): string {
     return this._appVersion;
+  }
+
+  public get language(): Languages {
+    const storedLanguage = localStorage.getItem('language') as Languages | null;
+    if (storedLanguage && Object.values(Languages).includes(storedLanguage)) {
+      return storedLanguage;
+    }
+
+    const browserLanguage = navigator.language || (navigator as any).userLanguage;
+    const shortCode = browserLanguage ? browserLanguage.split('-')[0].toLowerCase() : '';
+
+    let mappedLanguage: Languages | undefined;
+    switch (shortCode) {
+      case 'en':
+        mappedLanguage = Languages.eng;
+        break;
+      case 'uk':
+        mappedLanguage = Languages.ukr;
+        break;
+      case 'ru':
+        mappedLanguage = Languages.rus;
+        break;
+      default:
+        mappedLanguage = undefined;
+    }
+
+    return mappedLanguage || Languages.rus;
+  }
+
+  set language(value: Languages) {
+    if (!Object.values(Languages).includes(value)) return;
+
+    localStorage.setItem('language', value);
+    location.reload();
   }
 }

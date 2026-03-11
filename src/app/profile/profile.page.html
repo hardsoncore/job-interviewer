@@ -37,6 +37,14 @@
     <span slot="end">{{ appVersion }}</span>
   </ion-item>
   <ion-item>
+    <ion-label>Language</ion-label>
+    <ion-select placeholder="Select language" [(ngModel)]="currentLanguage">
+      <ion-select-option [value]="languages.eng">English</ion-select-option>
+      <ion-select-option [value]="languages.ukr">Ukrainian</ion-select-option>
+      <ion-select-option [value]="languages.rus">Russian</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
     <ion-label>Theme</ion-label>
     <ion-select placeholder="Select theme" [(ngModel)]="currentTheme">
       <ion-select-option value="light">Light</ion-select-option>

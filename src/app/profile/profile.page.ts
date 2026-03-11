@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 
-import { Themes, ThemeType } from '../models/app.model';
+import { Languages, Themes, ThemeType } from '../models/app.model';
 import { Profile } from '../models/profile.model';
 import { ProfileService } from '../services/profile.service';
 import { ThemeService } from '../services/theme.service';
@@ -18,6 +18,7 @@ export class ProfilePage implements OnInit {
   profile: Profile;
   avPercent: number;
   appVersion: string;
+  languages = Languages;
 
   constructor(
     private theme: ThemeService,
@@ -35,6 +36,15 @@ export class ProfilePage implements OnInit {
 
   set currentTheme(value: ThemeType) {
     this.theme.toggleDarkTheme(value === Themes.dark);
+  }
+
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  get currentLanguage(): Languages {
+    return this.appService.language;
+  }
+
+  set currentLanguage(value: Languages) {
+    this.appService.language = value;
   }
 
   ngOnInit(): void {
