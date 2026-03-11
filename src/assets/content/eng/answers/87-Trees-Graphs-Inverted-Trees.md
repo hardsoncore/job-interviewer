@@ -140,4 +140,4 @@
   <strong>Practice</strong>: Graphs are used to model complex networks. A Dependency Graph is created by module bundlers (like Webpack) when they analyze which file imports which other files. Graphs are also used in designing complex State Machines or routing maps in applications.
 </p>
 
-<img src="/assets/img/trees_and_graphs.png" alt="Graphs in real life" />
+<img src="assets/img/trees-vs-graphs.png" alt="Graphs in real life" />
