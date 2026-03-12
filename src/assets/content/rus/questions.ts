@@ -1752,7 +1752,7 @@ export const questions = [
   },
   {
     id: 75,
-    name: 'Разница между any, unknown и never.',
+    name: 'Разница между any, unknown и never',
     answer: 'assets/content/rus/answers/75-Raznitsa-mezhdu-any-unknown-i-never.md',
     tags: [
       'TypeScript',

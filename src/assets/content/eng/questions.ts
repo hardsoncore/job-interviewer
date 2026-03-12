@@ -1756,7 +1756,7 @@ export const questions = [
   },
   {
     id: 75,
-    name: 'Difference between any, unknown, and never.',
+    name: 'Difference between any, unknown, and never',
     answer: 'assets/content/eng/answers/75-Difference-between-any-unknown-and-never.md',
     tags: [
       'TypeScript',
