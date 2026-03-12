@@ -8,9 +8,8 @@
   <section class="content">
     <h1>{{ question?.name }}</h1>
     <pre class="pre-text" [innerHTML]="question?.answer"></pre>
-    <!-- <iframe class="pre-text" [src]="question?.answer"></iframe> -->
   </section>
 
-  <ion-button (click)="submitAnswer()" color="tertiary" fill="outline" expand="block" size="large">Take Answer</ion-button>
+  <ion-button (click)="submitAnswer()" color="tertiary" fill="outline" expand="block" size="large">Solve</ion-button>
   <br>
 </ion-content>
