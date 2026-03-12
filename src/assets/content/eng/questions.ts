@@ -2406,5 +2406,37 @@ export const questions = [
         isChecked: false
       }
     ]
+  },
+  {
+    id: 104,
+    name: 'Object.defineProperty - what it is and what it is for?',
+    answer: 'assets/content/eng/answers/104-Object-defineProperty-what-it-is-and-what-it-is-for.md',
+    tags: [
+      'JavaScript',
+      'Angular.js',
+      'Vue 2'
+    ],
+    structure: [
+      {
+        name: 'Object.defineProperty - what it is and what it is for?',
+        isChecked: false
+      },
+      {
+        name: 'General property descriptors: configurable, enumerable',
+        isChecked: false
+      },
+      {
+        name: 'Data descriptors: writable, value',
+        isChecked: false
+      },
+      {
+        name: 'Accessor descriptors: get, set',
+        isChecked: false
+      },
+      {
+        name: 'Usage in Vue and other frameworks - (only Vue 2, in Vue 3 - already Proxy)',
+        isChecked: false
+      }
+    ]
   }
 ];

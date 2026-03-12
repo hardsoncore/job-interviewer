@@ -2407,5 +2407,37 @@ export const questions = [
         isChecked: false
       }
     ]
+  },
+  {
+    id: 104,
+    name: 'Object.defineProperty - що це і для чого потрібно? (+ застосування в Angular.js і Vue 2)',
+    answer: 'assets/content/ukr/answers/104-Object-defineProperty-scho-tse-i-dlya-chogo-potribno.md',
+    tags: [
+      'JavaScript',
+      'Angular.js',
+      'Vue 2'
+    ],
+    structure: [
+      {
+        name: 'Object.defineProperty - що це і для чого потрібно?',
+        isChecked: false
+      },
+      {
+        name: 'Загальні дескриптори властивостей: configurable, enumerable',
+        isChecked: false
+      },
+      {
+        name: 'Дескриптори даних: writable, value',
+        isChecked: false
+      },
+      {
+        name: 'Дескриптори доступу: get, set',
+        isChecked: false
+      },
+      {
+        name: 'Використання в Vue та інших фреймворках - (тільки Vue 2, у Vue 3 вже Proxy)',
+        isChecked: false
+      }
+    ]
   }
 ];
