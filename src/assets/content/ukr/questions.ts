@@ -2439,5 +2439,33 @@ export const questions = [
         isChecked: false
       }
     ]
+  },
+  {
+    id: 105,
+    name: 'Суть реактивності в Angular.js, Angular 2+, Vue 2 і Vue 3. В чому фундаментальна різниця між підходами до реактивності?',
+    answer: 'assets/content/ukr/answers/105-Sut-reaktivnosti-v-Angular-Vue.md',
+    tags: [
+      'Angular',
+      'Vue',
+      'Reactivity'
+    ],
+    structure: [
+      {
+        name: 'Реактивність в Vue 2',
+        isChecked: false
+      },
+      {
+        name: 'Реактивність в Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'Реактивність в Angular.js',
+        isChecked: false
+      },
+      {
+        name: 'Реактивність в Angular 2+',
+        isChecked: false
+      }
+    ]
   }
 ];

@@ -2438,5 +2438,33 @@ export const questions = [
         isChecked: false
       }
     ]
-  }
+  },
+  {
+    id: 105,
+    name: 'The essence of reactivity in Angular.js, Angular 2+, Vue 2, and Vue 3. What is the fundamental difference between approaches?',
+    answer: 'assets/content/eng/answers/105-The-essence-of-reactivity-in-Angular-Vue.md',
+    tags: [
+      'Angular',
+      'Vue',
+      'Reactivity'
+    ],
+    structure: [
+      {
+        name: 'Reactivity in Vue 2',
+        isChecked: false
+      },
+      {
+        name: 'Reactivity in Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'Reactivity in Angular.js',
+        isChecked: false
+      },
+      {
+        name: 'Reactivity in Angular 2+',
+        isChecked: false
+      }
+    ]
+  },
 ];
