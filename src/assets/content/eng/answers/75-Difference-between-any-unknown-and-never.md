@@ -12,7 +12,7 @@
 </p>
 
 <p>
-  <span class="accent">When to use:</span> <b>Almost never in new code.</b> It is only acceptable during the gradual migration of a large legacy project to TypeScript or for very quick and temporary hacks during debugging.
+  <span class="accent">When to use:</span> <b>Almost never in new code.</b> It is only acceptable during the addition of new functionality or bug fixes - while the solution is not yet fully ready and BEFORE pushing the code to the remote repository. Or during the gradual migration of a large legacy project to TypeScript.
 </p>
 
 <code class="code">
@@ -62,7 +62,7 @@
 </p>
 
 <p>
-  <span class="accent">Behavior:</span> Nothing can be assigned to a variable of type never (not even any).
+  <span class="accent">Behavior:</span> Nothing can be assigned to a variable of type <code>never</code> (not even <code>any</code>).
 </p>
 
 <p>
