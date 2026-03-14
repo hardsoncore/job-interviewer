@@ -1692,8 +1692,8 @@ export const questions = [
   },
   {
     id: 71,
-    name: 'Що таке Type Guards і Type Assertions (Суження типів)?',
-    answer: 'assets/content/ukr/answers/71-Shcho-take-Type-Guards-i-Type-Assertions-Suzhennya-typiv.md',
+    name: 'Що таке Type Guards і Type Assertions?',
+    answer: 'assets/content/ukr/answers/71-Shcho-take-Type-Guards-i-Type-Assertions.md',
     tags: [
       'TypeScript',
       'TS mechanics',
@@ -1702,11 +1702,11 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Type Guards (Охоронці типів)',
+        name: 'Type Guards - typeof, in, instanceof, Custom Type Guards',
         isChecked: false
       },
       {
-        name: 'Type Assertions (Утвердження типів)',
+        name: 'Type Assertions - as, <Type>, !, as const',
         isChecked: false
       }
     ]

@@ -1701,11 +1701,11 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Type Guards',
+        name: 'Type Guards - typeof, in, instanceof, Custom Type Guards',
         isChecked: false
       },
       {
-        name: 'Type Assertions',
+        name: 'Type Assertions - as, <Type>, !, as const',
         isChecked: false
       }
     ]
