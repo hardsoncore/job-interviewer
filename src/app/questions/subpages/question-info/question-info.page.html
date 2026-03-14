@@ -5,11 +5,13 @@
 </ion-header>
 
 <ion-content>
-  <section class="content">
-    <h1>{{ question?.name }}</h1>
-    <pre class="pre-text" [innerHTML]="question?.answer"></pre>
-  </section>
+  <div class="container">
+    <section class="content">
+      <h1>{{ question?.name }}</h1>
+      <pre class="pre-text" [innerHTML]="question?.answer"></pre>
+    </section>
 
-  <ion-button (click)="submitAnswer()" color="tertiary" fill="outline" expand="block" size="large">Solve</ion-button>
-  <br>
+    <ion-button (click)="submitAnswer()" color="tertiary" fill="outline" expand="block" size="large">Solve</ion-button>
+    <br>
+  </div>
 </ion-content>

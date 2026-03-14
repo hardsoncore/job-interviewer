@@ -13,13 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-item *ngFor="let question of questions" button (click)="clickOnQuestion(question)" detail>
-    <ion-label>{{ question.id }}. {{ question.name }}</ion-label>
-    <ion-badge
-      [color]="(getPercentById(question.id) | async) < 33 && 'danger' ||
-               (getPercentById(question.id) | async) < 66 && 'warning' || 'success'"
-      slot="end">
-        {{ (getPercentById(question.id) | async) }}%
-    </ion-badge>
-  </ion-item>
+  <div class="container">
+    <ion-item *ngFor="let question of questions" button (click)="clickOnQuestion(question)" detail>
+      <ion-label>{{ question.id }}. {{ question.name }}</ion-label>
+      <ion-badge
+        [color]="(getPercentById(question.id) | async) < 33 && 'danger' ||
+                (getPercentById(question.id) | async) < 66 && 'warning' || 'success'"
+        slot="end">
+          {{ (getPercentById(question.id) | async) }}%
+      </ion-badge>
+    </ion-item>
+  </div>
 </ion-content>

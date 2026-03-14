@@ -13,57 +13,59 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card (click)="visitTheoryPage()">
-    <ion-card-header *ngIf="question">
-      <ion-card-subtitle>
-        Question №{{ question.id }}
-      </ion-card-subtitle>
-      <ion-card-title>{{ question.name }}</ion-card-title>
-    </ion-card-header>
-    <!-- skeleton -->
-    <ion-card-header *ngIf="!question">
-      <ion-card-subtitle>
-        <ion-skeleton-text style="width: 40%; max-width: 150px;" animated></ion-skeleton-text>
-        <ion-skeleton-text style="width: 40%; max-width: 150px;" animated></ion-skeleton-text>
+  <div class="container">
+    <ion-card (click)="visitTheoryPage()">
+      <ion-card-header *ngIf="question">
+        <ion-card-subtitle>
+          Question №{{ question.id }}
+        </ion-card-subtitle>
+        <ion-card-title>{{ question.name }}</ion-card-title>
+      </ion-card-header>
+      <!-- skeleton -->
+      <ion-card-header *ngIf="!question">
+        <ion-card-subtitle>
+          <ion-skeleton-text style="width: 40%; max-width: 150px;" animated></ion-skeleton-text>
+          <ion-skeleton-text style="width: 40%; max-width: 150px;" animated></ion-skeleton-text>
 
-      </ion-card-subtitle>
-      <ion-card-title>
-        <ion-skeleton-text animated></ion-skeleton-text>
-        <ion-skeleton-text animated></ion-skeleton-text>
-        <ion-skeleton-text animated></ion-skeleton-text>
-        <ion-skeleton-text animated></ion-skeleton-text>
-        <ion-skeleton-text animated></ion-skeleton-text>
-        <ion-skeleton-text animated></ion-skeleton-text>
-      </ion-card-title>
-    </ion-card-header>
+        </ion-card-subtitle>
+        <ion-card-title>
+          <ion-skeleton-text animated></ion-skeleton-text>
+          <ion-skeleton-text animated></ion-skeleton-text>
+          <ion-skeleton-text animated></ion-skeleton-text>
+          <ion-skeleton-text animated></ion-skeleton-text>
+          <ion-skeleton-text animated></ion-skeleton-text>
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-card-title>
+      </ion-card-header>
 
-    <ion-card-content *ngIf="question">
-      <ul class="tags">
-        <li *ngFor="let tag of question.tags">
-          <ion-badge color="warning">{{ tag }}</ion-badge>
-        </li>
-      </ul>
-    </ion-card-content>
-    <!-- skeleton -->
-    <ion-card-content *ngIf="!question">
-      <ul class="tags">
-        <li>
-          <ion-badge color="warning">
-            <ion-skeleton-text style="width: 10vw; max-width: 50px;" animated></ion-skeleton-text>
-          </ion-badge>
-        </li>
-      </ul>
-    </ion-card-content>
+      <ion-card-content *ngIf="question">
+        <ul class="tags">
+          <li *ngFor="let tag of question.tags">
+            <ion-badge color="warning">{{ tag }}</ion-badge>
+          </li>
+        </ul>
+      </ion-card-content>
+      <!-- skeleton -->
+      <ion-card-content *ngIf="!question">
+        <ul class="tags">
+          <li>
+            <ion-badge color="warning">
+              <ion-skeleton-text style="width: 10vw; max-width: 50px;" animated></ion-skeleton-text>
+            </ion-badge>
+          </li>
+        </ul>
+      </ion-card-content>
 
-    <div class="progress-wrapper">
-      <p>Progress: {{ question ? (getPercentById(question.id) | async) : 0 }}%</p>
-      <ion-progress-bar *ngIf="question" [value]="getPercentById(question.id) | async"></ion-progress-bar>
-      <ion-progress-bar *ngIf="!question" type="indeterminate"></ion-progress-bar>
-    </div>
+      <div class="progress-wrapper">
+        <p>Progress: {{ question ? (getPercentById(question.id) | async) : 0 }}%</p>
+        <ion-progress-bar *ngIf="question" [value]="getPercentById(question.id) | async"></ion-progress-bar>
+        <ion-progress-bar *ngIf="!question" type="indeterminate"></ion-progress-bar>
+      </div>
 
-    <div class="buttons">
-      <ion-button (click)="getNextQuestion(); $event.stopPropagation();" color="tertiary" fill="outline">Skip</ion-button>
-      <ion-button (click)="submitAnswer(); $event.stopPropagation();" color="tertiary">Solve</ion-button>
-    </div>
-  </ion-card>
+      <div class="buttons">
+        <ion-button (click)="getNextQuestion(); $event.stopPropagation();" color="tertiary" fill="outline">Skip</ion-button>
+        <ion-button (click)="submitAnswer(); $event.stopPropagation();" color="tertiary">Solve</ion-button>
+      </div>
+    </ion-card>
+  </div>
 </ion-content>

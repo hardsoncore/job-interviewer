@@ -1,0 +1,7 @@
+@media (min-width: 768px) {
+  :host::ng-deep .container {
+    min-width: 768px;
+    width: 50vw;
+    margin: 0 auto;
+  }
+}
