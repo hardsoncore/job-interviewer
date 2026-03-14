@@ -1511,7 +1511,7 @@ export const questions = [
   },
   {
     id: 63,
-    name: 'Code style, linters, prettier etc.',
+    name: 'Code style: linters, prettier etc.',
     answer: 'assets/content/rus/answers/63-Code-style-Linters-Prittier.md',
     tags: [
       'programming',
@@ -1521,7 +1521,19 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Зачем нужен code style и инструменты для его поддержания',
+        isChecked: false
+      },
+      {
+        name: 'Prettier',
+        isChecked: false
+      },
+      {
+        name: 'ESLint, TSLint и CodeLint',
+        isChecked: false
+      },
+      {
+        name: '.editorconfig',
         isChecked: false
       }
     ]
