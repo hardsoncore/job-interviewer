@@ -55,6 +55,16 @@
 
 :host ::ng-deep .load-answer-error {
   color: var(--ion-color-danger);
+
+  &__emoji {
+    text-align: center;
+    line-height: 0;
+    font-size: 5rem;
+  }
+
+  &__link {
+    color: inherit;
+  }
 }
 
 ion-button {
