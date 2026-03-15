@@ -1719,6 +1719,30 @@ export const questions = [
       {
         name: 'Enums (Перечисления)',
         isChecked: false
+      },
+      {
+        name: 'Плюсы Enums',
+        isChecked: false
+      },
+      {
+        name: 'Numeric Enums (Числовые перечисления)',
+        isChecked: false
+      },
+      {
+        name: 'String Enums (Строковые перечисления)',
+        isChecked: false
+      },
+      {
+        name: 'Heterogeneous Enums (Гетерогенные перечисления)',
+        isChecked: false
+      },
+      {
+        name: 'Const Enums (Константные перечисления)',
+        isChecked: false
+      },
+      {
+        name: 'Под капотом: как JavaScript обрабатывает Enums',
+        isChecked: false
       }
     ]
   },

@@ -1721,7 +1721,31 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Enums',
+        name: 'Enums ',
+        isChecked: false
+      },
+      {
+        name: 'Advantages of Enums',
+        isChecked: false
+      },
+      {
+        name: 'Numeric Enums',
+        isChecked: false
+      },
+      {
+        name: 'String Enums',
+        isChecked: false
+      },
+      {
+        name: 'Heterogeneous Enums',
+        isChecked: false
+      },
+      {
+        name: 'Const Enums',
+        isChecked: false
+      },
+      {
+        name: 'Under the hood: how JavaScript handles Enums',
         isChecked: false
       }
     ]

@@ -1722,7 +1722,31 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Enums (Перечислення)',
+        name: 'Enums (Перерахування)',
+        isChecked: false
+      },
+      {
+        name: 'Плюси Enums',
+        isChecked: false
+      },
+      {
+        name: 'Numeric Enums (Числові перерахування)',
+        isChecked: false
+      },
+      {
+        name: 'String Enums (Строкові перерахування)',
+        isChecked: false
+      },
+      {
+        name: 'Heterogeneous Enums (Гетерогенні перерахування)',
+        isChecked: false
+      },
+      {
+        name: 'Const Enums (Константні перерахування)',
+        isChecked: false
+      },
+      {
+        name: 'Під капотом: як JavaScript обробляє Enums',
         isChecked: false
       }
     ]
