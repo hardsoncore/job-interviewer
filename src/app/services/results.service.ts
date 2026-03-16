@@ -14,16 +14,25 @@ export class ResultsService {
   constructor(
     private questionsService: QuestionsService,
   ) {
-    const storageResults = localStorage.getItem('results');
+    this.questionsService.questions.subscribe(questions => {
+      let storageResults: Results[] = [];
+      const stored = localStorage.getItem('results');
 
-    if (storageResults) {
-      this._results.next(JSON.parse(localStorage.getItem('results')));
-    } else {
-      this.questionsService.questions.subscribe(questions => {
-        const newResults = questions.map(q => ({ id: q.id, correctness: 0 })) as Results[];
-        this.setResults(newResults);
-      });
-    }
+      if (stored) {
+        try {
+          storageResults = JSON.parse(stored);
+        } catch (e) {
+          console.error('Failed to parse results from local storage', e);
+        }
+      }
+
+      const mergedResults = questions.map(q => {
+        const existingResult = storageResults.find(r => r.id === q.id);
+        return existingResult ? existingResult : { id: q.id, correctness: 0 };
+      }) as Results[];
+
+      this.setResults(mergedResults);
+    });
   }
 
   get results(): Observable<Results[]> {
