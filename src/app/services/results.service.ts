@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 import { Results } from '../models/question.model';
 import { QuestionsService } from './questions.service';
@@ -35,19 +36,19 @@ export class ResultsService {
   }
 
   getAveragePercent(): Observable<number> {
-    const averagePercent = new BehaviorSubject(0);
-    this._results.subscribe(results => {
-      averagePercent.next(Math.round(results.reduce((prev, curr) => prev + curr.correctness, 0) / results.length));
-    });
-    return averagePercent.asObservable();
+    return this._results.pipe(
+      map(results => {
+        if (!results || results.length === 0) {
+          return 0;
+        }
+        return Math.round(results.reduce((prev, curr) => prev + curr.correctness, 0) / results.length);
+      })
+    );
   }
 
   getPercentById(id: number): Observable<number> {
-    const percent = new BehaviorSubject(0);
-    this._results.subscribe(results => {
-      percent.next(results.find(result => result.id === id)?.correctness || 0);
-    });
-
-    return percent.asObservable();
+    return this._results.pipe(
+      map(results => results.find(result => result.id === id)?.correctness || 0)
+    );
   }
 }
