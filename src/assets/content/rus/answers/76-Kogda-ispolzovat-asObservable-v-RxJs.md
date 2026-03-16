@@ -1,47 +1,71 @@
+<h3>Зачем нужен <code>Subject.prototype.asObservable()</code></h3>
 
 <p>
-  Смысл использования <code>Subject.prototype.asObservable()</code> состоит в том, чтобы предотвратить
-  утечку &quot;observer side&quot; из API (предотвратить утечку абстракции, когда вы не хотите,
-  чтобы кто-либо мог вызвать метод <code>next()</code> у возвращаемого значения).
+  <code>Subject.prototype.asObservable()</code> используется для инкапсуляции и предотвращения &quot;утечки абстракции&quot;.
+  Он позволяет скрыть методы <code>Subject</code>, которые могут изменять поток данных, и предоставляет только интерфейс для подписки.
+  <br>
+  Метод <code>.asObservable()</code> превращает <code>Subject</code> в обычный <code>Observable</code> (read-only поток),
+  скрывая методы <code>next()</code>, <code>error()</code> и <code>complete()</code>.
+  Это гарантирует, что внешний код сможет только подписываться на данные, но не сможет их изменять.
 </p>
+
+<h4>Идеальный паттерн использования</h4>
+<p>
+  В целом, это стандартная практика — инкапсулировать логику по управлению потоками данных внутри сервисов.
+  Мы создаем приватный <code>Subject</code> для управления данными изнутри, и отдаем наружу публичный <code>Observable</code>:
+</p>
+
 <code class="code">
-  const myAPI = {
-    getData: () =&gt; {
-      const subject = new Subject();
-      const source = new SomeWeirdDataSource();
-      source.onMessage = (data) =&gt; subject.next({ type: &#39;message&#39;, data });
-      source.onOtherMessage = (data) =&gt; subject.next({ type: &#39;othermessage&#39;, data });
-      return subject.asObservable();
+  class DataService {
+    // 1. Приватный источник истины (Subject или BehaviorSubject)
+    private dataSubject = new Subject&lt;string&gt;();
+
+    // 2. Публичный read-only поток
+    public data$ = this.dataSubject.asObservable();
+
+    // 3. Мутация данных происходит только через методы сервиса
+    public fetchNewData(data: string) {
+      // Какая-то логика...
+      this.dataSubject.next(data);
     }
+  }
+</code>
+
+<p>Теперь, когда кто-то получит доступ к <code>data$</code>, он не сможет сломать поток:</p>
+
+<code class="code">
+  const service = new DataService();
+  service.data$.next('LOL hax!'); // Ошибка: Property 'next' does not exist
+</code>
+
+<h4>Чего стоит избегать? </h4>
+<p>
+  Иногда разработчики пытаются использовать <code>Subject</code> и <code>.asObservable()</code> внутри обычных функций возврата данных:
+</p>
+
+<p class="info info--orange">
+  АНТИПАТТЕРН: Не используйте <code>Subject</code> и <code>.asObservable()</code> внутри функций, которые возвращают потоки данных. Это нарушает архитектуру и семантику RxJS.
+</p>
+
+<code class="code">
+  // АНТИПАТТЕРН
+  const getData = () =&gt; {
+    const subject = new Subject();
+    const source = new SomeWeirdDataSource();
+    source.onMessage = (data) =&gt; subject.next(data);
+    return subject.asObservable();
   };
 </code>
 
-<p>Теперь, когда кто-то получит результат от <code>myAPI.getData()</code> , он не может вызвать метод next():</p>
+<p>У этого подхода есть серьезные архитектурные изъяны:</p>
+<ul>
+  <li><strong>Отсутствие ленивости:</strong> <code>getData()</code> не ленив. Источник <code>SomeWeirdDataSource</code> создается и начинает работу немедленно, даже если на возвращаемый <code>Observable</code> еще никто не подписался.</li>
+  <li><strong>Утечки памяти:</strong> Каждый вызов <code>getData()</code> создает новый <code>Subject</code> и новый источник данных, что быстро приведет к проблемам с производительностью.</li>
+  <li><strong>Нарушение семантики RxJS:</strong> Если вам нужно обернуть внешний источник данных в поток внутри функции, для этого существует конструктор <code>new Observable(subscriber =&gt; { ... })</code>. <code>Subject</code> же предназначен для мультикаста (маршрутизации одного потока множеству подписчиков).</li>
+</ul>
 
-<code class="code">
-  const result = myAPI.getData();
-  result.next(&#39;LOL hax!&#39;); // throws an error because next doesn&#39;t exist
-</code>
-
+<h3>Вывод</h3>
 <p>
-  В целом, это хорошая практика - инкапсулировать логику по управлению потоками данных внутри сервисов и не давать
-  возможности менять эти данные извне без особой необходимости.
+  Держите <code>Subject</code> приватным на уровне класса/компонента, а наружу выставляйте только результат выполнения <code>.asObservable()</code>.
+  Это обеспечивает чистую архитектуру, предотвращает утечки абстракции и гарантирует, что потоки данных не будут изменены извне.
 </p>
-
-<p>
-  Однако, в этом подходе также есть пара моментов, которые стоит учитывать. Во-первых,
-  <code>getData()</code>
-  не ленив, как большинство наблюдаемых, он немедленно создаст базовый источник данных
-  <code>SomeWeirdDataSource</code>
-  (и, предположительно, некоторые побочные эффекты).
-  Во-вторых, на выходе <code>getData()</code> возвращает <code>return subject.asObservable();</code>,
-  которое каждый раз будет новым наблюдаемым.;
-</p>
-
-<p>
-  Таким образом, использовать этот подход следует с осторожностью.
-  Также следует вынести часть с созданием <code>new Subject</code> за пределы этой функции,
-  дабы не создавать новую сущность при каждом вызове (например, производить инициализацию
-  <code>Subject</code> в корне компонента).
-</p>
-    

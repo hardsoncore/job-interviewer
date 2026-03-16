@@ -1829,6 +1829,14 @@ export const questions = [
       {
         name: 'asObservable() - що це і для чого потрібно?',
         isChecked: false
+      },
+      {
+        name: 'Правильний спосіб використання asObservable()',
+        isChecked: false
+      },
+      {
+        name: 'Антипаттерн використання asObservable()',
+        isChecked: false
       }
     ]
   },
