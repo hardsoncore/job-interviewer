@@ -34,8 +34,8 @@ export class ProfileService {
 
   private _getDefaultProfile(): Profile {
     const defaultProfile: Profile = {
-      username: 'Guest',
-      avatarUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'
+      username: 'JS_FOX',
+      avatarUrl: 'assets/fox_js.png',
     };
 
     return defaultProfile;
