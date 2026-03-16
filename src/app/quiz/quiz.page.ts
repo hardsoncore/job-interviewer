@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { take } from 'rxjs/operators';
 
 import { QueryParams } from '../models/app.model';
 import { Question } from '../models/question.model';
@@ -58,7 +59,16 @@ export class QuizPage implements OnInit {
 
     // with timeout looks better
     setTimeout(() => {
-      this.questionsService.getRandomQuestion().subscribe(q => this.question = q);
+      this.resultsService.results.pipe(take(1)).subscribe(results => {
+        const uncompletedQuestions = results.filter(r => r.correctness < 100);
+
+        if (uncompletedQuestions.length > 0) {
+          const randomId = uncompletedQuestions[Math.floor(Math.random() * uncompletedQuestions.length)].id;
+          this.question = this.questionsService.getQuestionById(randomId);
+        } else {
+          this.questionsService.getRandomQuestion().pipe(take(1)).subscribe(q => this.question = q);
+        }
+      });
     }, 1000);
   }
 
