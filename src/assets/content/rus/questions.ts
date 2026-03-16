@@ -1781,7 +1781,31 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Generics (Обобщения)',
+        name: 'Generics (Обобщения) - какую проблему решают?',
+        isChecked: false
+      },
+      {
+        name: 'Синтаксис Generics',
+        isChecked: false
+      },
+      {
+        name: 'Применение Generics в функциях, интерфейсах и классах',
+        isChecked: false
+      },
+      {
+        name: 'Ограничения (Constraints) в Generics',
+        isChecked: false
+      },
+      {
+        name: 'Утилиты типов на основе Generics',
+        isChecked: false
+      },
+      {
+        name: 'Множественные параметры типов',
+        isChecked: false
+      },
+      {
+        name: 'Как Generics работают под капотом в JavaScript',
         isChecked: false
       }
     ]

@@ -1785,7 +1785,31 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Generics',
+        name: 'Generics - what problem do they solve?',
+        isChecked: false
+      },
+      {
+        name: 'Generics syntax',
+        isChecked: false
+      },
+      {
+        name: 'Usage of Generics in functions, interfaces, and classes',
+        isChecked: false
+      },
+      {
+        name: 'Constraints in Generics',
+        isChecked: false
+      },
+      {
+        name: 'Utility Types based on Generics',
+        isChecked: false
+      },
+      {
+        name: 'Multiple type parameters',
+        isChecked: false
+      },
+      {
+        name: 'How Generics work under the hood in JavaScript',
         isChecked: false
       }
     ]
