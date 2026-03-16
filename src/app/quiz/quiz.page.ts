@@ -15,6 +15,7 @@ import { ResultsService } from '../services/results.service';
 })
 export class QuizPage implements OnInit {
   question: Question;
+  percent$: Observable<number>;
 
   constructor(
     private questionsService: QuestionsService,
@@ -65,15 +66,15 @@ export class QuizPage implements OnInit {
         if (uncompletedQuestions.length > 0) {
           const randomId = uncompletedQuestions[Math.floor(Math.random() * uncompletedQuestions.length)].id;
           this.question = this.questionsService.getQuestionById(randomId);
+          this.percent$ = this.resultsService.getPercentById(this.question.id);
         } else {
-          this.questionsService.getRandomQuestion().pipe(take(1)).subscribe(q => this.question = q);
+          this.questionsService.getRandomQuestion().pipe(take(1)).subscribe(q => {
+            this.question = q;
+            this.percent$ = this.resultsService.getPercentById(this.question.id);
+          });
         }
       });
     }, 1000);
-  }
-
-  public getPercentById(id: number): Observable<number> {
-    return this.resultsService.getPercentById(id);
   }
 
   private _clearQueryParams(): void {

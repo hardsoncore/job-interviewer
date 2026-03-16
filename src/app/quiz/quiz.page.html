@@ -57,8 +57,8 @@
       </ion-card-content>
 
       <div class="progress-wrapper">
-        <p>Progress: {{ question ? (getPercentById(question.id) | async) : 0 }}%</p>
-        <ion-progress-bar *ngIf="question" [value]="getPercentById(question.id) | async"></ion-progress-bar>
+        <p>Progress: {{ question ? (percent$ | async) : 0 }}%</p>
+        <ion-progress-bar *ngIf="question" [value]="((percent$ | async) || 0) / 100"></ion-progress-bar>
         <ion-progress-bar *ngIf="!question" type="indeterminate"></ion-progress-bar>
       </div>
 
