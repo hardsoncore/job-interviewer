@@ -5,18 +5,20 @@
 </ion-header>
 
 <ion-content>
-  <h1 class="content">{{ question?.name }}</h1>
+  <div class="container">
+    <h1 class="content">{{ question?.name }}</h1>
 
-  <ion-list>
-    <ion-item *ngFor="let step of question?.structure">
-      <ion-label>{{ step?.name }}</ion-label>
-      <ion-checkbox [(ngModel)]="step.isChecked" slot="end" color="success"></ion-checkbox>
-    </ion-item>
-  </ion-list>
+    <ion-list>
+      <ion-item *ngFor="let step of question?.structure">
+        <ion-label>{{ step?.name }}</ion-label>
+        <ion-checkbox [(ngModel)]="step.isChecked" slot="end" color="success"></ion-checkbox>
+      </ion-item>
+    </ion-list>
 
-  <br>
+    <br>
 
-  <ion-button (click)="saveResult()" color="tertiary" fill="outline" expand="block" size="large">
-    Save result
-  </ion-button>
+    <ion-button (click)="saveResult()" color="tertiary" fill="outline" expand="block" size="large">
+      Save result
+    </ion-button>
+  </div>
 </ion-content>
