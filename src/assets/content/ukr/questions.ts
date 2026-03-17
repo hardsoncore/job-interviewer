@@ -1389,7 +1389,7 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: '11 основних нововведень в ES6',
         isChecked: false
       }
     ]

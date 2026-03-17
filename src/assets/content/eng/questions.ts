@@ -1388,7 +1388,7 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'HTML tags',
+        name: '11 main features of ES6',
         isChecked: false
       }
     ]
