@@ -20,6 +20,25 @@
   const myNumber = identity&lt;number>(42);      // Returns number
 </code>
 
+<h4>Step 2.1: Covering Input and Output Types</h4>
+
+<p>There are cases when a function takes one type of data and returns another. In such situations, you can use multiple type parameters.</p>
+
+<p>This allows you to maintain strict typing for both types while providing flexibility in working with different data.</p>
+
+<code class="code">
+  // The function takes an input type (TInput) and an output type (TOutput)
+  function processData<TInput, TOutput>(
+    input: TInput,
+    transformer: (val: TInput) => TOutput
+  ): TOutput {
+    return transformer(input);
+  }
+
+  // Example usage: converting a string to a number
+  const result = processData<string, number>("123", (val) => parseInt(val));
+</code>
+
 <h4>Step 3: Generics in Interfaces (Real-world Contract)</h4>
 
 <p>When working with a REST API, the server response structure is often standardized, and only the payload itself changes. Generics perfectly describe such patterns, eliminating code duplication.</p>
