@@ -1870,7 +1870,19 @@ export const questions = [
     category: 'programming',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Abstraction (Абстракция)',
+        isChecked: false
+      },
+      {
+        name: 'Encapsulation (Инкапсуляция)',
+        isChecked: false
+      },
+      {
+        name: 'Inheritance (Наследование)',
+        isChecked: false
+      },
+      {
+        name: 'Polymorphism (Полиморфизм)',
         isChecked: false
       }
     ]

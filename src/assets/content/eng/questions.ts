@@ -1874,7 +1874,19 @@ export const questions = [
     category: 'programming',
     structure: [
       {
-        name: 'HTML tags',
+        name: 'Abstraction',
+        isChecked: false
+      },
+      {
+        name: 'Encapsulation',
+        isChecked: false
+      },
+      {
+        name: 'Inheritance',
+        isChecked: false
+      },
+      {
+        name: 'Polymorphism',
         isChecked: false
       }
     ]
