@@ -41,10 +41,6 @@
 </p>
 
 <p>
-  Strictly speaking, all trees in computer science are drawn "inverted." Unlike in nature, our root is at the top, and the leaves grow downward.
-</p>
-
-<p>
   Usually, when people talk about inverted trees, they mean trees with parent pointers (Upward Trees / Disjoint Sets).
 </p>
 
@@ -81,7 +77,7 @@
 </p>
 
 <p class="info">
-  There are many types of binary trees: balanced (AVL, Red-Black), unbalanced, full, complete, etc. Each is optimized for specific tasks.
+  There are many types of binary trees: balanced (AVL, Red-Black), unbalanced, full, complete, incomplete, etc. Each is optimized for specific tasks.
 </p>
 
 <h3>3.1. Binary Search Tree (BST)</h3>
@@ -115,7 +111,7 @@
 </p>
 
 <p>
-  A graph consists of vertices and edges that connect them. Edges can have a direction (like a one-way street) or be bidirectional.
+  A graph consists of vertices and edges that connect them. Edges can have one direction or be bidirectional.
 </p>
 
 <p>
