@@ -63,6 +63,11 @@ export class AnswerStructurePage implements OnInit {
 
   private _calculateCorrectness(): number {
     let correctAnswers = 0;
+
+    if (!this.question?.structure || this.question.structure.length === 0) {
+      return 0;
+    }
+
     this.question.structure.forEach(step => step.isChecked && correctAnswers++);
 
     return (correctAnswers / this.question.structure.length) * 100;

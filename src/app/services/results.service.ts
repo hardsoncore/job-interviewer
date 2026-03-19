@@ -55,9 +55,9 @@ export class ResultsService {
     );
   }
 
-  getPercentById(id: number): Observable<number> {
+  getPercentById(id: number | string): Observable<number> {
     return this._results.pipe(
-      map(results => results.find(result => result.id === id)?.correctness || 0)
+      map(results => results.find(result => Number(result.id) === Number(id))?.correctness || 0)
     );
   }
 }

@@ -29,8 +29,8 @@ export class QuestionsService {
     );
   }
 
-  public getQuestionById(id: number): Question {
-    return this._questions.getValue().find(q => q.id === id);
+  public getQuestionById(id: number | string): Question {
+    return this._questions.getValue().find(q => Number(q.id) === Number(id));
   }
 
   private setQuestions() {
