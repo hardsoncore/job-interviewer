@@ -2476,6 +2476,7 @@ export const questions = [
       'Lifecycle',
       'Hooks'
     ],
+    category: 'Angular',
     structure: [
       {
         name: 'Lifecycle Hooks (Classic)',
@@ -2496,6 +2497,7 @@ export const questions = [
       'Angular.js',
       'Vue 2'
     ],
+    category: 'JavaScript',
     structure: [
       {
         name: 'Object.defineProperty - what it is and what it is for?',
@@ -2528,6 +2530,7 @@ export const questions = [
       'Vue',
       'Reactivity'
     ],
+    category: '',
     structure: [
       {
         name: 'Reactivity in Vue 2',
@@ -2547,4 +2550,47 @@ export const questions = [
       }
     ]
   },
+
+  {
+    id: 106,
+    name: 'Abstract Classes в TypeScript. When to use abstract classes instead of interfaces?',
+    answer: 'assets/content/eng/answers/106-Abstract-Classes-v-TypeScript.md',
+    tags: [
+      'TypeScript',
+      'OOP',
+      'Abstract Classes'
+    ],
+    category: 'TypeScript',
+    structure: [
+      {
+        name: 'Abstract Classes - what they are and why they are needed?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 107,
+    name: 'Protected vs Private vs Public в TypeScript. When to use each of these access modifiers?',
+    answer: 'assets/content/eng/answers/107-Protected-vs-Private-vs-Public-v-TypeScript.md',
+    tags: [
+      'TypeScript',
+      'OOP',
+      'Access Modifiers'
+    ],
+    category: 'TypeScript',
+    structure: [
+      {
+        name: 'Protected (Access Modifier)',
+        isChecked: false
+      },
+      {
+        name: 'Private (Access Modifier)',
+        isChecked: false
+      },
+      {
+        name: 'Public (Access Modifier)',
+        isChecked: false
+      }
+    ]
+  }
 ];
