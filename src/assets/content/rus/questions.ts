@@ -2472,6 +2472,7 @@ export const questions = [
       'Lifecycle',
       'Hooks'
     ],
+    category: 'Angular',
     structure: [
       {
         name: 'Lifecycle Hooks (Классические)',
@@ -2492,6 +2493,7 @@ export const questions = [
       'Angular.js',
       'Vue 2'
     ],
+    category: 'JavaScript',
     structure: [
       {
         name: 'Object.defineProperty - что это и для чего нужно?',
@@ -2524,6 +2526,7 @@ export const questions = [
       'Vue',
       'Reactivity'
     ],
+    category: '',
     structure: [
       {
         name: 'Реактивность в Vue 2',
@@ -2539,6 +2542,48 @@ export const questions = [
       },
       {
         name: 'Реактивность в Angular 2+',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 106,
+    name: 'Abstract Classes (Абстрактные классы) в TypeScript. Когда использовать абстрактные классы вместо интерфейсов?',
+    answer: 'assets/content/rus/answers/106-Abstract-Classes-v-TypeScript.md',
+    tags: [
+      'TypeScript',
+      'OOP',
+      'Abstract Classes'
+    ],
+    category: 'TypeScript',
+    structure: [
+      {
+        name: 'Abstract Classes (Абстрактные классы)',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 107,
+    name: 'Protected vs Private vs Public в TypeScript. Когда использовать каждый из этих модификаторов доступа?',
+    answer: 'assets/content/rus/answers/107-Protected-vs-Private-vs-Public-v-TypeScript.md',
+    tags: [
+      'TypeScript',
+      'OOP',
+      'Access Modifiers'
+    ],
+    category: 'TypeScript',
+    structure: [
+      {
+        name: 'Protected (Модификатор доступа)',
+        isChecked: false
+      },
+      {
+        name: 'Private (Модификатор доступа)',
+        isChecked: false
+      },
+      {
+        name: 'Public (Модификатор доступа)',
         isChecked: false
       }
     ]
