@@ -4,7 +4,7 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-green.svg?style=flat-square)
 ![Content Focus](https://img.shields.io/badge/Contributions-Content_Focused-blue.svg?style=flat-square)
 
-**Note:** I'm open to discuss improvements! Feel free to open a PR or contact me.
+**Note:** I'm open to discussing improvements! Feel free to open a PR or contact me.
 
 ## 📖 About
 
