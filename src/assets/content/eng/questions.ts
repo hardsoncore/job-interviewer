@@ -2602,6 +2602,10 @@ export const questions = [
       {
         name: 'Public (Access Modifier)',
         isChecked: false
+      },
+      {
+        name: 'When to use each of these access modifiers',
+        isChecked: false
       }
     ]
   }

@@ -2597,6 +2597,10 @@ export const questions = [
       {
         name: 'Public (Модификатор доступа)',
         isChecked: false
+      },
+      {
+        name: 'Когда использовать каждый из этих модификаторов доступа',
+        isChecked: false
       }
     ]
   }

@@ -2602,6 +2602,10 @@ export const questions = [
       {
         name: 'Public (Модифікатор доступу)',
         isChecked: false
+      },
+      {
+        name: 'Коли використовувати кожен з цих модифікаторів доступу',
+        isChecked: false
       }
     ]
   }
