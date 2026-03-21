@@ -111,3 +111,39 @@
   const fetcher = new UserFetcher();
   fetcher.fetchAndProcess(); // Using shared algorithm with unique details
 </code>
+
+<h3>Combining Inheritance and Contracts</h3>
+
+<p>
+  In TypeScript, you can easily combine inheritance and contract implementation. The main rule to remember is: you can only inherit (<code>extends</code>) from one base class, but you can implement (<code>implements</code>) as many interfaces as you want.
+  <br>
+  This gives you flexibility in designing your architecture, allowing you to use abstract classes for shared logic and interfaces for describing shapes and contracts.
+</p>
+
+<code class="code">
+  // Abstract class with base logic
+  abstract class BaseService {
+    protected log(message: string): void {
+      console.log(`[BaseService] ${message}`);
+    }
+  }
+
+  // Interface for contract
+  interface Notifiable {
+    notify(message: string): void;
+  }
+
+  // Concrete implementation that inherits from abstract class and implements interface
+  class EmailService extends BaseService implements Notifiable {
+    notify(message: string): void {
+      this.log(`Sending email with message: ${message}`);
+      // Email sending logic...
+    }
+  }
+
+  const emailService = new EmailService();
+  emailService.notify('Hello, world!');
+</code>
+
+<h3>What's the power of this approach?</h3>
+<p>You get the best of both worlds. On one hand, you reuse already written code from the abstract class, and on the other hand, you adhere to strict contracts defined by interfaces.</p>

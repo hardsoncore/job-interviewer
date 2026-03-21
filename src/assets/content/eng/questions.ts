@@ -2569,6 +2569,14 @@ export const questions = [
       {
         name: 'When to use abstract classes instead of interfaces',
         isChecked: false
+      },
+      {
+        name: 'Can abstract classes be used for multiple inheritance?',
+        isChecked: false
+      },
+      {
+        name: 'Can abstract classes be combined with interfaces?',
+        isChecked: false
       }
     ]
   },

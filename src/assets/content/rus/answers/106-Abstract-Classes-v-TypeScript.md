@@ -106,3 +106,39 @@
   const fetcher = new UserFetcher();
   fetcher.fetchAndProcess(); // Используем общий алгоритм с уникальными деталями
 </code>
+
+<h3>Комбинирование наследования и контрактов</h3>
+
+<p>
+  В TypeScript ты можешь легко комбинировать наследование и реализацию контрактов. Главное правило, о котором нужно помнить: наследовать (<code>extends</code>) можно только один базовый класс, а вот реализовывать (<code>implements</code>) — сколько угодно интерфейсов.
+  <br>
+  Это дает тебе гибкость в проектировании архитектуры, позволяя использовать абстрактные классы для общей логики и интерфейсы для описания форм и контрактов.
+</p>
+
+<code class="code">
+  // Абстрактный класс с базовой логикой
+  abstract class BaseService {
+    protected log(message: string): void {
+      console.log(`[BaseService] ${message}`);
+    }
+  }
+
+  // Интерфейс для контракта
+  interface Notifiable {
+    notify(message: string): void;
+  }
+
+  // Конкретная реализация, которая наследует от абстрактного класса и реализует интерфейс
+  class EmailService extends BaseService implements Notifiable {
+    notify(message: string): void {
+      this.log(`Отправка email с сообщением: ${message}`);
+      // Логика отправки email...
+    }
+  }
+
+  const emailService = new EmailService();
+  emailService.notify('Привет, мир!');
+</code>
+
+<h3>В чем сила такого подхода?</h3>
+<p>Ты получаешь лучшее от двух миров. С одной стороны, переиспользуешь уже написанный код из абстрактного класса, а с другой — соблюдаешь строгие контракты, определенные интерфейсами.</p>
