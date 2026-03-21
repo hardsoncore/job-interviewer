@@ -1,12 +1,12 @@
 {
-  "name": "job-interviewer",
+  "name": "js-interviewer",
   "version": "1.0.1",
   "author": "Yehor Niestierov",
-  "homepage": "https://github.com/hardsoncore/job-interviewer",
+  "homepage": "https://github.com/hardsoncore/js-interviewer",
   "scripts": {
     "ng": "ng",
     "start": "node git-version.js && ng serve",
-    "build": "node git-version.js && ng build --base-href=/job-interviewer/",
+    "build": "node git-version.js && ng build --base-href=/js-interviewer/",
     "build-apk": "node git-version.js && ionic capacitor build android",
     "build-apk-release": "node git-version.js && ionic capacitor build android --prod --release",
     "test": "ng test",

@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.jobinterviewer.app',
-  appName: 'job-interviewer',
+  appId: 'com.jsinterviewer.app',
+  appName: 'js-interviewer',
   webDir: 'www',
   bundledWebRuntime: false
 };

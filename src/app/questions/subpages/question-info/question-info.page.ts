@@ -79,7 +79,7 @@ export class QuestionInfoPage implements OnInit, OnDestroy {
               <h3 class="load-answer-error__title">404 - Answer Text Not Found</h3>
               <p class="load-answer-error__text">
                 Help us fill the gap — we\'d love your contribution via a
-                <a class="load-answer-error__link" href="https://github.com/hardsoncore/job-interviewer/pulls" target="_blank">
+                <a class="load-answer-error__link" href="https://github.com/hardsoncore/js-interviewer/pulls" target="_blank">
                   Pull Request on GitHub
                 </a>
               </p>

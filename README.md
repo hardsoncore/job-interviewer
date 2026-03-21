@@ -1,4 +1,4 @@
-# Job Interviewer
+# JS Interviewer
 
 <p align="left">
   <img src="https://img.shields.io/badge/Status-Legacy%202021-orange?style=for-the-badge" />
@@ -9,24 +9,24 @@
 
 ## 📖 About
 
-Job Interviewer is a mobile application designed to help frontend developers prepare for job interviews. This pet project collects the most common and important interview questions across multiple categories to help you succeed in your next technical interview.
+JS Interviewer is a mobile application designed to help frontend developers prepare for job interviews. This pet project collects the most common and important interview questions across multiple categories to help you succeed in your next technical interview.
 
 ## 🚀 Live Demo
 
-The project is deployed and available online:  
-👉 **[https://hardsoncore.github.io/job-interviewer](https://hardsoncore.github.io/job-interviewer)**
+The project is deployed and available online:
+👉 **[https://hardsoncore.github.io/js-interviewer](https://hardsoncore.github.io/js-interviewer)**
 
 You can follow the link to jump right in and start practicing.
 
 ### 📱 Mobile Usage
 
-For quick and easy access, you can save the application directly to your smartphone's home screen. 
+For quick and easy access, you can save the application directly to your smartphone's home screen.
 
 * **For iOS (iPhone / iPad):**
   1. Open the link in the **Safari** browser.
   2. Tap the **Share** icon at the bottom of the screen.
   3. Scroll down and select **Add to Home Screen**.
-  
+
 * **For Android:**
   1. Open the link in the **Chrome** browser.
   2. Tap the menu icon (three dots in the top right corner).
@@ -56,8 +56,8 @@ This project is built with modern web and mobile technologies:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/hardsoncore/job-interviewer.git
-cd job-interviewer
+git clone https://github.com/hardsoncore/js-interviewer.git
+cd js-interviewer
 ```
 
 2. Install dependencies:
@@ -75,7 +75,7 @@ npm start
 ## 📂 Project Structure
 
 ```
-job-interviewer/
+js-interviewer/
 ├── src/
 │   ├── app/              # Application components and modules
 │   ├── assets/           # Static assets (images, icons, etc.)
@@ -91,7 +91,7 @@ job-interviewer/
 
 Feel free to communicate and discuss.
 <br/>
-Contributions, issues, and feature requests are welcome! 
+Contributions, issues, and feature requests are welcome!
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)

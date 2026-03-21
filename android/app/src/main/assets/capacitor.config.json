@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "job-interviewer",
-	"webDir": "www",
-	"bundledWebRuntime": false
+  "appId": "io.ionic.starter",
+  "appName": "js-interviewer",
+  "webDir": "www",
+  "bundledWebRuntime": false
 }
