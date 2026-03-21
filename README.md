@@ -1,15 +1,37 @@
 # JS Interviewer
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Status-Legacy%202021-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Maintenance-Minor%20Changes-yellow?style=for-the-badge" />
-</p>
+![Status_InProgress](https://img.shields.io/badge/Status-In_Progress-brightgreen.svg?style=flat-square)
+![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-green.svg?style=flat-square)
+![Content Focus](https://img.shields.io/badge/Contributions-Content_Focused-blue.svg?style=flat-square)
 
 **Note:** I'm open to discuss improvements! Feel free to open a PR or contact me.
 
 ## 📖 About
 
 JS Interviewer is a mobile application designed to help frontend developers prepare for job interviews. This pet project collects the most common and important interview questions across multiple categories to help you succeed in your next technical interview.
+
+## 📌 Project Status & Architecture
+
+This application was originally built 5 years ago. To ensure the primary goal of this project — **delivering high-quality, up-to-date interview questions and answers** — remains the focus, the core UI framework (Angular/Ionic) is currently frozen. 
+
+I am actively maintaining and expanding the *content* of this repository. By not spending time on endless framework migrations, I can dedicate my efforts to curating the best possible interview materials. 
+
+**TL;DR:** The code might be a bit older, but the knowledge base is fresh, actively updated, and growing!
+
+## 🤝 How to Contribute
+
+I would love your help to make this repository even better! Since the focus is on the knowledge base, contributing is incredibly easy — you don't need to dive into the application's architecture.
+
+### ✅ What I am looking for (Greatly Appreciated!):
+* **New Interview Questions:** Know a tricky JS/TS/Frontend question? Add it!
+* **Answer Improvements:** Found a better way to explain a concept? Please update the current answer.
+* **Typo Fixes:** Grammar police are always welcome. 
+* **Translation/Localization:** (If applicable to your project).
+
+### ❌ What is currently out of scope:
+* UI framework migrations (e.g., updating Angular/Ionic to the latest versions).
+* Heavy architectural refactoring of the existing codebase.
+* Changing the build tools.
 
 ## 🚀 Live Demo
 
@@ -86,18 +108,6 @@ js-interviewer/
 ├── e2e/                # End-to-end tests
 └── ...config files
 ```
-
-## 🤝 Contributing
-
-Feel free to communicate and discuss.
-<br/>
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 👤 Author
 
