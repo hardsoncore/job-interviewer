@@ -26,7 +26,7 @@ I would love your help to make this repository even better! Since the focus is o
 * **New Interview Questions:** Know a tricky JS/TS/Frontend question? Add it!
 * **Answer Improvements:** Found a better way to explain a concept? Please update the current answer.
 * **Typo Fixes:** Grammar police are always welcome. 
-* **Translation/Localization:** (If applicable to your project).
+* **Translation/Localization:** Help translate existing questions and answers into other languages (please keep technical terminology accurate and consistent).
 
 ### ❌ What is currently out of scope:
 * UI framework migrations (e.g., updating Angular/Ionic to the latest versions).
