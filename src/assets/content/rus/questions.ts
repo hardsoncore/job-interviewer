@@ -2560,6 +2560,10 @@ export const questions = [
       {
         name: 'Abstract Classes (Абстрактные классы)',
         isChecked: false
+      },
+      {
+        name: 'Когда использовать абстрактные классы вместо интерфейсов',
+        isChecked: false
       }
     ]
   },

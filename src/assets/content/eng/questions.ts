@@ -2565,6 +2565,10 @@ export const questions = [
       {
         name: 'Abstract Classes - what they are and why they are needed?',
         isChecked: false
+      },
+      {
+        name: 'When to use abstract classes instead of interfaces',
+        isChecked: false
       }
     ]
   },
