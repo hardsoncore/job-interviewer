@@ -12,7 +12,7 @@ JS Interviewer is a mobile application designed to help frontend developers prep
 
 ## 📌 Project Status & Architecture
 
-This application was originally built 5 years ago. To ensure the primary goal of this project — **delivering high-quality, up-to-date interview questions and answers** — remains the focus, the core UI framework (Angular/Ionic) is currently frozen. 
+This application was originally built several years ago. To ensure the primary goal of this project — **delivering high-quality, up-to-date interview questions and answers** — remains the focus, the core UI framework (Angular/Ionic) is currently frozen. 
 
 I am actively maintaining and expanding the *content* of this repository. By not spending time on endless framework migrations, I can dedicate my efforts to curating the best possible interview materials. 
 
