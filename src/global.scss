@@ -32,3 +32,9 @@
 .content {
   padding: 0 1rem;
 }
+
+.clear-storage-alert {
+  .danger-button {
+    color: var(--ion-color-danger) !important;
+  }
+}

@@ -59,22 +59,24 @@ export class ProfilePage implements OnInit {
     }, 1000);
   }
 
-  public async clearStorage() {
+  public async clearResults() {
     const usersChoise = await this._presentAlert();
     if (usersChoise === 'ok') {
-      localStorage.clear();
+      this.resultsService.setResults([]);
       location.reload();
     }
   }
 
   private async _presentAlert(): Promise<string> {
     const alert = await this.alertController.create({
-      header: 'Clear application data?',
-      message: 'All your progress and settings will be lost.',
+      cssClass: 'clear-storage-alert',
+      header: 'All your progress will be lost',
+      message: 'Are you sure you want to clear your progress and start over again?',
       buttons: [
         'Cancel',
         {
           text: 'Clear',
+          cssClass: 'danger-button',
           role: 'ok'
         }
       ]
