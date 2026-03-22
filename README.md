@@ -10,13 +10,18 @@
 
 JS Interviewer is a mobile application designed to help frontend developers prepare for job interviews. This pet project collects the most common and important interview questions across multiple categories to help you succeed in your next technical interview.
 
+## 🚀 Live Demo
+
+The project is deployed and available online:
+👉 **[https://hardsoncore.github.io/js-interviewer](https://hardsoncore.github.io/js-interviewer)**
+
+You can follow the link to jump right in and start practicing.
+
 ## 📌 Project Status & Architecture
 
 This application was originally built several years ago. To ensure the primary goal of this project — **delivering high-quality, up-to-date interview questions and answers** — remains the focus, the core UI framework (Angular/Ionic) is currently frozen. 
 
-I am actively maintaining and expanding the *content* of this repository. By not spending time on endless framework migrations, I can dedicate my efforts to curating the best possible interview materials. 
-
-**TL;DR:** The code might be a bit older, but the knowledge base is fresh, actively updated, and growing!
+I am actively maintaining and expanding the *content* of this repository. The code might be a bit older, but the knowledge base is fresh, actively updated, and growing!
 
 ## 🤝 How to Contribute
 
@@ -32,13 +37,6 @@ I would love your help to make this repository even better! Since the focus is o
 * UI framework migrations (e.g., updating Angular/Ionic to the latest versions).
 * Heavy architectural refactoring of the existing codebase.
 * Changing the build tools.
-
-## 🚀 Live Demo
-
-The project is deployed and available online:
-👉 **[https://hardsoncore.github.io/js-interviewer](https://hardsoncore.github.io/js-interviewer)**
-
-You can follow the link to jump right in and start practicing.
 
 ### 📱 Mobile Usage
 
