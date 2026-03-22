@@ -5,40 +5,62 @@ export const questions = [
     answer: 'assets/content/eng/answers/1-How-does-the-browser-parse-a-page.md',
     tags: [
       'markup',
+      'CSS',
       'browser'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Parsing HTML, building the DOM',
+        name: 'Critical Rendering Path',
         isChecked: false
       },
       {
-        name: 'Fetching external resources (JS, CSS)',
+        name: 'How the browser builds the DOM, CSSOM, and Render Tree',
         isChecked: false
       },
       {
-        name: 'Parsing CSS and creating CSSOM',
+        name: 'How the browser executes JavaScript and how it affects rendering',
         isChecked: false
       },
       {
-        name: 'Executing JavaScript',
+        name: 'What is Layout / Reflow',
         isChecked: false
       },
       {
-        name: 'Combining DOM and CSSOM to build the render tree',
+        name: 'What is Repaint',
         isChecked: false
       },
       {
-        name: 'Calculating layout and rendering the result',
+        name: 'Composite',
+        isChecked: false
+      },
+      {
+        name: 'Events DOMContentLoaded and Load - what is the difference?',
         isChecked: false
       }
     ]
   },
   {
     id: 2,
+    name: 'Как оптимизировать рендеринг страницы',
+    answer: 'assets/content/rus/answers/2-Kak-optimizirovat-rendering-stranitsy.md',
+    tags: [
+      'markup',
+      'CSS',
+      'browser'
+    ],
+    category: 'Markup',
+    structure: [
+      {
+        name: 'Теги HTML',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 3,
     name: 'What is <DOCTYPE>. Why is it needed?',
-    answer: 'assets/content/eng/answers/2-What-is-DOCTYPE-Why-is-it-needed.md',
+    answer: 'assets/content/eng/answers/3-What-is-DOCTYPE-Why-is-it-needed.md',
     tags: [
       'HTML',
       'markup'
@@ -68,9 +90,9 @@ export const questions = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     name: 'HTML5 Tags. Semantics. Accessibility.',
-    answer: 'assets/content/eng/answers/3-HTML5-Tags-Semantics-Accessibility.md',
+    answer: 'assets/content/eng/answers/4-HTML5-Tags-Semantics-Accessibility.md',
     tags: [
       'HTML',
       'markup'
@@ -92,9 +114,9 @@ export const questions = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: 'What are the ways to include CSS on a page?',
-    answer: 'assets/content/eng/answers/4-What-are-the-ways-to-include-CSS-on-a-page.md',
+    answer: 'assets/content/eng/answers/5-What-are-the-ways-to-include-CSS-on-a-page.md',
     tags: [
       'HTML',
       'markup',
@@ -125,9 +147,9 @@ export const questions = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: 'CSS Priority. Cascade.',
-    answer: 'assets/content/eng/answers/5-CSS-Priority-Cascade.md',
+    answer: 'assets/content/eng/answers/6-CSS-Priority-Cascade.md',
     tags: [
       'css'
     ],
@@ -152,9 +174,9 @@ export const questions = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: 'CSS Selector Weight',
-    answer: 'assets/content/eng/answers/6-CSS-Selector-Weight.md',
+    answer: 'assets/content/eng/answers/7-CSS-Selector-Weight.md',
     tags: [
       'markup',
       'CSS'
@@ -188,25 +210,9 @@ export const questions = [
     ]
   },
   {
-    id: 7,
-    name: 'High specificity of a selector, are there any drawbacks?',
-    answer: 'assets/content/eng/answers/7-High-specificity-of-a-selector-are-there-any-drawbacks.md',
-    tags: [
-      'markup',
-      'CSS'
-    ],
-    category: 'Markup',
-    structure: [
-      {
-        name: 'HTML tags',
-        isChecked: false
-      }
-    ]
-  },
-  {
     id: 8,
-    name: '!important',
-    answer: 'assets/content/eng/answers/8-!important.md',
+    name: 'High specificity of a selector, are there any drawbacks? + !important',
+    answer: 'assets/content/eng/answers/8-High-specificity-of-a-selector-are-there-any-drawbacks.md',
     tags: [
       'markup',
       'CSS'

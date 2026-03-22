@@ -5,40 +5,62 @@ export const questions = [
     answer: 'assets/content/rus/answers/1-Kak-brauzer-parsit-stranitsu.md',
     tags: [
       'markup',
+      'CSS',
       'browser'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Парсинг HTML, построение DOM',
+        name: 'Критический путь рендеринга',
         isChecked: false
       },
       {
-        name: 'Получение внешних ресурсов (JS, CSS)',
+        name: 'Как браузер строит DOM, CSSOM и Render Tree',
         isChecked: false
       },
       {
-        name: 'Разбор CSS и создание CSSOM',
+        name: 'Как браузер выполняет JavaScript и как это влияет на рендеринг',
         isChecked: false
       },
       {
-        name: 'Выполнение JavaScript',
+        name: 'Что такое Layout / Reflow',
         isChecked: false
       },
       {
-        name: 'Объединение DOM и CSSOM для построения дерево рендеринга',
+        name: 'Что такое Repaint',
         isChecked: false
       },
       {
-        name: 'Расчет макета и отрисовка результата',
+        name: 'Composite (композитинг)',
+        isChecked: false
+      },
+      {
+        name: 'Ивенты DOMContentLoaded и Load - в чем разница?',
         isChecked: false
       }
     ]
   },
   {
     id: 2,
+    name: 'Как оптимизировать рендеринг страницы',
+    answer: 'assets/content/rus/answers/2-Kak-optimizirovat-rendering-stranitsy.md',
+    tags: [
+      'markup',
+      'CSS',
+      'browser'
+    ],
+    category: 'Markup',
+    structure: [
+      {
+        name: 'Теги HTML',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 3,
     name: 'Что такое <DOCTYPE>. Зачем он нужен?',
-    answer: 'assets/content/rus/answers/2-Chto-takoe-DOCTYPE-Zachem-on-nuzhen.md',
+    answer: 'assets/content/rus/answers/3-Chto-takoe-DOCTYPE-Zachem-on-nuzhen.md',
     tags: [
       'HTML',
       'markup'
@@ -68,9 +90,9 @@ export const questions = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     name: 'Теги HTML5. Семантика. Доступность.',
-    answer: 'assets/content/rus/answers/3-Tegi-HTML5-Semantika-Dostupnost.md',
+    answer: 'assets/content/rus/answers/4-Tegi-HTML5-Semantika-Dostupnost.md',
     tags: [
       'HTML',
       'markup'
@@ -92,9 +114,9 @@ export const questions = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: 'Какие есть способы подключить CSS на страницу?',
-    answer: 'assets/content/rus/answers/4-Kakie-est-sposoby-podklyuchit-CSS-na-stranitsu.md',
+    answer: 'assets/content/rus/answers/5-Kakie-est-sposoby-podklyuchit-CSS-na-stranitsu.md',
     tags: [
       'HTML',
       'markup',
@@ -125,9 +147,9 @@ export const questions = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: 'Приоритет стилей. Каскадность.',
-    answer: 'assets/content/rus/answers/5-Prioritet-stilej-Kaskadnost.md',
+    answer: 'assets/content/rus/answers/6-Prioritet-stilej-Kaskadnost.md',
     tags: [
       'css'
     ],
@@ -152,9 +174,9 @@ export const questions = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: '“Вес” селекторов CSS',
-    answer: 'assets/content/rus/answers/6-“Ves”-selektorov-CSS.md',
+    answer: 'assets/content/rus/answers/7-“Ves”-selektorov-CSS.md',
     tags: [
       'markup',
       'CSS'
@@ -188,25 +210,9 @@ export const questions = [
     ]
   },
   {
-    id: 7,
-    name: 'Высокая специфичность селектора, есть ли у нее какие-то недостатки?',
-    answer: 'assets/content/rus/answers/7-Vysokaya-spetsifichnost-selektora-est-li-u-nee-kakie-to-nedostatki.md',
-    tags: [
-      'markup',
-      'CSS'
-    ],
-    category: 'Markup',
-    structure: [
-      {
-        name: 'Теги HTML',
-        isChecked: false
-      }
-    ]
-  },
-  {
     id: 8,
-    name: '!important',
-    answer: 'assets/content/rus/answers/8-!important.md',
+    name: 'Высокая специфичность селектора, есть ли у нее какие-то недостатки? + !important',
+    answer: 'assets/content/rus/answers/8-Vysokaya-spetsifichnost-selektora-est-li-u-nee-kakie-to-nedostatki.md',
     tags: [
       'markup',
       'CSS'

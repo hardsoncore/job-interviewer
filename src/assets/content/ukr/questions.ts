@@ -5,40 +5,62 @@ export const questions = [
     answer: 'assets/content/ukr/answers/1-Jak-brauzer-parsit-storinku.md',
     tags: [
       'markup',
+      'CSS',
       'browser'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Парсинг HTML, побудова DOM',
+        name: 'Критичний шлях рендерингу',
         isChecked: false
       },
       {
-        name: 'Отримання зовнішніх ресурсів (JS, CSS)',
+        name: 'Як браузер будує DOM, CSSOM та Render Tree',
         isChecked: false
       },
       {
-        name: 'Розбір CSS та створення CSSOM',
+        name: 'Як браузер виконує JavaScript і як це впливає на рендеринг',
         isChecked: false
       },
       {
-        name: 'Виконання JavaScript',
+        name: 'Що таке Layout / Reflow',
         isChecked: false
       },
       {
-        name: 'Об\'єднання DOM та CSSOM для побудови дерева рендерингу',
+        name: 'Що таке Repaint',
         isChecked: false
       },
       {
-        name: 'Розрахунок макета та відображення результату',
+        name: 'Composite (композитинг)',
+        isChecked: false
+      },
+      {
+        name: 'Події DOMContentLoaded та Load - у чому різниця?',
         isChecked: false
       }
     ]
   },
   {
     id: 2,
+    name: 'Як оптимізувати рендеринг сторінки',
+    answer: 'assets/content/ukr/answers/2-Jak-optimizuvaty-rendering-storinky.md',
+    tags: [
+      'markup',
+      'CSS',
+      'browser'
+    ],
+    category: 'Markup',
+    structure: [
+      {
+        name: 'Теги HTML',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 3,
     name: 'Що таке <DOCTYPE>. Навіщо він потрібен?',
-    answer: 'assets/content/ukr/answers/2-Sho-take-DOCTYPE-Navishcho-vin-potriben.md',
+    answer: 'assets/content/ukr/answers/3-Sho-take-DOCTYPE-Navishcho-vin-potriben.md',
     tags: [
       'HTML',
       'markup'
@@ -68,9 +90,9 @@ export const questions = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     name: 'Теги HTML5. Семантика. Доступність.',
-    answer: 'assets/content/ukr/answers/3-Tegi-HTML5-Semantika-Dostupnost.md',
+    answer: 'assets/content/ukr/answers/4-Tegi-HTML5-Semantika-Dostupnost.md',
     tags: [
       'HTML',
       'markup'
@@ -92,9 +114,9 @@ export const questions = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: 'Які є способи підключити CSS на сторінку?',
-    answer: 'assets/content/ukr/answers/4-Jaki-ye-sposoby-pidklyuchyty-CSS-na-storinku.md',
+    answer: 'assets/content/ukr/answers/5-Jaki-ye-sposoby-pidklyuchyty-CSS-na-storinku.md',
     tags: [
       'HTML',
       'markup',
@@ -125,9 +147,9 @@ export const questions = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: 'Пріоритет стилів. Каскадність.',
-    answer: 'assets/content/ukr/answers/5-Prioritet-stiliv-Kaskadnist.md',
+    answer: 'assets/content/ukr/answers/6-Prioritet-stiliv-Kaskadnist.md',
     tags: [
       'css'
     ],
@@ -152,9 +174,9 @@ export const questions = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: '“Вага” селекторів CSS',
-    answer: 'assets/content/ukr/answers/6-“Vaga”-selektoriv-CSS.md',
+    answer: 'assets/content/ukr/answers/7-“Vaga”-selektoriv-CSS.md',
     tags: [
       'markup',
       'CSS'
@@ -188,25 +210,9 @@ export const questions = [
     ]
   },
   {
-    id: 7,
-    name: 'Висока специфічність селектора, чи є у неї якісь недоліки?',
-    answer: 'assets/content/ukr/answers/7-Vysoka-spetsifichnist-selektora-chi-ye-u-ne-ya-kaki-nedoliky.md',
-    tags: [
-      'markup',
-      'CSS'
-    ],
-    category: 'Markup',
-    structure: [
-      {
-        name: 'Теги HTML',
-        isChecked: false
-      }
-    ]
-  },
-  {
     id: 8,
-    name: '!important',
-    answer: 'assets/content/ukr/answers/8-!important.md',
+    name: 'Висока специфічність селектора, чи є у неї якісь недоліки? + !important',
+    answer: 'assets/content/ukr/answers/8-Vysoka-spetsifichnist-selektora-chi-ye-u-ne-ya-kaki-nedoliky.md',
     tags: [
       'markup',
       'CSS'
