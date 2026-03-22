@@ -42,8 +42,8 @@ export const questions = [
   },
   {
     id: 2,
-    name: 'Как оптимизировать рендеринг страницы',
-    answer: 'assets/content/rus/answers/2-Kak-optimizirovat-rendering-stranitsy.md',
+    name: 'How to optimize page rendering',
+    answer: 'assets/content/eng/answers/2-How-to-optimize-page-rendering.md',
     tags: [
       'markup',
       'CSS',
@@ -52,7 +52,31 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Critical Rendering Path (CRP)',
+        isChecked: false
+      },
+      {
+        name: 'Optimizing DOM (HTML)',
+        isChecked: false
+      },
+      {
+        name: 'Optimizing CSSOM (CSS)',
+        isChecked: false
+      },
+      {
+        name: 'Optimizing JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Optimizing media and fonts (Resources)',
+        isChecked: false
+      },
+      {
+        name: 'Network optimizations and content delivery',
+        isChecked: false
+      },
+      {
+        name: 'Profiling and metrics',
         isChecked: false
       }
     ]

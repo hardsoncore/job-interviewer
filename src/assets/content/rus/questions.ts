@@ -52,7 +52,31 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Critical Rendering Path (CRP)',
+        isChecked: false
+      },
+      {
+        name: 'Оптимизация DOM (HTML)',
+        isChecked: false
+      },
+      {
+        name: 'Оптимизация CSSOM (CSS)',
+        isChecked: false
+      },
+      {
+        name: 'Оптимизация JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Оптимизация медиа и шрифтов (Ресурсы)',
+        isChecked: false
+      },
+      {
+        name: 'Сетевые оптимизации и доставка контента',
+        isChecked: false
+      },
+      {
+        name: 'Профилирование и метрики',
         isChecked: false
       }
     ]
