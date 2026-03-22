@@ -244,7 +244,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Недоліки високої специфічності',
+        isChecked: false
+      },
+      {
+        name: '!important - коли варто використовувати і які проблеми може викликати',
+        isChecked: false
+      },
+      {
+        name: 'Best practices для управління специфічністю і пріоритетом стилів',
         isChecked: false
       }
     ]

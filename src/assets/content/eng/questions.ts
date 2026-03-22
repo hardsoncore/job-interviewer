@@ -244,7 +244,15 @@ export const questions = [
     category: 'Markup',
     structure: [
       {
-        name: 'HTML tags',
+        name: 'Drawbacks of high specificity',
+        isChecked: false
+      },
+      {
+        name: '!important - when to use it and what problems it can cause',
+        isChecked: false
+      },
+      {
+        name: 'Best practices for managing specificity and style priority',
         isChecked: false
       }
     ]
