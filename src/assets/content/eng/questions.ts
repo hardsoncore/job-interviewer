@@ -714,7 +714,7 @@ export const questions = [
   {
     id: 28,
     name: 'Pre- and post- CSS processors. Experience with them',
-    answer: 'assets/content/eng/answers/28-Pre--i-post--protsessory-CSS-Opyt-raboty-s-nimi.md',
+    answer: 'assets/content/eng/answers/28-Pre--and-post--CSS-processors-Experience-with-them.md',
     tags: [
       'markup',
       'CSS'
@@ -1377,7 +1377,7 @@ export const questions = [
   {
     id: 55,
     name: 'Promise chaining. Can we call promise.then().finally().then() or promise.catch().then()? What will we get?',
-    answer: 'assets/content/eng/answers/55-Promise-chaining-Can-we-call-promisethenfinallythen-or-promisecatchthen-What-will-we-get.md',
+    answer: 'assets/content/eng/answers/55-Promise-chaining.md',
     tags: [
       'JavaScript',
       'JS mechanics',
@@ -1697,8 +1697,8 @@ export const questions = [
   },
   {
     id: 70,
-    name: 'Which Utility Types (Утилиты типов) do you use in practice?',
-    answer: 'assets/content/eng/answers/70-Which-Utility-Types-Utility-tipov-do-you-use-in-practice.md',
+    name: 'Which Utility Types do you use in practice?',
+    answer: 'assets/content/eng/answers/70-Which-Utility-Types-do-you-use-in-practice.md',
     tags: [
       'TypeScript',
       'Typization'
@@ -2450,15 +2450,15 @@ export const questions = [
         isChecked: false
       },
       {
-        name: 'Zoneless (Современный Angular / Signals)',
+        name: 'Zoneless (Modern Angular / Signals)',
         isChecked: false
       }
     ]
   },
   {
     id: 100,
-    name: 'Deferrable Views (@defer): Как работает этот механизм? Какие встроенные триггеры (on viewport, on interaction, on idle) существуют для ленивой загрузки кусков шаблона?',
-    answer: 'assets/content/eng/answers/100-Deferrable-Views-defer-Kak-rabotaet-etot-mehanizm-Kakie-vstroennye-triggery-on-viewport-on-interaction-on-idle-sushchestvuyut-dlya-lenivoj-zagruzki-kuskov-shablona.md',
+    name: 'Deferrable Views (@defer): How does this mechanism work?',
+    answer: 'assets/content/eng/answers/100-Deferrable-Views-defer.md',
     tags: [
       'Angular',
       'Performance'
@@ -2473,8 +2473,8 @@ export const questions = [
   },
   {
     id: 101,
-    name: 'Functional Guards - что это и почему классовые Guards были объявлены deprecated?',
-    answer: 'assets/content/eng/answers/101-Functional-Guards---chto-eto-i-pochemu-klassovye-Guards-byli-obyavleny-deprecated.md',
+    name: 'Functional Guards - what they are and why class-based Guards were deprecated?',
+    answer: 'assets/content/eng/answers/101-Functional-Guards.md',
     tags: [
       'angular',
       'routing',
@@ -2490,8 +2490,8 @@ export const questions = [
   },
   {
     id: 102,
-    name: 'Functional Interceptors: Как настроить перехватчики HTTP-запросов (Interceptors) в Standalone-приложении без использования модулей и HTTP_INTERCEPTORS?',
-    answer: 'assets/content/eng/answers/102-Functional-Interceptors-Kak-nastroit-perehvatchiki-HTTP-zaprosov-Interceptors-v-Standalone-prilozhenii-bez-ispolzovaniya-modulej-i-HTTP_INTERCEPTORS.md',
+    name: 'Functional Interceptors: How to configure HTTP request interceptors (Interceptors) in a Standalone application without using modules and HTTP_INTERCEPTORS?',
+    answer: 'assets/content/eng/answers/102-Functional-Interceptors.md',
     tags: [
       'angular',
       'routing',
@@ -2507,7 +2507,7 @@ export const questions = [
   },
   {
     id: 103,
-    name: 'Lifecycle Angular (Жизненный цикл компонента). Современный подход',
+    name: 'Lifecycle Angular. Modern Approach',
     answer: 'assets/content/eng/answers/103-Lifecycle-Angular-Lifecycle-Hooks-Modern-Approach.md',
     tags: [
       'Angular',
