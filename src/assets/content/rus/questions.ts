@@ -2641,5 +2641,56 @@ export const questions = [
         isChecked: false
       }
     ]
+  },
+  {
+    id: 108,
+    name: 'Console API. Какие методы консоли ты используешь в своей работе и для чего?',
+    answer: 'assets/content/rus/answers/108-Console-API.md',
+    tags: [
+      'JavaScript',
+      'Debugging',
+      'Console'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Console API (API консоли)',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 109,
+    name: 'Чистая функция (Pure Function) и её преимущества. Примеры чистых и нечистых функций в JavaScript',
+    answer: 'assets/content/rus/answers/109-Pure-Function.md',
+    tags: [
+      'JavaScript',
+      'Functional Programming',
+      'Pure Functions'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Pure Functions (Чистые функции) - что это и в чем их преимущества',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 110,
+    name: 'Функция высшего порядка (Higher-Order Function) в JavaScript. Примеры и применение',
+    answer: 'assets/content/rus/answers/110-Higher-Order-Function.md',
+    tags: [
+      'JavaScript',
+      'Functional Programming',
+      'Higher-Order Functions'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Higher-Order Functions (Функции высшего порядка) - что это и в чем их преимущества',
+        isChecked: false
+      },
+    ]
   }
 ];

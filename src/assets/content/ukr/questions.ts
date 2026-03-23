@@ -2646,5 +2646,56 @@ export const questions = [
         isChecked: false
       }
     ]
+  },
+  {
+    id: 108,
+    name: 'Console API. Які методи консолі ти використовуєш у своїй роботі і для чого?',
+    answer: 'assets/content/ukr/answers/108-Console-API.md',
+    tags: [
+      'JavaScript',
+      'Debugging',
+      'Console'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Console API (API консолі)',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 109,
+    name: 'Чиста функція (Pure Function) і її переваги. Приклади чистих і нечистих функцій у JavaScript',
+    answer: 'assets/content/rus/answers/109-Pure-Function.md',
+    tags: [
+      'JavaScript',
+      'Functional Programming',
+      'Pure Functions'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Pure Functions (Чисті функції) - що це і в чому їх переваги',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 110,
+    name: 'Функція вищого порядку (Higher-Order Function) в JavaScript. Приклади та застосування',
+    answer: 'assets/content/rus/answers/110-Higher-Order-Function.md',
+    tags: [
+      'JavaScript',
+      'Functional Programming',
+      'Higher-Order Functions'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Higher-Order Functions (Функції вищого порядку) - що це і в чому їх переваги',
+        isChecked: false
+      },
+    ]
   }
 ];

@@ -2646,5 +2646,56 @@ export const questions = [
         isChecked: false
       }
     ]
+  },
+  {
+    id: 108,
+    name: 'Console API. What console methods do you use in your work and for what?',
+    answer: 'assets/content/eng/answers/108-Console-API.md',
+    tags: [
+      'JavaScript',
+      'Debugging',
+      'Console'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Console API - what it is and why it is needed?',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 109,
+    name: 'Pure Function) and its advantages. Examples of pure and impure functions in JavaScript',
+    answer: 'assets/content/rus/answers/109-Pure-Function.md',
+    tags: [
+      'JavaScript',
+      'Functional Programming',
+      'Pure Functions'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Pure Functions - what they are and their advantages',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 110,
+    name: 'Higher-Order Function in JavaScript. Examples and usage',
+    answer: 'assets/content/rus/answers/110-Higher-Order-Function.md',
+    tags: [
+      'JavaScript',
+      'Functional Programming',
+      'Higher-Order Functions'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Higher-Order Functions - what they are and their advantages',
+        isChecked: false
+      },
+    ]
   }
 ];
