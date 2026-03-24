@@ -2256,19 +2256,19 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Основи RxJS',
+        name: 'Що таке RxJS',
         isChecked: false
       },
       {
-        name: 'Ключові будівельні блоки RxJS',
+        name: 'Для чого потрібен RxJS?',
         isChecked: false
       },
       {
-        name: 'Оператори RxJS',
+        name: 'Базові сутності RxJS: Observable, Observer, Subscription, Subject',
         isChecked: false
       },
       {
-        name: 'Управління пам\'яттю в RxJS',
+        name: 'Популярні оператори',
         isChecked: false
       }
     ]

@@ -2251,19 +2251,19 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Основы RxJS',
+        name: 'Что такое RxJS',
         isChecked: false
       },
       {
-        name: 'Ключевые строительные блоки RxJS',
+        name: 'Для чего нужен RxJS?',
         isChecked: false
       },
       {
-        name: 'Операторы RxJS',
+        name: 'Базовые сущности RxJS: Observable, Observer, Subscription, Subject',
         isChecked: false
       },
       {
-        name: 'Управление памятью в RxJS',
+        name: 'Популярные операторы',
         isChecked: false
       }
     ]

@@ -2255,19 +2255,19 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Basics of RxJS',
+        name: 'What is RxJS',
         isChecked: false
       },
       {
-        name: 'Key building blocks of RxJS',
+        name: 'What is RxJS used for?',
         isChecked: false
       },
       {
-        name: 'RxJS Operators',
+        name: 'Basic entities of RxJS: Observable, Observer, Subscription, Subject',
         isChecked: false
       },
       {
-        name: 'Memory Management in RxJS',
+        name: 'Popular operators',
         isChecked: false
       }
     ]
