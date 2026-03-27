@@ -5,6 +5,10 @@
 ![Content Focus](https://img.shields.io/badge/Contributions-Content_Focused-blue.svg?style=flat-square)
 
 **Note:** I'm open to discussing improvements! Feel free to open a PR or contact me.
+<br>
+If you found these materials helpful for your interview or just useful in general, please star this repo. Your support is my best motivation!
+
+[![GitHub stars](https://img.shields.io/github/stars/hardsoncore/js-interviewer.svg?style=social&label=Star)](https://github.com/hardsoncore/js-interviewer)
 
 ## 📖 About
 
@@ -12,10 +16,9 @@ JS Interviewer is a mobile application designed to help frontend developers prep
 
 ## 🚀 Live Demo
 
-The project is deployed and available online:
+The project is deployed and available online - start practicing:
+<br>
 👉 **[https://hardsoncore.github.io/js-interviewer](https://hardsoncore.github.io/js-interviewer)**
-
-You can follow the link to jump right in and start practicing.
 
 ## 📌 Project Status & Architecture
 
@@ -38,7 +41,7 @@ I would love your help to make this repository even better! Since the focus is o
 * Heavy architectural refactoring of the existing codebase.
 * Changing the build tools.
 
-### 📱 Mobile Usage
+## 📱 Add app to your mobile (Android / iOS)
 
 For quick and easy access, you can save the application directly to your smartphone's home screen.
 
