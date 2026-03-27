@@ -41,7 +41,7 @@ I would love your help to make this repository even better! Since the focus is o
 * Heavy architectural refactoring of the existing codebase.
 * Changing the build tools.
 
-## 📱 Add APP to you Mobile (Android / iOS)
+## 📱 Add app to your mobile (Android / iOS)
 
 For quick and easy access, you can save the application directly to your smartphone's home screen.
 
