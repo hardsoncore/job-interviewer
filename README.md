@@ -16,7 +16,7 @@ JS Interviewer is a mobile application designed to help frontend developers prep
 
 ## 🚀 Live Demo
 
-The project is deployed and available online - start practicing: 
+The project is deployed and available online - start practicing:
 <br>
 👉 **[https://hardsoncore.github.io/js-interviewer](https://hardsoncore.github.io/js-interviewer)**
 
