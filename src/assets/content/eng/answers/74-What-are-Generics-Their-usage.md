@@ -28,7 +28,7 @@
 
 <code class="code">
   // The function takes an input type (TInput) and an output type (TOutput)
-  function processData<TInput, TOutput>(
+  function processData&lt;TInput, TOutput>(
     input: TInput,
     transformer: (val: TInput) => TOutput
   ): TOutput {
@@ -36,7 +36,7 @@
   }
 
   // Example usage: converting a string to a number
-  const result = processData<string, number>("123", (val) => parseInt(val));
+  const result = processData&lt;string, number>("123", (val) => parseInt(val));
 </code>
 
 <h4>Step 3: Generics in Interfaces (Real-world Contract)</h4>

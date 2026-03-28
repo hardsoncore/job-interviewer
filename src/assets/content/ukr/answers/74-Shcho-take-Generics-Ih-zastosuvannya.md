@@ -28,7 +28,7 @@
 
 <code class="code">
   // Функція приймає тип входу (TInput) і тип виходу (TOutput)
-  function processData<TInput, TOutput>(
+  function processData&lt;TInput, TOutput>(
     input: TInput,
     transformer: (val: TInput) => TOutput
   ): TOutput {
@@ -36,7 +36,7 @@
   }
 
   // Приклад використання: перетворюємо рядок на число
-  const result = processData<string, number>("123", (val) => parseInt(val));
+  const result = processData&lt;string, number>("123", (val) => parseInt(val));
 </code>
 
 <h4>Крок 3: Дженерики в інтерфейсах (Реальний контракт)</h4>
