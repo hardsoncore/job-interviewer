@@ -1518,9 +1518,7 @@ export const questions = [
     answer: 'assets/content/eng/answers/61-DOM---what-is-it-and-why-DOM-events-Bubbling-capturing-Delegation.md',
     tags: [
       'markup',
-      'markup',
-      'browser mechanics',
-      'browser'
+      'browser mechanics'
     ],
     category: 'Markup',
     structure: [
@@ -1607,9 +1605,13 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'HTML tags',
+        name: 'Reactive programming - what is it?',
         isChecked: false
-      }
+      },
+      {
+        name: 'RxJs - what is it for?',
+        isChecked: false
+      },
     ]
   },
   {
@@ -1690,7 +1692,11 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'HTML tags',
+        name: 'Zone.js - what is it?',
+        isChecked: false
+      },
+      {
+        name: 'How Zone.js works under the hood',
         isChecked: false
       }
     ]

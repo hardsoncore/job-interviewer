@@ -525,8 +525,8 @@ export const questions = [
   },
   {
     id: 19,
-    name: 'Сброс стилів і \"нормалізація\" (Reset VS Normilize). Їх відмінності.',
-    answer: 'assets/content/ukr/answers/19-Sbros-stiliv-i-normalizatsiya-Reset-VS-Normilize-Ih-vidminnosti.md',
+    name: 'Сброс стилів і \"нормалізація\" (Reset VS Normalize). Їх відмінності.',
+    answer: 'assets/content/ukr/answers/19-Sbros-stiliv-i-normalizatsiya-Reset-VS-Normalize-Ih-vidminnosti.md',
     tags: [
       'markup',
       'CSS'
@@ -1519,9 +1519,7 @@ export const questions = [
     answer: 'assets/content/ukr/answers/61-DOM---shcho-tse-i-navishcho-DOM-podiyi-Splivannya-zanurennya-Deleguvannya.md',
     tags: [
       'markup',
-      'markup',
       'browser mechanics',
-      'browser'
     ],
     category: 'Markup',
     structure: [
@@ -1608,9 +1606,13 @@ export const questions = [
     category: 'TypeScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Реактивне програмування - що це?',
         isChecked: false
-      }
+      },
+      {
+        name: 'RxJs - для чого потрібен?',
+        isChecked: false
+      },
     ]
   },
   {
@@ -1691,7 +1693,11 @@ export const questions = [
     category: 'Angular',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Zone.js - що це?',
+        isChecked: false
+      },
+      {
+        name: 'Як працює Zone.js під капотом',
         isChecked: false
       }
     ]
