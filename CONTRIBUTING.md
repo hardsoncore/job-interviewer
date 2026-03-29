@@ -4,27 +4,6 @@ Thank you for deciding to help make our frontend developer knowledge base better
 
 ---
 
-## 🚀 Getting Started
-
-1. **Fork** this repository to your account.
-2. Clone the fork to your local machine:
-   ```bash
-   git clone https://github.com/hardsoncore/js-interviewer.git
-   ```
-3. Create a new branch with a descriptive name:
-   ```bash
-   git checkout -b feat/add-hoisting-question
-   ```
-   *Examples of branch names: `feat/add-hoisting-question`, `fix/typo-in-event-loop`, `docs/translate-to-polish`.*
-4. Make your changes, check them, and commit.
-5. Push the changes to your fork:
-   ```bash
-   git push origin your-branch-name
-   ```
-6. Create a **Pull Request** to the `master` branch of the original repository.
-
----
-
 ## ✅ In Scope (What we are looking for)
 
 We will be very grateful for:
