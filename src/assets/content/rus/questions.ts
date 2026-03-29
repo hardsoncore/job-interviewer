@@ -2941,5 +2941,226 @@ export const questions = [
         isChecked: false
       }
     ]
-  }
+  },
+  {
+    id: 119,
+    name: 'Провайдеры в Angular. Типы провайдеров и их применение',
+    answer: 'assets/content/rus/answers/119-Providers-in-Angular-Types-of-Providers-and-Their-Usage.md',
+    tags: [
+      'Angular',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Провайдеры в Angular - что это такое',
+        isChecked: false
+      },
+      {
+        name: 'Типы провайдеров в Angular (Class Provider, Factory Provider, Value Provider, Existing Provider)',
+        isChecked: false
+      },
+      {
+        name: 'Когда использовать каждый тип провайдера',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 120,
+    name: 'Сервисы в Angular. Что это такое и для чего нужны? Жизненный цикл сервисов',
+    answer: 'assets/content/rus/answers/120-Services-in-Angular-What-are-they-and-what-are-they-for.md',
+    tags: [
+      'Angular',
+      'Services',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Сервисы в Angular - что это такое',
+        isChecked: false
+      },
+      {
+        name: 'Для чего нужны сервисы в Angular',
+        isChecked: false
+      },
+      {
+        name: 'Жизненный цикл сервисов в Angular',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 121,
+    name: 'Паттерн Singleton (Одиночка) в Angular. Являются ли сервисы в Angular синглтонами по умолчанию?',
+    answer: 'assets/content/rus/answers/121-Singleton-Pattern-in-Angular-Are-Angular-Services-Singletons-by-Default.md',
+    tags: [
+      'Angular',
+      'Singleton',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Паттерн Singleton (Одиночка) - что это такое',
+        isChecked: false
+      },
+      {
+        name: 'Являются ли сервисы в Angular синглтонами по умолчанию?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 122,
+    name: 'Виды директив: Structural vs Attribute. В чем разница между структурными и атрибутными директивами в Angular? Приведи примеры.',
+    answer: 'assets/content/rus/answers/122-Directives-in-Angular-Structural-vs-Attribute.md',
+    tags: [
+      'Angular',
+      'Directives'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Структурные директивы в Angular',
+        isChecked: false
+      },
+      {
+        name: 'Атрибутные директивы в Angular',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 123,
+    name: 'Pipes: Pure vs Impure. Что такое чистые и нечистые пайпы? Почему использование функций в шаблоне(например {{ getLabel(item) }}) — это плохая практика, и как пайпы помогают это решить?',
+    answer: 'assets/content/rus/answers/123-Pipes-Pure-vs-Impure.md',
+    tags: [
+      'Angular',
+      'Pipes'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Чистые пайпы в Angular',
+        isChecked: false
+      },
+      {
+        name: 'Нечистые пайпы в Angular',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 124,
+    name: 'ViewChild / ContentChild. В чем разница между @ViewChild и @ContentChild? Когда какой декоратор применять?',
+    answer: 'assets/content/rus/answers/124-ViewChild-ContentChild.md',
+    tags: [
+      'Angular',
+      'ViewChild',
+      'ContentChild'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'ViewChild в Angular',
+        isChecked: false
+      },
+      {
+        name: 'ContentChild в Angular',
+        isChecked: false
+      },
+      {
+        name: 'Когда использовать @ViewChild, а когда @ContentChild',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 125,
+    name: 'Proxy и Reflect. В чем разница между ними? Как они работают и почему современные фреймворки (Vue 3, MobX) перешли на них?',
+    answer: 'assets/content/rus/answers/125-Proxy-Reflect.md',
+    tags: [
+      'JavaScript',
+      'Proxy',
+      'Reflect'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Proxy в JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Reflect в JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Когда использовать Proxy, а когда Reflect',
+        isChecked: false
+      },
+      {
+        name: 'Использование в современных фреймворках',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 126,
+    name: 'Утечки памяти (Memory Leaks). Какие бывают частые причины утечек памяти в JS и как их избежать?',
+    answer: 'assets/content/rus/answers/126-Memory-Leaks.md',
+    tags: [
+      'JavaScript',
+      'Memory Leaks'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое утечки памяти в контексте веб-приложений и почему это важно',
+        isChecked: false
+      },
+      {
+        name: 'Частые причины утечек памяти в JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Как избежать утечек памяти в JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Инструменты для обнаружения и устранения утечек памяти',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 127,
+    name: 'Web Workers / Service Workers. JS однопоточный, но как тогда выполнять тяжелые вычисления не блокируя UI?',
+    answer: 'assets/content/rus/answers/127-Web-Workers-Service-Workers.md',
+    tags: [
+      'JavaScript',
+      'Web Workers',
+      'Service Workers'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое Web Workers и Service Workers в контексте веб-приложений',
+        isChecked: false
+      },
+      {
+        name: 'Когда использовать Web Workers, а когда Service Workers',
+        isChecked: false
+      },
+      {
+        name: 'Примеры использования Web Workers и Service Workers',
+        isChecked: false
+      },
+      {
+        name: 'Инструменты для работы с Web Workers и Service Workers',
+        isChecked: false
+      }
+    ]
+  },
 ];

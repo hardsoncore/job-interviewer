@@ -2946,5 +2946,226 @@ export const questions = [
         isChecked: false
       }
     ]
-  }
+  },
+  {
+    id: 119,
+    name: 'Providers in Angular. Types of Providers and Their Usage',
+    answer: 'assets/content/eng/answers/119-Providers-in-Angular-Types-of-Providers-and-Their-Usage.md',
+    tags: [
+      'Angular',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Providers in Angular - what is it',
+        isChecked: false
+      },
+      {
+        name: 'Types of Providers in Angular (Class Provider, Factory Provider, Value Provider, Existing Provider)',
+        isChecked: false
+      },
+      {
+        name: 'When to use each type of provider',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 120,
+    name: 'Services in Angular. What are they and what are they for? Lifecycle of services',
+    answer: 'assets/content/eng/answers/120-Services-in-Angular-What-are-they-and-what-are-they-for.md',
+    tags: [
+      'Angular',
+      'Services',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Services in Angular - what is it',
+        isChecked: false
+      },
+      {
+        name: 'Why services are needed in Angular',
+        isChecked: false
+      },
+      {
+        name: 'Lifecycle of services in Angular',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 121,
+    name: 'Singleton Pattern in Angular. Are Angular services singletons by default?',
+    answer: 'assets/content/eng/answers/121-Singleton-Pattern-in-Angular-Are-Angular-Services-Singletons-by-Default.md',
+    tags: [
+      'Angular',
+      'Singleton',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Singleton Pattern - what is it',
+        isChecked: false
+      },
+      {
+        name: 'Are Angular services singletons by default?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 122,
+    name: 'Types of Directives: Structural vs Attribute. What is the difference between structural and attribute directives in Angular? Give examples.',
+    answer: 'assets/content/eng/answers/122-Directives-in-Angular-Structural-vs-Attribute.md',
+    tags: [
+      'Angular',
+      'Directives'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Structural directives in Angular',
+        isChecked: false
+      },
+      {
+        name: 'Attribute directives in Angular',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 123,
+    name: 'Pipes: Pure vs Impure. What are pure and impure pipes? Why using functions in templates (e.g., {{ getLabel(item) }}) is a bad practice, and how pipes help solve this?',
+    answer: 'assets/content/eng/answers/123-Pipes-Pure-vs-Impure.md',
+    tags: [
+      'Angular',
+      'Pipes'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Pure pipes in Angular',
+        isChecked: false
+      },
+      {
+        name: 'Impure pipes in Angular',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 124,
+    name: 'ViewChild / ContentChild. What is the difference between @ViewChild and @ContentChild? When to use each decorator?',
+    answer: 'assets/content/eng/answers/124-ViewChild-ContentChild.md',
+    tags: [
+      'Angular',
+      'ViewChild',
+      'ContentChild'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'ViewChild in Angular',
+        isChecked: false
+      },
+      {
+        name: 'ContentChild in Angular',
+        isChecked: false
+      },
+      {
+        name: 'When to use @ViewChild and when to use @ContentChild',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 125,
+    name: 'Proxy and Reflect. What is the difference between them? How do they work and why have modern frameworks (Vue 3, MobX) switched to them?',
+    answer: 'assets/content/eng/answers/125-Proxy-Reflect.md',
+    tags: [
+      'JavaScript',
+      'Proxy',
+      'Reflect'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Proxy in JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Reflect in JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'When to use Proxy and when to use Reflect',
+        isChecked: false
+      },
+      {
+        name: 'Usage in modern frameworks',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 126,
+    name: 'Memory Leaks. What are common causes of memory leaks in JS and how to avoid them?',
+    answer: 'assets/content/eng/answers/126-Memory-Leaks.md',
+    tags: [
+      'JavaScript',
+      'Memory Leaks'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What are memory leaks in the context of web applications and why it is important',
+        isChecked: false
+      },
+      {
+        name: 'Common causes of memory leaks in JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'How to avoid memory leaks in JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Tools for detecting and fixing memory leaks',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 127,
+    name: 'Web Workers / Service Workers. JS is single-threaded, but how can we perform heavy computations without blocking the UI?',
+    answer: 'assets/content/eng/answers/127-Web-Workers-Service-Workers.md',
+    tags: [
+      'JavaScript',
+      'Web Workers',
+      'Service Workers'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What are Web Workers and Service Workers in the context of web applications',
+        isChecked: false
+      },
+      {
+        name: 'When to use Web Workers and when to use Service Workers',
+        isChecked: false
+      },
+      {
+        name: 'Examples of using Web Workers and Service Workers',
+        isChecked: false
+      },
+      {
+        name: 'Tools for working with Web Workers and Service Workers',
+        isChecked: false
+      }
+    ]
+  },
 ];
