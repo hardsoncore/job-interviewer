@@ -2673,7 +2673,7 @@ export const questions = [
   {
     id: 109,
     name: 'Чиста функція (Pure Function) і її переваги. Приклади чистих і нечистих функцій у JavaScript',
-    answer: 'assets/content/rus/answers/109-Pure-Function.md',
+    answer: 'assets/content/ukr/answers/109-Pure-Function.md',
     tags: [
       'JavaScript',
       'Functional Programming',
@@ -2690,7 +2690,7 @@ export const questions = [
   {
     id: 110,
     name: 'Функція вищого порядку (Higher-Order Function) в JavaScript. Приклади та застосування',
-    answer: 'assets/content/rus/answers/110-Higher-Order-Function.md',
+    answer: 'assets/content/ukr/answers/110-Higher-Order-Function.md',
     tags: [
       'JavaScript',
       'Functional Programming',
@@ -2702,6 +2702,249 @@ export const questions = [
         name: 'Higher-Order Functions (Функції вищого порядку) - що це і в чому їх переваги',
         isChecked: false
       },
+    ]
+  },
+  {
+    id: 111,
+    name: 'У чому різниця між Higher-order операторами в RxJS: mergeMap, switchMap, concatMap і exhaustMap?',
+    answer: 'assets/content/ukr/answers/111-RxJS-Higher-order-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'mergeMap',
+        isChecked: false
+      },
+      {
+        name: 'switchMap',
+        isChecked: false
+      },
+      {
+        name: 'concatMap',
+        isChecked: false
+      },
+      {
+        name: 'exhaustMap',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 112,
+    name: 'У чому різниця між комбінуючими операторами RxJS: combineLatest, forkJoin, withLatestFrom, concat, merge, zip і race?',
+    answer: 'assets/content/ukr/answers/112-RxJS-Combination-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'combineLatest',
+        isChecked: false
+      },
+      {
+        name: 'forkJoin',
+        isChecked: false
+      },
+      {
+        name: 'withLatestFrom',
+        isChecked: false
+      },
+      {
+        name: 'concat',
+        isChecked: false
+      },
+      {
+        name: 'merge',
+        isChecked: false
+      },
+      {
+        name: 'zip',
+        isChecked: false
+      },
+      {
+        name: 'race',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 113,
+    name: 'У чому різниця між операторами створення RxJS: of, from, fromEvent, interval і timer?',
+    answer: 'assets/content/ukr/answers/113-RxJS-Creation-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'of',
+        isChecked: false
+      },
+      {
+        name: 'from',
+        isChecked: false
+      },
+      {
+        name: 'fromEvent',
+        isChecked: false
+      },
+      {
+        name: 'interval',
+        isChecked: false
+      },
+      {
+        name: 'timer',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 114,
+    name: 'У чому різниця між операторами фільтрації RxJS: filter, take, takeUntil, skip і distinctUntilChanged?',
+    answer: 'assets/content/ukr/answers/114-RxJS-Filtering-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'filter',
+        isChecked: false
+      },
+      {
+        name: 'take',
+        isChecked: false
+      },
+      {
+        name: 'takeUntil',
+        isChecked: false
+      },
+      {
+        name: 'skip',
+        isChecked: false
+      },
+      {
+        name: 'distinctUntilChanged',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 115,
+    name: 'У чому різниця між операторами утилітами RxJS: tap, finalize, delay, timeout і retry?',
+    answer: 'assets/content/ukr/answers/115-RxJS-Utility-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'tap',
+        isChecked: false
+
+      },
+      {
+        name: 'finalize',
+        isChecked: false
+      },
+      {
+        name: 'delay',
+        isChecked: false
+      },
+      {
+        name: 'timeout',
+        isChecked: false
+      },
+      {
+        name: 'retry',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 116,
+    name: 'У чому різниця між операторами трансформації RxJS: map, mapTo, pluck і scan?',
+    answer: 'assets/content/ukr/answers/116-RxJS-Transformation-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'map',
+        isChecked: false
+      },
+      {
+        name: 'mapTo',
+        isChecked: false
+      },
+      {
+        name: 'pluck',
+        isChecked: false
+      },
+      {
+        name: 'scan',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 117,
+    name: 'Element Injector (або NodeInjector) в Angular. Що це таке і для чого потрібно? Пріоритет токенів на одному елементі',
+    answer: 'assets/content/ukr/answers/117-Element-Injector-v-Angular-Shto-tse-take-i-dlya-chogo-potribno.md',
+    tags: [
+      'Angular',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Element Injector (або NodeInjector) - що це таке',
+        isChecked: false
+      },
+      {
+        name: 'Як працює Element Injector в Angular',
+        isChecked: false
+      },
+      {
+        name: 'Навіщо потрібен Element Injector і які проблеми він вирішує',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 118,
+    name: 'Ієрархія DI та патерн Shadowing (Затемнення провайдерів)',
+    answer: 'assets/content/ukr/answers/118-DI-Hierarchy-and-Shadowing-Pattern.md',
+    tags: [
+      'Angular',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Ієрархія DI в Angular',
+        isChecked: false
+      },
+      {
+        name: 'Патерн Shadowing (Затемнення провайдерів)',
+        isChecked: false
+      }
     ]
   }
 ];

@@ -2672,8 +2672,8 @@ export const questions = [
   },
   {
     id: 109,
-    name: 'Pure Function) and its advantages. Examples of pure and impure functions in JavaScript',
-    answer: 'assets/content/rus/answers/109-Pure-Function.md',
+    name: 'Pure Function and its advantages. Examples of pure and impure functions in JavaScript',
+    answer: 'assets/content/eng/answers/109-Pure-Function.md',
     tags: [
       'JavaScript',
       'Functional Programming',
@@ -2690,7 +2690,7 @@ export const questions = [
   {
     id: 110,
     name: 'Higher-Order Function in JavaScript. Examples and usage',
-    answer: 'assets/content/rus/answers/110-Higher-Order-Function.md',
+    answer: 'assets/content/eng/answers/110-Higher-Order-Function.md',
     tags: [
       'JavaScript',
       'Functional Programming',
@@ -2702,6 +2702,249 @@ export const questions = [
         name: 'Higher-Order Functions - what they are and their advantages',
         isChecked: false
       },
+    ]
+  },
+  {
+    id: 111,
+    name: 'What is the difference between Higher-order operators in RxJS: mergeMap, switchMap, concatMap, and exhaustMap?',
+    answer: 'assets/content/eng/answers/111-RxJS-Higher-order-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'mergeMap',
+        isChecked: false
+      },
+      {
+        name: 'switchMap',
+        isChecked: false
+      },
+      {
+        name: 'concatMap',
+        isChecked: false
+      },
+      {
+        name: 'exhaustMap',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 112,
+    name: 'What is the difference between combination operators in RxJS: combineLatest, forkJoin, withLatestFrom, concat, merge, zip, and race?',
+    answer: 'assets/content/eng/answers/112-RxJS-Combination-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'combineLatest',
+        isChecked: false
+      },
+      {
+        name: 'forkJoin',
+        isChecked: false
+      },
+      {
+        name: 'withLatestFrom',
+        isChecked: false
+      },
+      {
+        name: 'concat',
+        isChecked: false
+      },
+      {
+        name: 'merge',
+        isChecked: false
+      },
+      {
+        name: 'zip',
+        isChecked: false
+      },
+      {
+        name: 'race',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 113,
+    name: 'What is the difference between creation operators in RxJS: of, from, fromEvent, interval, and timer?',
+    answer: 'assets/content/eng/answers/113-RxJS-Creation-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'of',
+        isChecked: false
+      },
+      {
+        name: 'from',
+        isChecked: false
+      },
+      {
+        name: 'fromEvent',
+        isChecked: false
+      },
+      {
+        name: 'interval',
+        isChecked: false
+      },
+      {
+        name: 'timer',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 114,
+    name: 'What is the difference between filtering operators in RxJS: filter, take, takeUntil, skip, and distinctUntilChanged?',
+    answer: 'assets/content/eng/answers/114-RxJS-Filtering-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'filter',
+        isChecked: false
+      },
+      {
+        name: 'take',
+        isChecked: false
+      },
+      {
+        name: 'takeUntil',
+        isChecked: false
+      },
+      {
+        name: 'skip',
+        isChecked: false
+      },
+      {
+        name: 'distinctUntilChanged',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 115,
+    name: 'What is the difference between utility operators in RxJS: tap, finalize, delay, timeout, and retry?',
+    answer: 'assets/content/eng/answers/115-RxJS-Utility-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'tap',
+        isChecked: false
+
+      },
+      {
+        name: 'finalize',
+        isChecked: false
+      },
+      {
+        name: 'delay',
+        isChecked: false
+      },
+      {
+        name: 'timeout',
+        isChecked: false
+      },
+      {
+        name: 'retry',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 116,
+    name: 'What is the difference between transformation operators in RxJS: map, mapTo, pluck, and scan?',
+    answer: 'assets/content/eng/answers/116-RxJS-Transformation-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'map',
+        isChecked: false
+      },
+      {
+        name: 'mapTo',
+        isChecked: false
+      },
+      {
+        name: 'pluck',
+        isChecked: false
+      },
+      {
+        name: 'scan',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 117,
+    name: 'Element Injector (or NodeInjector) in Angular. What is it and what is it for? Token priority on a single element',
+    answer: 'assets/content/eng/answers/117-Element-Injector-in-Angular-What-is-it-and-what-is-it-for.md',
+    tags: [
+      'Angular',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Element Injector (or NodeInjector) - what is it',
+        isChecked: false
+      },
+      {
+        name: 'How Element Injector works in Angular',
+        isChecked: false
+      },
+      {
+        name: 'Why Element Injector is needed and what problems it solves',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 118,
+    name: 'DI Hierarchy and Shadowing Pattern',
+    answer: 'assets/content/eng/answers/118-DI-Hierarchy-and-Shadowing-Pattern.md',
+    tags: [
+      'Angular',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'DI Hierarchy in Angular',
+        isChecked: false
+      },
+      {
+        name: 'Shadowing Pattern',
+        isChecked: false
+      }
     ]
   }
 ];

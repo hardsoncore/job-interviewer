@@ -2698,5 +2698,248 @@ export const questions = [
         isChecked: false
       },
     ]
+  },
+  {
+    id: 111,
+    name: 'В чем разница между Higher-order операторами в RxJS: mergeMap, switchMap, concatMap и exhaustMap?',
+    answer: 'assets/content/rus/answers/111-RxJS-Higher-order-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'mergeMap',
+        isChecked: false
+      },
+      {
+        name: 'switchMap',
+        isChecked: false
+      },
+      {
+        name: 'concatMap',
+        isChecked: false
+      },
+      {
+        name: 'exhaustMap',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 112,
+    name: 'В чем разница между комбинирующими операторами RxJS: combineLatest, forkJoin, withLatestFrom, concat, merge, zip и race?',
+    answer: 'assets/content/rus/answers/112-RxJS-Combination-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'combineLatest',
+        isChecked: false
+      },
+      {
+        name: 'forkJoin',
+        isChecked: false
+      },
+      {
+        name: 'withLatestFrom',
+        isChecked: false
+      },
+      {
+        name: 'concat',
+        isChecked: false
+      },
+      {
+        name: 'merge',
+        isChecked: false
+      },
+      {
+        name: 'zip',
+        isChecked: false
+      },
+      {
+        name: 'race',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 113,
+    name: 'В чем разница между операторами создания RxJS: of, from, fromEvent, interval и timer?',
+    answer: 'assets/content/rus/answers/113-RxJS-Creation-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'of',
+        isChecked: false
+      },
+      {
+        name: 'from',
+        isChecked: false
+      },
+      {
+        name: 'fromEvent',
+        isChecked: false
+      },
+      {
+        name: 'interval',
+        isChecked: false
+      },
+      {
+        name: 'timer',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 114,
+    name: 'В чем разница между операторами фильтрации RxJS: filter, take, takeUntil, skip и distinctUntilChanged?',
+    answer: 'assets/content/rus/answers/114-RxJS-Filtering-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'filter',
+        isChecked: false
+      },
+      {
+        name: 'take',
+        isChecked: false
+      },
+      {
+        name: 'takeUntil',
+        isChecked: false
+      },
+      {
+        name: 'skip',
+        isChecked: false
+      },
+      {
+        name: 'distinctUntilChanged',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 115,
+    name: 'В чем разница между операторами утилитами RxJS: tap, finalize, delay, timeout и retry?',
+    answer: 'assets/content/rus/answers/115-RxJS-Utility-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'tap',
+        isChecked: false
+
+      },
+      {
+        name: 'finalize',
+        isChecked: false
+      },
+      {
+        name: 'delay',
+        isChecked: false
+      },
+      {
+        name: 'timeout',
+        isChecked: false
+      },
+      {
+        name: 'retry',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 116,
+    name: 'В чем разница между операторами трансформации RxJS: map, mapTo, pluck и scan?',
+    answer: 'assets/content/rus/answers/116-RxJS-Transformation-Operators.md',
+    tags: [
+      'Angular',
+      'RxJS',
+      'Operators'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'map',
+        isChecked: false
+      },
+      {
+        name: 'mapTo',
+        isChecked: false
+      },
+      {
+        name: 'pluck',
+        isChecked: false
+      },
+      {
+        name: 'scan',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 117,
+    name: 'Element Injector (или NodeInjector) в Angular. Что это такое и для чего нужно? Приоритет токенов на одном элементе',
+    answer: 'assets/content/rus/answers/117-Element-Injector-v-Angular-Chto-eto-takoe-i-dlya-chego-nuzhno.md',
+    tags: [
+      'Angular',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Element Injector (или NodeInjector) - что это такое',
+        isChecked: false
+      },
+      {
+        name: 'Как работает Element Injector в Angular',
+        isChecked: false
+      },
+      {
+        name: 'Зачем нужен Element Injector и какие проблемы он решает',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 118,
+    name: 'Иерархия DI и паттерн Shadowing (Затенение провайдеров)',
+    answer: 'assets/content/rus/answers/118-DI-Hierarchy-and-Shadowing-Pattern.md',
+    tags: [
+      'Angular',
+      'Dependency Injection'
+    ],
+    category: 'Angular',
+    structure: [
+      {
+        name: 'Иерархия DI в Angular',
+        isChecked: false
+      },
+      {
+        name: 'Паттерн Shadowing (Затенение провайдеров)',
+        isChecked: false
+      }
+    ]
   }
 ];
