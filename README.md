@@ -26,21 +26,6 @@ This application was originally built several years ago. To ensure the primary g
 
 I am actively maintaining and expanding the *content* of this repository. The code might be a bit older, but the knowledge base is fresh, actively updated, and growing!
 
-## 🤝 How to Contribute
-
-I would love your help to make this repository even better! Since the focus is on the knowledge base, contributing is incredibly easy — you don't need to dive into the application's architecture.
-
-### ✅ What I am looking for (Greatly Appreciated!):
-* **New Interview Questions:** Know a tricky JS/TS/Frontend question? Add it!
-* **Answer Improvements:** Found a better way to explain a concept? Please update the current answer.
-* **Typo Fixes:** Grammar police are always welcome. 
-* **Translation/Localization:** Help translate existing questions and answers into other languages (please keep technical terminology accurate and consistent).
-
-### ❌ What is currently out of scope:
-* UI framework migrations (e.g., updating Angular/Ionic to the latest versions).
-* Heavy architectural refactoring of the existing codebase.
-* Changing the build tools.
-
 ## 📱 Add app to your mobile (Android / iOS)
 
 For quick and easy access, you can save the application directly to your smartphone's home screen.
@@ -54,17 +39,6 @@ For quick and easy access, you can save the application directly to your smartph
   1. Open the link in the **Chrome** browser.
   2. Tap the menu icon (three dots in the top right corner).
   3. Select **Add to Home screen**.
-
-## 🛠️ Tech Stack
-
-This project is built with modern web and mobile technologies:
-
-- **[Angular 13](https://angular.io/)** - Frontend framework
-- **[Ionic 6](https://ionicframework.com/)** - Cross-platform mobile UI framework
-- **[Capacitor 3](https://capacitorjs.com/)** - Native runtime for web apps
-- **TypeScript** - Type-safe JavaScript
-- **RxJS** - Reactive programming library
-- **SCSS** - Styling
 
 ## 🚀 Getting Started
 
@@ -90,7 +64,7 @@ npm install
 
 3. Start the development server:
 ```bash
-npm start
+npm run start
 ```
 
 4. Open your browser and navigate to `http://localhost:4200`
@@ -101,13 +75,9 @@ npm start
 js-interviewer/
 ├── src/
 │   ├── app/              # Application components and modules
-│   ├── assets/           # Static assets (images, icons, etc.)
+│   ├── assets/           # Static assets (images, icons, questions and answers etc.)
 │   ├── environments/     # Environment configurations
-│   └── theme/           # Global styles and themes
-├── android/             # Android platform files
-├── resources/           # App resources (splash screens, icons)
-├── e2e/                # End-to-end tests
-└── ...config files
+│   └── theme/            # Global styles and themes
 ```
 
 ## 👤 Author
