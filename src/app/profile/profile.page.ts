@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 import { Languages, Themes, ThemeType } from '../models/app.model';
 import { Profile } from '../models/profile.model';
@@ -13,12 +15,15 @@ import { AppService } from '../services/app.service';
   templateUrl: 'profile.page.html',
   styleUrls: ['profile.page.scss']
 })
-export class ProfilePage implements OnInit {
+export class ProfilePage implements OnInit, OnDestroy {
   imgLoaded = false;
   profile: Profile;
   avPercent: number;
   appVersion: string;
   languages = Languages;
+
+  private destroy$ = new Subject<void>();
+  private timerId: any;
 
   constructor(
     private theme: ThemeService,
@@ -48,13 +53,21 @@ export class ProfilePage implements OnInit {
   }
 
   ngOnInit(): void {
-    this.profileService.profile.subscribe(profile => this.profile = profile);
-    this.resultsService.getAveragePercent().subscribe(percent => this.avPercent = percent);
+    this.profileService.profile.pipe(takeUntil(this.destroy$)).subscribe(profile => this.profile = profile);
+    this.resultsService.getAveragePercent().pipe(takeUntil(this.destroy$)).subscribe(percent => this.avPercent = percent);
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+    if (this.timerId) {
+      clearTimeout(this.timerId);
+    }
   }
 
   public onImageLoad(): void {
     // will work without a timeout, but it looks more intresting with a timeout
-    setTimeout(() => {
+    this.timerId = setTimeout(() => {
       this.imgLoaded = true;
     }, 1000);
   }

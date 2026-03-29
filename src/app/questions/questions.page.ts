@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 import { NavigationExtras, Router } from '@angular/router';
 
 import { QuestionsService } from '../services/questions.service';
@@ -12,10 +13,12 @@ import { ResultsService } from '../services/results.service';
   templateUrl: 'questions.page.html',
   styleUrls: ['questions.page.scss']
 })
-export class QuestionsPage implements OnInit {
+export class QuestionsPage implements OnInit, OnDestroy {
   questions: Question[] = [];
   filteredQuestions: Question[] = [];
   results: Results[];
+
+  private destroy$ = new Subject<void>();
 
   constructor(
     private questionsService: QuestionsService,
@@ -24,11 +27,16 @@ export class QuestionsPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.questionsService.questions.subscribe(questions => {
+    this.questionsService.questions.pipe(takeUntil(this.destroy$)).subscribe(questions => {
       this.questions = questions;
       this.filteredQuestions = questions;
     });
-    this.resultsService.results.subscribe(results => this.results = results);
+    this.resultsService.results.pipe(takeUntil(this.destroy$)).subscribe(results => this.results = results);
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
   public handleInput(event: any) {
@@ -46,6 +54,10 @@ export class QuestionsPage implements OnInit {
 
       return matchTags || matchCategory || matchName;
     });
+  }
+
+  public trackById(index: number, item: Question) {
+    return item.id;
   }
 
   public getPercentById(id: number): Observable<number> {

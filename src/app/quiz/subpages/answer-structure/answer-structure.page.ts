@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 import { QuestionsService } from 'src/app/services/questions.service';
 import { Question, Results } from 'src/app/models/question.model';
@@ -11,10 +13,12 @@ import { ResultsService } from 'src/app/services/results.service';
   templateUrl: './answer-structure.page.html',
   styleUrls: ['./answer-structure.page.scss'],
 })
-export class AnswerStructurePage implements OnInit {
+export class AnswerStructurePage implements OnInit, OnDestroy {
   questionId: number;
   question: Question;
   results: Results[];
+
+  private destroy$ = new Subject<void>();
 
   constructor(
     private route: ActivatedRoute,
@@ -24,13 +28,18 @@ export class AnswerStructurePage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.queryParams.subscribe((params: QueryParams) => {
+    this.route.queryParams.pipe(takeUntil(this.destroy$)).subscribe((params: QueryParams) => {
       this.questionId = +params.questionId;
 
       this._initQuestion();
     });
 
     this._getResults();
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
   public backToQuiz(useParams = false): void {
@@ -52,13 +61,13 @@ export class AnswerStructurePage implements OnInit {
   }
 
   private _initQuestion(): void {
-    this.questionsService.questions.subscribe(() => {
+    this.questionsService.questions.pipe(takeUntil(this.destroy$)).subscribe(() => {
       this.question = this.questionsService.getQuestionById(this.questionId);
     });
   }
 
   private _getResults(): void {
-    this.resultsService.results.subscribe(res => this.results = res);
+    this.resultsService.results.pipe(takeUntil(this.destroy$)).subscribe(res => this.results = res);
   }
 
   private _calculateCorrectness(): number {

@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
-import { Observable } from 'rxjs';
-import { take } from 'rxjs/operators';
+import { Observable, Subject } from 'rxjs';
+import { take, takeUntil } from 'rxjs/operators';
 
 import { QueryParams } from '../models/app.model';
 import { Question } from '../models/question.model';
@@ -13,9 +13,12 @@ import { ResultsService } from '../services/results.service';
   templateUrl: 'quiz.page.html',
   styleUrls: ['quiz.page.scss']
 })
-export class QuizPage implements OnInit {
+export class QuizPage implements OnInit, OnDestroy {
   question: Question;
   percent$: Observable<number>;
+
+  private destroy$ = new Subject<void>();
+  private timerId: any;
 
   constructor(
     private questionsService: QuestionsService,
@@ -25,7 +28,7 @@ export class QuizPage implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.queryParams.subscribe((params: QueryParams) => {
+    this.route.queryParams.pipe(takeUntil(this.destroy$)).subscribe((params: QueryParams) => {
       if (params.needToUpdate) {
         this.getNextQuestion();
         this._clearQueryParams();
@@ -33,6 +36,14 @@ export class QuizPage implements OnInit {
     });
 
     this.getNextQuestion();
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next();
+    this.destroy$.complete();
+    if (this.timerId) {
+      clearTimeout(this.timerId);
+    }
   }
 
   public visitTheoryPage(): void {
@@ -59,7 +70,7 @@ export class QuizPage implements OnInit {
     this.question = null;
 
     // with timeout looks better
-    setTimeout(() => {
+    this.timerId = setTimeout(() => {
       this.resultsService.results.pipe(take(1)).subscribe(results => {
         const uncompletedQuestions = results.filter(r => r.correctness < 100);
 
