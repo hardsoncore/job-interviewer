@@ -1,3 +1,5 @@
+import { Question } from 'src/app/models/question.model';
+
 export const questions = [
   {
     id: 1,
@@ -848,6 +850,7 @@ export const questions = [
       'JavaScript',
       'JS mechanics'
     ],
+    category: 'JavaScript',
     structure: [
       {
         name: 'Let, const and var - differences',
@@ -1070,6 +1073,7 @@ export const questions = [
       'JavaScript',
       'JS mechanics'
     ],
+    category: 'JavaScript',
     structure: [
       {
         name: 'Garbage Collector',
@@ -3168,4 +3172,4 @@ export const questions = [
       }
     ]
   },
-];
+] as Question[];

@@ -3,6 +3,7 @@ export interface Question {
   name: string;
   answer: string;
   tags: string[];
+  category: string;
   structure: Step[];
 }
 
