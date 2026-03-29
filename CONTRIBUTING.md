@@ -29,7 +29,7 @@ Thank you for deciding to help make our frontend developer knowledge base better
 
 We will be very grateful for:
 
-* **New interview questions:** Know a tricky JS/TS or Angular/Vue question? Please propose it via [GitHub Discussions](link-to-discussions) first so we can validate it before you start working on a PR!
+* **New interview questions:** Know a tricky JS/TS or Angular/Vue question? Please propose it via [GitHub Discussions](https://github.com/hardsoncore/js-interviewer/discussions) first so we can validate it before you start working on a PR!
 * **Better answers:** If you can explain a concept simpler or deeper - it is a must-have.
 * **Bug fixes:** Typos, incorrect terminology.
 * **Localization:** Translating existing questions (keeping technical terms accurate).
