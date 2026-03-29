@@ -59,4 +59,4 @@ We try to follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ## ⚖️ Code of Conduct
 
-By participating in this project, you agree to follow our [Code of Conduct](./CODE_OF_CONDUCT.md). Let's be polite and support each other!
+By participating in this project, you agree to follow our [Code of Conduct](.github/CODE_OF_CONDUCT.md). Let's be polite and support each other!
