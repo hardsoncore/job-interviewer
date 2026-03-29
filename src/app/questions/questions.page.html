@@ -14,7 +14,9 @@
   </ion-header>
 
   <div class="container">
-    <ion-item *ngFor="let question of questions" button (click)="clickOnQuestion(question)" detail>
+    <ion-searchbar animated="true" placeholder="Type related keywords to find question" (ionInput)="handleInput($event)"></ion-searchbar>
+
+    <ion-item *ngFor="let question of filteredQuestions" button (click)="clickOnQuestion(question)" detail>
       <ion-label>{{ question.id }}. {{ question.name }}</ion-label>
       <ion-badge
         [color]="(getPercentById(question.id) | async) < 33 && 'danger' ||

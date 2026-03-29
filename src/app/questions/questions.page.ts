@@ -14,6 +14,7 @@ import { ResultsService } from '../services/results.service';
 })
 export class QuestionsPage implements OnInit {
   questions: Question[] = [];
+  filteredQuestions: Question[] = [];
   results: Results[];
 
   constructor(
@@ -23,8 +24,28 @@ export class QuestionsPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.questionsService.questions.subscribe(questions => this.questions = questions);
+    this.questionsService.questions.subscribe(questions => {
+      this.questions = questions;
+      this.filteredQuestions = questions;
+    });
     this.resultsService.results.subscribe(results => this.results = results);
+  }
+
+  public handleInput(event: any) {
+    const query = event.target.value?.toLowerCase() || '';
+
+    if (!query.trim()) {
+      this.filteredQuestions = [...this.questions];
+      return;
+    }
+
+    this.filteredQuestions = this.questions.filter((question: Question) => {
+      const matchTags = question.tags?.some(tag => tag.toLowerCase().includes(query));
+      const matchCategory = question.category?.toLowerCase().includes(query);
+      const matchName = question.name?.toLowerCase().includes(query);
+
+      return matchTags || matchCategory || matchName;
+    });
   }
 
   public getPercentById(id: number): Observable<number> {
