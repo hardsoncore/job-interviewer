@@ -9,12 +9,38 @@
   Emission — an array of the latest values from each Observable.
 </p>
 
+<code class="code">
+  import { combineLatest, of } from 'rxjs';
+
+  const obs1 = of(1, 2, 3);
+  const obs2 = of('A', 'B', 'C');
+
+  combineLatest([obs1, obs2]).subscribe(result => console.log(result));
+  // → [1, "A"]
+  // → [2, "B"]
+  // → [3, "C"]
+</code>
+
 <h3>withLatestFrom</h3>
 <p>
-  <strong>withLatestFrom</strong> is similar to combineLatest, but here there is a clear "leader". It emits values only when the main (source) stream emits. The other streams simply "mix in" their latest current states.
+  <strong>withLatestFrom</strong> is similar to <code>combineLatest</code>, but here there is a clear "leader". It emits values only when the main (source) stream emits. The other streams simply "mix in" their latest current states.
   <br>
   Emission — an array of the latest values from all "mixing" Observables, but only at the moment the main stream emits.
 </p>
+
+<code class="code">
+  import { withLatestFrom, of } from 'rxjs';
+
+  const source = of(1, 2, 3);
+  const other = of('A', 'B', 'C');
+
+  source.pipe(
+    withLatestFrom(other)
+  ).subscribe(result => console.log(result));
+  // → [1, "C"]
+  // → [2, "C"]
+  // → [3, "C"]
+</code>
 
 <h3>zip</h3>
 <p>
@@ -23,10 +49,32 @@
   Emission — an array of values from each Observable, grouped by their index number.
 </p>
 
+<code class="code">
+  import { zip, of } from 'rxjs';
+
+  const obs1 = of(1, 2, 3);
+  const obs2 = of('A', 'B');
+
+  zip(obs1, obs2).subscribe(result => console.log(result));
+  // → [1, "A"]
+  // → [2, "B"]
+  // (3 from obs1 hangs in memory, waiting for a pair)
+</code>
+
 <h3>forkJoin</h3>
 <p>
   <strong>forkJoin</strong> waits until all provided streams (Observables) complete, and only after that does it emit an array of their latest values. If at least one Observable does not complete, forkJoin emits nothing. If one stream fails with an error — the entire forkJoin fails.
 </p>
+
+<code class="code">
+  import { forkJoin, of } from 'rxjs';
+
+  const obs1 = of(1, 2, 3);
+  const obs2 = of('A', 'B', 'C');
+
+  forkJoin([obs1, obs2]).subscribe(result => console.log(result));
+  // → [3, "C"] (only after both Observables complete)
+</code>
 
 <h3>merge</h3>
 <p>
@@ -35,9 +83,40 @@
   Emission — values from each Observable as soon as they appear, without waiting for other Observables.
 </p>
 
+<code class="code">
+  import { merge, of } from 'rxjs';
+
+  const obs1 = of(1, 2, 3);
+  const obs2 = of('A', 'B', 'C');
+
+  merge(obs1, obs2).subscribe(result => console.log(result));
+  // → 1
+  // → "A"
+  // → 2
+  // → "B"
+  // → 3
+  // → "C"
+</code>
+
 <h3>concat</h3>
 <p>
   <strong>concat</strong> emits values from Observables sequentially, waiting for the previous Observable to complete before starting to emit values from the next one.
   <br>
   Emission — values from each Observable, but only after the completion of the previous Observable.
 </p>
+
+<code class="code">
+  import { concat, of } from 'rxjs';
+
+  const obs1 = of(1, 2, 3);
+  const obs2 = of('A', 'B', 'C');
+
+  concat(obs1, obs2).subscribe(result => console.log(result));
+  // → 1
+  // → 2
+  // → 3
+  // (obs1 completed, now obs2 starts)
+  // → "A"
+  // → "B"
+  // → "C"
+</code>
