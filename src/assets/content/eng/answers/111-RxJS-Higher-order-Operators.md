@@ -1,5 +1,13 @@
-<p>
-All four operators do the same thing: they take each value from the source (outer) Observable and map it to an inner Observable. The difference lies in their strategy for managing concurrently active inner streams.
+<p class="info info--blue">
+  These are transformation operators that do two things:
+  <br>
+  <br>
+  <strong>Projection (Mapping):</strong> For EACH value from the "outer" stream, they create a new "inner" stream (inner Observable).
+  <br>
+  <strong>Subscription management (Flattening):</strong> They automatically subscribe to these inner streams and emit their values into the main stream.
+  <br>
+  <br>
+  The difference between them lies only in the concurrency strategy: what to do if a new value arrives while the previous inner stream has not yet completed?
 </p>
 
 <h3>mergeMap</h3>
