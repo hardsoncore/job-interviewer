@@ -3172,4 +3172,522 @@ export const questions = [
       }
     ]
   },
+  {
+    id: 128,
+    name: 'У чому ключові відмінності Composition API від Options API, і які фундаментальні проблеми він вирішує?',
+    answer: 'assets/content/ukr/answers/128-Composition-API-Options-API.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Composition API',
+      'Options API'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке Composition API і Options API в Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Ключові відмінності Composition API від Options API',
+        isChecked: false
+      },
+      {
+        name: 'Які фундаментальні проблеми вирішує Composition API',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    name: 'Що таке setup()? Синтаксичний цукор <script setup>+ Макроси: defineProps і defineEmits',
+    answer: 'assets/content/ukr/answers/129-Script-Setup.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Script Setup'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке setup() і для чого він потрібен у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Що таке <script setup> у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Ключові відмінності <script setup> від стандартної функції setup()',
+        isChecked: false
+      },
+      {
+        name: 'Які переваги дає використання <script setup>',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 130,
+    name: 'Два брати реактивності: ref vs reactive',
+    answer: 'assets/content/ukr/answers/130-Ref-vs-Reactive.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке ref і reactive у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Ключові відмінності ref від reactive',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 131,
+    name: 'toValue vs toRaw. У чому різниця між цими функціями і коли яку використовувати?',
+    answer: 'assets/content/ukr/answers/131-ToValue-vs-ToRaw.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке toValue і toRaw у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Ключові відмінності toValue від toRaw',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 132,
+    name: 'Автоматичне спостереження: watch vs watchEffect',
+    answer: 'assets/content/ukr/answers/132-Watch-vs-WatchEffect.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке watch і watchEffect у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Ключові відмінності watch від watchEffect',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 133,
+    name: 'Обчислювані властивості: computed',
+    answer: 'assets/content/ukr/answers/133-Computed.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке computed у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Коли використовувати computed, а коли це антипатерн',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 134,
+    name: 'Позбавлення від "Prop Drilling": provide / inject',
+    answer: 'assets/content/ukr/answers/134-Provide-Inject.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке provide / inject у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Коли використовувати provide / inject, а коли це антипатерн',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 135,
+    name: 'Слоти: Різниця між звичайними слотами, слотами з іменами та динамічними слотами',
+    answer: 'assets/content/ukr/answers/135-Slots.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Slots'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке слоти у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Різниця між звичайними слотами, слотами з іменами та динамічними слотами',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 136,
+    name: 'Teleport: Що таке Teleport у Vue.js і для чого він потрібен? В чому переваги використання Teleport?',
+    answer: 'assets/content/ukr/answers/136-Teleport.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Teleport'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке Teleport у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Коли використовувати Teleport, а коли це антипатерн',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 137,
+    name: 'Як змінилася система реактивності у Vue 3? У чому різниця під капотом?',
+    answer: 'assets/content/ukr/answers/137-Reactivity.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Як працює реактивність у Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'У чому різниця під капотом між реактивністю у Vue 2 та Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'За рахунок чого рендеринг у Vue 3 став значно швидшим? Оптимізації компілятора (Patch Flags, Static Hoisting)',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 138,
+    name: 'Що таке Фрагменти (Fragments) у Vue 3 і як вони впливають на структуру шаблонів?',
+    answer: 'assets/content/ukr/answers/138-Fragments.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Fragments'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке Фрагменти (Fragments) у Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'Як Фрагменти впливають на структуру шаблонів',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 139,
+    name: 'Користувацькі директиви. Як змінилося створення кастомних директив?',
+    answer: 'assets/content/ukr/answers/139-CustomDirectives.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Custom Directives'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке кастомні директиви (Custom Directives) у Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'Як кастомні директиви впливають на структуру шаблонів',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 140,
+    name: 'Pinia. Чому екосистема перейшла на Pinia? У чому переваги порівняно з Vuex та іншими?',
+    answer: 'assets/content/ukr/answers/140-Pinia.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Pinia'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Чому екосистема перейшла на Pinia',
+        isChecked: false
+      },
+      {
+        name: 'У чому переваги Pinia порівняно з Vuex та іншими',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 141,
+    name: 'Хуки життєвого циклу у Vue 3',
+    answer: 'assets/content/ukr/answers/141-LifecycleHooks.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Lifecycle Hooks'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Як змінилися хуки життєвого циклу у Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'Куди зникли created та beforeCreate',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 142,
+    name: 'Що таке Composable? Для чого вони потрібні?',
+    answer: 'assets/content/ukr/answers/142-Composable.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Composable'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке Composable у Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Відмінності Composable від звичайних методів із сервісу',
+        isChecked: false
+      },
+      {
+        name: 'Які переваги дає використання Composable',
+        isChecked: false
+      },
+      {
+        name: 'Ключові відмінності Composable від mixins та HOCs',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 143,
+    name: 'Вбудований компонент <Suspense>. Як він працює і які проблеми вирішує?',
+    answer: 'assets/content/ukr/answers/143-Suspense.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Suspense'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Як працює вбудований компонент <Suspense>',
+        isChecked: false
+      },
+      {
+        name: 'Які проблеми вирішує <Suspense>',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 144,
+    name: 'Коли і навіщо слід використовувати shallowRef і shallowReactive замість звичайних?',
+    answer: 'assets/content/ukr/answers/144-ShallowRef.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'ShallowRef'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Коли і навіщо слід використовувати shallowRef і shallowReactive',
+        isChecked: false
+      },
+      {
+        name: 'Які переваги дає використання shallowRef і shallowReactive',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 145,
+    name: 'Що таке defineModel і як він спрощує двостороннє зв\'язування даних?',
+    answer: 'assets/content/ukr/answers/145-DefineModel.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'DefineModel'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке defineModel і як він спрощує двостороннє зв\'язування даних',
+        isChecked: false
+      },
+      {
+        name: 'Які переваги дає використання defineModel',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 146,
+    name: 'В чому різниця між toRef і toRefs, і в яких випадках їх застосовують?',
+    answer: 'assets/content/ukr/answers/146-ToRefToRefs.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'ToRef',
+      'ToRefs'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке toRef і toRefs',
+        isChecked: false
+      },
+      {
+        name: 'Які переваги дає використання toRef і toRefs',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 147,
+    name: 'Що таке Vue Router? Які важливі функції надає маршрутизатор? Які хуки навігації є у vue-router?',
+    answer: 'assets/content/ukr/answers/147-VueRouter.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Vue Router'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Що таке Vue Router',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 147,
+    name: 'Як дані передаються між компонентами у Vue?',
+    answer: 'assets/content/ukr/answers/147-DataTransfer.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Data Transfer'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Як дані передаються між компонентами у Vue',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 148,
+    name: 'Same-Origin Policy та CORS. Як браузери забезпечують безпеку при обміні даними між різними джерелами?',
+    answer: 'assets/content/ukr/answers/148-SameOriginPolicyCORS.md',
+    tags: [
+      'Web Security',
+      'CORS',
+      'cross-site',
+      'Same-Origin Policy'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Same-Origin Policy та CORS',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 149,
+    name: 'Cookies. Що таке cookies і для чого вони потрібні?',
+    answer: 'assets/content/ukr/answers/149-CookiesSecurity.md',
+    tags: [
+      'Web Security',
+      'cookies',
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Що таке cookies і для чого вони потрібні?',
+        isChecked: false
+      },
+      {
+        name: 'Які атрибути cookies допомагають забезпечити безпеку (Secure, HttpOnly, SameSite)',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 150,
+    name: 'Як браузери забезпечують безпеку cookies при обміні даними між різними джерелами?',
+    answer: 'assets/content/ukr/answers/150-CookiesSecurity.md',
+    tags: [
+      'Web Security',
+      'cookies',
+      'cross-site',
+      'Same-Origin Policy'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Як браузери забезпечують безпеку cookies при обміні даними між різними джерелами?',
+        isChecked: false
+      },
+      {
+        name: 'Які атрибути cookies допомагають забезпечити безпеку (Secure, HttpOnly, SameSite)',
+        isChecked: false
+      }
+    ]
+  },
 ] as Question[];

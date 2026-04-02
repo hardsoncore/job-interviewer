@@ -3172,4 +3172,523 @@ export const questions = [
       }
     ]
   },
+  {
+    id: 128,
+    name: 'What are the key differences between Composition API and Options API, and what fundamental problems does it solve?',
+    answer: 'assets/content/eng/answers/128-Composition-API-Options-API.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Composition API',
+      'Options API'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is Composition API and Options API in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Key differences between Composition API and Options API',
+        isChecked: false
+      },
+      {
+        name: 'Fundamental problems solved by Composition API',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 129,
+    name: 'What is setup()? Syntactic sugar <script setup>+ Macros: defineProps and defineEmits',
+    answer: 'assets/content/eng/answers/129-Script-Setup.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Script Setup'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is setup() and why it is needed in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'What is <script setup> in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Key differences between <script setup> and the standard setup() function',
+        isChecked: false
+      },
+      {
+        name: 'Benefits of using <script setup>',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 130,
+    name: 'Two brothers of reactivity: ref vs reactive',
+    answer: 'assets/content/eng/answers/130-Ref-vs-Reactive.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is ref and reactive in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Key differences between ref and reactive',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 131,
+    name: 'toValue vs toRaw. What is the difference between these functions and when to use each?',
+    answer: 'assets/content/eng/answers/131-ToValue-vs-ToRaw.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is toValue and toRaw in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Key differences between toValue and toRaw',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 132,
+    name: 'Automatic tracking: watch vs watchEffect',
+    answer: 'assets/content/eng/answers/132-Watch-vs-WatchEffect.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is watch and watchEffect in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Key differences between watch and watchEffect',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 133,
+    name: 'Computed properties: computed',
+    answer: 'assets/content/eng/answers/133-Computed.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is computed in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'When to use computed and when it is an anti-pattern',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 134,
+    name: 'Eliminating "Prop Drilling": provide / inject',
+    answer: 'assets/content/eng/answers/134-Provide-Inject.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is provide / inject in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'When to use provide / inject and when it is an anti-pattern',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 135,
+    name: 'Slots: Key differences between default slots, named slots, and dynamic slots',
+    answer: 'assets/content/eng/answers/135-Slots.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Slots'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What are slots in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'Key differences between default slots, named slots, and dynamic slots',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 136,
+    name: 'Teleport: What is Teleport in Vue.js and why is it needed? What are the benefits of using Teleport?',
+    answer: 'assets/content/eng/answers/136-Teleport.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Teleport'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is Teleport in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'When to use Teleport and when it is an anti-pattern',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 137,
+    name: 'How has the reactivity system changed in Vue 3? What are the differences under the hood?',
+    answer: 'assets/content/eng/answers/137-Reactivity.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Reactivity'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'How does reactivity work in Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'What are the differences under the hood between reactivity in Vue 2 and Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'Why is rendering significantly faster in Vue 3? Compiler optimizations (Patch Flags, Static Hoisting)',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 138,
+    name: 'What are Fragments in Vue 3, and how do they affect template structure?',
+    answer: 'assets/content/eng/answers/138-Fragments.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Fragments'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What are Fragments in Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'How do Fragments affect template structure',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 139,
+    name: 'Custom Directives. How has the creation of custom directives changed?',
+    answer: 'assets/content/eng/answers/139-CustomDirectives.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Custom Directives'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What are custom directives (Custom Directives) in Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'How do custom directives affect template structure',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 140,
+    name: 'Pinia. Why did the ecosystem switch to Pinia? What are the advantages compared to Vuex and others?',
+    answer: 'assets/content/eng/answers/140-Pinia.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Pinia'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'Why did the ecosystem switch to Pinia',
+        isChecked: false
+      },
+      {
+        name: 'What are the advantages of Pinia compared to Vuex and others',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 141,
+    name: 'Lifecycle Hooks in Vue 3',
+    answer: 'assets/content/eng/answers/141-LifecycleHooks.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Lifecycle Hooks'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'How have lifecycle hooks changed in Vue 3',
+        isChecked: false
+      },
+      {
+        name: 'Where did created and beforeCreate go',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 142,
+    name: 'What is a Composable? What are they used for?',
+    answer: 'assets/content/eng/answers/142-Composable.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Composable'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is a Composable in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'How does a Composable differ from regular service methods',
+        isChecked: false
+      },
+      {
+        name: 'What are the advantages of using Composables',
+        isChecked: false
+      },
+      {
+        name: 'Key differences between Composables and mixins or HOCs',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 143,
+    name: 'Built-in <Suspense> component. How does it work and what problems does it solve?',
+    answer: 'assets/content/eng/answers/143-Suspense.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Suspense'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'How does the built-in <Suspense> component work',
+        isChecked: false
+      },
+      {
+        name: 'What problems does <Suspense> solve',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 144,
+    name: 'When and why should you use shallowRef and shallowReactive instead of the regular ones?',
+    answer: 'assets/content/eng/answers/144-ShallowRef.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'ShallowRef'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'When and why should you use shallowRef and shallowReactive',
+        isChecked: false
+      },
+      {
+        name: 'What are the advantages of using shallowRef and shallowReactive',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 145,
+    name: 'What is defineModel and how does it simplify two-way data binding?',
+    answer: 'assets/content/eng/answers/145-DefineModel.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'DefineModel'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is defineModel and how does it simplify two-way data binding',
+        isChecked: false
+      },
+      {
+        name: 'What are the advantages of using defineModel',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 146,
+    name: 'What is the difference between toRef and toRefs, and when should they be used?',
+    answer: 'assets/content/eng/answers/146-ToRefToRefs.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'ToRef',
+      'ToRefs'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is toRef and toRefs',
+        isChecked: false
+      },
+      {
+        name: 'What are the advantages of using toRef and toRefs',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 147,
+    name: 'What is Vue Router? What important features does the router provide? What navigation hooks are available in vue-router?',
+    answer: 'assets/content/eng/answers/147-VueRouter.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Vue Router'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'What is Vue Router',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 147,
+    name: 'How is data passed between components in Vue?',
+    answer: 'assets/content/eng/answers/147-DataTransfer.md',
+    tags: [
+      'Vue.js',
+      'Vue 3',
+      'Data Transfer'
+    ],
+    category: 'Vue.js',
+    structure: [
+      {
+        name: 'How is data passed between components in Vue',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 148,
+    name: 'Same-Origin Policy and CORS. How do browsers ensure security when exchanging data between different origins?',
+    answer: 'assets/content/eng/answers/148-SameOriginPolicyCORS.md',
+    tags: [
+      'Web Security',
+      'CORS',
+      'cross-site',
+      'Same-Origin Policy'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Same-Origin Policy and CORS',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 149,
+    name: 'Cookies. What are cookies and what are they used for?',
+    answer: 'assets/content/eng/answers/149-CookiesSecurity.md',
+    tags: [
+      'Web Security',
+      'cookies',
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'What are cookies and what are they used for?',
+        isChecked: false
+      },
+      {
+        name: 'Which cookie attributes help ensure security (Secure, HttpOnly, SameSite)?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 150,
+    name: 'How do browsers ensure the security of cookies when exchanging data between different origins?',
+    answer: 'assets/content/eng/answers/150-CookiesSecurity.md',
+    tags: [
+      'Web Security',
+      'cookies',
+      'cross-site',
+      'Same-Origin Policy'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'How do browsers ensure the security of cookies when exchanging data between different origins?',
+        isChecked: false
+      },
+      {
+        name: 'Which cookie attributes help ensure security (Secure, HttpOnly, SameSite)?',
+        isChecked: false
+      }
+    ]
+  },
 ] as Question[];
