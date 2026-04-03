@@ -3628,8 +3628,27 @@ export const questions = [
   },
   {
     id: 148,
+    name: 'HTTP/HTTPS: методы, заголовки, кеширование и безопасность',
+    answer: 'assets/content/rus/answers/148-HTTPHTTPS.md',
+    tags: [
+      'Web Security',
+      'HTTP',
+      'HTTPS',
+      'cross-site',
+      'Same-Origin Policy'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'HTTP/HTTPS: методы, заголовки, кеширование и безопасность',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 149,
     name: 'Same-Origin Policy и CORS. Как браузеры обеспечивают безопасность при обмене данными между разными источниками?',
-    answer: 'assets/content/rus/answers/148-SameOriginPolicyCORS.md',
+    answer: 'assets/content/rus/answers/149-SameOriginPolicyCORS.md',
     tags: [
       'Web Security',
       'CORS',
@@ -3645,9 +3664,9 @@ export const questions = [
     ]
   },
   {
-    id: 149,
+    id: 150,
     name: 'Cookies. Что такое cookies и для чего они нужны?',
-    answer: 'assets/content/rus/answers/149-CookiesSecurity.md',
+    answer: 'assets/content/rus/answers/150-CookiesSecurity.md',
     tags: [
       'Web Security',
       'cookies',
@@ -3665,9 +3684,9 @@ export const questions = [
     ]
   },
   {
-    id: 150,
+    id: 151,
     name: 'Как браузеры обеспечивают безопасность cookies при обмене данными между разными источниками?',
-    answer: 'assets/content/rus/answers/150-CookiesSecurity.md',
+    answer: 'assets/content/rus/answers/151-CookiesSecurity.md',
     tags: [
       'Web Security',
       'cookies',

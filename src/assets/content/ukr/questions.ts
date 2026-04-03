@@ -3632,8 +3632,27 @@ export const questions = [
   },
   {
     id: 148,
+    name: 'HTTP/HTTPS: методи, заголовки, кешування та безпека',
+    answer: 'assets/content/ukr/answers/148-HTTPHTTPS.md',
+    tags: [
+      'Web Security',
+      'HTTP',
+      'HTTPS',
+      'cross-site',
+      'Same-Origin Policy'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'HTTP/HTTPS: методи, заголовки, кешування та безпека',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 149,
     name: 'Same-Origin Policy та CORS. Як браузери забезпечують безпеку при обміні даними між різними джерелами?',
-    answer: 'assets/content/ukr/answers/148-SameOriginPolicyCORS.md',
+    answer: 'assets/content/ukr/answers/149-SameOriginPolicyCORS.md',
     tags: [
       'Web Security',
       'CORS',
@@ -3649,9 +3668,9 @@ export const questions = [
     ]
   },
   {
-    id: 149,
+    id: 150,
     name: 'Cookies. Що таке cookies і для чого вони потрібні?',
-    answer: 'assets/content/ukr/answers/149-CookiesSecurity.md',
+    answer: 'assets/content/ukr/answers/150-CookiesSecurity.md',
     tags: [
       'Web Security',
       'cookies',
@@ -3669,9 +3688,9 @@ export const questions = [
     ]
   },
   {
-    id: 150,
+    id: 151,
     name: 'Як браузери забезпечують безпеку cookies при обміні даними між різними джерелами?',
-    answer: 'assets/content/ukr/answers/150-CookiesSecurity.md',
+    answer: 'assets/content/ukr/answers/151-CookiesSecurity.md',
     tags: [
       'Web Security',
       'cookies',

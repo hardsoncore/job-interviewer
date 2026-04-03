@@ -3633,8 +3633,27 @@ export const questions = [
   },
   {
     id: 148,
+    name: 'HTTP/HTTPS: methods, headers, caching, and security',
+    answer: 'assets/content/eng/answers/148-HTTPHTTPS.md',
+    tags: [
+      'Web Security',
+      'HTTP',
+      'HTTPS',
+      'cross-site',
+      'Same-Origin Policy'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'HTTP/HTTPS: methods, headers, caching, and security',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 149,
     name: 'Same-Origin Policy and CORS. How do browsers ensure security when exchanging data between different origins?',
-    answer: 'assets/content/eng/answers/148-SameOriginPolicyCORS.md',
+    answer: 'assets/content/eng/answers/149-SameOriginPolicyCORS.md',
     tags: [
       'Web Security',
       'CORS',
@@ -3650,9 +3669,9 @@ export const questions = [
     ]
   },
   {
-    id: 149,
+    id: 150,
     name: 'Cookies. What are cookies and what are they used for?',
-    answer: 'assets/content/eng/answers/149-CookiesSecurity.md',
+    answer: 'assets/content/eng/answers/150-CookiesSecurity.md',
     tags: [
       'Web Security',
       'cookies',
@@ -3670,9 +3689,9 @@ export const questions = [
     ]
   },
   {
-    id: 150,
+    id: 151,
     name: 'How do browsers ensure the security of cookies when exchanging data between different origins?',
-    answer: 'assets/content/eng/answers/150-CookiesSecurity.md',
+    answer: 'assets/content/eng/answers/151-CookiesSecurity.md',
     tags: [
       'Web Security',
       'cookies',
