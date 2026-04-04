@@ -2127,33 +2127,66 @@ export const questions = [
   },
   {
     id: 86,
-    name: 'Безпека додатків (AppSec)',
-    answer: 'assets/content/ukr/answers/86-Bezpeka-dodatkiv-AppSec.md',
+    name: 'Основні методи сортування. В чому їх різниця і який краще використовувати в різних випадках?',
+    answer: 'assets/content/ukr/answers/86-Metody-sortuvannya.md',
     tags: [
-      'security',
-      'AppSec',
-      'OWASP'
+      'algorithm',
+      'sorting',
+      'Big O'
     ],
-    category: 'General',
+    category: 'Algorithms',
     structure: [
       {
-        name: 'XSS',
+        name: 'Сортування бульбашкою (Bubble Sort)',
         isChecked: false
       },
       {
-        name: 'CSRF',
+        name: 'Сортування вставками (Insertion Sort)',
         isChecked: false
       },
       {
-        name: 'SQL Injection',
+        name: 'Сортування вибором (Selection Sort)',
+        isChecked: false
+      },
+      {
+        name: 'Сортування злиттям (Merge Sort)',
+        isChecked: false
+      },
+      {
+        name: 'Швидке сортування (Quick Sort)',
         isChecked: false
       }
     ]
   },
   {
     id: 87,
+    name: 'Метод оцінки складності алгоритму. O(1), O(n), O(log n) і т.д. Що це і навіщо потрібно',
+    answer: 'assets/content/ukr/answers/87-Metod-otsinky-skladnosti-algoritmu.md',
+    tags: [
+      'algorithm',
+      'complexity',
+      'Big O'
+    ],
+    category: 'Algorithms',
+    structure: [
+      {
+        name: 'O(1)',
+        isChecked: false
+      },
+      {
+        name: 'O(n)',
+        isChecked: false
+      },
+      {
+        name: 'O(log n)',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 88,
     name: 'Дерева, графи, перевернуті дерева',
-    answer: 'assets/content/ukr/answers/87-Dereva-grafy-perevernutі-dereva.md',
+    answer: 'assets/content/ukr/answers/88-Dereva-grafy-perevernutye-dereva.md',
     tags: [
       'data structures',
       'trees',
@@ -2175,31 +2208,6 @@ export const questions = [
       },
       {
         name: 'Графи',
-        isChecked: false
-      }
-    ]
-  },
-  {
-    id: 88,
-    name: 'Чому робота з DOM вважається дуже ресурсоємною?',
-    answer: 'assets/content/ukr/answers/88-Chomu-robota-z-DOM-vvazhayetsya-duzhe-resursojemnoyu.md',
-    tags: [
-      'DOM',
-      'performance',
-      'web development'
-    ],
-    category: 'Markup',
-    structure: [
-      {
-        name: 'DOM — це Web API, а не частина JavaScript',
-        isChecked: false
-      },
-      {
-        name: 'DOM — це складна ієрархічна структура даних',
-        isChecked: false
-      },
-      {
-        name: 'Reflow і Repaint',
         isChecked: false
       }
     ]
@@ -3709,4 +3717,163 @@ export const questions = [
       }
     ]
   },
+  {
+    id: 152,
+    name: 'XSS (Cross-Site Scripting). Що таке XSS-атаки і як захиститися від них?',
+    answer: 'assets/content/ukr/answers/152-XSS.md',
+    tags: [
+      'Web Security',
+      'XSS',
+      'cross-site'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Що таке XSS-атаки і як вони працюють',
+        isChecked: false
+      },
+      {
+        name: 'Як захиститися від XSS-атак',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 153,
+    name: 'CSRF (Cross-Site Request Forgery). Що таке CSRF-атаки і як захиститися від них?',
+    answer: 'assets/content/ukr/answers/153-CSRF.md',
+    tags: [
+      'Web Security',
+      'CSRF',
+      'cross-site'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Що таке CSRF-атаки і як вони працюють',
+        isChecked: false
+      },
+      {
+        name: 'Як захиститися від CSRF-атак',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 154,
+    name: 'SQL Injection. Що таке SQL-ін\'єкції і як захиститися від них?',
+    answer: 'assets/content/ukr/answers/154-SQL-Injection.md',
+    tags: [
+      'Web Security',
+      'SQL Injection'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Що таке SQL-ін\'єкції і як захиститися від них?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 155,
+    name: 'SSL/TLS. Що таке SSL/TLS і як вони забезпечують безпеку даних при передачі по мережі?',
+    answer: 'assets/content/ukr/answers/155-SSLTLS.md',
+    tags: [
+      'Web Security',
+      'SSL',
+      'TLS'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Що таке SSL/TLS і як вони забезпечують безпеку даних при передачі по мережі?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 156,
+    name: 'OAuth 2.0. Що таке OAuth 2.0 і як він забезпечує безпечну авторизацію у веб-додатках?',
+    answer: 'assets/content/ukr/answers/156-OAuth2.md',
+    tags: [
+      'Web Security',
+      'OAuth 2.0',
+      'authorization'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Що таке OAuth 2.0',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 157,
+    name: 'JWT (JSON Web Tokens). Що таке JWT і як він використовується для аутентифікації та передачі інформації між клієнтом і сервером?',
+    answer: 'assets/content/ukr/answers/157-JWT.md',
+    tags: [
+      'Web Security',
+      'JWT',
+      'authentication'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'Що таке JWT і як він використовується для аутентифікації та передачі інформації між клієнтом і сервером?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 158,
+    name: 'Чому робота з DOM вважається дуже ресурсоємною?',
+    answer: 'assets/content/ukr/answers/158-Pochemu-rabota-s-DOM-schitaetsya-ochen-resursoemkoj.md',
+    tags: [
+      'DOM',
+      'performance',
+      'web development'
+    ],
+    category: 'Markup',
+    structure: [
+      {
+        name: 'DOM — це Web API, а не частина JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'DOM — це складна ієрархічна структура даних',
+        isChecked: false
+      },
+      {
+        name: 'Reflow і Repaint',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 159,
+    name: 'Ecmascript language types VS Ecmascript specification types',
+    answer: 'assets/content/ukr/answers/159-EcmascriptTypes.md',
+    tags: [
+      'JavaScript',
+      'Ecmascript',
+      'types'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Що таке типи мови Ecmascript?',
+        isChecked: false
+      },
+      {
+        name: 'Що таке типи специфікації Ecmascript?',
+        isChecked: false
+      },
+      {
+        name: 'У чому різниця між типами мови та типами специфікації Ecmascript?',
+        isChecked: false
+      }
+    ]
+  }
 ] as Question[];

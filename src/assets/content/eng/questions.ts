@@ -2126,33 +2126,66 @@ export const questions = [
   },
   {
     id: 86,
-    name: 'Application Security (AppSec)',
-    answer: 'assets/content/eng/answers/86-Application-Security-AppSec.md',
+    name: 'Sorting methods. What are their differences and which one is better to use in different cases?',
+    answer: 'assets/content/eng/answers/86-Sorting-methods.md',
     tags: [
-      'security',
-      'AppSec',
-      'OWASP'
+      'algorithm',
+      'sorting',
+      'Big O'
     ],
-    category: 'General',
+    category: 'Algorithms',
     structure: [
       {
-        name: 'XSS',
+        name: 'Bubble Sort',
         isChecked: false
       },
       {
-        name: 'CSRF',
+        name: 'Insertion Sort',
         isChecked: false
       },
       {
-        name: 'SQL Injection',
+        name: 'Selection Sort',
+        isChecked: false
+      },
+      {
+        name: 'Merge Sort',
+        isChecked: false
+      },
+      {
+        name: 'Quick Sort',
         isChecked: false
       }
     ]
   },
   {
     id: 87,
+    name: 'Method for evaluating algorithm complexity. O(1), O(n), O(log n), etc. What it is and why it is needed',
+    answer: 'assets/content/eng/answers/87-Method-for-evaluating-algorithm-complexity.md',
+    tags: [
+      'algorithm',
+      'complexity',
+      'Big O'
+    ],
+    category: 'Algorithms',
+    structure: [
+      {
+        name: 'O(1)',
+        isChecked: false
+      },
+      {
+        name: 'O(n)',
+        isChecked: false
+      },
+      {
+        name: 'O(log n)',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 88,
     name: 'Trees, Graphs, Inverted Trees',
-    answer: 'assets/content/eng/answers/87-Trees-Graphs-Inverted-Trees.md',
+    answer: 'assets/content/eng/answers/88-Trees-Graphs-Inverted-Trees.md',
     tags: [
       'data structures',
       'trees',
@@ -2174,31 +2207,6 @@ export const questions = [
       },
       {
         name: 'Graphs',
-        isChecked: false
-      }
-    ]
-  },
-  {
-    id: 88,
-    name: 'Why is working with the DOM considered very resource-intensive?',
-    answer: 'assets/content/eng/answers/88-Why-is-working-with-the-DOM-considered-very-resource-intensive.md',
-    tags: [
-      'DOM',
-      'performance',
-      'web development'
-    ],
-    category: 'Markup',
-    structure: [
-      {
-        name: 'DOM — Web API, not part of JavaScript',
-        isChecked: false
-      },
-      {
-        name: 'DOM — a complex hierarchical data structure',
-        isChecked: false
-      },
-      {
-        name: 'Reflow and Repaint',
         isChecked: false
       }
     ]
@@ -3710,4 +3718,163 @@ export const questions = [
       }
     ]
   },
+  {
+    id: 152,
+    name: 'XSS (Cross-Site Scripting). What are XSS attacks and how to protect against them?',
+    answer: 'assets/content/eng/answers/152-XSS.md',
+    tags: [
+      'Web Security',
+      'XSS',
+      'cross-site'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'What are XSS attacks and how do they work',
+        isChecked: false
+      },
+      {
+        name: 'How to protect against XSS attacks',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 153,
+    name: 'CSRF (Cross-Site Request Forgery). What are CSRF attacks and how to protect against them?',
+    answer: 'assets/content/eng/answers/153-CSRF.md',
+    tags: [
+      'Web Security',
+      'CSRF',
+      'cross-site'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'What are CSRF attacks and how do they work',
+        isChecked: false
+      },
+      {
+        name: 'How to protect against CSRF attacks',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 154,
+    name: 'SQL Injection. What are SQL injections and how to protect against them?',
+    answer: 'assets/content/eng/answers/154-SQL-Injection.md',
+    tags: [
+      'Web Security',
+      'SQL Injection'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'What are SQL injections and how do they work?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 155,
+    name: 'SSL/TLS. What are SSL/TLS and how do they ensure data security during transmission?',
+    answer: 'assets/content/eng/answers/155-SSLTLS.md',
+    tags: [
+      'Web Security',
+      'SSL',
+      'TLS'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'What are SSL/TLS and how do they ensure data security during transmission?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 156,
+    name: 'OAuth 2.0. What is OAuth 2.0 and how does it ensure secure authorization in web applications?',
+    answer: 'assets/content/eng/answers/156-OAuth2.md',
+    tags: [
+      'Web Security',
+      'OAuth 2.0',
+      'authorization'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'What is OAuth 2.0',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 157,
+    name: 'JWT (JSON Web Tokens). What is JWT and how is it used for authentication and information exchange between client and server?',
+    answer: 'assets/content/eng/answers/157-JWT.md',
+    tags: [
+      'Web Security',
+      'JWT',
+      'authentication'
+    ],
+    category: 'Web Security',
+    structure: [
+      {
+        name: 'What is JWT and how is it used for authentication and information exchange between client and server?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 158,
+    name: 'Why is working with the DOM considered very resource-intensive?',
+    answer: 'assets/content/eng/answers/158-Why-working-with-DOM-is-resource-intensive.md',
+    tags: [
+      'DOM',
+      'performance',
+      'web development'
+    ],
+    category: 'Markup',
+    structure: [
+      {
+        name: 'DOM - Web API, not part of JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'DOM - a complex hierarchical data structure',
+        isChecked: false
+      },
+      {
+        name: 'Reflow and Repaint',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 159,
+    name: 'Ecmascript language types VS Ecmascript specification types',
+    answer: 'assets/content/eng/answers/159-EcmascriptTypes.md',
+    tags: [
+      'JavaScript',
+      'Ecmascript',
+      'types'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What are Ecmascript language types?',
+        isChecked: false
+      },
+      {
+        name: 'What are Ecmascript specification types?',
+        isChecked: false
+      },
+      {
+        name: 'What is the difference between language types and specification types in Ecmascript?',
+        isChecked: false
+      }
+    ]
+  }
 ] as Question[];
