@@ -71,6 +71,15 @@ ion-button {
   margin: 1rem;
 }
 
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  & ion-button {
+    flex: 1;
+  }
+}
 @media (min-width: 768px) {
   .container {
     background-color: var(--ion-item-background);

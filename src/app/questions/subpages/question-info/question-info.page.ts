@@ -61,6 +61,40 @@ export class QuestionInfoPage implements OnInit, OnDestroy {
     this.router.navigate(['tabs/quiz/answer-structure'], navigationExtras);
   }
 
+  public goToPrevQuestion(): void {
+    const prevQuestionId = this.questionId - 1;
+    if (prevQuestionId < 1) return; // prevent navigating to non-existent question
+
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        questionId: prevQuestionId,
+      } as QueryParams
+    };
+
+    this.router.navigate(['tabs/questions/question-info'], navigationExtras);
+  }
+
+  public goToNextQuestion(): void {
+    const nextQuestionId = this.questionId + 1;
+    if (nextQuestionId > this.questionsService.getQuestionsCount()) return; // prevent navigating to non-existent question
+
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        questionId: nextQuestionId,
+      } as QueryParams
+    };
+
+    this.router.navigate(['tabs/questions/question-info'], navigationExtras);
+  }
+
+  public isFirstQuestion(): boolean {
+    return this.questionId === 1;
+  }
+
+  public isLastQuestion(): boolean {
+    return this.questionId >= this.questionsService.getQuestionsCount();
+  }
+
   private loadAnswerContent(path: string) {
     this.http.get(path, { responseType: 'text' }).subscribe({
       next: (content) => {
