@@ -844,10 +844,12 @@ export const questions = [
   },
   {
     id: 34,
-    name: 'Let, const и var. Различия + Hoisting ',
+    name: 'Let, const и var. Различия + Hoisting',
     answer: 'assets/content/rus/answers/34-Let-const-i-var-Razlichiya-+-Hoisting-.md',
     tags: [
       'JavaScript',
+      'variables',
+      'let', 'const', 'var',
       'JS mechanics'
     ],
     category: 'JavaScript',
@@ -858,6 +860,14 @@ export const questions = [
       },
       {
         name: 'Hoisting (всплытие или поднятие)',
+        isChecked: false
+      },
+      {
+        name: 'Как Hoisting работает с var, let и const',
+        isChecked: false
+      },
+      {
+        name: 'Temporal Dead Zone (TDZ) для let и const',
         isChecked: false
       }
     ]
