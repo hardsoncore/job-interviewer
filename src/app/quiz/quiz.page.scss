@@ -41,3 +41,9 @@
     flex: 1;
   }
 }
+
+@media (min-width: 768px) {
+  .header * {
+    font-size: 1.8rem !important;
+  }
+}

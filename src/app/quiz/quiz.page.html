@@ -15,7 +15,7 @@
 
   <div class="container">
     <ion-card (click)="visitTheoryPage()">
-      <ion-card-header *ngIf="question">
+      <ion-card-header *ngIf="question" class="header">
         <ion-card-subtitle>
           Question №{{ question.id }}
         </ion-card-subtitle>
@@ -63,8 +63,8 @@
       </div>
 
       <div class="buttons">
-        <ion-button (click)="getNextQuestion(); $event.stopPropagation();" color="tertiary" fill="outline">Skip</ion-button>
-        <ion-button (click)="submitAnswer(); $event.stopPropagation();" color="tertiary">Solve</ion-button>
+        <ion-button (click)="getNextQuestion(); $event.stopPropagation();" color="tertiary" fill="outline" size="large">Skip</ion-button>
+        <ion-button (click)="submitAnswer(); $event.stopPropagation();" color="tertiary" size="large">Solve</ion-button>
       </div>
     </ion-card>
   </div>
