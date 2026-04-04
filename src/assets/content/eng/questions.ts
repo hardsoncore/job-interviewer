@@ -2609,7 +2609,7 @@ export const questions = [
 
   {
     id: 106,
-    name: 'Abstract Classes в TypeScript. When to use abstract classes instead of interfaces?',
+    name: 'Abstract Classes in TypeScript. When to use abstract classes instead of interfaces?',
     answer: 'assets/content/eng/answers/106-Abstract-Classes-v-TypeScript.md',
     tags: [
       'TypeScript',
@@ -2638,7 +2638,7 @@ export const questions = [
   },
   {
     id: 107,
-    name: 'Protected vs Private vs Public в TypeScript. When to use each of these access modifiers?',
+    name: 'Protected vs Private vs Public in TypeScript. When to use each of these access modifiers?',
     answer: 'assets/content/eng/answers/107-Protected-vs-Private-vs-Public-v-TypeScript.md',
     tags: [
       'TypeScript',
