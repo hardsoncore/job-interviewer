@@ -51,8 +51,9 @@ export class QuestionsPage implements OnInit, OnDestroy {
       const matchTags = question.tags?.some(tag => tag.toLowerCase().includes(query));
       const matchCategory = question.category?.toLowerCase().includes(query);
       const matchName = question.name?.toLowerCase().includes(query);
+      const matchId = question.id?.toString().includes(query);
 
-      return matchTags || matchCategory || matchName;
+      return matchTags || matchCategory || matchName || matchId;
     });
   }
 
