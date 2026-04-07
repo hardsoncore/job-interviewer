@@ -1,3 +1,14 @@
+.dark {
+  :host::ng-deep code {
+    background-color: #121212bf;
+    border-color: #d5d5d54f;
+  }
+
+  :host ::ng-deep .code {
+    color: #5bda5b;
+  }
+}
+
 .pre-text {
   font-family: sans-serif;
   white-space: inherit;
@@ -5,7 +16,7 @@
 }
 
 :host ::ng-deep code {
-  background-color: #ababab26;
+  background-color: #b0b0b0b8;
   display: inline-block;
   padding: 0 2px;
   word-break: break-word;
@@ -13,18 +24,20 @@
   border-width: 1px;
   border-style: solid;
   border-radius: 2px;
-  border-color: #d5d5d54f;
+  border-color: #5251514f;
 }
 
 :host ::ng-deep .code {
   border: 0;
   border-radius: 0;
   display: block;
-  color: #0eef0e;
+  color: #236d23;
+  text-shadow: 0 0 #656565;
   white-space: pre;
   overflow: auto;
   padding-bottom: 1rem;
   font-family: monospace;
+  font-weight: 500;
 }
 
 :host ::ng-deep .info {
@@ -45,6 +58,18 @@
   border-bottom: 2px dotted;
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+:host ::ng-deep .deep-dive {
+  background-color: #c6c6c630;
+  color: orange;
+  display: inline-block;
+  padding: 0.5rem;
+  font-weight: bold;
+
+  &::before {
+    content: '\26A0\ ';
+  }
 }
 
 :host ::ng-deep img {
@@ -80,6 +105,7 @@ ion-button {
     flex: 1;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     background-color: var(--ion-item-background);
