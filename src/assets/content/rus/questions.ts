@@ -788,16 +788,26 @@ export const questions = [
   },
   {
     id: 31,
-    name: 'CORS. Что это такое и с чем его едят?',
-    answer: 'assets/content/rus/answers/31-CORS-Chto-eto-takoe-i-s-chem-ego-edyat.md',
+    name: 'Какие типы узлов есть в DOM, чем они отличаются и для чего нужны?',
+    answer: 'assets/content/rus/answers/31-Kakie-tipy-uzlov-est-v-DOM.md',
     tags: [
       'browser',
-      'security'
+      'performance',
+      'markup',
+      'DOM'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'CORS - что это?',
+        name: 'Какие типы узлов есть в DOM?',
+        isChecked: false
+      },
+      {
+        name: 'Чем они отличаются?',
+        isChecked: false
+      },
+      {
+        name: 'Для чего нужны разные типы узлов?',
         isChecked: false
       }
     ]
@@ -3878,6 +3888,211 @@ export const questions = [
       },
       {
         name: 'В чем разница между типами языка и типами спецификации Ecmascript?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 160,
+    name: 'IntersectionObserver API. Что это такое и для чего нужно?',
+    answer: 'assets/content/rus/answers/160-IntersectionObserver.md',
+    tags: [
+      'JavaScript',
+      'IntersectionObserver',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое IntersectionObserver API и для чего он нужен?',
+        isChecked: false
+      },
+      {
+        name: 'Как использовать IntersectionObserver API для оптимизации производительности веб-приложений?',
+        isChecked: false
+      },
+      {
+        name: 'На смену каким устаревшим техникам пришел IntersectionObserver API?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 161,
+    name: 'MutationObserver API. Что это такое и для чего нужно?',
+    answer: 'assets/content/rus/answers/161-MutationObserver.md',
+    tags: [
+      'JavaScript',
+      'MutationObserver',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое MutationObserver API и для чего он нужен?',
+        isChecked: false
+      },
+      {
+        name: 'Как использовать MutationObserver API для отслеживания изменений в DOM?',
+        isChecked: false
+      },
+      {
+        name: 'На смену каким устаревшим техникам пришел MutationObserver API?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 162,
+    name: 'ResizeObserver API. Что это такое и для чего нужно?',
+    answer: 'assets/content/rus/answers/162-ResizeObserver.md',
+    tags: [
+      'JavaScript',
+      'ResizeObserver',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое ResizeObserver API и для чего он нужен?',
+        isChecked: false
+      },
+      {
+        name: 'Как использовать ResizeObserver API для отслеживания изменений размера элементов в DOM?',
+        isChecked: false
+      },
+      {
+        name: 'На смену каким устаревшим техникам пришел ResizeObserver API?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 163,
+    name: 'Performance API. Что это такое и для чего нужно?',
+    answer: 'assets/content/rus/answers/163-PerformanceAPI.md',
+    tags: [
+      'JavaScript',
+      'Performance API',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое Performance API и для чего он нужен?',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 164,
+    name: 'Web Animations API. Что это такое и для чего нужно?',
+    answer: 'assets/content/rus/answers/164-WebAnimationsAPI.md',
+    tags: [
+      'JavaScript',
+      'Web Animations API',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое Web Animations API и для чего он нужен?',
+        isChecked: false
+      },
+      {
+        name: 'Как использовать Web Animations API для создания анимаций в веб-приложениях?',
+        isChecked: false
+      },
+      {
+        name: 'На смену каким устаревшим техникам пришел Web Animations API?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 165,
+    name: 'Web Speech API. Что это такое и для чего нужно?',
+    answer: 'assets/content/rus/answers/165-WebSpeechAPI.md',
+    tags: [
+      'JavaScript',
+      'Web Speech API',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое Web Speech API и для чего он нужен?',
+        isChecked: false
+      },
+      {
+        name: 'Как использовать Web Speech API для распознавания речи и синтеза речи в веб-приложениях?',
+        isChecked: false
+      },
+      {
+        name: 'Какие есть аналогичные API для работы с голосом',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 166,
+    name: 'Web Bluetooth API. Что это такое и для чего нужно?',
+    answer: 'assets/content/rus/answers/166-WebBluetoothAPI.md',
+    tags: [
+      'JavaScript',
+      'Web Bluetooth API',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое Web Bluetooth API и для чего он нужен?',
+        isChecked: false
+      },
+      {
+        name: 'Как использовать Web Bluetooth API для взаимодействия с Bluetooth-устройствами в веб-приложениях?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 167,
+    name: 'requestAnimationFrame. Что это такое и для чего нужно?',
+    answer: 'assets/content/rus/answers/167-requestAnimationFrame.md',
+    tags: [
+      'JavaScript',
+      'requestAnimationFrame',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое requestAnimationFrame и для чего он нужен?',
+        isChecked: false
+      },
+      {
+        name: 'Как использовать requestAnimationFrame для оптимизации анимаций в веб-приложениях?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 168,
+    name: 'requestIdleCallback. Что это такое и для чего нужно?',
+    answer: 'assets/content/rus/answers/168-requestIdleCallback.md',
+    tags: [
+      'JavaScript',
+      'requestIdleCallback',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое requestIdleCallback и для чего он нужен?',
+        isChecked: false
+      },
+      {
+        name: 'Как использовать requestIdleCallback для оптимизации выполнения задач в веб-приложениях?',
         isChecked: false
       }
     ]

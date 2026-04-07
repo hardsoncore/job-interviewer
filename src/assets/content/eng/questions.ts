@@ -788,16 +788,26 @@ export const questions = [
   },
   {
     id: 31,
-    name: 'CORS. What is it and how does it work?',
-    answer: 'assets/content/eng/answers/31-CORS-What-is-it-and-how-does-it-work.md',
+    name: 'What types of nodes exist in the DOM, how do they differ, and what are they used for?',
+    answer: 'assets/content/eng/answers/31-What-types-of-nodes-exist-in-the-DOM.md',
     tags: [
       'browser',
-      'security'
+      'performance',
+      'markup',
+      'DOM'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'CORS - what is it?',
+        name: 'What types of nodes exist in the DOM?',
+        isChecked: false
+      },
+      {
+        name: 'How do they differ?',
+        isChecked: false
+      },
+      {
+        name: 'What are the different types of nodes used for?',
         isChecked: false
       }
     ]
