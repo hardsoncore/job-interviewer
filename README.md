@@ -45,7 +45,7 @@ The project is deployed and available online - start practicing:
 
 ## 📌 Project Status & Architecture
 
-Primary goal of this project — **delivering high-quality, up-to-date interview questions and answers** — remains the focus, the core UI framework (Angular/Ionic) is currently frozen. 
+The primary goal of this project — **delivering high-quality, up-to-date interview questions and answers** — remains the focus. The core UI framework (Angular/Ionic) is currently frozen.
 
 I am actively maintaining and expanding the *content* of this repository. The code might be a bit older, but the knowledge base is fresh, actively updated, and growing!
 
