@@ -5,7 +5,7 @@
   }
 
   :host ::ng-deep .code {
-    color: #5bda5b;
+    color: #60a260;
   }
 }
 
@@ -46,11 +46,11 @@
   border-left: 4px solid;
 
   &.info--orange {
-    border-color: #ffc409;
+    border-color: var(--ion-color-warning);
   }
 
   &.info--blue {
-    border-color: #4854e0;
+    border-color: var(--ion-color-primary);
   }
 }
 
@@ -62,7 +62,7 @@
 
 :host ::ng-deep .deep-dive {
   background-color: #c6c6c630;
-  color: orange;
+  color: var(--ion-color-warning);
   display: inline-block;
   padding: 0.5rem;
   font-weight: bold;
