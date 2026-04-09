@@ -3959,7 +3959,7 @@ export const questions = [
   },
   {
     id: 160,
-    name: 'IntersectionObserver API. Что это такое и для чего нужно?',
+    name: 'IntersectionObserver API. Отслеживание видимости элементов на странице и оптимизация производительности',
     answer: 'assets/content/rus/answers/160-IntersectionObserver.md',
     tags: [
       'JavaScript',

@@ -3963,7 +3963,7 @@ export const questions = [
   },
   {
     id: 160,
-    name: 'IntersectionObserver API. Що це таке і для чого потрібно?',
+    name: 'IntersectionObserver API. Відстеження видимості елементів на сторінці та оптимізація продуктивності',
     answer: 'assets/content/ukr/answers/160-IntersectionObserver.md',
     tags: [
       'JavaScript',

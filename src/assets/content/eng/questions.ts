@@ -3964,7 +3964,7 @@ export const questions = [
   },
   {
     id: 160,
-    name: 'IntersectionObserver API. What is it and what is it used for?',
+    name: 'IntersectionObserver API. Tracking element visibility on the page and performance optimization',
     answer: 'assets/content/eng/answers/160-IntersectionObserver.md',
     tags: [
       'JavaScript',
