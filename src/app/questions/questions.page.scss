@@ -1,0 +1,24 @@
+.question {
+  margin-bottom: .5rem;
+  border-radius: 5px;
+  border: 1px solid var(--ion-color-medium);
+}
+
+.question__name {
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  margin-bottom: .5rem;
+}
+
+.question__details {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}

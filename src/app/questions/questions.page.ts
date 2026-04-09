@@ -3,11 +3,11 @@ import { Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { NavigationExtras, Router } from '@angular/router';
 
-import { QuestionsService } from '../services/questions.service';
-import { Question, Results } from '../models/question.model';
-import { QueryParams } from '../models/app.model';
-import { ResultsService } from '../services/results.service';
-
+import { QuestionsService } from 'src/app/services/questions.service';
+import { Question, Results } from 'src/app/models/question.model';
+import { QueryParams } from 'src/app/models/app.model';
+import { ResultsService } from 'src/app/services/results.service';
+import { QuestionLevels } from 'src/app/enums/questions.enum';
 @Component({
   selector: 'app-questions',
   templateUrl: 'questions.page.html',
@@ -17,6 +17,7 @@ export class QuestionsPage implements OnInit, OnDestroy {
   questions: Question[] = [];
   filteredQuestions: Question[] = [];
   results: Results[];
+  questionLevels = QuestionLevels;
 
   private destroy$ = new Subject<void>();
 
