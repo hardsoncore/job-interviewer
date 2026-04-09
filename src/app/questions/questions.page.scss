@@ -4,6 +4,13 @@
   border: 1px solid var(--ion-color-medium);
 }
 
+@media (max-width: 768px) {
+  .question {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+}
+
 .question__name {
   font-weight: 500;
   display: -webkit-box;
