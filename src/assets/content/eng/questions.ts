@@ -3406,21 +3406,29 @@ export const questions = [
   },
   {
     id: 134,
-    name: 'Eliminating "Prop Drilling": provide / inject',
-    answer: 'assets/content/eng/answers/134-Provide-Inject.md',
+    name: 'Ways to transfer data between components in Vue? provide / inject, props / emit, and global state (e.g., Pinia)',
+    answer: 'assets/content/eng/answers/147-DataTransfer.md',
     tags: [
       'Vue.js',
       'Vue 3',
-      'Reactivity'
+      'Data Transfer'
     ],
     category: 'Vue.js',
     structure: [
       {
-        name: 'What is provide / inject in Vue.js',
+        name: 'What are the ways to transfer data between components in Vue.js',
+        isChecked: false
+      },
+      {
+        name: 'When to use props / emit',
         isChecked: false
       },
       {
         name: 'When to use provide / inject and when it is an anti-pattern',
+        isChecked: false
+      },
+      {
+        name: 'When to use global state (e.g., Pinia) and when it is better to avoid it',
         isChecked: false
       }
     ]
@@ -3703,23 +3711,6 @@ export const questions = [
     structure: [
       {
         name: 'What is Vue Router',
-        isChecked: false
-      }
-    ]
-  },
-  {
-    id: 147,
-    name: 'How is data passed between components in Vue?',
-    answer: 'assets/content/eng/answers/147-DataTransfer.md',
-    tags: [
-      'Vue.js',
-      'Vue 3',
-      'Data Transfer'
-    ],
-    category: 'Vue.js',
-    structure: [
-      {
-        name: 'How is data passed between components in Vue',
         isChecked: false
       }
     ]

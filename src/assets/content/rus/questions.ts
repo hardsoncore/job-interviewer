@@ -3401,21 +3401,29 @@ export const questions = [
   },
   {
     id: 134,
-    name: 'Избавление от "Prop Drilling": provide / inject',
-    answer: 'assets/content/rus/answers/134-Provide-Inject.md',
+    name: 'Способы передачи данных между компонентами во Vue? provide / inject, props / emit и глобальное состояние (например, Pinia)',
+    answer: 'assets/content/rus/answers/147-DataTransfer.md',
     tags: [
       'Vue.js',
       'Vue 3',
-      'Reactivity'
+      'Data Transfer'
     ],
     category: 'Vue.js',
     structure: [
       {
-        name: 'Что такое provide / inject в Vue.js',
+        name: 'Какие способы передачи данных между компонентами во Vue.js существуют',
+        isChecked: false
+      },
+      {
+        name: 'Когда использовать props / emit',
         isChecked: false
       },
       {
         name: 'Когда использовать provide / inject, а когда это антипаттерн',
+        isChecked: false
+      },
+      {
+        name: 'Когда использовать глобальное состояние (например, Pinia), а когда лучше обойтись без него',
         isChecked: false
       }
     ]
@@ -3698,23 +3706,6 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Vue Router',
-        isChecked: false
-      }
-    ]
-  },
-  {
-    id: 147,
-    name: 'Как данные передаются между компонентами во Vue?',
-    answer: 'assets/content/rus/answers/147-DataTransfer.md',
-    tags: [
-      'Vue.js',
-      'Vue 3',
-      'Data Transfer'
-    ],
-    category: 'Vue.js',
-    structure: [
-      {
-        name: 'Как данные передаются между компонентами во Vue',
         isChecked: false
       }
     ]
