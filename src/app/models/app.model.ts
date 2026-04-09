@@ -1,18 +1,8 @@
-export enum Themes {
-  dark = 'dark',
-  light = 'light'
-}
+import { Themes } from 'src/app/enums/app.enum';
 
 export type ThemeType = keyof typeof Themes;
-
 export interface QueryParams {
   canGoBack?: boolean;
   questionId?: string | number; // because number converts to string in parameters
   needToUpdate?: boolean;
-}
-
-export enum Languages {
-  eng = 'eng',
-  ukr = 'ukr',
-  rus = 'rus'
 }

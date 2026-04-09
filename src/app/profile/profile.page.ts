@@ -3,12 +3,13 @@ import { AlertController } from '@ionic/angular';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
-import { Languages, Themes, ThemeType } from '../models/app.model';
-import { Profile } from '../models/profile.model';
-import { ProfileService } from '../services/profile.service';
-import { ThemeService } from '../services/theme.service';
-import { ResultsService } from '../services/results.service';
-import { AppService } from '../services/app.service';
+import { ThemeType } from 'src/app/models/app.model';
+import { Languages, Themes } from 'src/app/enums/app.enum';
+import { Profile } from 'src/app/models/profile.model';
+import { ProfileService } from 'src/app/services/profile.service';
+import { ThemeService } from 'src/app/services/theme.service';
+import { ResultsService } from 'src/app/services/results.service';
+import { AppService } from 'src/app/services/app.service';
 
 @Component({
   selector: 'app-profile',

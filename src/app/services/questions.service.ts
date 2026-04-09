@@ -7,7 +7,7 @@ import { questions as listOfQA_ukr } from 'src/assets/content/ukr/questions';
 import { questions as listOfQA_eng } from 'src/assets/content/eng/questions';
 import { questions as listOfQA_ru } from 'src/assets/content/rus/questions';
 import { AppService } from './app.service';
-import { Languages } from '../models/app.model';
+import { Languages } from 'src/app/enums/app.enum';
 
 @Injectable({
   providedIn: 'root'

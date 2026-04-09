@@ -1,9 +1,12 @@
+import { QuestionCategories, QuestionLevels } from 'src/app/enums/questions.enum';
+
 export interface Question {
   id: number;
   name: string;
   answer: string;
+  level: QuestionLevels;
   tags: string[];
-  category: string;
+  category: QuestionCategories;
   structure: Step[];
 }
 

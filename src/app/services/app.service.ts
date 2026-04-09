@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { versionInfo } from 'get-version';
-import { Languages } from '../models/app.model';
+import { Languages } from 'src/app/enums/app.enum';
 
 @Injectable({
   providedIn: 'root'
