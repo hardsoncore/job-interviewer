@@ -14,31 +14,24 @@ export const questions = [
     structure: [
       {
         name: 'Критичний шлях рендерингу',
-        isChecked: false
       },
       {
         name: 'Як браузер будує DOM, CSSOM та Render Tree',
-        isChecked: false
       },
       {
         name: 'Як браузер виконує JavaScript і як це впливає на рендеринг',
-        isChecked: false
       },
       {
         name: 'Що таке Layout / Reflow',
-        isChecked: false
       },
       {
         name: 'Що таке Repaint',
-        isChecked: false
       },
       {
         name: 'Composite (композитинг)',
-        isChecked: false
       },
       {
         name: 'Події DOMContentLoaded та Load - у чому різниця?',
-        isChecked: false
       }
     ]
   },
@@ -55,31 +48,24 @@ export const questions = [
     structure: [
       {
         name: 'Critical Rendering Path (CRP)',
-        isChecked: false
       },
       {
         name: 'Оптимізація DOM (HTML)',
-        isChecked: false
       },
       {
         name: 'Оптимізація CSSOM (CSS)',
-        isChecked: false
       },
       {
         name: 'Оптимізація JavaScript',
-        isChecked: false
       },
       {
         name: 'Оптимізація медіа та шрифтів (Ресурси)',
-        isChecked: false
       },
       {
         name: 'Мережеві оптимізації та доставка контенту',
-        isChecked: false
       },
       {
         name: 'Профілювання та метрики',
-        isChecked: false
       }
     ]
   },
@@ -95,23 +81,18 @@ export const questions = [
     structure: [
       {
         name: 'Що таке цей тег DOCTYPE',
-        isChecked: false
       },
       {
         name: 'Навіщо потрібен DOCTYPE',
-        isChecked: false
       },
       {
         name: 'Розповісти про те, що є різні види DOCTYPE',
-        isChecked: false
       },
       {
         name: 'Чи можна взагалі обійтися без DOCTYPE?',
-        isChecked: false
       },
       {
         name: 'Зараз практично завжди варто використовувати DOCTYPE HTML5',
-        isChecked: false
       }
     ]
   },
@@ -127,15 +108,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке семантична верстка і навіщо вона потрібна',
-        isChecked: false
       },
       {
         name: 'Основні семантичні теги HTML',
-        isChecked: false
       },
       {
         name: 'Як розмітити сторінку з точки зору семантики',
-        isChecked: false
       }
     ]
   },
@@ -152,23 +130,18 @@ export const questions = [
     structure: [
       {
         name: 'Підключення CSS через зовнішній файл стилів тегом link',
-        isChecked: false
       },
       {
         name: 'Додавання CSS за допомогою тега style',
-        isChecked: false
       },
       {
         name: 'Імпорт CSS через команду @import',
-        isChecked: false
       },
       {
         name: 'Inline-стилі CSS',
-        isChecked: false
       },
       {
         name: 'Стилі CSS через JavaScript',
-        isChecked: false
       }
     ]
   },
@@ -185,31 +158,24 @@ export const questions = [
     structure: [
       {
         name: 'Токенізація CSS: як браузер розбиває код на токени',
-        isChecked: false
       },
       {
         name: 'Архітектура парсингу CSS у браузері',
-        isChecked: false
       },
       {
         name: 'Right-to-Left парсинг і його переваги',
-        isChecked: false
       },
       {
         name: 'Як парсинг CSS впливає на рендеринг сторінки',
-        isChecked: false
       },
       {
         name: 'Помилки в CSS і як браузер їх обробляє',
-        isChecked: false
       },
       {
         name: 'Оптимізація парсингу CSS в сучасних браузерах',
-        isChecked: false
       },
       {
         name: 'Блокування рендеру та етапи Layout, Paint, Composite',
-        isChecked: false
       }
     ]
   },
@@ -227,31 +193,24 @@ export const questions = [
     structure: [
       {
         name: 'Каскадність у CSS: як браузер визначає, які стилі застосовувати',
-        isChecked: false
       },
       {
         name: '!important',
-        isChecked: false
       },
       {
         name: 'Inline-стилі',
-        isChecked: false
       },
       {
         name: 'ID',
-        isChecked: false
       },
       {
         name: 'Класи, Атрибути, Псевдокласи',
-        isChecked: false
       },
       {
         name: 'Теги, Псевдоелементи',
-        isChecked: false
       },
       {
         name: 'Нульова вага',
-        isChecked: false
       }
     ]
   },
@@ -267,15 +226,12 @@ export const questions = [
     structure: [
       {
         name: 'Недоліки високої специфічності',
-        isChecked: false
       },
       {
         name: '!important - коли варто використовувати і які проблеми може викликати',
-        isChecked: false
       },
       {
         name: 'Best practices для управління специфічністю і пріоритетом стилів',
-        isChecked: false
       }
     ]
   },
@@ -291,15 +247,12 @@ export const questions = [
     structure: [
       {
         name: '>',
-        isChecked: false
       },
       {
         name: '+',
-        isChecked: false
       },
       {
         name: '~',
-        isChecked: false
       }
     ]
   },
@@ -317,15 +270,12 @@ export const questions = [
       {
         name: 'Псевдокласи стану (Інтерактив)',
 
-        isChecked: false
       },
       {
         name: 'Структурні псевдокласи',
-        isChecked: false
       },
       {
         name: 'Просунуті селектори (Modern CSS)',
-        isChecked: false
       }
     ]
   },
@@ -342,27 +292,21 @@ export const questions = [
     structure: [
       {
         name: ':disabled',
-        isChecked: false
       },
       {
         name: ':required',
-        isChecked: false
       },
       {
         name: ':invalid',
-        isChecked: false
       },
       {
         name: ':valid',
-        isChecked: false
       },
       {
         name: ':checked',
-        isChecked: false
       },
       {
         name: ':placeholder-shown',
-        isChecked: false
       },
     ]
   },
@@ -379,23 +323,18 @@ export const questions = [
     structure: [
       {
         name: 'Що таке псевдоелементи?',
-        isChecked: false
       },
       {
         name: 'Генерований контент (::before і ::after)',
-        isChecked: false
       },
       {
         name: 'Текстові (::first-letter і ::first-line)',
-        isChecked: false
       },
       {
         name: 'Інтерфейсні (::placeholder, ::selection, ::marker)',
-        isChecked: false
       },
       {
         name: 'Просунуті (::backdrop, ::file-selector-button)',
-        isChecked: false
       }
     ]
   },
@@ -412,23 +351,18 @@ export const questions = [
     structure: [
       {
         name: 'static',
-        isChecked: false
       },
       {
         name: 'relative',
-        isChecked: false
       },
       {
         name: 'absolute',
-        isChecked: false
       },
       {
         name: 'fixed',
-        isChecked: false
       },
       {
         name: 'sticky',
-        isChecked: false
       }
     ]
   },
@@ -445,11 +379,9 @@ export const questions = [
     structure: [
       {
         name: 'Блочні елементи',
-        isChecked: false
       },
       {
         name: 'Рядкові елементи',
-        isChecked: false
       },
     ]
   },
@@ -466,11 +398,9 @@ export const questions = [
     structure: [
       {
         name: 'Горизонтальне центрування',
-        isChecked: false
       },
       {
         name: 'Вертикальне центрування',
-        isChecked: false
       }
     ]
   },
@@ -487,11 +417,9 @@ export const questions = [
     structure: [
       {
         name: 'Бокcова модель (Box Model)',
-        isChecked: false
       },
       {
         name: 'box-sizing: content-box і box-sizing: border-box',
-        isChecked: false
       }
     ]
   },
@@ -508,15 +436,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Flexbox',
-        isChecked: false
       },
       {
         name: 'Що таке Grid',
-        isChecked: false
       },
       {
         name: 'Основні відмінності між Flexbox і Grid',
-        isChecked: false
       },
     ]
   },
@@ -533,15 +458,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке CSS анімації?',
-        isChecked: false
       },
       {
         name: 'Основні властивості для створення анімацій',
-        isChecked: false
       },
       {
         name: 'Переваги та недоліки CSS анімацій',
-        isChecked: false
       }
     ]
   },
@@ -558,19 +480,15 @@ export const questions = [
     structure: [
       {
         name: 'Відносні одиниці вимірювання (em, rem, %, vw, vh) та їх переваги',
-        isChecked: false
       },
       {
         name: 'Як відносні одиниці допомагають в адаптивній верстці',
-        isChecked: false
       },
       {
         name: 'Вплив відносних одиниць на доступність (a11y) та зручність використання',
-        isChecked: false
       },
       {
         name: 'Архітектура адаптивних величин: контекст обчислення, наслідування та масштабованість',
-        isChecked: false
       }
     ]
   },
@@ -587,15 +505,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке движок браузера і його роль у роботі веб-сторінок',
-        isChecked: false
       },
       {
         name: 'Сучасні движки браузера: V8 (Chrome, Edge), SpiderMonkey (Firefox), JavaScriptCore (Safari)',
-        isChecked: false
       },
       {
         name: 'Основні відмінності між движками та їх оптимізації',
-        isChecked: false
       }
     ]
   },
@@ -612,23 +527,18 @@ export const questions = [
     structure: [
       {
         name: 'Як працює JS-движок',
-        isChecked: false
       },
       {
         name: 'Парсинг JavaScript',
-        isChecked: false
       },
       {
         name: 'Інтерпретація (Ignition)',
-        isChecked: false
       },
       {
         name: 'JIT-компіляція та Оптимізація (Turbofan)',
-        isChecked: false
       },
       {
         name: 'Деоптимізація (Bailout)',
-        isChecked: false
       }
     ]
   },
@@ -645,7 +555,6 @@ export const questions = [
     structure: [
       {
         name: '3 способи підключення JS на сторінку',
-        isChecked: false
       }
     ]
   },
@@ -662,15 +571,12 @@ export const questions = [
     structure: [
       {
         name: 'Async',
-        isChecked: false
       },
       {
         name: 'Defer',
-        isChecked: false
       },
       {
         name: 'Без атрибутів',
-        isChecked: false
       }
     ]
   },
@@ -687,11 +593,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке SVG?',
-        isChecked: false
       },
       {
         name: 'Ключові особливості SVG',
-        isChecked: false
       }
     ]
   },
@@ -708,19 +612,15 @@ export const questions = [
     structure: [
       {
         name: 'Canvas - що це?',
-        isChecked: false
       },
       {
         name: 'Навіщо потрібен Canvas?',
-        isChecked: false
       },
       {
         name: 'Основні сфери застосування',
-        isChecked: false
       },
       {
         name: 'Переваги Canvas',
-        isChecked: false
       }
     ]
   },
@@ -737,23 +637,18 @@ export const questions = [
     structure: [
       {
         name: 'CSS Custom Properties - що це?',
-        isChecked: false
       },
       {
         name: 'Підтримка в браузерах і коли з\'явилися',
-        isChecked: false
       },
       {
         name: 'Головні відмінності від змінних SASS/LESS',
-        isChecked: false
       },
       {
         name: 'Наслідування і область видимості CSS Custom Properties',
-        isChecked: false
       },
       {
         name: 'Динамічна темізація через CSS Custom Properties',
-        isChecked: false
       }
     ]
   },
@@ -771,11 +666,9 @@ export const questions = [
     structure: [
       {
         name: 'Критичний шлях рендерингу (Critical Rendering Path) і його вплив на продуктивність анімацій',
-        isChecked: false
       },
       {
         name: 'Які CSS-властивості викликають Layout, Paint і Composite',
-        isChecked: false
       },
     ]
   },
@@ -791,11 +684,9 @@ export const questions = [
     structure: [
       {
         name: 'Пре- и пост- процесори CSS - що це?',
-        isChecked: false
       },
       {
         name: 'Актуальність у 2025-2026 роках',
-        isChecked: false
       }
     ]
   },
@@ -812,15 +703,12 @@ export const questions = [
     structure: [
       {
         name: 'Методологія БЕМ - що це?',
-        isChecked: false
       },
       {
         name: 'Основні позиції методології БЕМ',
-        isChecked: false
       },
       {
         name: 'Які проблеми вирішує БЕМ',
-        isChecked: false
       }
     ]
   },
@@ -836,19 +724,15 @@ export const questions = [
     structure: [
       {
         name: 'HTML-шаблонизатори/препроцесори - що це?',
-        isChecked: false
       },
       {
         name: 'Приклади популярних інструментів',
-        isChecked: false
       },
       {
         name: 'У чому різниця між шаблонізатором і препроцесором?',
-        isChecked: false
       },
       {
         name: 'Актуальні вони сьогодні?',
-        isChecked: false
       }
     ]
   },
@@ -866,15 +750,12 @@ export const questions = [
     structure: [
       {
         name: 'Які типи вузлів є в DOM?',
-        isChecked: false
       },
       {
         name: 'Чим вони відрізняються?',
-        isChecked: false
       },
       {
         name: 'Для чого потрібні різні типи вузлів?',
-        isChecked: false
       }
     ]
   },
@@ -890,15 +771,12 @@ export const questions = [
     structure: [
       {
         name: '7 примітивних типів даних',
-        isChecked: false
       },
       {
         name: '1 непримітивний тип даних',
-        isChecked: false
       },
       {
         name: 'typeof і його особливості',
-        isChecked: false
       }
     ]
   },
@@ -914,7 +792,6 @@ export const questions = [
     structure: [
       {
         name: 'Три основних типи перетворення',
-        isChecked: false
       }
     ]
   },
@@ -932,19 +809,15 @@ export const questions = [
     structure: [
       {
         name: 'Let, const і var - різниці',
-        isChecked: false
       },
       {
         name: 'Hoisting (вспливання або підняття)',
-        isChecked: false
       },
       {
         name: 'Як Hoisting працює з var, let і const',
-        isChecked: false
       },
       {
         name: 'Temporal Dead Zone (TDZ) для let і const',
-        isChecked: false
       }
     ]
   },
@@ -961,11 +834,9 @@ export const questions = [
     structure: [
       {
         name: 'Function Declaration',
-        isChecked: false
       },
       {
         name: 'Function Expression',
-        isChecked: false
       },
     ]
   },
@@ -982,23 +853,18 @@ export const questions = [
     structure: [
       {
         name: 'Масив (Array)',
-        isChecked: false
       },
       {
         name: 'Об\'єкт (Object)',
-        isChecked: false
       },
       {
         name: 'Map (Карта)',
-        isChecked: false
       },
       {
         name: 'Set (Множина)',
-        isChecked: false
       },
       {
         name: 'WeakMap і WeakSet',
-        isChecked: false
       }
     ]
   },
@@ -1017,63 +883,48 @@ export const questions = [
     structure: [
       {
         name: 'pop/push і shift/unshift, їх різниці',
-        isChecked: false
       },
       {
         name: 'splice',
-        isChecked: false
       },
       {
         name: 'slice',
-        isChecked: false
       },
       {
         name: 'concat',
-        isChecked: false
       },
       {
         name: 'forEach',
-        isChecked: false
       },
       {
         name: 'indexOf/lastIndexOf і includes, їх різниці',
-        isChecked: false
       },
       {
         name: 'find і findIndex, їх різниці',
-        isChecked: false
       },
       {
         name: 'filter',
-        isChecked: false
       },
       {
         name: 'map',
-        isChecked: false
       },
       {
         name: 'sort(fn)',
-        isChecked: false
       },
       {
         name: 'reverse',
-        isChecked: false
       },
       {
         name: 'split і join',
-        isChecked: false
       },
       {
         name: 'reduce',
-        isChecked: false
       },
       {
         name: 'Array.isArray',
-        isChecked: false
       },
       {
         name: '«thisArg»',
-        isChecked: false
       }
     ]
   },
@@ -1091,15 +942,12 @@ export const questions = [
     structure: [
       {
         name: 'Ітератори: Механіка під капотом',
-        isChecked: false
       },
       {
         name: 'Генератори',
-        isChecked: false
       },
       {
         name: 'Навіщо це потрібно на практиці?',
-        isChecked: false
       }
     ]
   },
@@ -1115,15 +963,12 @@ export const questions = [
     structure: [
       {
         name: 'Lexical Environment',
-        isChecked: false
       },
       {
         name: 'Види областей видимості: глобальна, функціональна, блочна',
-        isChecked: false
       },
       {
         name: 'Життєвий цикл змінної',
-        isChecked: false
       }
     ]
   },
@@ -1139,15 +984,12 @@ export const questions = [
     structure: [
       {
         name: 'Замикання - що це і для чого потрібно',
-        isChecked: false
       },
       {
         name: '[[Environment]]',
-        isChecked: false
       },
       {
         name: 'Використання замикань для створення приватних змінних',
-        isChecked: false
       }
     ]
   },
@@ -1163,7 +1005,6 @@ export const questions = [
     structure: [
       {
         name: 'Garbage Collector',
-        isChecked: false
       }
     ]
   },
@@ -1179,11 +1020,9 @@ export const questions = [
     structure: [
       {
         name: 'Рекурсія - що це і для чого потрібно',
-        isChecked: false
       },
       {
         name: 'Плюси і мінуси рекурсії',
-        isChecked: false
       }
     ]
   },
@@ -1200,15 +1039,12 @@ export const questions = [
     structure: [
       {
         name: 'Глобальний контекст і звичайний виклик функції',
-        isChecked: false
       },
       {
         name: 'Виклик як метод об\'єкта',
-        isChecked: false
       },
       {
         name: 'Стрілочні функції (Arrow Functions)',
-        isChecked: false
       }
     ]
   },
@@ -1225,15 +1061,12 @@ export const questions = [
     structure: [
       {
         name: 'Неявна прив\'язка (Implicit Binding)',
-        isChecked: false
       },
       {
         name: 'Явна прив\'язка (Explicit Binding)',
-        isChecked: false
       },
       {
         name: 'Методи call, apply і bind і їх різниця',
-        isChecked: false
       }
     ]
   },
@@ -1251,15 +1084,12 @@ export const questions = [
     structure: [
       {
         name: 'Каррування - що це і для чого потрібно',
-        isChecked: false
       },
       {
         name: 'Реалізація каррування',
-        isChecked: false
       },
       {
         name: 'Навіщо це потрібно на практиці?',
-        isChecked: false
       }
     ]
   },
@@ -1277,11 +1107,9 @@ export const questions = [
     structure: [
       {
         name: 'Часткове застосування (основано на карруванні)',
-        isChecked: false
       },
       {
         name: 'Реалізація часткового застосування',
-        isChecked: false
       }
     ]
   },
@@ -1298,19 +1126,15 @@ export const questions = [
     structure: [
       {
         name: 'Псевдомасив arguments',
-        isChecked: false
       },
       {
         name: 'Чому він псевдомасив?',
-        isChecked: false
       },
       {
         name: 'Arguments VS Arrow Functions',
-        isChecked: false
       },
       {
         name: 'Сучасні альтернативи',
-        isChecked: false
       }
     ]
   },
@@ -1326,15 +1150,12 @@ export const questions = [
     structure: [
       {
         name: 'Директива "use strict" - що це і для чого потрібно',
-        isChecked: false
       },
       {
         name: 'Головні зміни при включенні строгого режиму',
-        isChecked: false
       },
       {
         name: 'Як включити строгий режим?',
-        isChecked: false
       }
     ]
   },
@@ -1350,11 +1171,9 @@ export const questions = [
     structure: [
       {
         name: 'Перетворення об\'єктів: toString і valueOf',
-        isChecked: false
       },
       {
         name: 'Як движок вирішує, який метод викликати першим',
-        isChecked: false
       }
     ]
   },
@@ -1370,11 +1189,9 @@ export const questions = [
     structure: [
       {
         name: 'Навіщо потрібен Event Loop',
-        isChecked: false
       },
       {
         name: 'Основні сутності: Call Stack, Heap, Web APIs, Microtasks і Macrotasks',
-        isChecked: false
       }
     ]
   },
@@ -1390,11 +1207,9 @@ export const questions = [
     structure: [
       {
         name: 'Наслідування в JavaScript',
-        isChecked: false
       },
       {
         name: 'Прототипне наслідування та ланцюжок прототипів',
-        isChecked: false
       }
     ]
   },
@@ -1410,7 +1225,6 @@ export const questions = [
     structure: [
       {
         name: '__proto__ - що це?',
-        isChecked: false
       }
     ]
   },
@@ -1426,7 +1240,6 @@ export const questions = [
     structure: [
       {
         name: 'F.prototype',
-        isChecked: false
       }
     ]
   },
@@ -1444,23 +1257,18 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Promise, в якій версії ES з\'явився',
-        isChecked: false
       },
       {
         name: 'Яку проблему вирішували проміси',
-        isChecked: false
       },
       {
         name: 'Незмінність результату після завершення проміса',
-        isChecked: false
       },
       {
         name: 'then, catch, finally',
-        isChecked: false
       },
       {
         name: 'Еволюція промісів та async/await',
-        isChecked: false
       }
     ]
   },
@@ -1478,15 +1286,12 @@ export const questions = [
     structure: [
       {
         name: 'Promise chaining',
-        isChecked: false
       },
       {
         name: 'Можна продовжити ланцюжок викликів після помилки',
-        isChecked: false
       },
       {
         name: 'Можна будувати такі ланцюжки і з finally',
-        isChecked: false
       }
     ]
   },
@@ -1501,7 +1306,6 @@ export const questions = [
     structure: [
       {
         name: 'Try - Catch - для чого потрібно?',
-        isChecked: false
       }
     ]
   },
@@ -1517,7 +1321,6 @@ export const questions = [
     structure: [
       {
         name: '11 основних нововведень в ES6',
-        isChecked: false
       }
     ]
   },
@@ -1534,7 +1337,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -1552,19 +1354,15 @@ export const questions = [
     structure: [
       {
         name: 'Еволюція асинхронного JS в ES8',
-        isChecked: false
       },
       {
         name: 'Навіщо потрібен async/await? Яку проблему вирішує?',
-        isChecked: false
       },
       {
         name: 'try...catch...finally',
-        isChecked: false
       },
       {
         name: 'node.js і підтримка async/await',
-        isChecked: false
       }
     ]
   },
@@ -1582,23 +1380,18 @@ export const questions = [
     structure: [
       {
         name: 'Яку проблему вирішують',
-        isChecked: false
       },
       {
         name: 'Promise.all() — «Все або нічого»',
-        isChecked: false
       },
       {
         name: 'Promise.allSettled() — «Дочекатися всіх, незважаючи ні на що»',
-        isChecked: false
       },
       {
         name: 'Promise.race() — «Хто швидше»',
-        isChecked: false
       },
       {
         name: 'Promise.any() — «Хоч хтось успішний»',
-        isChecked: false
       }
     ]
   },
@@ -1614,7 +1407,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -1631,11 +1423,9 @@ export const questions = [
     structure: [
       {
         name: 'LocalStorage',
-        isChecked: false
       },
       {
         name: 'SessionStorage',
-        isChecked: false
       },
     ]
   },
@@ -1652,19 +1442,15 @@ export const questions = [
     structure: [
       {
         name: 'Навіщо потрібні інструменти для підтримки code style?',
-        isChecked: false
       },
       {
         name: 'Prettier',
-        isChecked: false
       },
       {
         name: 'ESLint, TSLint і CodeLint',
-        isChecked: false
       },
       {
         name: '.editorconfig',
-        isChecked: false
       }
     ]
   },
@@ -1680,7 +1466,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -1696,11 +1481,9 @@ export const questions = [
     structure: [
       {
         name: 'Реактивне програмування - що це?',
-        isChecked: false
       },
       {
         name: 'RxJs - для чого потрібен?',
-        isChecked: false
       },
     ]
   },
@@ -1718,7 +1501,6 @@ export const questions = [
     structure: [
       {
         name: 'Observable - що це?',
-        isChecked: false
       }
     ]
   },
@@ -1736,7 +1518,6 @@ export const questions = [
     structure: [
       {
         name: 'Subject - що це?',
-        isChecked: false
       }
     ]
   },
@@ -1754,19 +1535,15 @@ export const questions = [
     structure: [
       {
         name: 'Специфіка Subject',
-        isChecked: false
       },
       {
         name: 'Відмінності поведінки та види Subject',
-        isChecked: false
       },
       {
         name: 'Специфіка Observable',
-        isChecked: false
       },
       {
         name: 'Observable - тільки для отримання даних, Subject - ще й для розповсюдження',
-        isChecked: false
       }
     ]
   },
@@ -1783,11 +1560,9 @@ export const questions = [
     structure: [
       {
         name: 'Zone.js - що це?',
-        isChecked: false
       },
       {
         name: 'Як працює Zone.js під капотом',
-        isChecked: false
       }
     ]
   },
@@ -1803,23 +1578,18 @@ export const questions = [
     structure: [
       {
         name: 'Partial&lt;Type> (Частковий)',
-        isChecked: false
       },
       {
         name: 'Required&lt;Type> (Обов\'язковий)',
-        isChecked: false
       },
       {
         name: 'Pick&lt;Type, Keys> (Вибрати)',
-        isChecked: false
       },
       {
         name: 'Omit&lt;Type, Keys> (Виключити)',
-        isChecked: false
       },
       {
         name: 'Record&lt;Keys, Type> (Запис / Словник)',
-        isChecked: false
       }
     ]
   },
@@ -1836,11 +1606,9 @@ export const questions = [
     structure: [
       {
         name: 'Type Guards - typeof, in, instanceof, Custom Type Guards',
-        isChecked: false
       },
       {
         name: 'Type Assertions - as, <Type>, !, as const',
-        isChecked: false
       }
     ]
   },
@@ -1856,31 +1624,24 @@ export const questions = [
     structure: [
       {
         name: 'Enums (Перерахування)',
-        isChecked: false
       },
       {
         name: 'Плюси Enums',
-        isChecked: false
       },
       {
         name: 'Numeric Enums (Числові перерахування)',
-        isChecked: false
       },
       {
         name: 'String Enums (Строкові перерахування)',
-        isChecked: false
       },
       {
         name: 'Heterogeneous Enums (Гетерогенні перерахування)',
-        isChecked: false
       },
       {
         name: 'Const Enums (Константні перерахування)',
-        isChecked: false
       },
       {
         name: 'Під капотом: як JavaScript обробляє Enums',
-        isChecked: false
       }
     ]
   },
@@ -1896,15 +1657,12 @@ export const questions = [
     structure: [
       {
         name: 'Class (Реалізація)',
-        isChecked: false
       },
       {
         name: 'Interface (Контракт)',
-        isChecked: false
       },
       {
         name: 'Type (Псевдонім)',
-        isChecked: false
       }
     ]
   },
@@ -1920,31 +1678,24 @@ export const questions = [
     structure: [
       {
         name: 'Generics (Узагальнення) - яку проблему вирішують?',
-        isChecked: false
       },
       {
         name: 'Синтаксис Generics',
-        isChecked: false
       },
       {
         name: 'Застосування Generics у функціях, інтерфейсах та класах',
-        isChecked: false
       },
       {
         name: 'Обмеження (Constraints) у Generics',
-        isChecked: false
       },
       {
         name: 'Утиліти типів на основі Generics',
-        isChecked: false
       },
       {
         name: 'Множинні параметри типів',
-        isChecked: false
       },
       {
         name: 'Як Generics працюють під капотом у JavaScript',
-        isChecked: false
       }
     ]
   },
@@ -1960,15 +1711,12 @@ export const questions = [
     structure: [
       {
         name: 'any',
-        isChecked: false
       },
       {
         name: 'unknown',
-        isChecked: false
       },
       {
         name: 'never',
-        isChecked: false
       }
     ]
   },
@@ -1985,15 +1733,12 @@ export const questions = [
     structure: [
       {
         name: 'asObservable() - що це і для чого потрібно?',
-        isChecked: false
       },
       {
         name: 'Правильний спосіб використання asObservable()',
-        isChecked: false
       },
       {
         name: 'Антипаттерн використання asObservable()',
-        isChecked: false
       }
     ]
   },
@@ -2009,19 +1754,15 @@ export const questions = [
     structure: [
       {
         name: 'Abstraction (Абстракція)',
-        isChecked: false
       },
       {
         name: 'Encapsulation (Інкапсуляція)',
-        isChecked: false
       },
       {
         name: 'Inheritance (Успадкування)',
-        isChecked: false
       },
       {
         name: 'Polymorphism (Поліморфізм)',
-        isChecked: false
       }
     ]
   },
@@ -2037,7 +1778,6 @@ export const questions = [
     structure: [
       {
         name: 'Паттерни проектування - що це і для чого потрібні?',
-        isChecked: false
       }
     ]
   },
@@ -2054,7 +1794,6 @@ export const questions = [
     structure: [
       {
         name: 'Декоратор',
-        isChecked: false
       }
     ]
   },
@@ -2071,27 +1810,21 @@ export const questions = [
     structure: [
       {
         name: 'Принципи SOLID - це',
-        isChecked: false
       },
       {
         name: 'Single Responsibility Principle (Принцип єдиної відповідальності)',
-        isChecked: false
       },
       {
         name: 'Open-Closed Principle (Принцип відкритості/закритості)',
-        isChecked: false
       },
       {
         name: 'Liskov Substitution Principle (Принцип підстановки Барбари Лісков)',
-        isChecked: false
       },
       {
         name: 'Interface Segregation Principle (Принцип розділення інтерфейсу)',
-        isChecked: false
       },
       {
         name: 'Dependency Inversion Principle (Принцип інверсії залежностей)',
-        isChecked: false
       }
     ]
   },
@@ -2107,7 +1840,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -2124,7 +1856,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -2141,31 +1872,24 @@ export const questions = [
     structure: [
       {
         name: 'SELECT, FROM',
-        isChecked: false
       },
       {
         name: 'SELECT DISTINCT',
-        isChecked: false
       },
       {
         name: 'WHERE',
-        isChecked: false
       },
       {
         name: 'GROUP BY',
-        isChecked: false
       },
       {
         name: 'HAVING',
-        isChecked: false
       },
       {
         name: 'ORDER BY',
-        isChecked: false
       },
       {
         name: 'JOIN і його варіанти',
-        isChecked: false
       }
     ]
   },
@@ -2181,11 +1905,9 @@ export const questions = [
     structure: [
       {
         name: 'JSON - що це і для чого потрібно',
-        isChecked: false
       },
       {
         name: 'Метод toJSON',
-        isChecked: false
       }
     ]
   },
@@ -2202,11 +1924,9 @@ export const questions = [
     structure: [
       {
         name: 'Аутентифікація',
-        isChecked: false
       },
       {
         name: 'Авторизація',
-        isChecked: false
       }
     ]
   },
@@ -2223,23 +1943,18 @@ export const questions = [
     structure: [
       {
         name: 'Сортування бульбашкою (Bubble Sort)',
-        isChecked: false
       },
       {
         name: 'Сортування вставками (Insertion Sort)',
-        isChecked: false
       },
       {
         name: 'Сортування вибором (Selection Sort)',
-        isChecked: false
       },
       {
         name: 'Сортування злиттям (Merge Sort)',
-        isChecked: false
       },
       {
         name: 'Швидке сортування (Quick Sort)',
-        isChecked: false
       }
     ]
   },
@@ -2256,15 +1971,12 @@ export const questions = [
     structure: [
       {
         name: 'O(1)',
-        isChecked: false
       },
       {
         name: 'O(n)',
-        isChecked: false
       },
       {
         name: 'O(log n)',
-        isChecked: false
       }
     ]
   },
@@ -2281,19 +1993,15 @@ export const questions = [
     structure: [
       {
         name: 'Дерева',
-        isChecked: false
       },
       {
         name: 'Перевернуті дерева',
-        isChecked: false
       },
       {
         name: 'Бінарні дерева',
-        isChecked: false
       },
       {
         name: 'Графи',
-        isChecked: false
       }
     ]
   },
@@ -2309,15 +2017,12 @@ export const questions = [
     structure: [
       {
         name: 'Shadow DOM - що це таке',
-        isChecked: false
       },
       {
         name: 'Проблема, яку вирішує Shadow DOM',
-        isChecked: false
       },
       {
         name: 'Ключові особливості Shadow DOM',
-        isChecked: false
       }
     ]
   },
@@ -2335,15 +2040,12 @@ export const questions = [
     structure: [
       {
         name: 'Virtual DOM - що це таке',
-        isChecked: false
       },
       {
         name: 'Проблема, яку вирішує Virtual DOM',
-        isChecked: false
       },
       {
         name: 'Як працює Virtual DOM',
-        isChecked: false
       }
     ]
   },
@@ -2360,19 +2062,15 @@ export const questions = [
     structure: [
       {
         name: 'Що таке RxJS',
-        isChecked: false
       },
       {
         name: 'Для чого потрібен RxJS?',
-        isChecked: false
       },
       {
         name: 'Базові сутності RxJS: Observable, Observer, Subscription, Subject',
-        isChecked: false
       },
       {
         name: 'Популярні оператори',
-        isChecked: false
       }
     ]
   },
@@ -2389,15 +2087,12 @@ export const questions = [
     structure: [
       {
         name: 'State management в Angular. NgRx, що це таке',
-        isChecked: false
       },
       {
         name: 'Store, Actions, Reducers, Selectors',
-        isChecked: false
       },
       {
         name: 'Effects (Побічні ефекти та асинхронність)',
-        isChecked: false
       }
     ]
   },
@@ -2414,11 +2109,9 @@ export const questions = [
     structure: [
       {
         name: 'Signals в Angular, що це таке',
-        isChecked: false
       },
       {
         name: 'Фундаментальна різниця між Signals і RxJS',
-        isChecked: false
       }
     ]
   },
@@ -2435,15 +2128,12 @@ export const questions = [
     structure: [
       {
         name: 'Computed',
-        isChecked: false
       },
       {
         name: 'Effect',
-        isChecked: false
       },
       {
         name: 'Коли використовувати Effect, а коли це антипатерн',
-        isChecked: false
       }
     ]
   },
@@ -2460,7 +2150,6 @@ export const questions = [
     structure: [
       {
         name: 'input(), output() і model() - що це',
-        isChecked: false
       }
     ]
   },
@@ -2477,11 +2166,9 @@ export const questions = [
     structure: [
       {
         name: 'Концепція Standalone',
-        isChecked: false
       },
       {
         name: 'Чому відмовилися від NgModules',
-        isChecked: false
       }
     ]
   },
@@ -2499,19 +2186,15 @@ export const questions = [
     structure: [
       {
         name: 'Функція inject()',
-        isChecked: false
       },
       {
         name: 'Переваги inject() порівняно з Constructor DI',
-        isChecked: false
       },
       {
         name: 'Де МОЖНА використовувати inject()',
-        isChecked: false
       },
       {
         name: 'Де НЕ МОЖНА використовувати inject()',
-        isChecked: false
       }
     ]
   },
@@ -2527,11 +2210,9 @@ export const questions = [
     structure: [
       {
         name: 'Новий Control Flow',
-        isChecked: false
       },
       {
         name: 'Переваги нового Control Flow',
-        isChecked: false
       }
     ]
   },
@@ -2547,15 +2228,12 @@ export const questions = [
     structure: [
       {
         name: 'ChangeDetectionStrategy.Default',
-        isChecked: false
       },
       {
         name: 'ChangeDetectionStrategy.OnPush',
-        isChecked: false
       },
       {
         name: 'Zoneless (Современный Angular / Signals)',
-        isChecked: false
       }
     ]
   },
@@ -2571,7 +2249,6 @@ export const questions = [
     structure: [
       {
         name: 'Deferrable Views',
-        isChecked: false
       }
     ]
   },
@@ -2588,7 +2265,6 @@ export const questions = [
     structure: [
       {
         name: 'Functional Guards',
-        isChecked: false
       }
     ]
   },
@@ -2605,7 +2281,6 @@ export const questions = [
     structure: [
       {
         name: 'Functional Interceptors',
-        isChecked: false
       }
     ]
   },
@@ -2622,11 +2297,9 @@ export const questions = [
     structure: [
       {
         name: 'Lifecycle Hooks (Класичні)',
-        isChecked: false
       },
       {
         name: 'Сучасний підхід',
-        isChecked: false
       }
     ]
   },
@@ -2643,23 +2316,18 @@ export const questions = [
     structure: [
       {
         name: 'Object.defineProperty - що це і для чого потрібно?',
-        isChecked: false
       },
       {
         name: 'Загальні дескриптори властивостей: configurable, enumerable',
-        isChecked: false
       },
       {
         name: 'Дескриптори даних: writable, value',
-        isChecked: false
       },
       {
         name: 'Дескриптори доступу: get, set',
-        isChecked: false
       },
       {
         name: 'Використання в Vue та інших фреймворках - (тільки Vue 2, у Vue 3 вже Proxy)',
-        isChecked: false
       }
     ]
   },
@@ -2676,19 +2344,15 @@ export const questions = [
     structure: [
       {
         name: 'Реактивність в Vue 2',
-        isChecked: false
       },
       {
         name: 'Реактивність в Vue 3',
-        isChecked: false
       },
       {
         name: 'Реактивність в Angular.js',
-        isChecked: false
       },
       {
         name: 'Реактивність в Angular 2+',
-        isChecked: false
       }
     ]
   },
@@ -2705,19 +2369,15 @@ export const questions = [
     structure: [
       {
         name: 'Abstract Classes (Абстрактні класи)',
-        isChecked: false
       },
       {
         name: 'Коли використовувати абстрактні класи замість інтерфейсів',
-        isChecked: false
       },
       {
         name: 'Чи можна використовувати абстрактні класи для реалізації множинного наслідування?',
-        isChecked: false
       },
       {
         name: 'Чи можна комбінувати абстрактні класи та інтерфейси?',
-        isChecked: false
       }
     ]
   },
@@ -2734,19 +2394,15 @@ export const questions = [
     structure: [
       {
         name: 'Protected (Модифікатор доступу)',
-        isChecked: false
       },
       {
         name: 'Private (Модифікатор доступу)',
-        isChecked: false
       },
       {
         name: 'Public (Модифікатор доступу)',
-        isChecked: false
       },
       {
         name: 'Коли використовувати кожен з цих модифікаторів доступу',
-        isChecked: false
       }
     ]
   },
@@ -2763,7 +2419,6 @@ export const questions = [
     structure: [
       {
         name: 'Console API (API консолі)',
-        isChecked: false
       },
     ]
   },
@@ -2780,7 +2435,6 @@ export const questions = [
     structure: [
       {
         name: 'Pure Functions (Чисті функції) - що це і в чому їх переваги',
-        isChecked: false
       },
     ]
   },
@@ -2797,7 +2451,6 @@ export const questions = [
     structure: [
       {
         name: 'Higher-Order Functions (Функції вищого порядку) - що це і в чому їх переваги',
-        isChecked: false
       },
     ]
   },
@@ -2814,19 +2467,15 @@ export const questions = [
     structure: [
       {
         name: 'mergeMap',
-        isChecked: false
       },
       {
         name: 'switchMap',
-        isChecked: false
       },
       {
         name: 'concatMap',
-        isChecked: false
       },
       {
         name: 'exhaustMap',
-        isChecked: false
       }
     ]
   },
@@ -2843,31 +2492,24 @@ export const questions = [
     structure: [
       {
         name: 'combineLatest',
-        isChecked: false
       },
       {
         name: 'forkJoin',
-        isChecked: false
       },
       {
         name: 'withLatestFrom',
-        isChecked: false
       },
       {
         name: 'concat',
-        isChecked: false
       },
       {
         name: 'merge',
-        isChecked: false
       },
       {
         name: 'zip',
-        isChecked: false
       },
       {
         name: 'race',
-        isChecked: false
       }
     ]
   },
@@ -2884,23 +2526,18 @@ export const questions = [
     structure: [
       {
         name: 'of',
-        isChecked: false
       },
       {
         name: 'from',
-        isChecked: false
       },
       {
         name: 'fromEvent',
-        isChecked: false
       },
       {
         name: 'interval',
-        isChecked: false
       },
       {
         name: 'timer',
-        isChecked: false
       }
     ]
   },
@@ -2917,23 +2554,18 @@ export const questions = [
     structure: [
       {
         name: 'filter',
-        isChecked: false
       },
       {
         name: 'take',
-        isChecked: false
       },
       {
         name: 'takeUntil',
-        isChecked: false
       },
       {
         name: 'skip',
-        isChecked: false
       },
       {
         name: 'distinctUntilChanged',
-        isChecked: false
       }
     ]
   },
@@ -2950,24 +2582,19 @@ export const questions = [
     structure: [
       {
         name: 'tap',
-        isChecked: false
 
       },
       {
         name: 'finalize',
-        isChecked: false
       },
       {
         name: 'delay',
-        isChecked: false
       },
       {
         name: 'timeout',
-        isChecked: false
       },
       {
         name: 'retry',
-        isChecked: false
       }
     ]
   },
@@ -2984,19 +2611,15 @@ export const questions = [
     structure: [
       {
         name: 'map',
-        isChecked: false
       },
       {
         name: 'mapTo',
-        isChecked: false
       },
       {
         name: 'pluck',
-        isChecked: false
       },
       {
         name: 'scan',
-        isChecked: false
       }
     ]
   },
@@ -3012,15 +2635,12 @@ export const questions = [
     structure: [
       {
         name: 'Element Injector (або NodeInjector) - що це таке',
-        isChecked: false
       },
       {
         name: 'Як працює Element Injector в Angular',
-        isChecked: false
       },
       {
         name: 'Навіщо потрібен Element Injector і які проблеми він вирішує',
-        isChecked: false
       }
     ]
   },
@@ -3036,11 +2656,9 @@ export const questions = [
     structure: [
       {
         name: 'Ієрархія DI в Angular',
-        isChecked: false
       },
       {
         name: 'Патерн Shadowing (Затемнення провайдерів)',
-        isChecked: false
       }
     ]
   },
@@ -3056,15 +2674,12 @@ export const questions = [
     structure: [
       {
         name: 'Провайдери в Angular - що це таке',
-        isChecked: false
       },
       {
         name: 'Типи провайдерів в Angular (Class Provider, Factory Provider, Value Provider, Existing Provider)',
-        isChecked: false
       },
       {
         name: 'Коли використовувати кожен тип провайдера',
-        isChecked: false
       }
     ]
   },
@@ -3081,15 +2696,12 @@ export const questions = [
     structure: [
       {
         name: 'Сервіси в Angular - що це таке',
-        isChecked: false
       },
       {
         name: 'Для чого потрібні сервіси в Angular',
-        isChecked: false
       },
       {
         name: 'Життєвий цикл сервісів в Angular',
-        isChecked: false
       }
     ]
   },
@@ -3106,11 +2718,9 @@ export const questions = [
     structure: [
       {
         name: 'Паттерн Singleton (Одиночка) - що це таке',
-        isChecked: false
       },
       {
         name: 'Чи є сервіси в Angular синглтонами за замовчуванням?',
-        isChecked: false
       }
     ]
   },
@@ -3126,11 +2736,9 @@ export const questions = [
     structure: [
       {
         name: 'Структурні директиви в Angular',
-        isChecked: false
       },
       {
         name: 'Атрибутні директиви в Angular',
-        isChecked: false
       }
     ]
   },
@@ -3146,11 +2754,9 @@ export const questions = [
     structure: [
       {
         name: 'Чисті пайпи в Angular',
-        isChecked: false
       },
       {
         name: 'Нечисті пайпи в Angular',
-        isChecked: false
       },
     ]
   },
@@ -3167,15 +2773,12 @@ export const questions = [
     structure: [
       {
         name: 'ViewChild в Angular',
-        isChecked: false
       },
       {
         name: 'ContentChild в Angular',
-        isChecked: false
       },
       {
         name: 'Коли використовувати @ViewChild, а коли @ContentChild',
-        isChecked: false
       }
     ]
   },
@@ -3192,19 +2795,15 @@ export const questions = [
     structure: [
       {
         name: 'Proxy в JavaScript',
-        isChecked: false
       },
       {
         name: 'Reflect в JavaScript',
-        isChecked: false
       },
       {
         name: 'Коли використовувати Proxy, а коли Reflect',
-        isChecked: false
       },
       {
         name: 'Використання в сучасних фреймворках',
-        isChecked: false
       }
     ]
   },
@@ -3220,19 +2819,15 @@ export const questions = [
     structure: [
       {
         name: 'Що таке витоки пам\'яті в контексті веб-додатків і чому це важливо',
-        isChecked: false
       },
       {
         name: 'Часті причини витоків пам\'яті в JavaScript',
-        isChecked: false
       },
       {
         name: 'Як уникнути витоків пам\'яті в JavaScript',
-        isChecked: false
       },
       {
         name: 'Інструменти для виявлення та усунення витоків пам\'яті',
-        isChecked: false
       }
     ]
   },
@@ -3249,19 +2844,15 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Web Workers і Service Workers в контексті веб-додатків',
-        isChecked: false
       },
       {
         name: 'Коли використовувати Web Workers, а коли Service Workers',
-        isChecked: false
       },
       {
         name: 'Приклади використання Web Workers і Service Workers',
-        isChecked: false
       },
       {
         name: 'Інструменти для роботи з Web Workers і Service Workers',
-        isChecked: false
       }
     ]
   },
@@ -3279,15 +2870,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Composition API і Options API в Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключові відмінності Composition API від Options API',
-        isChecked: false
       },
       {
         name: 'Які фундаментальні проблеми вирішує Composition API',
-        isChecked: false
       }
     ]
   },
@@ -3303,19 +2891,15 @@ export const questions = [
     structure: [
       {
         name: 'Що таке setup() і для чого він потрібен у Vue.js',
-        isChecked: false
       },
       {
         name: 'Що таке <script setup> у Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключові відмінності <script setup> від стандартної функції setup()',
-        isChecked: false
       },
       {
         name: 'Які переваги дає використання <script setup>',
-        isChecked: false
       }
     ]
   },
@@ -3332,11 +2916,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке ref і reactive у Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключові відмінності ref від reactive',
-        isChecked: false
       }
     ]
   },
@@ -3353,11 +2935,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке toValue і toRaw у Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключові відмінності toValue від toRaw',
-        isChecked: false
       }
     ]
   },
@@ -3374,11 +2954,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке watch і watchEffect у Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключові відмінності watch від watchEffect',
-        isChecked: false
       }
     ]
   },
@@ -3395,11 +2973,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке computed у Vue.js',
-        isChecked: false
       },
       {
         name: 'Коли використовувати computed, а коли це антипатерн',
-        isChecked: false
       }
     ]
   },
@@ -3416,19 +2992,15 @@ export const questions = [
     structure: [
       {
         name: 'Які способи передачі даних між компонентами у Vue.js існують',
-        isChecked: false
       },
       {
         name: 'Коли використовувати props / emit',
-        isChecked: false
       },
       {
         name: 'Коли використовувати provide / inject, а коли це антипатерн',
-        isChecked: false
       },
       {
         name: 'Коли використовувати глобальний стан (наприклад, Pinia), а коли краще обійтися без нього',
-        isChecked: false
       }
     ]
   },
@@ -3445,11 +3017,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке слоти у Vue.js',
-        isChecked: false
       },
       {
         name: 'Різниця між звичайними слотами, слотами з іменами та динамічними слотами',
-        isChecked: false
       }
     ]
   },
@@ -3466,11 +3036,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Teleport у Vue.js',
-        isChecked: false
       },
       {
         name: 'Коли використовувати Teleport, а коли це антипатерн',
-        isChecked: false
       }
     ]
   },
@@ -3487,15 +3055,12 @@ export const questions = [
     structure: [
       {
         name: 'Як працює реактивність у Vue 3',
-        isChecked: false
       },
       {
         name: 'У чому різниця під капотом між реактивністю у Vue 2 та Vue 3',
-        isChecked: false
       },
       {
         name: 'За рахунок чого рендеринг у Vue 3 став значно швидшим? Оптимізації компілятора (Patch Flags, Static Hoisting)',
-        isChecked: false
       }
     ]
   },
@@ -3512,11 +3077,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Фрагменти (Fragments) у Vue 3',
-        isChecked: false
       },
       {
         name: 'Як Фрагменти впливають на структуру шаблонів',
-        isChecked: false
       }
     ]
   },
@@ -3533,11 +3096,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке кастомні директиви (Custom Directives) у Vue 3',
-        isChecked: false
       },
       {
         name: 'Як кастомні директиви впливають на структуру шаблонів',
-        isChecked: false
       }
     ]
   },
@@ -3554,11 +3115,9 @@ export const questions = [
     structure: [
       {
         name: 'Чому екосистема перейшла на Pinia',
-        isChecked: false
       },
       {
         name: 'У чому переваги Pinia порівняно з Vuex та іншими',
-        isChecked: false
       }
     ]
   },
@@ -3575,11 +3134,9 @@ export const questions = [
     structure: [
       {
         name: 'Як змінилися хуки життєвого циклу у Vue 3',
-        isChecked: false
       },
       {
         name: 'Куди зникли created та beforeCreate',
-        isChecked: false
       }
     ]
   },
@@ -3596,19 +3153,15 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Composable у Vue.js',
-        isChecked: false
       },
       {
         name: 'Відмінності Composable від звичайних методів із сервісу',
-        isChecked: false
       },
       {
         name: 'Які переваги дає використання Composable',
-        isChecked: false
       },
       {
         name: 'Ключові відмінності Composable від mixins та HOCs',
-        isChecked: false
       },
     ]
   },
@@ -3625,11 +3178,9 @@ export const questions = [
     structure: [
       {
         name: 'Як працює вбудований компонент <Suspense>',
-        isChecked: false
       },
       {
         name: 'Які проблеми вирішує <Suspense>',
-        isChecked: false
       }
     ]
   },
@@ -3646,11 +3197,9 @@ export const questions = [
     structure: [
       {
         name: 'Коли і навіщо слід використовувати shallowRef і shallowReactive',
-        isChecked: false
       },
       {
         name: 'Які переваги дає використання shallowRef і shallowReactive',
-        isChecked: false
       }
     ]
   },
@@ -3667,11 +3216,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке defineModel і як він спрощує двостороннє зв\'язування даних',
-        isChecked: false
       },
       {
         name: 'Які переваги дає використання defineModel',
-        isChecked: false
       }
     ]
   },
@@ -3689,11 +3236,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке toRef і toRefs',
-        isChecked: false
       },
       {
         name: 'Які переваги дає використання toRef і toRefs',
-        isChecked: false
       }
     ]
   },
@@ -3710,7 +3255,6 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Vue Router',
-        isChecked: false
       }
     ]
   },
@@ -3729,7 +3273,6 @@ export const questions = [
     structure: [
       {
         name: 'HTTP/HTTPS: методи, заголовки, кешування та безпека',
-        isChecked: false
       }
     ]
   },
@@ -3747,7 +3290,6 @@ export const questions = [
     structure: [
       {
         name: 'Same-Origin Policy та CORS',
-        isChecked: false
       }
     ]
   },
@@ -3763,11 +3305,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке cookies і для чого вони потрібні?',
-        isChecked: false
       },
       {
         name: 'Які атрибути cookies допомагають забезпечити безпеку (Secure, HttpOnly, SameSite)',
-        isChecked: false
       }
     ]
   },
@@ -3785,11 +3325,9 @@ export const questions = [
     structure: [
       {
         name: 'Як браузери забезпечують безпеку cookies при обміні даними між різними джерелами?',
-        isChecked: false
       },
       {
         name: 'Які атрибути cookies допомагають забезпечити безпеку (Secure, HttpOnly, SameSite)',
-        isChecked: false
       }
     ]
   },
@@ -3806,11 +3344,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке XSS-атаки і як вони працюють',
-        isChecked: false
       },
       {
         name: 'Як захиститися від XSS-атак',
-        isChecked: false
       }
     ]
   },
@@ -3827,11 +3363,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке CSRF-атаки і як вони працюють',
-        isChecked: false
       },
       {
         name: 'Як захиститися від CSRF-атак',
-        isChecked: false
       }
     ]
   },
@@ -3847,7 +3381,6 @@ export const questions = [
     structure: [
       {
         name: 'Що таке SQL-ін\'єкції і як захиститися від них?',
-        isChecked: false
       }
     ]
   },
@@ -3864,7 +3397,6 @@ export const questions = [
     structure: [
       {
         name: 'Що таке SSL/TLS і як вони забезпечують безпеку даних при передачі по мережі?',
-        isChecked: false
       }
     ]
   },
@@ -3881,7 +3413,6 @@ export const questions = [
     structure: [
       {
         name: 'Що таке OAuth 2.0',
-        isChecked: false
       }
     ]
   },
@@ -3898,7 +3429,6 @@ export const questions = [
     structure: [
       {
         name: 'Що таке JWT і як він використовується для аутентифікації та передачі інформації між клієнтом і сервером?',
-        isChecked: false
       }
     ]
   },
@@ -3915,15 +3445,12 @@ export const questions = [
     structure: [
       {
         name: 'DOM — це Web API, а не частина JavaScript',
-        isChecked: false
       },
       {
         name: 'DOM — це складна ієрархічна структура даних',
-        isChecked: false
       },
       {
         name: 'Reflow і Repaint',
-        isChecked: false
       }
     ]
   },
@@ -3940,15 +3467,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке типи мови Ecmascript?',
-        isChecked: false
       },
       {
         name: 'Що таке типи специфікації Ecmascript?',
-        isChecked: false
       },
       {
         name: 'У чому різниця між типами мови та типами специфікації Ecmascript?',
-        isChecked: false
       }
     ]
   },
@@ -3965,15 +3489,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке IntersectionObserver API і для чого він потрібен?',
-        isChecked: false
       },
       {
         name: 'Як використовувати IntersectionObserver API для оптимізації продуктивності веб-додатків?',
-        isChecked: false
       },
       {
         name: 'На зміну яким застарілим технікам прийшов IntersectionObserver API?',
-        isChecked: false
       }
     ]
   },
@@ -3990,15 +3511,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке MutationObserver API і для чого він потрібен?',
-        isChecked: false
       },
       {
         name: 'Як використовувати MutationObserver API для відстеження змін у DOM?',
-        isChecked: false
       },
       {
         name: 'На зміну яким застарілим технікам прийшов MutationObserver API?',
-        isChecked: false
       }
     ]
   },
@@ -4015,15 +3533,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке ResizeObserver API і для чого він потрібен?',
-        isChecked: false
       },
       {
         name: 'Як використовувати ResizeObserver API для відстеження змін розміру елементів у DOM?',
-        isChecked: false
       },
       {
         name: 'На зміну яким застарілим технікам прийшов ResizeObserver API?',
-        isChecked: false
       }
     ]
   },
@@ -4040,7 +3555,6 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Performance API і для чого він потрібен?',
-        isChecked: false
       },
     ]
   },
@@ -4057,15 +3571,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Web Animations API і для чого він потрібен?',
-        isChecked: false
       },
       {
         name: 'Як використовувати Web Animations API для створення анімацій у веб-додатках?',
-        isChecked: false
       },
       {
         name: 'На зміну яким застарілим технікам прийшов Web Animations API?',
-        isChecked: false
       }
     ]
   },
@@ -4082,15 +3593,12 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Web Speech API і для чого він потрібен?',
-        isChecked: false
       },
       {
         name: 'Як використовувати Web Speech API для розпізнавання мови та синтезу мови у веб-додатках?',
-        isChecked: false
       },
       {
         name: 'Які є аналогічні API для роботи з голосом',
-        isChecked: false
       }
     ]
   },
@@ -4107,11 +3615,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке Web Bluetooth API і для чого він потрібен?',
-        isChecked: false
       },
       {
         name: 'Як використовувати Web Bluetooth API для взаємодії з Bluetooth-пристроями у веб-додатках?',
-        isChecked: false
       }
     ]
   },
@@ -4128,11 +3634,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке requestAnimationFrame і для чого він потрібен?',
-        isChecked: false
       },
       {
         name: 'Як використовувати requestAnimationFrame для оптимізації анімацій у веб-додатках?',
-        isChecked: false
       }
     ]
   },
@@ -4149,11 +3653,9 @@ export const questions = [
     structure: [
       {
         name: 'Що таке requestIdleCallback і для чого він потрібен?',
-        isChecked: false
       },
       {
         name: 'Як використовувати requestIdleCallback для оптимізації виконання задач у веб-додатках?',
-        isChecked: false
       }
     ]
   },
@@ -4170,7 +3672,6 @@ export const questions = [
     structure: [
       {
         name: 'Що таке queueMicrotask і для чого він потрібен?',
-        isChecked: false
       },
     ]
   }

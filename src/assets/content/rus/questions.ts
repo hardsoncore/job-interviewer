@@ -14,31 +14,24 @@ export const questions = [
     structure: [
       {
         name: 'Критический путь рендеринга',
-        isChecked: false
       },
       {
         name: 'Как браузер строит DOM, CSSOM и Render Tree',
-        isChecked: false
       },
       {
         name: 'Как браузер выполняет JavaScript и как это влияет на рендеринг',
-        isChecked: false
       },
       {
         name: 'Что такое Layout / Reflow',
-        isChecked: false
       },
       {
         name: 'Что такое Repaint',
-        isChecked: false
       },
       {
         name: 'Composite (композитинг)',
-        isChecked: false
       },
       {
         name: 'Ивенты DOMContentLoaded и Load - в чем разница?',
-        isChecked: false
       }
     ]
   },
@@ -55,31 +48,24 @@ export const questions = [
     structure: [
       {
         name: 'Critical Rendering Path (CRP)',
-        isChecked: false
       },
       {
         name: 'Оптимизация DOM (HTML)',
-        isChecked: false
       },
       {
         name: 'Оптимизация CSSOM (CSS)',
-        isChecked: false
       },
       {
         name: 'Оптимизация JavaScript',
-        isChecked: false
       },
       {
         name: 'Оптимизация медиа и шрифтов (Ресурсы)',
-        isChecked: false
       },
       {
         name: 'Сетевые оптимизации и доставка контента',
-        isChecked: false
       },
       {
         name: 'Профилирование и метрики',
-        isChecked: false
       }
     ]
   },
@@ -95,23 +81,18 @@ export const questions = [
     structure: [
       {
         name: 'Что такое этот тег DOCTYPE',
-        isChecked: false
       },
       {
         name: 'Зачем нужен DOCTYPE',
-        isChecked: false
       },
       {
         name: 'Рассказать, про то что есть разные виды DOCTYPE',
-        isChecked: false
       },
       {
         name: 'Можно ли вообще обойтись без DOCTYPE?',
-        isChecked: false
       },
       {
         name: 'Сейчас практически всегда стоит юзать DOCTYPE HTML5',
-        isChecked: false
       }
     ]
   },
@@ -127,15 +108,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое семантическая вёрстка и зачем она нужна',
-        isChecked: false
       },
       {
         name: 'Основные семантические теги HTML',
-        isChecked: false
       },
       {
         name: 'Как разметить страницу с точки зрения семантики',
-        isChecked: false
       }
     ]
   },
@@ -152,23 +130,18 @@ export const questions = [
     structure: [
       {
         name: 'Подключение CSS через внешний файл стилей тегом link',
-        isChecked: false
       },
       {
         name: 'Добавление CSS с помощью тега style',
-        isChecked: false
       },
       {
         name: 'Импорт CSS через команду @import',
-        isChecked: false
       },
       {
         name: 'Inline-стили CSS',
-        isChecked: false
       },
       {
         name: 'Стили CSS через JavaScript',
-        isChecked: false
       }
     ]
   },
@@ -185,31 +158,24 @@ export const questions = [
     structure: [
       {
         name: 'Токенизация CSS: как браузер разбивает код на токены',
-        isChecked: false
       },
       {
         name: 'Архитектура парсинга CSS в браузере',
-        isChecked: false
       },
       {
         name: 'Right-to-Left парсинг и его преимущества',
-        isChecked: false
       },
       {
         name: 'Как парсинг CSS влияет на рендеринг страницы',
-        isChecked: false
       },
       {
         name: 'Ошибки в CSS и как браузер их обрабатывает',
-        isChecked: false
       },
       {
         name: 'Оптимизации парсинга CSS в современных браузерах',
-        isChecked: false
       },
       {
         name: 'Блокировка рендера и этапы Layout, Paint, Composite',
-        isChecked: false
       }
     ]
   },
@@ -227,31 +193,24 @@ export const questions = [
     structure: [
       {
         name: 'Каскадность в CSS: как браузер определяет, какие стили применять',
-        isChecked: false
       },
       {
         name: '!important',
-        isChecked: false
       },
       {
         name: 'Inline-стили',
-        isChecked: false
       },
       {
         name: 'ID',
-        isChecked: false
       },
       {
         name: 'Классы, Атрибуты, Псевдоклассы',
-        isChecked: false
       },
       {
         name: 'Теги, Псевдоэлементы',
-        isChecked: false
       },
       {
         name: 'Нулевой вес',
-        isChecked: false
       }
     ]
   },
@@ -267,15 +226,12 @@ export const questions = [
     structure: [
       {
         name: 'Недостатки высокой специфичности',
-        isChecked: false
       },
       {
         name: '!important - когда стоит использовать и какие проблемы может вызвать',
-        isChecked: false
       },
       {
         name: 'Best practices для управления специфичностью и приоритетом стилей',
-        isChecked: false
       }
     ]
   },
@@ -291,15 +247,12 @@ export const questions = [
     structure: [
       {
         name: '>',
-        isChecked: false
       },
       {
         name: '+',
-        isChecked: false
       },
       {
         name: '~',
-        isChecked: false
       }
     ]
   },
@@ -316,15 +269,12 @@ export const questions = [
     structure: [
       {
         name: 'Псевдоклассы состояния (Интерактив)',
-        isChecked: false
       },
       {
         name: 'Структурные псевдоклассы',
-        isChecked: false
       },
       {
         name: 'Продвинутые селекторы (Modern CSS)',
-        isChecked: false
       }
     ]
   },
@@ -341,27 +291,21 @@ export const questions = [
     structure: [
       {
         name: ':disabled',
-        isChecked: false
       },
       {
         name: ':required',
-        isChecked: false
       },
       {
         name: ':invalid',
-        isChecked: false
       },
       {
         name: ':valid',
-        isChecked: false
       },
       {
         name: ':checked',
-        isChecked: false
       },
       {
         name: ':placeholder-shown',
-        isChecked: false
       },
     ]
   },
@@ -378,23 +322,18 @@ export const questions = [
     structure: [
       {
         name: 'Что такое псевдоэлементы?',
-        isChecked: false
       },
       {
         name: 'Генерируемый контент (::before и ::after)',
-        isChecked: false
       },
       {
         name: 'Текстовые (::first-letter и ::first-line)',
-        isChecked: false
       },
       {
         name: 'Интерфейсные (::placeholder, ::selection, ::marker)',
-        isChecked: false
       },
       {
         name: 'Продвинутые (::backdrop, ::file-selector-button)',
-        isChecked: false
       }
     ]
   },
@@ -411,23 +350,18 @@ export const questions = [
     structure: [
       {
         name: 'static',
-        isChecked: false
       },
       {
         name: 'relative',
-        isChecked: false
       },
       {
         name: 'absolute',
-        isChecked: false
       },
       {
         name: 'fixed',
-        isChecked: false
       },
       {
         name: 'sticky',
-        isChecked: false
       }
     ]
   },
@@ -444,11 +378,9 @@ export const questions = [
     structure: [
       {
         name: 'Блочные элементы',
-        isChecked: false
       },
       {
         name: 'Строчные элементы',
-        isChecked: false
       },
     ]
   },
@@ -465,11 +397,9 @@ export const questions = [
     structure: [
       {
         name: 'Горизонтальное центрирование',
-        isChecked: false
       },
       {
         name: 'Вертикальное центрирование',
-        isChecked: false
       }
     ]
   },
@@ -486,11 +416,9 @@ export const questions = [
     structure: [
       {
         name: 'Боксовая модель (Box Model)',
-        isChecked: false
       },
       {
         name: 'box-sizing: content-box и box-sizing: border-box',
-        isChecked: false
       }
     ]
   },
@@ -507,15 +435,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Flexbox',
-        isChecked: false
       },
       {
         name: 'Что такое Grid',
-        isChecked: false
       },
       {
         name: 'Основные отличия между Flexbox и Grid',
-        isChecked: false
       },
     ]
   },
@@ -532,15 +457,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое CSS анимации?',
-        isChecked: false
       },
       {
         name: 'Основные свойства для создания анимаций',
-        isChecked: false
       },
       {
         name: 'Преимущества и недостатки CSS анимаций',
-        isChecked: false
       }
     ]
   },
@@ -557,19 +479,15 @@ export const questions = [
     structure: [
       {
         name: 'Относительные единицы измерения (em, rem, %, vw, vh) и их преимущества',
-        isChecked: false
       },
       {
         name: 'Как относительные единицы помогают в адаптивной верстке',
-        isChecked: false
       },
       {
         name: 'Влияние относительных единиц на доступность (a11y) и удобство использования',
-        isChecked: false
       },
       {
         name: 'Архитектура адаптивных величин: контекст вычисления, наследование и масштабируемость',
-        isChecked: false
       }
     ]
   },
@@ -586,15 +504,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое движок браузера и его роль в работе веб-страниц',
-        isChecked: false
       },
       {
         name: 'Современные движки браузера: V8 (Chrome, Edge), SpiderMonkey (Firefox), JavaScriptCore (Safari)',
-        isChecked: false
       },
       {
         name: 'Основные отличия между движками и их оптимизации',
-        isChecked: false
       }
     ]
   },
@@ -611,23 +526,18 @@ export const questions = [
     structure: [
       {
         name: 'Как работает JS-движок',
-        isChecked: false
       },
       {
         name: 'Парсинг JavaScript',
-        isChecked: false
       },
       {
         name: 'Интерпретация (Ignition)',
-        isChecked: false
       },
       {
         name: 'JIT-компиляция и Оптимизация (Turbofan)',
-        isChecked: false
       },
       {
         name: 'Деоптимизация (Bailout)',
-        isChecked: false
       }
     ]
   },
@@ -644,7 +554,6 @@ export const questions = [
     structure: [
       {
         name: '3 способа подключения JS на страницу',
-        isChecked: false
       }
     ]
   },
@@ -661,15 +570,12 @@ export const questions = [
     structure: [
       {
         name: 'Async',
-        isChecked: false
       },
       {
         name: 'Defer',
-        isChecked: false
       },
       {
         name: 'Без атрибутов',
-        isChecked: false
       }
     ]
   },
@@ -686,11 +592,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое SVG?',
-        isChecked: false
       },
       {
         name: 'Ключевые особенности SVG',
-        isChecked: false
       }
     ]
   },
@@ -707,19 +611,15 @@ export const questions = [
     structure: [
       {
         name: 'Canvas - что это?',
-        isChecked: false
       },
       {
         name: 'Зачем нужен Canvas?',
-        isChecked: false
       },
       {
         name: 'Основные сферы применения',
-        isChecked: false
       },
       {
         name: 'Преимущества Canvas',
-        isChecked: false
       }
     ]
   },
@@ -736,23 +636,18 @@ export const questions = [
     structure: [
       {
         name: 'CSS Custom Properties - что это?',
-        isChecked: false
       },
       {
         name: 'Поддержка в браузерах и когда появились',
-        isChecked: false
       },
       {
         name: 'Главные отличия от переменных SASS/LESS',
-        isChecked: false
       },
       {
         name: 'Наследование и область видимости CSS Custom Properties',
-        isChecked: false
       },
       {
         name: 'Динамическая темизация через CSS Custom Properties',
-        isChecked: false
       }
     ]
   },
@@ -770,11 +665,9 @@ export const questions = [
     structure: [
       {
         name: 'Критический путь рендеринга (Critical Rendering Path) и его влияние на производительность анимаций',
-        isChecked: false
       },
       {
         name: 'Какие CSS-свойства вызывают Layout, Paint и Composite',
-        isChecked: false
       },
     ]
   },
@@ -790,11 +683,9 @@ export const questions = [
     structure: [
       {
         name: 'Пре- и пост- процессоры CSS - что это?',
-        isChecked: false
       },
       {
         name: 'Актуальность в 2025-2026 годах',
-        isChecked: false
       }
     ]
   },
@@ -811,15 +702,12 @@ export const questions = [
     structure: [
       {
         name: 'Методология БЭМ - что это?',
-        isChecked: false
       },
       {
         name: 'Основные позиции методологии БЭМ',
-        isChecked: false
       },
       {
         name: 'Какие проблемы решает БЭМ',
-        isChecked: false
       }
     ]
   },
@@ -835,19 +723,15 @@ export const questions = [
     structure: [
       {
         name: 'HTML-шаблонизаторы/препроцессоры - что это?',
-        isChecked: false
       },
       {
         name: 'Примеры популярных инструментов',
-        isChecked: false
       },
       {
         name: 'В чем разница между шаблонизатором и препроцессором?',
-        isChecked: false
       },
       {
         name: 'Актуальны ли они сегодня?',
-        isChecked: false
       }
     ]
   },
@@ -865,15 +749,12 @@ export const questions = [
     structure: [
       {
         name: 'Какие типы узлов есть в DOM?',
-        isChecked: false
       },
       {
         name: 'Чем они отличаются?',
-        isChecked: false
       },
       {
         name: 'Для чего нужны разные типы узлов?',
-        isChecked: false
       }
     ]
   },
@@ -889,15 +770,12 @@ export const questions = [
     structure: [
       {
         name: '7 примитивных типов данных',
-        isChecked: false
       },
       {
         name: '1 непримитивный тип данных',
-        isChecked: false
       },
       {
         name: 'typeof и его особенности',
-        isChecked: false
       }
     ]
   },
@@ -913,7 +791,6 @@ export const questions = [
     structure: [
       {
         name: 'Три основных типа преобразования',
-        isChecked: false
       }
     ]
   },
@@ -931,19 +808,15 @@ export const questions = [
     structure: [
       {
         name: 'Let, const и var - различия',
-        isChecked: false
       },
       {
         name: 'Hoisting (всплытие или поднятие)',
-        isChecked: false
       },
       {
         name: 'Как Hoisting работает с var, let и const',
-        isChecked: false
       },
       {
         name: 'Temporal Dead Zone (TDZ) для let и const',
-        isChecked: false
       }
     ]
   },
@@ -960,7 +833,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -977,23 +849,18 @@ export const questions = [
     structure: [
       {
         name: 'Массив (Array)',
-        isChecked: false
       },
       {
         name: 'Объект (Object)',
-        isChecked: false
       },
       {
         name: 'Map (Карта)',
-        isChecked: false
       },
       {
         name: 'Set (Множество)',
-        isChecked: false
       },
       {
         name: 'WeakMap и WeakSet',
-        isChecked: false
       }
     ]
   },
@@ -1012,63 +879,48 @@ export const questions = [
     structure: [
       {
         name: 'pop/push и shift/unshift, их различия',
-        isChecked: false
       },
       {
         name: 'splice',
-        isChecked: false
       },
       {
         name: 'slice',
-        isChecked: false
       },
       {
         name: 'concat',
-        isChecked: false
       },
       {
         name: 'forEach',
-        isChecked: false
       },
       {
         name: 'indexOf/lastIndexOf и includes, их различия',
-        isChecked: false
       },
       {
         name: 'find и findIndex, их различия',
-        isChecked: false
       },
       {
         name: 'filter',
-        isChecked: false
       },
       {
         name: 'map',
-        isChecked: false
       },
       {
         name: 'sort(fn)',
-        isChecked: false
       },
       {
         name: 'reverse',
-        isChecked: false
       },
       {
         name: 'split и join',
-        isChecked: false
       },
       {
         name: 'reduce',
-        isChecked: false
       },
       {
         name: 'Array.isArray',
-        isChecked: false
       },
       {
         name: '«thisArg»',
-        isChecked: false
       }
     ]
   },
@@ -1086,15 +938,12 @@ export const questions = [
     structure: [
       {
         name: 'Итераторы: Механика под капотом',
-        isChecked: false
       },
       {
         name: 'Генераторы',
-        isChecked: false
       },
       {
         name: 'Зачем это нужно на практике?',
-        isChecked: false
       }
     ]
   },
@@ -1110,15 +959,12 @@ export const questions = [
     structure: [
       {
         name: 'Lexical Environment',
-        isChecked: false
       },
       {
         name: 'Виды областей видимости: глобальная, функциональная, блочная',
-        isChecked: false
       },
       {
         name: 'Жизненный цикл переменной',
-        isChecked: false
       }
     ]
   },
@@ -1134,15 +980,12 @@ export const questions = [
     structure: [
       {
         name: 'Замыкание - что это и для чего нужно',
-        isChecked: false
       },
       {
         name: '[[Environment]]',
-        isChecked: false
       },
       {
         name: 'Использование замыканий для создания приватных переменных',
-        isChecked: false
       }
     ]
   },
@@ -1158,7 +1001,6 @@ export const questions = [
     structure: [
       {
         name: 'Garbage Collector',
-        isChecked: false
       }
     ]
   },
@@ -1174,11 +1016,9 @@ export const questions = [
     structure: [
       {
         name: 'Рекурсия - что это и для чего нужно',
-        isChecked: false
       },
       {
         name: 'Плюсы и минусы рекурсии',
-        isChecked: false
       }
     ]
   },
@@ -1195,15 +1035,12 @@ export const questions = [
     structure: [
       {
         name: 'Глобальный контекст и обычный вызов функции',
-        isChecked: false
       },
       {
         name: 'Вызов в качестве метода объекта',
-        isChecked: false
       },
       {
         name: 'Стрелочные функции (Arrow Functions)',
-        isChecked: false
       }
     ]
   },
@@ -1220,15 +1057,12 @@ export const questions = [
     structure: [
       {
         name: 'Неявная привязка (Implicit Binding)',
-        isChecked: false
       },
       {
         name: 'Явная привязка (Explicit Binding)',
-        isChecked: false
       },
       {
         name: 'Методы call, apply и bind и их различия',
-        isChecked: false
       }
     ]
   },
@@ -1246,15 +1080,12 @@ export const questions = [
     structure: [
       {
         name: 'Каррирование - что это и для чего нужно',
-        isChecked: false
       },
       {
         name: 'Реализация каррирования',
-        isChecked: false
       },
       {
         name: 'Зачем это нужно на практике?',
-        isChecked: false
       }
     ]
   },
@@ -1272,11 +1103,9 @@ export const questions = [
     structure: [
       {
         name: 'Частичное применение (основано на каррировании)',
-        isChecked: false
       },
       {
         name: 'Реализация частичного применения',
-        isChecked: false
       }
     ]
   },
@@ -1293,19 +1122,15 @@ export const questions = [
     structure: [
       {
         name: 'Псевдомассив arguments',
-        isChecked: false
       },
       {
         name: 'Почему он псевдомассив?',
-        isChecked: false
       },
       {
         name: 'Arguments VS Arrow Functions',
-        isChecked: false
       },
       {
         name: 'Современные альтернативы',
-        isChecked: false
       }
     ]
   },
@@ -1321,15 +1146,12 @@ export const questions = [
     structure: [
       {
         name: 'Директива "use strict" - что это и для чего нужно',
-        isChecked: false
       },
       {
         name: 'Главные изменения при включении строгого режима',
-        isChecked: false
       },
       {
         name: 'Как включить строгий режим?',
-        isChecked: false
       }
     ]
   },
@@ -1345,11 +1167,9 @@ export const questions = [
     structure: [
       {
         name: 'Преобразование объектов: toString и valueOf',
-        isChecked: false
       },
       {
         name: 'Как движок решает, какой метод вызвать первым',
-        isChecked: false
       }
     ]
   },
@@ -1365,11 +1185,9 @@ export const questions = [
     structure: [
       {
         name: 'Зачем нужен Event Loop',
-        isChecked: false
       },
       {
         name: 'Основные сущности: Call Stack, Heap, Web APIs, Microtasks и Macrotasks',
-        isChecked: false
       }
     ]
   },
@@ -1385,11 +1203,9 @@ export const questions = [
     structure: [
       {
         name: 'Наследование в JavaScript',
-        isChecked: false
       },
       {
         name: 'Прототипное наследование и цепочка прототипов',
-        isChecked: false
       }
     ]
   },
@@ -1405,7 +1221,6 @@ export const questions = [
     structure: [
       {
         name: '__proto__ - что это?',
-        isChecked: false
       }
     ]
   },
@@ -1421,7 +1236,6 @@ export const questions = [
     structure: [
       {
         name: 'F.prototype',
-        isChecked: false
       }
     ]
   },
@@ -1439,23 +1253,18 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Promise, в какой версии ES появился',
-        isChecked: false
       },
       {
         name: 'Какую проблему решали промисы',
-        isChecked: false
       },
       {
         name: 'Неизменность результата после завершения промиса',
-        isChecked: false
       },
       {
         name: 'then, catch, finally',
-        isChecked: false
       },
       {
         name: 'Эволюция промисов и async/await',
-        isChecked: false
       }
     ]
   },
@@ -1473,15 +1282,12 @@ export const questions = [
     structure: [
       {
         name: 'Promise chaining',
-        isChecked: false
       },
       {
         name: 'Можно продолжить цепочку вызовов после ошибки',
-        isChecked: false
       },
       {
         name: 'Можно строить такие цепочки и с finally',
-        isChecked: false
       }
     ]
   },
@@ -1496,7 +1302,6 @@ export const questions = [
     structure: [
       {
         name: 'Try - Catch - для чего нужно?',
-        isChecked: false
       }
     ]
   },
@@ -1512,7 +1317,6 @@ export const questions = [
     structure: [
       {
         name: '11 основных нововведений в ES6',
-        isChecked: false
       }
     ]
   },
@@ -1529,7 +1333,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -1547,19 +1350,15 @@ export const questions = [
     structure: [
       {
         name: 'Эволюция асинхронного JS в ES8',
-        isChecked: false
       },
       {
         name: 'Зачем нужен async/await? Какую проблему решает?',
-        isChecked: false
       },
       {
         name: 'try...catch...finally',
-        isChecked: false
       },
       {
         name: 'node.js и поддержка async/await',
-        isChecked: false
       }
     ]
   },
@@ -1577,23 +1376,18 @@ export const questions = [
     structure: [
       {
         name: 'Какую проблему решают',
-        isChecked: false
       },
       {
         name: 'Promise.all() — «Все или ничего»',
-        isChecked: false
       },
       {
         name: 'Promise.allSettled() — «Дождаться всех, несмотря ни на что»',
-        isChecked: false
       },
       {
         name: 'Promise.race() — «Кто быстрее»',
-        isChecked: false
       },
       {
         name: 'Promise.any() — «Хоть кто-нибудь успешный»',
-        isChecked: false
       }
     ]
   },
@@ -1609,7 +1403,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -1626,11 +1419,9 @@ export const questions = [
     structure: [
       {
         name: 'LocalStorage',
-        isChecked: false
       },
       {
         name: 'SessionStorage',
-        isChecked: false
       },
     ]
   },
@@ -1647,19 +1438,15 @@ export const questions = [
     structure: [
       {
         name: 'Зачем нужен code style и инструменты для его поддержания',
-        isChecked: false
       },
       {
         name: 'Prettier',
-        isChecked: false
       },
       {
         name: 'ESLint, TSLint и CodeLint',
-        isChecked: false
       },
       {
         name: '.editorconfig',
-        isChecked: false
       }
     ]
   },
@@ -1675,7 +1462,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -1691,11 +1477,9 @@ export const questions = [
     structure: [
       {
         name: 'Реактивное программирование - что это?',
-        isChecked: false
       },
       {
         name: 'RxJs - для чего нужен?',
-        isChecked: false
       },
     ]
   },
@@ -1713,7 +1497,6 @@ export const questions = [
     structure: [
       {
         name: 'Observable - что это?',
-        isChecked: false
       }
     ]
   },
@@ -1731,7 +1514,6 @@ export const questions = [
     structure: [
       {
         name: 'Subject - что это?',
-        isChecked: false
       }
     ]
   },
@@ -1749,19 +1531,15 @@ export const questions = [
     structure: [
       {
         name: 'Специфика Subject',
-        isChecked: false
       },
       {
         name: 'Различия поведения и виды Subject',
-        isChecked: false
       },
       {
         name: 'Специфика Observable',
-        isChecked: false
       },
       {
         name: 'Observable - только на получение данных, Subject - ещё и для распространения',
-        isChecked: false
       }
     ]
   },
@@ -1778,11 +1556,9 @@ export const questions = [
     structure: [
       {
         name: 'Zone.js - что это?',
-        isChecked: false
       },
       {
         name: 'Как работает Zone.js под капотом',
-        isChecked: false
       }
     ]
   },
@@ -1798,23 +1574,18 @@ export const questions = [
     structure: [
       {
         name: 'Partial&lt;Type> (Частичный)',
-        isChecked: false
       },
       {
         name: 'Required&lt;Type> (Обязательный)',
-        isChecked: false
       },
       {
         name: 'Pick&lt;Type, Keys> (Выбрать)',
-        isChecked: false
       },
       {
         name: 'Omit&lt;Type, Keys> (Исключить)',
-        isChecked: false
       },
       {
         name: 'Record&lt;Keys, Type> (Запись / Словарь)',
-        isChecked: false
       }
     ]
   },
@@ -1831,11 +1602,9 @@ export const questions = [
     structure: [
       {
         name: 'Type Guards - typeof, in, instanceof, Custom Type Guards',
-        isChecked: false
       },
       {
         name: 'Type Assertions - as, <Type>, !, as const',
-        isChecked: false
       }
     ]
   },
@@ -1851,31 +1620,24 @@ export const questions = [
     structure: [
       {
         name: 'Enums (Перечисления)',
-        isChecked: false
       },
       {
         name: 'Плюсы Enums',
-        isChecked: false
       },
       {
         name: 'Numeric Enums (Числовые перечисления)',
-        isChecked: false
       },
       {
         name: 'String Enums (Строковые перечисления)',
-        isChecked: false
       },
       {
         name: 'Heterogeneous Enums (Гетерогенные перечисления)',
-        isChecked: false
       },
       {
         name: 'Const Enums (Константные перечисления)',
-        isChecked: false
       },
       {
         name: 'Под капотом: как JavaScript обрабатывает Enums',
-        isChecked: false
       }
     ]
   },
@@ -1891,15 +1653,12 @@ export const questions = [
     structure: [
       {
         name: 'Class (Реализация)',
-        isChecked: false
       },
       {
         name: 'Interface (Контракт)',
-        isChecked: false
       },
       {
         name: 'Type (Псевдоним)',
-        isChecked: false
       }
     ]
   },
@@ -1915,31 +1674,24 @@ export const questions = [
     structure: [
       {
         name: 'Generics (Обобщения) - какую проблему решают?',
-        isChecked: false
       },
       {
         name: 'Синтаксис Generics',
-        isChecked: false
       },
       {
         name: 'Применение Generics в функциях, интерфейсах и классах',
-        isChecked: false
       },
       {
         name: 'Ограничения (Constraints) в Generics',
-        isChecked: false
       },
       {
         name: 'Утилиты типов на основе Generics',
-        isChecked: false
       },
       {
         name: 'Множественные параметры типов',
-        isChecked: false
       },
       {
         name: 'Как Generics работают под капотом в JavaScript',
-        isChecked: false
       }
     ]
   },
@@ -1955,15 +1707,12 @@ export const questions = [
     structure: [
       {
         name: 'any',
-        isChecked: false
       },
       {
         name: 'unknown',
-        isChecked: false
       },
       {
         name: 'never',
-        isChecked: false
       }
     ]
   },
@@ -1980,15 +1729,12 @@ export const questions = [
     structure: [
       {
         name: 'asObservable() - что это и для чего нужно?',
-        isChecked: false
       },
       {
         name: 'Правильный способ использования asObservable()',
-        isChecked: false
       },
       {
         name: 'Антипаттерн использования asObservable()',
-        isChecked: false
       }
     ]
   },
@@ -2004,19 +1750,15 @@ export const questions = [
     structure: [
       {
         name: 'Abstraction (Абстракция)',
-        isChecked: false
       },
       {
         name: 'Encapsulation (Инкапсуляция)',
-        isChecked: false
       },
       {
         name: 'Inheritance (Наследование)',
-        isChecked: false
       },
       {
         name: 'Polymorphism (Полиморфизм)',
-        isChecked: false
       }
     ]
   },
@@ -2032,7 +1774,6 @@ export const questions = [
     structure: [
       {
         name: 'Паттерны проектирования - что это и для чего нужны?',
-        isChecked: false
       }
     ]
   },
@@ -2049,7 +1790,6 @@ export const questions = [
     structure: [
       {
         name: 'Декоратор',
-        isChecked: false
       }
     ]
   },
@@ -2066,27 +1806,21 @@ export const questions = [
     structure: [
       {
         name: 'Принципы SOLID - это',
-        isChecked: false
       },
       {
         name: 'Single Responsibility Principle (Принцип единой ответственности)',
-        isChecked: false
       },
       {
         name: 'Open-Closed Principle (Принцип открытости/закрытости)',
-        isChecked: false
       },
       {
         name: 'Liskov Substitution Principle (Принцип подстановки Барбары Лисков)',
-        isChecked: false
       },
       {
         name: 'Interface Segregation Principle (Принцип разделения интерфейса)',
-        isChecked: false
       },
       {
         name: 'Dependency Inversion Principle (Принцип инверсии зависимостей)',
-        isChecked: false
       }
     ]
   },
@@ -2102,7 +1836,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -2119,7 +1852,6 @@ export const questions = [
     structure: [
       {
         name: 'Теги HTML',
-        isChecked: false
       }
     ]
   },
@@ -2136,31 +1868,24 @@ export const questions = [
     structure: [
       {
         name: 'SELECT, FROM',
-        isChecked: false
       },
       {
         name: 'SELECT DISTINCT',
-        isChecked: false
       },
       {
         name: 'WHERE',
-        isChecked: false
       },
       {
         name: 'GROUP BY',
-        isChecked: false
       },
       {
         name: 'HAVING',
-        isChecked: false
       },
       {
         name: 'ORDER BY',
-        isChecked: false
       },
       {
         name: 'JOIN и его варианты',
-        isChecked: false
       }
     ]
   },
@@ -2176,11 +1901,9 @@ export const questions = [
     structure: [
       {
         name: 'JSON - что это и для чего нужно',
-        isChecked: false
       },
       {
         name: 'Метод toJSON',
-        isChecked: false
       }
     ]
   },
@@ -2197,11 +1920,9 @@ export const questions = [
     structure: [
       {
         name: 'Аутентификация',
-        isChecked: false
       },
       {
         name: 'Авторизация',
-        isChecked: false
       }
     ]
   },
@@ -2218,23 +1939,18 @@ export const questions = [
     structure: [
       {
         name: 'Пузырьковая сортировка (Bubble Sort)',
-        isChecked: false
       },
       {
         name: 'Сортировка вставками (Insertion Sort)',
-        isChecked: false
       },
       {
         name: 'Сортировка выбором (Selection Sort)',
-        isChecked: false
       },
       {
         name: 'Сортировка слиянием (Merge Sort)',
-        isChecked: false
       },
       {
         name: 'Быстрая сортировка (Quick Sort)',
-        isChecked: false
       }
     ]
   },
@@ -2251,15 +1967,12 @@ export const questions = [
     structure: [
       {
         name: 'O(1)',
-        isChecked: false
       },
       {
         name: 'O(n)',
-        isChecked: false
       },
       {
         name: 'O(log n)',
-        isChecked: false
       }
     ]
   },
@@ -2276,19 +1989,15 @@ export const questions = [
     structure: [
       {
         name: 'Деревья',
-        isChecked: false
       },
       {
         name: 'Перевернутые деревья',
-        isChecked: false
       },
       {
         name: 'Бинарные деревья',
-        isChecked: false
       },
       {
         name: 'Графы',
-        isChecked: false
       }
     ]
   },
@@ -2304,15 +2013,12 @@ export const questions = [
     structure: [
       {
         name: 'Shadow DOM - что это такое',
-        isChecked: false
       },
       {
         name: 'Проблема, которую решает Shadow DOM',
-        isChecked: false
       },
       {
         name: 'Ключевые особенности Shadow DOM',
-        isChecked: false
       }
     ]
   },
@@ -2330,15 +2036,12 @@ export const questions = [
     structure: [
       {
         name: 'Virtual DOM - что это такое',
-        isChecked: false
       },
       {
         name: 'Проблема, которую решает Virtual DOM',
-        isChecked: false
       },
       {
         name: 'Как работает Virtual DOM',
-        isChecked: false
       }
     ]
   },
@@ -2355,19 +2058,15 @@ export const questions = [
     structure: [
       {
         name: 'Что такое RxJS',
-        isChecked: false
       },
       {
         name: 'Для чего нужен RxJS?',
-        isChecked: false
       },
       {
         name: 'Базовые сущности RxJS: Observable, Observer, Subscription, Subject',
-        isChecked: false
       },
       {
         name: 'Популярные операторы',
-        isChecked: false
       }
     ]
   },
@@ -2384,15 +2083,12 @@ export const questions = [
     structure: [
       {
         name: 'State management в Angular. NgRx, что это такое',
-        isChecked: false
       },
       {
         name: 'Store, Actions, Reducers, Selectors',
-        isChecked: false
       },
       {
         name: 'Effects (Побочные эффекты и асинхронность)',
-        isChecked: false
       }
     ]
   },
@@ -2409,11 +2105,9 @@ export const questions = [
     structure: [
       {
         name: 'Signals в Angular, что это такое',
-        isChecked: false
       },
       {
         name: 'Фундаментальная разница между Signals и RxJS',
-        isChecked: false
       }
     ]
   },
@@ -2430,15 +2124,12 @@ export const questions = [
     structure: [
       {
         name: 'Computed',
-        isChecked: false
       },
       {
         name: 'Effect',
-        isChecked: false
       },
       {
         name: 'Когда использовать Effect, а когда это антипаттерн',
-        isChecked: false
       }
     ]
   },
@@ -2455,7 +2146,6 @@ export const questions = [
     structure: [
       {
         name: 'input(), output() и model() - что это',
-        isChecked: false
       }
     ]
   },
@@ -2472,11 +2162,9 @@ export const questions = [
     structure: [
       {
         name: 'Концепция Standalone',
-        isChecked: false
       },
       {
         name: 'Почему отказались от NgModules',
-        isChecked: false
       }
     ]
   },
@@ -2494,19 +2182,15 @@ export const questions = [
     structure: [
       {
         name: 'Функция inject()',
-        isChecked: false
       },
       {
         name: 'Преимущества inject() по сравнению с Constructor DI',
-        isChecked: false
       },
       {
         name: 'Где МОЖНО использовать inject()',
-        isChecked: false
       },
       {
         name: 'Где НЕЛЬЗЯ использовать inject()',
-        isChecked: false
       }
     ]
   },
@@ -2522,11 +2206,9 @@ export const questions = [
     structure: [
       {
         name: 'Новый Control Flow',
-        isChecked: false
       },
       {
         name: 'Преимущества нового Control Flow',
-        isChecked: false
       }
     ]
   },
@@ -2542,15 +2224,12 @@ export const questions = [
     structure: [
       {
         name: 'ChangeDetectionStrategy.Default',
-        isChecked: false
       },
       {
         name: 'ChangeDetectionStrategy.OnPush',
-        isChecked: false
       },
       {
         name: 'Zoneless (Современный Angular / Signals)',
-        isChecked: false
       }
     ]
   },
@@ -2566,7 +2245,6 @@ export const questions = [
     structure: [
       {
         name: 'Deferrable Views',
-        isChecked: false
       }
     ]
   },
@@ -2583,7 +2261,6 @@ export const questions = [
     structure: [
       {
         name: 'Functional Guards',
-        isChecked: false
       }
     ]
   },
@@ -2600,7 +2277,6 @@ export const questions = [
     structure: [
       {
         name: 'Functional Interceptors',
-        isChecked: false
       }
     ]
   },
@@ -2617,11 +2293,9 @@ export const questions = [
     structure: [
       {
         name: 'Lifecycle Hooks (Классические)',
-        isChecked: false
       },
       {
         name: 'Современный подход',
-        isChecked: false
       }
     ]
   },
@@ -2638,23 +2312,18 @@ export const questions = [
     structure: [
       {
         name: 'Object.defineProperty - что это и для чего нужно?',
-        isChecked: false
       },
       {
         name: 'Общие дескрипторы свойств: configurable, enumerable',
-        isChecked: false
       },
       {
         name: 'Дескрипторы данных: writable, value',
-        isChecked: false
       },
       {
         name: 'Дескрипторы доступа: get, set',
-        isChecked: false
       },
       {
         name: 'Применения в Vue и других фреймворках - (только Vue 2, в Vue 3 уже Proxy)',
-        isChecked: false
       }
     ]
   },
@@ -2671,19 +2340,15 @@ export const questions = [
     structure: [
       {
         name: 'Реактивность в Vue 2',
-        isChecked: false
       },
       {
         name: 'Реактивность в Vue 3',
-        isChecked: false
       },
       {
         name: 'Реактивность в Angular.js',
-        isChecked: false
       },
       {
         name: 'Реактивность в Angular 2+',
-        isChecked: false
       }
     ]
   },
@@ -2700,19 +2365,15 @@ export const questions = [
     structure: [
       {
         name: 'Abstract Classes (Абстрактные классы)',
-        isChecked: false
       },
       {
         name: 'Когда использовать абстрактные классы вместо интерфейсов',
-        isChecked: false
       },
       {
         name: 'Можно ли использовать абстрактные классы для реализации множественного наследования?',
-        isChecked: false
       },
       {
         name: 'Можно ли комбинировать абстрактные классы и интерфейсы?',
-        isChecked: false
       }
     ]
   },
@@ -2729,19 +2390,15 @@ export const questions = [
     structure: [
       {
         name: 'Protected (Модификатор доступа)',
-        isChecked: false
       },
       {
         name: 'Private (Модификатор доступа)',
-        isChecked: false
       },
       {
         name: 'Public (Модификатор доступа)',
-        isChecked: false
       },
       {
         name: 'Когда использовать каждый из этих модификаторов доступа',
-        isChecked: false
       }
     ]
   },
@@ -2758,7 +2415,6 @@ export const questions = [
     structure: [
       {
         name: 'Console API (API консоли)',
-        isChecked: false
       },
     ]
   },
@@ -2775,7 +2431,6 @@ export const questions = [
     structure: [
       {
         name: 'Pure Functions (Чистые функции) - что это и в чем их преимущества',
-        isChecked: false
       },
     ]
   },
@@ -2792,7 +2447,6 @@ export const questions = [
     structure: [
       {
         name: 'Higher-Order Functions (Функции высшего порядка) - что это и в чем их преимущества',
-        isChecked: false
       },
     ]
   },
@@ -2809,19 +2463,15 @@ export const questions = [
     structure: [
       {
         name: 'mergeMap',
-        isChecked: false
       },
       {
         name: 'switchMap',
-        isChecked: false
       },
       {
         name: 'concatMap',
-        isChecked: false
       },
       {
         name: 'exhaustMap',
-        isChecked: false
       }
     ]
   },
@@ -2838,31 +2488,24 @@ export const questions = [
     structure: [
       {
         name: 'combineLatest',
-        isChecked: false
       },
       {
         name: 'forkJoin',
-        isChecked: false
       },
       {
         name: 'withLatestFrom',
-        isChecked: false
       },
       {
         name: 'concat',
-        isChecked: false
       },
       {
         name: 'merge',
-        isChecked: false
       },
       {
         name: 'zip',
-        isChecked: false
       },
       {
         name: 'race',
-        isChecked: false
       }
     ]
   },
@@ -2879,23 +2522,18 @@ export const questions = [
     structure: [
       {
         name: 'of',
-        isChecked: false
       },
       {
         name: 'from',
-        isChecked: false
       },
       {
         name: 'fromEvent',
-        isChecked: false
       },
       {
         name: 'interval',
-        isChecked: false
       },
       {
         name: 'timer',
-        isChecked: false
       }
     ]
   },
@@ -2912,23 +2550,18 @@ export const questions = [
     structure: [
       {
         name: 'filter',
-        isChecked: false
       },
       {
         name: 'take',
-        isChecked: false
       },
       {
         name: 'takeUntil',
-        isChecked: false
       },
       {
         name: 'skip',
-        isChecked: false
       },
       {
         name: 'distinctUntilChanged',
-        isChecked: false
       }
     ]
   },
@@ -2945,24 +2578,19 @@ export const questions = [
     structure: [
       {
         name: 'tap',
-        isChecked: false
 
       },
       {
         name: 'finalize',
-        isChecked: false
       },
       {
         name: 'delay',
-        isChecked: false
       },
       {
         name: 'timeout',
-        isChecked: false
       },
       {
         name: 'retry',
-        isChecked: false
       }
     ]
   },
@@ -2979,19 +2607,15 @@ export const questions = [
     structure: [
       {
         name: 'map',
-        isChecked: false
       },
       {
         name: 'mapTo',
-        isChecked: false
       },
       {
         name: 'pluck',
-        isChecked: false
       },
       {
         name: 'scan',
-        isChecked: false
       }
     ]
   },
@@ -3007,15 +2631,12 @@ export const questions = [
     structure: [
       {
         name: 'Element Injector (или NodeInjector) - что это такое',
-        isChecked: false
       },
       {
         name: 'Как работает Element Injector в Angular',
-        isChecked: false
       },
       {
         name: 'Зачем нужен Element Injector и какие проблемы он решает',
-        isChecked: false
       }
     ]
   },
@@ -3031,11 +2652,9 @@ export const questions = [
     structure: [
       {
         name: 'Иерархия DI в Angular',
-        isChecked: false
       },
       {
         name: 'Паттерн Shadowing (Затенение провайдеров)',
-        isChecked: false
       }
     ]
   },
@@ -3051,15 +2670,12 @@ export const questions = [
     structure: [
       {
         name: 'Провайдеры в Angular - что это такое',
-        isChecked: false
       },
       {
         name: 'Типы провайдеров в Angular (Class Provider, Factory Provider, Value Provider, Existing Provider)',
-        isChecked: false
       },
       {
         name: 'Когда использовать каждый тип провайдера',
-        isChecked: false
       }
     ]
   },
@@ -3076,15 +2692,12 @@ export const questions = [
     structure: [
       {
         name: 'Сервисы в Angular - что это такое',
-        isChecked: false
       },
       {
         name: 'Для чего нужны сервисы в Angular',
-        isChecked: false
       },
       {
         name: 'Жизненный цикл сервисов в Angular',
-        isChecked: false
       }
     ]
   },
@@ -3101,11 +2714,9 @@ export const questions = [
     structure: [
       {
         name: 'Паттерн Singleton (Одиночка) - что это такое',
-        isChecked: false
       },
       {
         name: 'Являются ли сервисы в Angular синглтонами по умолчанию?',
-        isChecked: false
       }
     ]
   },
@@ -3121,11 +2732,9 @@ export const questions = [
     structure: [
       {
         name: 'Структурные директивы в Angular',
-        isChecked: false
       },
       {
         name: 'Атрибутные директивы в Angular',
-        isChecked: false
       }
     ]
   },
@@ -3141,11 +2750,9 @@ export const questions = [
     structure: [
       {
         name: 'Чистые пайпы в Angular',
-        isChecked: false
       },
       {
         name: 'Нечистые пайпы в Angular',
-        isChecked: false
       },
     ]
   },
@@ -3162,15 +2769,12 @@ export const questions = [
     structure: [
       {
         name: 'ViewChild в Angular',
-        isChecked: false
       },
       {
         name: 'ContentChild в Angular',
-        isChecked: false
       },
       {
         name: 'Когда использовать @ViewChild, а когда @ContentChild',
-        isChecked: false
       }
     ]
   },
@@ -3187,19 +2791,15 @@ export const questions = [
     structure: [
       {
         name: 'Proxy в JavaScript',
-        isChecked: false
       },
       {
         name: 'Reflect в JavaScript',
-        isChecked: false
       },
       {
         name: 'Когда использовать Proxy, а когда Reflect',
-        isChecked: false
       },
       {
         name: 'Использование в современных фреймворках',
-        isChecked: false
       }
     ]
   },
@@ -3215,19 +2815,15 @@ export const questions = [
     structure: [
       {
         name: 'Что такое утечки памяти в контексте веб-приложений и почему это важно',
-        isChecked: false
       },
       {
         name: 'Частые причины утечек памяти в JavaScript',
-        isChecked: false
       },
       {
         name: 'Как избежать утечек памяти в JavaScript',
-        isChecked: false
       },
       {
         name: 'Инструменты для обнаружения и устранения утечек памяти',
-        isChecked: false
       }
     ]
   },
@@ -3244,19 +2840,15 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Web Workers и Service Workers в контексте веб-приложений',
-        isChecked: false
       },
       {
         name: 'Когда использовать Web Workers, а когда Service Workers',
-        isChecked: false
       },
       {
         name: 'Примеры использования Web Workers и Service Workers',
-        isChecked: false
       },
       {
         name: 'Инструменты для работы с Web Workers и Service Workers',
-        isChecked: false
       }
     ]
   },
@@ -3274,15 +2866,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Composition API и Options API в Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключевые отличия Composition API от Options API',
-        isChecked: false
       },
       {
         name: 'Какие фундаментальные проблемы решает Composition API',
-        isChecked: false
       }
     ]
   },
@@ -3299,19 +2888,15 @@ export const questions = [
     structure: [
       {
         name: 'Что такое setup() и для чего он нужен в Vue.js',
-        isChecked: false
       },
       {
         name: 'Что такое <script setup> в Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключевые отличия <script setup> от стандартной функции setup()',
-        isChecked: false
       },
       {
         name: 'Какие преимущества дает использование <script setup>',
-        isChecked: false
       }
     ]
   },
@@ -3328,11 +2913,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое ref и reactive в Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключевые отличия ref от reactive',
-        isChecked: false
       }
     ]
   },
@@ -3349,11 +2932,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое toValue и toRaw в Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключевые отличия toValue от toRaw',
-        isChecked: false
       }
     ]
   },
@@ -3370,11 +2951,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое watch и watchEffect в Vue.js',
-        isChecked: false
       },
       {
         name: 'Ключевые отличия watch от watchEffect',
-        isChecked: false
       }
     ]
   },
@@ -3391,11 +2970,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое computed в Vue.js',
-        isChecked: false
       },
       {
         name: 'Когда использовать computed, а когда это антипаттерн',
-        isChecked: false
       }
     ]
   },
@@ -3412,19 +2989,15 @@ export const questions = [
     structure: [
       {
         name: 'Какие способы передачи данных между компонентами во Vue.js существуют',
-        isChecked: false
       },
       {
         name: 'Когда использовать props / emit',
-        isChecked: false
       },
       {
         name: 'Когда использовать provide / inject, а когда это антипаттерн',
-        isChecked: false
       },
       {
         name: 'Когда использовать глобальное состояние (например, Pinia), а когда лучше обойтись без него',
-        isChecked: false
       }
     ]
   },
@@ -3441,11 +3014,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое слоты в Vue.js',
-        isChecked: false
       },
       {
         name: 'Разница между обычными слотами, слотами с именами и динамическими слотами',
-        isChecked: false
       }
     ]
   },
@@ -3462,11 +3033,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Teleport в Vue.js',
-        isChecked: false
       },
       {
         name: 'Когда использовать Teleport, а когда это антипаттерн',
-        isChecked: false
       }
     ]
   },
@@ -3483,15 +3052,12 @@ export const questions = [
     structure: [
       {
         name: 'Как работает реактивность в Vue 3',
-        isChecked: false
       },
       {
         name: 'В чем разница под капотом между реактивностью в Vue 2 и Vue 3',
-        isChecked: false
       },
       {
         name: 'За счет чего рендеринг во Vue 3 стал значительно быстрее? Оптимизации компилятора (Patch Flags, Static Hoisting)',
-        isChecked: false
       }
     ]
   },
@@ -3508,11 +3074,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Фрагменты (Fragments) во Vue 3',
-        isChecked: false
       },
       {
         name: 'Как Фрагменты влияют на структуру шаблонов',
-        isChecked: false
       }
     ]
   },
@@ -3529,11 +3093,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое кастомные директивы (Custom Directives) во Vue 3',
-        isChecked: false
       },
       {
         name: 'Как кастомные директивы влияют на структуру шаблонов',
-        isChecked: false
       }
     ]
   },
@@ -3550,11 +3112,9 @@ export const questions = [
     structure: [
       {
         name: 'Почему экосистема перешла на Pinia',
-        isChecked: false
       },
       {
         name: 'В чем преимущества Pinia по сравнению с Vuex и другими',
-        isChecked: false
       }
     ]
   },
@@ -3571,11 +3131,9 @@ export const questions = [
     structure: [
       {
         name: 'Как изменились хуки жизненного цикла в Vue 3',
-        isChecked: false
       },
       {
         name: 'Куда пропали created и beforeCreate',
-        isChecked: false
       }
     ]
   },
@@ -3592,19 +3150,15 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Composable в Vue.js',
-        isChecked: false
       },
       {
         name: 'Отличие Composable от обычных методов из сервиса',
-        isChecked: false
       },
       {
         name: 'Какие преимущества дает использование Composable',
-        isChecked: false
       },
       {
         name: 'Ключевые отличия Composable от mixins и HOCs',
-        isChecked: false
       },
     ]
   },
@@ -3621,11 +3175,9 @@ export const questions = [
     structure: [
       {
         name: 'Как работает встроенный компонент <Suspense>',
-        isChecked: false
       },
       {
         name: 'Какие проблемы решает <Suspense>',
-        isChecked: false
       }
     ]
   },
@@ -3642,11 +3194,9 @@ export const questions = [
     structure: [
       {
         name: 'Когда и зачем следует использовать shallowRef и shallowReactive',
-        isChecked: false
       },
       {
         name: 'В чем преимущества использования shallowRef и shallowReactive',
-        isChecked: false
       }
     ]
   },
@@ -3663,11 +3213,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое defineModel и как он упрощает двустороннюю привязку данных',
-        isChecked: false
       },
       {
         name: 'В чем преимущества использования defineModel',
-        isChecked: false
       }
     ]
   },
@@ -3685,11 +3233,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое toRef и toRefs',
-        isChecked: false
       },
       {
         name: 'В чем преимущества использования toRef и toRefs',
-        isChecked: false
       }
     ]
   },
@@ -3706,7 +3252,6 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Vue Router',
-        isChecked: false
       }
     ]
   },
@@ -3725,7 +3270,6 @@ export const questions = [
     structure: [
       {
         name: 'HTTP/HTTPS: методы, заголовки, кеширование и безопасность',
-        isChecked: false
       }
     ]
   },
@@ -3743,7 +3287,6 @@ export const questions = [
     structure: [
       {
         name: 'Same-Origin Policy и CORS',
-        isChecked: false
       }
     ]
   },
@@ -3759,11 +3302,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое cookies и для чего они нужны?',
-        isChecked: false
       },
       {
         name: 'Какие атрибуты cookies помогают обеспечить безопасность (Secure, HttpOnly, SameSite)',
-        isChecked: false
       }
     ]
   },
@@ -3781,11 +3322,9 @@ export const questions = [
     structure: [
       {
         name: 'Как браузеры обеспечивают безопасность cookies при обмене данными между разными источниками?',
-        isChecked: false
       },
       {
         name: 'Какие атрибуты cookies помогают обеспечить безопасность (Secure, HttpOnly, SameSite)',
-        isChecked: false
       }
     ]
   },
@@ -3802,11 +3341,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое XSS-атаки и как они работают',
-        isChecked: false
       },
       {
         name: 'Как защититься от XSS-атак',
-        isChecked: false
       }
     ]
   },
@@ -3823,11 +3360,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое CSRF-атаки и как они работают',
-        isChecked: false
       },
       {
         name: 'Как защититься от CSRF-атак',
-        isChecked: false
       }
     ]
   },
@@ -3843,7 +3378,6 @@ export const questions = [
     structure: [
       {
         name: 'Что такое SQL-инъекции и как защититься от них?',
-        isChecked: false
       }
     ]
   },
@@ -3860,7 +3394,6 @@ export const questions = [
     structure: [
       {
         name: 'Что такое SSL/TLS и как они обеспечивают безопасность данных при передаче по сети?',
-        isChecked: false
       }
     ]
   },
@@ -3877,7 +3410,6 @@ export const questions = [
     structure: [
       {
         name: 'Что такое OAuth 2.0',
-        isChecked: false
       }
     ]
   },
@@ -3894,7 +3426,6 @@ export const questions = [
     structure: [
       {
         name: 'Что такое JWT и как он используется для аутентификации и передачи информации между клиентом и сервером?',
-        isChecked: false
       }
     ]
   },
@@ -3911,15 +3442,12 @@ export const questions = [
     structure: [
       {
         name: 'DOM — это Web API, а не часть JavaScript',
-        isChecked: false
       },
       {
         name: 'DOM — это сложная иерархическая структура данных',
-        isChecked: false
       },
       {
         name: 'Reflow и Repaint',
-        isChecked: false
       }
     ]
   },
@@ -3936,15 +3464,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое типы языка Ecmascript?',
-        isChecked: false
       },
       {
         name: 'Что такое типы спецификации Ecmascript?',
-        isChecked: false
       },
       {
         name: 'В чем разница между типами языка и типами спецификации Ecmascript?',
-        isChecked: false
       }
     ]
   },
@@ -3961,15 +3486,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое IntersectionObserver API и для чего он нужен?',
-        isChecked: false
       },
       {
         name: 'Как использовать IntersectionObserver API для оптимизации производительности веб-приложений?',
-        isChecked: false
       },
       {
         name: 'На смену каким устаревшим техникам пришел IntersectionObserver API?',
-        isChecked: false
       }
     ]
   },
@@ -3986,15 +3508,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое MutationObserver API и для чего он нужен?',
-        isChecked: false
       },
       {
         name: 'Как использовать MutationObserver API для отслеживания изменений в DOM?',
-        isChecked: false
       },
       {
         name: 'На смену каким устаревшим техникам пришел MutationObserver API?',
-        isChecked: false
       }
     ]
   },
@@ -4011,15 +3530,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое ResizeObserver API и для чего он нужен?',
-        isChecked: false
       },
       {
         name: 'Как использовать ResizeObserver API для отслеживания изменений размера элементов в DOM?',
-        isChecked: false
       },
       {
         name: 'На смену каким устаревшим техникам пришел ResizeObserver API?',
-        isChecked: false
       }
     ]
   },
@@ -4036,7 +3552,6 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Performance API и для чего он нужен?',
-        isChecked: false
       },
     ]
   },
@@ -4053,15 +3568,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Web Animations API и для чего он нужен?',
-        isChecked: false
       },
       {
         name: 'Как использовать Web Animations API для создания анимаций в веб-приложениях?',
-        isChecked: false
       },
       {
         name: 'На смену каким устаревшим техникам пришел Web Animations API?',
-        isChecked: false
       }
     ]
   },
@@ -4078,15 +3590,12 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Web Speech API и для чего он нужен?',
-        isChecked: false
       },
       {
         name: 'Как использовать Web Speech API для распознавания речи и синтеза речи в веб-приложениях?',
-        isChecked: false
       },
       {
         name: 'Какие есть аналогичные API для работы с голосом',
-        isChecked: false
       }
     ]
   },
@@ -4103,11 +3612,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое Web Bluetooth API и для чего он нужен?',
-        isChecked: false
       },
       {
         name: 'Как использовать Web Bluetooth API для взаимодействия с Bluetooth-устройствами в веб-приложениях?',
-        isChecked: false
       }
     ]
   },
@@ -4124,11 +3631,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое requestAnimationFrame и для чего он нужен?',
-        isChecked: false
       },
       {
         name: 'Как использовать requestAnimationFrame для оптимизации анимаций в веб-приложениях?',
-        isChecked: false
       }
     ]
   },
@@ -4145,11 +3650,9 @@ export const questions = [
     structure: [
       {
         name: 'Что такое requestIdleCallback и для чего он нужен?',
-        isChecked: false
       },
       {
         name: 'Как использовать requestIdleCallback для оптимизации выполнения задач в веб-приложениях?',
-        isChecked: false
       }
     ]
   },
@@ -4166,7 +3669,6 @@ export const questions = [
     structure: [
       {
         name: 'Что такое queueMicrotask и для чего он нужен?',
-        isChecked: false
       },
     ]
   }

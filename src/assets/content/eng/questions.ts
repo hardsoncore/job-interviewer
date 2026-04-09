@@ -14,31 +14,24 @@ export const questions = [
     structure: [
       {
         name: 'Critical Rendering Path',
-        isChecked: false
       },
       {
         name: 'How the browser builds the DOM, CSSOM, and Render Tree',
-        isChecked: false
       },
       {
         name: 'How the browser executes JavaScript and how it affects rendering',
-        isChecked: false
       },
       {
         name: 'What is Layout / Reflow',
-        isChecked: false
       },
       {
         name: 'What is Repaint',
-        isChecked: false
       },
       {
         name: 'Composite',
-        isChecked: false
       },
       {
         name: 'Events DOMContentLoaded and Load - what is the difference?',
-        isChecked: false
       }
     ]
   },
@@ -55,31 +48,24 @@ export const questions = [
     structure: [
       {
         name: 'Critical Rendering Path (CRP)',
-        isChecked: false
       },
       {
         name: 'Optimizing DOM (HTML)',
-        isChecked: false
       },
       {
         name: 'Optimizing CSSOM (CSS)',
-        isChecked: false
       },
       {
         name: 'Optimizing JavaScript',
-        isChecked: false
       },
       {
         name: 'Optimizing media and fonts (Resources)',
-        isChecked: false
       },
       {
         name: 'Network optimizations and content delivery',
-        isChecked: false
       },
       {
         name: 'Profiling and metrics',
-        isChecked: false
       }
     ]
   },
@@ -95,23 +81,18 @@ export const questions = [
     structure: [
       {
         name: 'What is this DOCTYPE tag',
-        isChecked: false
       },
       {
         name: 'Why is DOCTYPE needed',
-        isChecked: false
       },
       {
         name: 'Explain that there are different types of DOCTYPE',
-        isChecked: false
       },
       {
         name: 'Is it possible to do without DOCTYPE?',
-        isChecked: false
       },
       {
         name: 'Nowadays, it is almost always recommended to use DOCTYPE HTML5',
-        isChecked: false
       }
     ]
   },
@@ -127,15 +108,12 @@ export const questions = [
     structure: [
       {
         name: 'What is semantic markup and why is it needed',
-        isChecked: false
       },
       {
         name: 'Main semantic HTML tags',
-        isChecked: false
       },
       {
         name: 'How to markup a page from a semantic perspective',
-        isChecked: false
       }
     ]
   },
@@ -152,23 +130,18 @@ export const questions = [
     structure: [
       {
         name: 'Including CSS through an external stylesheet using the link tag',
-        isChecked: false
       },
       {
         name: 'Adding CSS using the style tag',
-        isChecked: false
       },
       {
         name: 'Importing CSS using the @import rule',
-        isChecked: false
       },
       {
         name: 'Inline CSS styles',
-        isChecked: false
       },
       {
         name: 'CSS styles through JavaScript',
-        isChecked: false
       }
     ]
   },
@@ -185,31 +158,24 @@ export const questions = [
     structure: [
       {
         name: 'CSS Tokenization: how the browser breaks code into tokens',
-        isChecked: false
       },
       {
         name: 'CSS Parsing Architecture in the Browser',
-        isChecked: false
       },
       {
         name: 'Right-to-Left Parsing and Its Advantages',
-        isChecked: false
       },
       {
         name: 'How CSS parsing affects page rendering',
-        isChecked: false
       },
       {
         name: 'CSS errors and how the browser handles them',
-        isChecked: false
       },
       {
         name: 'CSS parsing optimizations in modern browsers',
-        isChecked: false
       },
       {
         name: 'Render blocking and the stages of Layout, Paint, Composite',
-        isChecked: false
       }
     ]
   },
@@ -227,31 +193,24 @@ export const questions = [
     structure: [
       {
         name: 'Cascade in CSS: how the browser determines which styles to apply',
-        isChecked: false
       },
       {
         name: '!important',
-        isChecked: false
       },
       {
         name: 'Inline styles',
-        isChecked: false
       },
       {
         name: 'ID',
-        isChecked: false
       },
       {
         name: 'Classes, Attributes, Pseudo-classes',
-        isChecked: false
       },
       {
         name: 'Tags, Pseudo-elements',
-        isChecked: false
       },
       {
         name: 'Zero weight',
-        isChecked: false
       }
     ]
   },
@@ -267,15 +226,12 @@ export const questions = [
     structure: [
       {
         name: 'Drawbacks of high specificity',
-        isChecked: false
       },
       {
         name: '!important - when to use it and what problems it can cause',
-        isChecked: false
       },
       {
         name: 'Best practices for managing specificity and style priority',
-        isChecked: false
       }
     ]
   },
@@ -291,15 +247,12 @@ export const questions = [
     structure: [
       {
         name: '>',
-        isChecked: false
       },
       {
         name: '+',
-        isChecked: false
       },
       {
         name: '~',
-        isChecked: false
       }
     ]
   },
@@ -316,15 +269,12 @@ export const questions = [
     structure: [
       {
         name: 'State pseudo-classes (Interactive)',
-        isChecked: false
       },
       {
         name: 'Structural pseudo-classes',
-        isChecked: false
       },
       {
         name: 'Advanced selectors (Modern CSS)',
-        isChecked: false
       }
     ]
   },
@@ -341,27 +291,21 @@ export const questions = [
     structure: [
       {
         name: ':disabled',
-        isChecked: false
       },
       {
         name: ':required',
-        isChecked: false
       },
       {
         name: ':invalid',
-        isChecked: false
       },
       {
         name: ':valid',
-        isChecked: false
       },
       {
         name: ':checked',
-        isChecked: false
       },
       {
         name: ':placeholder-shown',
-        isChecked: false
       },
     ]
   },
@@ -378,23 +322,18 @@ export const questions = [
     structure: [
       {
         name: 'What are pseudo-elements?',
-        isChecked: false
       },
       {
         name: 'Generated content (::before and ::after)',
-        isChecked: false
       },
       {
         name: 'Text (::first-letter and ::first-line)',
-        isChecked: false
       },
       {
         name: 'Interface (::placeholder, ::selection, ::marker)',
-        isChecked: false
       },
       {
         name: 'Advanced (::backdrop, ::file-selector-button)',
-        isChecked: false
       }
     ]
   },
@@ -411,23 +350,18 @@ export const questions = [
     structure: [
       {
         name: 'static',
-        isChecked: false
       },
       {
         name: 'relative',
-        isChecked: false
       },
       {
         name: 'absolute',
-        isChecked: false
       },
       {
         name: 'fixed',
-        isChecked: false
       },
       {
         name: 'sticky',
-        isChecked: false
       }
     ]
   },
@@ -444,11 +378,9 @@ export const questions = [
     structure: [
       {
         name: 'Block elements',
-        isChecked: false
       },
       {
         name: 'Inline elements',
-        isChecked: false
       },
     ]
   },
@@ -465,11 +397,9 @@ export const questions = [
     structure: [
       {
         name: 'Horizontal centering',
-        isChecked: false
       },
       {
         name: 'Vertical centering',
-        isChecked: false
       }
     ]
   },
@@ -486,11 +416,9 @@ export const questions = [
     structure: [
       {
         name: 'Box Model',
-        isChecked: false
       },
       {
         name: 'box-sizing: content-box and box-sizing: border-box',
-        isChecked: false
       }
     ]
   },
@@ -507,15 +435,12 @@ export const questions = [
     structure: [
       {
         name: 'What is Flexbox?',
-        isChecked: false
       },
       {
         name: 'What is Grid?',
-        isChecked: false
       },
       {
         name: 'Main differences between Flexbox and Grid',
-        isChecked: false
       },
     ]
   },
@@ -532,15 +457,12 @@ export const questions = [
     structure: [
       {
         name: 'What are CSS animations?',
-        isChecked: false
       },
       {
         name: 'Main properties for creating animations',
-        isChecked: false
       },
       {
         name: 'Advantages and disadvantages of CSS animations',
-        isChecked: false
       }
     ]
   },
@@ -557,19 +479,15 @@ export const questions = [
     structure: [
       {
         name: 'Relative units (em, rem, %, vw, vh) and their advantages',
-        isChecked: false
       },
       {
         name: 'How relative units help in responsive design',
-        isChecked: false
       },
       {
         name: 'Impact of relative units on accessibility (a11y) and usability',
-        isChecked: false
       },
       {
         name: 'Architecture of adaptive units: calculation context, inheritance, and scalability',
-        isChecked: false
       }
     ]
   },
@@ -586,15 +504,12 @@ export const questions = [
     structure: [
       {
         name: 'What is a browser engine and its role in web page rendering',
-        isChecked: false
       },
       {
         name: 'Modern browser engines: V8 (Chrome, Edge), SpiderMonkey (Firefox), JavaScriptCore (Safari)',
-        isChecked: false
       },
       {
         name: 'Main differences between engines and their optimizations',
-        isChecked: false
       }
     ]
   },
@@ -611,23 +526,18 @@ export const questions = [
     structure: [
       {
         name: 'How the JS engine works',
-        isChecked: false
       },
       {
         name: 'Parsing JavaScript',
-        isChecked: false
       },
       {
         name: 'Interpretation (Ignition)',
-        isChecked: false
       },
       {
         name: 'JIT compilation and Optimization (Turbofan)',
-        isChecked: false
       },
       {
         name: 'Deoptimization (Bailout)',
-        isChecked: false
       }
     ]
   },
@@ -644,7 +554,6 @@ export const questions = [
     structure: [
       {
         name: '3 ways to include JS on a page',
-        isChecked: false
       }
     ]
   },
@@ -661,15 +570,12 @@ export const questions = [
     structure: [
       {
         name: 'Async',
-        isChecked: false
       },
       {
         name: 'Defer',
-        isChecked: false
       },
       {
         name: 'No attributes',
-        isChecked: false
       }
     ]
   },
@@ -686,11 +592,9 @@ export const questions = [
     structure: [
       {
         name: 'What is SVG?',
-        isChecked: false
       },
       {
         name: 'Key features of SVG',
-        isChecked: false
       }
     ]
   },
@@ -707,19 +611,15 @@ export const questions = [
     structure: [
       {
         name: 'Canvas - what is it?',
-        isChecked: false
       },
       {
         name: 'Why is Canvas needed?',
-        isChecked: false
       },
       {
         name: 'Main areas of application',
-        isChecked: false
       },
       {
         name: 'Advantages of Canvas',
-        isChecked: false
       }
     ]
   },
@@ -736,23 +636,18 @@ export const questions = [
     structure: [
       {
         name: 'CSS Custom Properties - what is it?',
-        isChecked: false
       },
       {
         name: 'Browser support and when they appeared',
-        isChecked: false
       },
       {
         name: 'Main differences from SASS/LESS variables',
-        isChecked: false
       },
       {
         name: 'Inheritance and scope of CSS Custom Properties',
-        isChecked: false
       },
       {
         name: 'Dynamic theming through CSS Custom Properties',
-        isChecked: false
       }
     ]
   },
@@ -770,11 +665,9 @@ export const questions = [
     structure: [
       {
         name: 'Critical Rendering Path (CRP) and its impact on animation performance',
-        isChecked: false
       },
       {
         name: 'Which CSS properties trigger Layout, Paint, and Composite',
-        isChecked: false
       },
     ]
   },
@@ -790,11 +683,9 @@ export const questions = [
     structure: [
       {
         name: 'Pre- and post- CSS processors - what is it?',
-        isChecked: false
       },
       {
         name: 'Relevance in 2025-2026',
-        isChecked: false
       }
     ]
   },
@@ -811,15 +702,12 @@ export const questions = [
     structure: [
       {
         name: 'BEM Methodology - what is it?',
-        isChecked: false
       },
       {
         name: 'Main positions of BEM methodology',
-        isChecked: false
       },
       {
         name: 'What problems does BEM solve?',
-        isChecked: false
       }
     ]
   },
@@ -835,19 +723,15 @@ export const questions = [
     structure: [
       {
         name: 'HTML template assets/content/engines/preprocessors - what is it?',
-        isChecked: false
       },
       {
         name: 'Examples of popular tools',
-        isChecked: false
       },
       {
         name: 'What is the difference between a template assets/content/engine and a preprocessor?',
-        isChecked: false
       },
       {
         name: 'Are they relevant today?',
-        isChecked: false
       }
     ]
   },
@@ -865,15 +749,12 @@ export const questions = [
     structure: [
       {
         name: 'What types of nodes exist in the DOM?',
-        isChecked: false
       },
       {
         name: 'How do they differ?',
-        isChecked: false
       },
       {
         name: 'What are the different types of nodes used for?',
-        isChecked: false
       }
     ]
   },
@@ -889,15 +770,12 @@ export const questions = [
     structure: [
       {
         name: '7 primitive data types',
-        isChecked: false
       },
       {
         name: '1 non-primitive data type',
-        isChecked: false
       },
       {
         name: 'typeof and its features',
-        isChecked: false
       }
     ]
   },
@@ -913,7 +791,6 @@ export const questions = [
     structure: [
       {
         name: 'Three main types of conversion',
-        isChecked: false
       }
     ]
   },
@@ -931,19 +808,15 @@ export const questions = [
     structure: [
       {
         name: 'Let, const and var - differences',
-        isChecked: false
       },
       {
         name: 'Hoisting and its features for let, const and var',
-        isChecked: false
       },
       {
         name: 'How Hoisting works with var, let and const',
-        isChecked: false
       },
       {
         name: 'Temporal Dead Zone (TDZ) for let and const',
-        isChecked: false
       }
     ]
   },
@@ -960,11 +833,9 @@ export const questions = [
     structure: [
       {
         name: 'Function declaration',
-        isChecked: false
       },
       {
         name: 'Function expression',
-        isChecked: false
       }
     ]
   },
@@ -981,23 +852,18 @@ export const questions = [
     structure: [
       {
         name: 'Array',
-        isChecked: false
       },
       {
         name: 'Object',
-        isChecked: false
       },
       {
         name: 'Map',
-        isChecked: false
       },
       {
         name: 'Set',
-        isChecked: false
       },
       {
         name: 'WeakMap and WeakSet',
-        isChecked: false
       }
     ]
   },
@@ -1016,63 +882,48 @@ export const questions = [
     structure: [
       {
         name: 'pop/push and shift/unshift, their differences',
-        isChecked: false
       },
       {
         name: 'splice',
-        isChecked: false
       },
       {
         name: 'slice',
-        isChecked: false
       },
       {
         name: 'concat',
-        isChecked: false
       },
       {
         name: 'forEach',
-        isChecked: false
       },
       {
         name: 'indexOf/lastIndexOf and includes, their differences',
-        isChecked: false
       },
       {
         name: 'find and findIndex, their differences',
-        isChecked: false
       },
       {
         name: 'filter',
-        isChecked: false
       },
       {
         name: 'map',
-        isChecked: false
       },
       {
         name: 'sort(fn)',
-        isChecked: false
       },
       {
         name: 'reverse',
-        isChecked: false
       },
       {
         name: 'split и join',
-        isChecked: false
       },
       {
         name: 'reduce',
-        isChecked: false
       },
       {
         name: 'Array.isArray',
-        isChecked: false
       },
       {
         name: '«thisArg»',
-        isChecked: false
       }
     ]
   },
@@ -1090,15 +941,12 @@ export const questions = [
     structure: [
       {
         name: 'Iterators: Mechanics under the hood',
-        isChecked: false
       },
       {
         name: 'Generators',
-        isChecked: false
       },
       {
         name: 'Why is this useful in practice?',
-        isChecked: false
       }
     ]
   },
@@ -1114,15 +962,12 @@ export const questions = [
     structure: [
       {
         name: 'Lexical Environment',
-        isChecked: false
       },
       {
         name: 'Types of scopes: global, function, block',
-        isChecked: false
       },
       {
         name: 'Variable lifecycle',
-        isChecked: false
       }
     ]
   },
@@ -1138,15 +983,12 @@ export const questions = [
     structure: [
       {
         name: 'Closure - what it is and why it is needed',
-        isChecked: false
       },
       {
         name: '[[Environment]]',
-        isChecked: false
       },
       {
         name: 'Using closures to create private variables',
-        isChecked: false
       }
     ]
   },
@@ -1162,7 +1004,6 @@ export const questions = [
     structure: [
       {
         name: 'Garbage Collector',
-        isChecked: false
       }
     ]
   },
@@ -1178,11 +1019,9 @@ export const questions = [
     structure: [
       {
         name: 'Recursion - what it is and why it is needed',
-        isChecked: false
       },
       {
         name: 'Pros and cons of recursion',
-        isChecked: false
       }
     ]
   },
@@ -1199,15 +1038,12 @@ export const questions = [
     structure: [
       {
         name: 'Global context and regular function call',
-        isChecked: false
       },
       {
         name: 'Calling as an object method',
-        isChecked: false
       },
       {
         name: 'Arrow functions',
-        isChecked: false
       }
     ]
   },
@@ -1224,15 +1060,12 @@ export const questions = [
     structure: [
       {
         name: 'Implicit Binding',
-        isChecked: false
       },
       {
         name: 'Explicit Binding',
-        isChecked: false
       },
       {
         name: 'Methods call, apply and bind and their differences',
-        isChecked: false
       }
     ]
   },
@@ -1250,15 +1083,12 @@ export const questions = [
     structure: [
       {
         name: 'Currying - what it is and why it is needed',
-        isChecked: false
       },
       {
         name: 'Implementation of currying',
-        isChecked: false
       },
       {
         name: 'Why is this useful in practice?',
-        isChecked: false
       }
     ]
   },
@@ -1276,11 +1106,9 @@ export const questions = [
     structure: [
       {
         name: 'Partial Application (based on currying)',
-        isChecked: false
       },
       {
         name: 'Implementation of partial application',
-        isChecked: false
       }
     ]
   },
@@ -1297,19 +1125,15 @@ export const questions = [
     structure: [
       {
         name: 'Arguments object',
-        isChecked: false
       },
       {
         name: 'Why is it called a pseudo-array?',
-        isChecked: false
       },
       {
         name: 'Arguments VS Arrow Functions',
-        isChecked: false
       },
       {
         name: 'Modern alternatives',
-        isChecked: false
       }
     ]
   },
@@ -1325,15 +1149,12 @@ export const questions = [
     structure: [
       {
         name: '"use strict" directive - what it is and why it is needed',
-        isChecked: false
       },
       {
         name: 'Main changes when strict mode is enabled',
-        isChecked: false
       },
       {
         name: 'How to enable strict mode?',
-        isChecked: false
       }
     ]
   },
@@ -1349,11 +1170,9 @@ export const questions = [
     structure: [
       {
         name: 'Object conversion: toString and valueOf',
-        isChecked: false
       },
       {
         name: 'How the assets/content/engine decides which method to call first',
-        isChecked: false
       }
     ]
   },
@@ -1369,11 +1188,9 @@ export const questions = [
     structure: [
       {
         name: 'Why do we need the Event Loop?',
-        isChecked: false
       },
       {
         name: 'Main entities: Call Stack, Heap, Web APIs, Microtasks and Macrotasks',
-        isChecked: false
       }
     ]
   },
@@ -1389,11 +1206,9 @@ export const questions = [
     structure: [
       {
         name: 'Inheritance in JavaScript',
-        isChecked: false
       },
       {
         name: 'Prototype inheritance and prototype chain',
-        isChecked: false
       }
     ]
   },
@@ -1409,7 +1224,6 @@ export const questions = [
     structure: [
       {
         name: '__proto__ - what is it?',
-        isChecked: false
       }
     ]
   },
@@ -1425,7 +1239,6 @@ export const questions = [
     structure: [
       {
         name: 'F.prototype',
-        isChecked: false
       }
     ]
   },
@@ -1443,23 +1256,18 @@ export const questions = [
     structure: [
       {
         name: 'What is a Promise, in which version of ES did it appear',
-        isChecked: false
       },
       {
         name: 'What problem did Promises solve?',
-        isChecked: false
       },
       {
         name: 'Immutability of the result after the Promise is settled',
-        isChecked: false
       },
       {
         name: 'then, catch, finally',
-        isChecked: false
       },
       {
         name: 'Evolution of Promises and async/await',
-        isChecked: false
       }
     ]
   },
@@ -1477,15 +1285,12 @@ export const questions = [
     structure: [
       {
         name: 'Promise chaining',
-        isChecked: false
       },
       {
         name: 'We can continue the chain after an error',
-        isChecked: false
       },
       {
         name: 'We can also build such chains with finally',
-        isChecked: false
       }
     ]
   },
@@ -1500,7 +1305,6 @@ export const questions = [
     structure: [
       {
         name: 'Try - Catch - what is it for?',
-        isChecked: false
       }
     ]
   },
@@ -1516,7 +1320,6 @@ export const questions = [
     structure: [
       {
         name: '11 main features of ES6',
-        isChecked: false
       }
     ]
   },
@@ -1533,7 +1336,6 @@ export const questions = [
     structure: [
       {
         name: 'HTML tags',
-        isChecked: false
       }
     ]
   },
@@ -1551,19 +1353,15 @@ export const questions = [
     structure: [
       {
         name: 'Evolution of asynchronous JS in ES8',
-        isChecked: false
       },
       {
         name: 'Why do we need async/await? What problem does it solve?',
-        isChecked: false
       },
       {
         name: 'try...catch...finally',
-        isChecked: false
       },
       {
         name: 'node.js and support for async/await',
-        isChecked: false
       }
     ]
   },
@@ -1581,23 +1379,18 @@ export const questions = [
     structure: [
       {
         name: 'What problem do they solve?',
-        isChecked: false
       },
       {
         name: 'Promise.all() — «All or nothing»',
-        isChecked: false
       },
       {
         name: 'Promise.allSettled() — «Wait for all, no matter what»',
-        isChecked: false
       },
       {
         name: 'Promise.race() — «Who is faster»',
-        isChecked: false
       },
       {
         name: 'Promise.any() — «At least one successful»',
-        isChecked: false
       }
     ]
   },
@@ -1613,7 +1406,6 @@ export const questions = [
     structure: [
       {
         name: 'HTML tags',
-        isChecked: false
       }
     ]
   },
@@ -1630,11 +1422,9 @@ export const questions = [
     structure: [
       {
         name: 'LocalStorage',
-        isChecked: false
       },
       {
         name: 'SessionStorage',
-        isChecked: false
       },
     ]
   },
@@ -1651,19 +1441,15 @@ export const questions = [
     structure: [
       {
         name: 'Why do we need code style and tools to maintain it?',
-        isChecked: false
       },
       {
         name: 'Prettier',
-        isChecked: false
       },
       {
         name: 'ESLint, TSLint and CodeLint',
-        isChecked: false
       },
       {
         name: '.editorconfig',
-        isChecked: false
       }
     ]
   },
@@ -1679,7 +1465,6 @@ export const questions = [
     structure: [
       {
         name: 'HTML tags',
-        isChecked: false
       }
     ]
   },
@@ -1695,11 +1480,9 @@ export const questions = [
     structure: [
       {
         name: 'Reactive programming - what is it?',
-        isChecked: false
       },
       {
         name: 'RxJs - what is it for?',
-        isChecked: false
       },
     ]
   },
@@ -1717,7 +1500,6 @@ export const questions = [
     structure: [
       {
         name: 'Observable - what is it?',
-        isChecked: false
       }
     ]
   },
@@ -1735,7 +1517,6 @@ export const questions = [
     structure: [
       {
         name: 'Subject - what is it?',
-        isChecked: false
       }
     ]
   },
@@ -1753,19 +1534,15 @@ export const questions = [
     structure: [
       {
         name: 'Subject specifics',
-        isChecked: false
       },
       {
         name: 'Behavior differences and types of Subject',
-        isChecked: false
       },
       {
         name: 'Observable specifics',
-        isChecked: false
       },
       {
         name: 'Observable - only for data retrieval, Subject - also for propagation',
-        isChecked: false
       }
     ]
   },
@@ -1782,11 +1559,9 @@ export const questions = [
     structure: [
       {
         name: 'Zone.js - what is it?',
-        isChecked: false
       },
       {
         name: 'How Zone.js works under the hood',
-        isChecked: false
       }
     ]
   },
@@ -1802,23 +1577,18 @@ export const questions = [
     structure: [
       {
         name: 'Partial&lt;Type>',
-        isChecked: false
       },
       {
         name: 'Required&lt;Type>',
-        isChecked: false
       },
       {
         name: 'Pick&lt;Type, Keys>',
-        isChecked: false
       },
       {
         name: 'Omit&lt;Type, Keys>',
-        isChecked: false
       },
       {
         name: 'Record&lt;Keys, Type>',
-        isChecked: false
       }
     ]
   },
@@ -1835,11 +1605,9 @@ export const questions = [
     structure: [
       {
         name: 'Type Guards - typeof, in, instanceof, Custom Type Guards',
-        isChecked: false
       },
       {
         name: 'Type Assertions - as, <Type>, !, as const',
-        isChecked: false
       }
     ]
   },
@@ -1855,31 +1623,24 @@ export const questions = [
     structure: [
       {
         name: 'Enums ',
-        isChecked: false
       },
       {
         name: 'Advantages of Enums',
-        isChecked: false
       },
       {
         name: 'Numeric Enums',
-        isChecked: false
       },
       {
         name: 'String Enums',
-        isChecked: false
       },
       {
         name: 'Heterogeneous Enums',
-        isChecked: false
       },
       {
         name: 'Const Enums',
-        isChecked: false
       },
       {
         name: 'Under the hood: how JavaScript handles Enums',
-        isChecked: false
       }
     ]
   },
@@ -1895,15 +1656,12 @@ export const questions = [
     structure: [
       {
         name: 'Class (Implementation)',
-        isChecked: false
       },
       {
         name: 'Interface (Contract)',
-        isChecked: false
       },
       {
         name: 'Type (Alias)',
-        isChecked: false
       }
     ]
   },
@@ -1919,31 +1677,24 @@ export const questions = [
     structure: [
       {
         name: 'Generics - what problem do they solve?',
-        isChecked: false
       },
       {
         name: 'Generics syntax',
-        isChecked: false
       },
       {
         name: 'Usage of Generics in functions, interfaces, and classes',
-        isChecked: false
       },
       {
         name: 'Constraints in Generics',
-        isChecked: false
       },
       {
         name: 'Utility Types based on Generics',
-        isChecked: false
       },
       {
         name: 'Multiple type parameters',
-        isChecked: false
       },
       {
         name: 'How Generics work under the hood in JavaScript',
-        isChecked: false
       }
     ]
   },
@@ -1959,15 +1710,12 @@ export const questions = [
     structure: [
       {
         name: 'any',
-        isChecked: false
       },
       {
         name: 'unknown',
-        isChecked: false
       },
       {
         name: 'never',
-        isChecked: false
       }
     ]
   },
@@ -1984,15 +1732,12 @@ export const questions = [
     structure: [
       {
         name: 'asObservable() - what it is and why it is needed?',
-        isChecked: false
       },
       {
         name: 'Correct way to use asObservable()',
-        isChecked: false
       },
       {
         name: 'Anti-pattern of using asObservable()',
-        isChecked: false
       }
     ]
   },
@@ -2008,19 +1753,15 @@ export const questions = [
     structure: [
       {
         name: 'Abstraction',
-        isChecked: false
       },
       {
         name: 'Encapsulation',
-        isChecked: false
       },
       {
         name: 'Inheritance',
-        isChecked: false
       },
       {
         name: 'Polymorphism',
-        isChecked: false
       }
     ]
   },
@@ -2036,7 +1777,6 @@ export const questions = [
     structure: [
       {
         name: 'Design Patterns - what they are and why they are needed?',
-        isChecked: false
       }
     ]
   },
@@ -2053,7 +1793,6 @@ export const questions = [
     structure: [
       {
         name: 'Decorator',
-        isChecked: false
       }
     ]
   },
@@ -2070,27 +1809,21 @@ export const questions = [
     structure: [
       {
         name: 'SOLID Principles - what they are and why they are needed',
-        isChecked: false
       },
       {
         name: 'Single Responsibility Principle',
-        isChecked: false
       },
       {
         name: 'Open-Closed Principle',
-        isChecked: false
       },
       {
         name: 'Liskov Substitution Principle',
-        isChecked: false
       },
       {
         name: 'Interface Segregation Principle',
-        isChecked: false
       },
       {
         name: 'Dependency Inversion Principle',
-        isChecked: false
       }
     ]
   },
@@ -2106,7 +1839,6 @@ export const questions = [
     structure: [
       {
         name: 'HTML tags',
-        isChecked: false
       }
     ]
   },
@@ -2123,7 +1855,6 @@ export const questions = [
     structure: [
       {
         name: 'HTML tags',
-        isChecked: false
       }
     ]
   },
@@ -2140,31 +1871,24 @@ export const questions = [
     structure: [
       {
         name: 'SELECT, FROM',
-        isChecked: false
       },
       {
         name: 'SELECT DISTINCT',
-        isChecked: false
       },
       {
         name: 'WHERE',
-        isChecked: false
       },
       {
         name: 'GROUP BY',
-        isChecked: false
       },
       {
         name: 'HAVING',
-        isChecked: false
       },
       {
         name: 'ORDER BY',
-        isChecked: false
       },
       {
         name: 'JOIN and its variants',
-        isChecked: false
       }
     ]
   },
@@ -2180,11 +1904,9 @@ export const questions = [
     structure: [
       {
         name: 'JSON - what it is and why it is needed',
-        isChecked: false
       },
       {
         name: 'toJSON method',
-        isChecked: false
       }
     ]
   },
@@ -2201,11 +1923,9 @@ export const questions = [
     structure: [
       {
         name: 'Authentication',
-        isChecked: false
       },
       {
         name: 'Authorization',
-        isChecked: false
       }
     ]
   },
@@ -2222,23 +1942,18 @@ export const questions = [
     structure: [
       {
         name: 'Bubble Sort',
-        isChecked: false
       },
       {
         name: 'Insertion Sort',
-        isChecked: false
       },
       {
         name: 'Selection Sort',
-        isChecked: false
       },
       {
         name: 'Merge Sort',
-        isChecked: false
       },
       {
         name: 'Quick Sort',
-        isChecked: false
       }
     ]
   },
@@ -2255,15 +1970,12 @@ export const questions = [
     structure: [
       {
         name: 'O(1)',
-        isChecked: false
       },
       {
         name: 'O(n)',
-        isChecked: false
       },
       {
         name: 'O(log n)',
-        isChecked: false
       }
     ]
   },
@@ -2280,19 +1992,15 @@ export const questions = [
     structure: [
       {
         name: 'Trees',
-        isChecked: false
       },
       {
         name: 'Inverted Trees',
-        isChecked: false
       },
       {
         name: 'Binary Trees',
-        isChecked: false
       },
       {
         name: 'Graphs',
-        isChecked: false
       }
     ]
   },
@@ -2308,15 +2016,12 @@ export const questions = [
     structure: [
       {
         name: 'Shadow DOM - what it is',
-        isChecked: false
       },
       {
         name: 'The problem that Shadow DOM solves',
-        isChecked: false
       },
       {
         name: 'Key features of Shadow DOM',
-        isChecked: false
       }
     ]
   },
@@ -2334,15 +2039,12 @@ export const questions = [
     structure: [
       {
         name: 'Virtual DOM - what it is',
-        isChecked: false
       },
       {
         name: 'The problem that Virtual DOM solves',
-        isChecked: false
       },
       {
         name: 'How Virtual DOM works',
-        isChecked: false
       }
     ]
   },
@@ -2359,19 +2061,15 @@ export const questions = [
     structure: [
       {
         name: 'What is RxJS',
-        isChecked: false
       },
       {
         name: 'What is RxJS used for?',
-        isChecked: false
       },
       {
         name: 'Basic entities of RxJS: Observable, Observer, Subscription, Subject',
-        isChecked: false
       },
       {
         name: 'Popular operators',
-        isChecked: false
       }
     ]
   },
@@ -2388,15 +2086,12 @@ export const questions = [
     structure: [
       {
         name: 'State management in Angular. NgRx, what it is',
-        isChecked: false
       },
       {
         name: 'Store, Actions, Reducers, Selectors',
-        isChecked: false
       },
       {
         name: 'Effects (Side effects and asynchronicity)',
-        isChecked: false
       }
     ]
   },
@@ -2413,11 +2108,9 @@ export const questions = [
     structure: [
       {
         name: 'Signals in Angular, what it is',
-        isChecked: false
       },
       {
         name: 'The fundamental difference between Signals and RxJS',
-        isChecked: false
       }
     ]
   },
@@ -2434,15 +2127,12 @@ export const questions = [
     structure: [
       {
         name: 'Computed',
-        isChecked: false
       },
       {
         name: 'Effect',
-        isChecked: false
       },
       {
         name: 'When to use Effect, and when it is an anti-pattern',
-        isChecked: false
       }
     ]
   },
@@ -2459,7 +2149,6 @@ export const questions = [
     structure: [
       {
         name: 'input(), output() and model() - what it is',
-        isChecked: false
       }
     ]
   },
@@ -2476,11 +2165,9 @@ export const questions = [
     structure: [
       {
         name: 'Standalone Concept',
-        isChecked: false
       },
       {
         name: 'Why did they abandon NgModules',
-        isChecked: false
       }
     ]
   },
@@ -2498,19 +2185,15 @@ export const questions = [
     structure: [
       {
         name: 'inject() function',
-        isChecked: false
       },
       {
         name: 'Advantages of inject() compared to Constructor DI',
-        isChecked: false
       },
       {
         name: 'Where you CAN use inject()',
-        isChecked: false
       },
       {
         name: 'Where you CANNOT use inject()',
-        isChecked: false
       }
     ]
   },
@@ -2526,11 +2209,9 @@ export const questions = [
     structure: [
       {
         name: 'New Control Flow',
-        isChecked: false
       },
       {
         name: 'Advantages of the new Control Flow',
-        isChecked: false
       }
     ]
   },
@@ -2546,15 +2227,12 @@ export const questions = [
     structure: [
       {
         name: 'ChangeDetectionStrategy.Default',
-        isChecked: false
       },
       {
         name: 'ChangeDetectionStrategy.OnPush',
-        isChecked: false
       },
       {
         name: 'Zoneless (Modern Angular / Signals)',
-        isChecked: false
       }
     ]
   },
@@ -2570,7 +2248,6 @@ export const questions = [
     structure: [
       {
         name: 'Deferrable Views',
-        isChecked: false
       }
     ]
   },
@@ -2587,7 +2264,6 @@ export const questions = [
     structure: [
       {
         name: 'Functional Guards',
-        isChecked: false
       }
     ]
   },
@@ -2604,7 +2280,6 @@ export const questions = [
     structure: [
       {
         name: 'Functional Interceptors',
-        isChecked: false
       }
     ]
   },
@@ -2621,11 +2296,9 @@ export const questions = [
     structure: [
       {
         name: 'Lifecycle Hooks (Classic)',
-        isChecked: false
       },
       {
         name: 'Modern Approach',
-        isChecked: false
       }
     ]
   },
@@ -2642,23 +2315,18 @@ export const questions = [
     structure: [
       {
         name: 'Object.defineProperty - what it is and what it is for?',
-        isChecked: false
       },
       {
         name: 'General property descriptors: configurable, enumerable',
-        isChecked: false
       },
       {
         name: 'Data descriptors: writable, value',
-        isChecked: false
       },
       {
         name: 'Accessor descriptors: get, set',
-        isChecked: false
       },
       {
         name: 'Usage in Vue and other frameworks - (only Vue 2, in Vue 3 - already Proxy)',
-        isChecked: false
       }
     ]
   },
@@ -2675,19 +2343,15 @@ export const questions = [
     structure: [
       {
         name: 'Reactivity in Vue 2',
-        isChecked: false
       },
       {
         name: 'Reactivity in Vue 3',
-        isChecked: false
       },
       {
         name: 'Reactivity in Angular.js',
-        isChecked: false
       },
       {
         name: 'Reactivity in Angular 2+',
-        isChecked: false
       }
     ]
   },
@@ -2705,19 +2369,15 @@ export const questions = [
     structure: [
       {
         name: 'Abstract Classes - what they are and why they are needed?',
-        isChecked: false
       },
       {
         name: 'When to use abstract classes instead of interfaces',
-        isChecked: false
       },
       {
         name: 'Can abstract classes be used for multiple inheritance?',
-        isChecked: false
       },
       {
         name: 'Can abstract classes be combined with interfaces?',
-        isChecked: false
       }
     ]
   },
@@ -2734,19 +2394,15 @@ export const questions = [
     structure: [
       {
         name: 'Protected (Access Modifier)',
-        isChecked: false
       },
       {
         name: 'Private (Access Modifier)',
-        isChecked: false
       },
       {
         name: 'Public (Access Modifier)',
-        isChecked: false
       },
       {
         name: 'When to use each of these access modifiers',
-        isChecked: false
       }
     ]
   },
@@ -2763,7 +2419,6 @@ export const questions = [
     structure: [
       {
         name: 'Console API - what it is and why it is needed?',
-        isChecked: false
       },
     ]
   },
@@ -2780,7 +2435,6 @@ export const questions = [
     structure: [
       {
         name: 'Pure Functions - what they are and their advantages',
-        isChecked: false
       },
     ]
   },
@@ -2797,7 +2451,6 @@ export const questions = [
     structure: [
       {
         name: 'Higher-Order Functions - what they are and their advantages',
-        isChecked: false
       },
     ]
   },
@@ -2814,19 +2467,15 @@ export const questions = [
     structure: [
       {
         name: 'mergeMap',
-        isChecked: false
       },
       {
         name: 'switchMap',
-        isChecked: false
       },
       {
         name: 'concatMap',
-        isChecked: false
       },
       {
         name: 'exhaustMap',
-        isChecked: false
       }
     ]
   },
@@ -2843,31 +2492,24 @@ export const questions = [
     structure: [
       {
         name: 'combineLatest',
-        isChecked: false
       },
       {
         name: 'forkJoin',
-        isChecked: false
       },
       {
         name: 'withLatestFrom',
-        isChecked: false
       },
       {
         name: 'concat',
-        isChecked: false
       },
       {
         name: 'merge',
-        isChecked: false
       },
       {
         name: 'zip',
-        isChecked: false
       },
       {
         name: 'race',
-        isChecked: false
       }
     ]
   },
@@ -2884,23 +2526,18 @@ export const questions = [
     structure: [
       {
         name: 'of',
-        isChecked: false
       },
       {
         name: 'from',
-        isChecked: false
       },
       {
         name: 'fromEvent',
-        isChecked: false
       },
       {
         name: 'interval',
-        isChecked: false
       },
       {
         name: 'timer',
-        isChecked: false
       }
     ]
   },
@@ -2917,23 +2554,18 @@ export const questions = [
     structure: [
       {
         name: 'filter',
-        isChecked: false
       },
       {
         name: 'take',
-        isChecked: false
       },
       {
         name: 'takeUntil',
-        isChecked: false
       },
       {
         name: 'skip',
-        isChecked: false
       },
       {
         name: 'distinctUntilChanged',
-        isChecked: false
       }
     ]
   },
@@ -2950,24 +2582,19 @@ export const questions = [
     structure: [
       {
         name: 'tap',
-        isChecked: false
 
       },
       {
         name: 'finalize',
-        isChecked: false
       },
       {
         name: 'delay',
-        isChecked: false
       },
       {
         name: 'timeout',
-        isChecked: false
       },
       {
         name: 'retry',
-        isChecked: false
       }
     ]
   },
@@ -2984,19 +2611,15 @@ export const questions = [
     structure: [
       {
         name: 'map',
-        isChecked: false
       },
       {
         name: 'mapTo',
-        isChecked: false
       },
       {
         name: 'pluck',
-        isChecked: false
       },
       {
         name: 'scan',
-        isChecked: false
       }
     ]
   },
@@ -3012,15 +2635,12 @@ export const questions = [
     structure: [
       {
         name: 'Element Injector (or NodeInjector) - what is it',
-        isChecked: false
       },
       {
         name: 'How Element Injector works in Angular',
-        isChecked: false
       },
       {
         name: 'Why Element Injector is needed and what problems it solves',
-        isChecked: false
       }
     ]
   },
@@ -3036,11 +2656,9 @@ export const questions = [
     structure: [
       {
         name: 'DI Hierarchy in Angular',
-        isChecked: false
       },
       {
         name: 'Shadowing Pattern',
-        isChecked: false
       }
     ]
   },
@@ -3056,15 +2674,12 @@ export const questions = [
     structure: [
       {
         name: 'Providers in Angular - what is it',
-        isChecked: false
       },
       {
         name: 'Types of Providers in Angular (Class Provider, Factory Provider, Value Provider, Existing Provider)',
-        isChecked: false
       },
       {
         name: 'When to use each type of provider',
-        isChecked: false
       }
     ]
   },
@@ -3081,15 +2696,12 @@ export const questions = [
     structure: [
       {
         name: 'Services in Angular - what is it',
-        isChecked: false
       },
       {
         name: 'Why services are needed in Angular',
-        isChecked: false
       },
       {
         name: 'Lifecycle of services in Angular',
-        isChecked: false
       }
     ]
   },
@@ -3106,11 +2718,9 @@ export const questions = [
     structure: [
       {
         name: 'Singleton Pattern - what is it',
-        isChecked: false
       },
       {
         name: 'Are Angular services singletons by default?',
-        isChecked: false
       }
     ]
   },
@@ -3126,11 +2736,9 @@ export const questions = [
     structure: [
       {
         name: 'Structural directives in Angular',
-        isChecked: false
       },
       {
         name: 'Attribute directives in Angular',
-        isChecked: false
       }
     ]
   },
@@ -3146,11 +2754,9 @@ export const questions = [
     structure: [
       {
         name: 'Pure pipes in Angular',
-        isChecked: false
       },
       {
         name: 'Impure pipes in Angular',
-        isChecked: false
       },
     ]
   },
@@ -3167,15 +2773,12 @@ export const questions = [
     structure: [
       {
         name: 'ViewChild in Angular',
-        isChecked: false
       },
       {
         name: 'ContentChild in Angular',
-        isChecked: false
       },
       {
         name: 'When to use @ViewChild and when to use @ContentChild',
-        isChecked: false
       }
     ]
   },
@@ -3192,19 +2795,15 @@ export const questions = [
     structure: [
       {
         name: 'Proxy in JavaScript',
-        isChecked: false
       },
       {
         name: 'Reflect in JavaScript',
-        isChecked: false
       },
       {
         name: 'When to use Proxy and when to use Reflect',
-        isChecked: false
       },
       {
         name: 'Usage in modern frameworks',
-        isChecked: false
       }
     ]
   },
@@ -3220,19 +2819,15 @@ export const questions = [
     structure: [
       {
         name: 'What are memory leaks in the context of web applications and why it is important',
-        isChecked: false
       },
       {
         name: 'Common causes of memory leaks in JavaScript',
-        isChecked: false
       },
       {
         name: 'How to avoid memory leaks in JavaScript',
-        isChecked: false
       },
       {
         name: 'Tools for detecting and fixing memory leaks',
-        isChecked: false
       }
     ]
   },
@@ -3249,19 +2844,15 @@ export const questions = [
     structure: [
       {
         name: 'What are Web Workers and Service Workers in the context of web applications',
-        isChecked: false
       },
       {
         name: 'When to use Web Workers and when to use Service Workers',
-        isChecked: false
       },
       {
         name: 'Examples of using Web Workers and Service Workers',
-        isChecked: false
       },
       {
         name: 'Tools for working with Web Workers and Service Workers',
-        isChecked: false
       }
     ]
   },
@@ -3279,15 +2870,12 @@ export const questions = [
     structure: [
       {
         name: 'What is Composition API and Options API in Vue.js',
-        isChecked: false
       },
       {
         name: 'Key differences between Composition API and Options API',
-        isChecked: false
       },
       {
         name: 'Fundamental problems solved by Composition API',
-        isChecked: false
       }
     ]
   },
@@ -3304,19 +2892,15 @@ export const questions = [
     structure: [
       {
         name: 'What is setup() and why it is needed in Vue.js',
-        isChecked: false
       },
       {
         name: 'What is <script setup> in Vue.js',
-        isChecked: false
       },
       {
         name: 'Key differences between <script setup> and the standard setup() function',
-        isChecked: false
       },
       {
         name: 'Benefits of using <script setup>',
-        isChecked: false
       }
     ]
   },
@@ -3333,11 +2917,9 @@ export const questions = [
     structure: [
       {
         name: 'What is ref and reactive in Vue.js',
-        isChecked: false
       },
       {
         name: 'Key differences between ref and reactive',
-        isChecked: false
       }
     ]
   },
@@ -3354,11 +2936,9 @@ export const questions = [
     structure: [
       {
         name: 'What is toValue and toRaw in Vue.js',
-        isChecked: false
       },
       {
         name: 'Key differences between toValue and toRaw',
-        isChecked: false
       }
     ]
   },
@@ -3375,11 +2955,9 @@ export const questions = [
     structure: [
       {
         name: 'What is watch and watchEffect in Vue.js',
-        isChecked: false
       },
       {
         name: 'Key differences between watch and watchEffect',
-        isChecked: false
       }
     ]
   },
@@ -3396,11 +2974,9 @@ export const questions = [
     structure: [
       {
         name: 'What is computed in Vue.js',
-        isChecked: false
       },
       {
         name: 'When to use computed and when it is an anti-pattern',
-        isChecked: false
       }
     ]
   },
@@ -3417,19 +2993,15 @@ export const questions = [
     structure: [
       {
         name: 'What are the ways to transfer data between components in Vue.js',
-        isChecked: false
       },
       {
         name: 'When to use props / emit',
-        isChecked: false
       },
       {
         name: 'When to use provide / inject and when it is an anti-pattern',
-        isChecked: false
       },
       {
         name: 'When to use global state (e.g., Pinia) and when it is better to avoid it',
-        isChecked: false
       }
     ]
   },
@@ -3446,11 +3018,9 @@ export const questions = [
     structure: [
       {
         name: 'What are slots in Vue.js',
-        isChecked: false
       },
       {
         name: 'Key differences between default slots, named slots, and dynamic slots',
-        isChecked: false
       }
     ]
   },
@@ -3467,11 +3037,9 @@ export const questions = [
     structure: [
       {
         name: 'What is Teleport in Vue.js',
-        isChecked: false
       },
       {
         name: 'When to use Teleport and when it is an anti-pattern',
-        isChecked: false
       }
     ]
   },
@@ -3488,15 +3056,12 @@ export const questions = [
     structure: [
       {
         name: 'How does reactivity work in Vue 3',
-        isChecked: false
       },
       {
         name: 'What are the differences under the hood between reactivity in Vue 2 and Vue 3',
-        isChecked: false
       },
       {
         name: 'Why is rendering significantly faster in Vue 3? Compiler optimizations (Patch Flags, Static Hoisting)',
-        isChecked: false
       }
     ]
   },
@@ -3513,11 +3078,9 @@ export const questions = [
     structure: [
       {
         name: 'What are Fragments in Vue 3',
-        isChecked: false
       },
       {
         name: 'How do Fragments affect template structure',
-        isChecked: false
       }
     ]
   },
@@ -3534,11 +3097,9 @@ export const questions = [
     structure: [
       {
         name: 'What are custom directives (Custom Directives) in Vue 3',
-        isChecked: false
       },
       {
         name: 'How do custom directives affect template structure',
-        isChecked: false
       }
     ]
   },
@@ -3555,11 +3116,9 @@ export const questions = [
     structure: [
       {
         name: 'Why did the ecosystem switch to Pinia',
-        isChecked: false
       },
       {
         name: 'What are the advantages of Pinia compared to Vuex and others',
-        isChecked: false
       }
     ]
   },
@@ -3576,11 +3135,9 @@ export const questions = [
     structure: [
       {
         name: 'How have lifecycle hooks changed in Vue 3',
-        isChecked: false
       },
       {
         name: 'Where did created and beforeCreate go',
-        isChecked: false
       }
     ]
   },
@@ -3597,19 +3154,15 @@ export const questions = [
     structure: [
       {
         name: 'What is a Composable in Vue.js',
-        isChecked: false
       },
       {
         name: 'How does a Composable differ from regular service methods',
-        isChecked: false
       },
       {
         name: 'What are the advantages of using Composables',
-        isChecked: false
       },
       {
         name: 'Key differences between Composables and mixins or HOCs',
-        isChecked: false
       },
     ]
   },
@@ -3626,11 +3179,9 @@ export const questions = [
     structure: [
       {
         name: 'How does the built-in <Suspense> component work',
-        isChecked: false
       },
       {
         name: 'What problems does <Suspense> solve',
-        isChecked: false
       }
     ]
   },
@@ -3647,11 +3198,9 @@ export const questions = [
     structure: [
       {
         name: 'When and why should you use shallowRef and shallowReactive',
-        isChecked: false
       },
       {
         name: 'What are the advantages of using shallowRef and shallowReactive',
-        isChecked: false
       }
     ]
   },
@@ -3668,11 +3217,9 @@ export const questions = [
     structure: [
       {
         name: 'What is defineModel and how does it simplify two-way data binding',
-        isChecked: false
       },
       {
         name: 'What are the advantages of using defineModel',
-        isChecked: false
       }
     ]
   },
@@ -3690,11 +3237,9 @@ export const questions = [
     structure: [
       {
         name: 'What is toRef and toRefs',
-        isChecked: false
       },
       {
         name: 'What are the advantages of using toRef and toRefs',
-        isChecked: false
       }
     ]
   },
@@ -3711,7 +3256,6 @@ export const questions = [
     structure: [
       {
         name: 'What is Vue Router',
-        isChecked: false
       }
     ]
   },
@@ -3730,7 +3274,6 @@ export const questions = [
     structure: [
       {
         name: 'HTTP/HTTPS: methods, headers, caching, and security',
-        isChecked: false
       }
     ]
   },
@@ -3748,7 +3291,6 @@ export const questions = [
     structure: [
       {
         name: 'Same-Origin Policy and CORS',
-        isChecked: false
       }
     ]
   },
@@ -3764,11 +3306,9 @@ export const questions = [
     structure: [
       {
         name: 'What are cookies and what are they used for?',
-        isChecked: false
       },
       {
         name: 'Which cookie attributes help ensure security (Secure, HttpOnly, SameSite)?',
-        isChecked: false
       }
     ]
   },
@@ -3786,11 +3326,9 @@ export const questions = [
     structure: [
       {
         name: 'How do browsers ensure the security of cookies when exchanging data between different origins?',
-        isChecked: false
       },
       {
         name: 'Which cookie attributes help ensure security (Secure, HttpOnly, SameSite)?',
-        isChecked: false
       }
     ]
   },
@@ -3807,11 +3345,9 @@ export const questions = [
     structure: [
       {
         name: 'What are XSS attacks and how do they work',
-        isChecked: false
       },
       {
         name: 'How to protect against XSS attacks',
-        isChecked: false
       }
     ]
   },
@@ -3828,11 +3364,9 @@ export const questions = [
     structure: [
       {
         name: 'What are CSRF attacks and how do they work',
-        isChecked: false
       },
       {
         name: 'How to protect against CSRF attacks',
-        isChecked: false
       }
     ]
   },
@@ -3848,7 +3382,6 @@ export const questions = [
     structure: [
       {
         name: 'What are SQL injections and how do they work?',
-        isChecked: false
       }
     ]
   },
@@ -3865,7 +3398,6 @@ export const questions = [
     structure: [
       {
         name: 'What are SSL/TLS and how do they ensure data security during transmission?',
-        isChecked: false
       }
     ]
   },
@@ -3882,7 +3414,6 @@ export const questions = [
     structure: [
       {
         name: 'What is OAuth 2.0',
-        isChecked: false
       }
     ]
   },
@@ -3899,7 +3430,6 @@ export const questions = [
     structure: [
       {
         name: 'What is JWT and how is it used for authentication and information exchange between client and server?',
-        isChecked: false
       }
     ]
   },
@@ -3916,15 +3446,12 @@ export const questions = [
     structure: [
       {
         name: 'DOM - Web API, not part of JavaScript',
-        isChecked: false
       },
       {
         name: 'DOM - a complex hierarchical data structure',
-        isChecked: false
       },
       {
         name: 'Reflow and Repaint',
-        isChecked: false
       }
     ]
   },
@@ -3941,15 +3468,12 @@ export const questions = [
     structure: [
       {
         name: 'What are Ecmascript language types?',
-        isChecked: false
       },
       {
         name: 'What are Ecmascript specification types?',
-        isChecked: false
       },
       {
         name: 'What is the difference between language types and specification types in Ecmascript?',
-        isChecked: false
       }
     ]
   },
@@ -3966,15 +3490,12 @@ export const questions = [
     structure: [
       {
         name: 'What is IntersectionObserver API and what is it used for?',
-        isChecked: false
       },
       {
         name: 'How to use IntersectionObserver API to optimize web application performance?',
-        isChecked: false
       },
       {
         name: 'Which outdated techniques has the IntersectionObserver API replaced?',
-        isChecked: false
       }
     ]
   },
@@ -3991,15 +3512,12 @@ export const questions = [
     structure: [
       {
         name: 'What is MutationObserver API and what is it used for?',
-        isChecked: false
       },
       {
         name: 'How to use MutationObserver API to track changes in the DOM?',
-        isChecked: false
       },
       {
         name: 'Which outdated techniques has the MutationObserver API replaced?',
-        isChecked: false
       }
     ]
   },
@@ -4016,15 +3534,12 @@ export const questions = [
     structure: [
       {
         name: 'What is ResizeObserver API and what is it used for?',
-        isChecked: false
       },
       {
         name: 'How to use ResizeObserver API to track changes in the size of elements in the DOM?',
-        isChecked: false
       },
       {
         name: 'Which outdated techniques has the ResizeObserver API replaced?',
-        isChecked: false
       }
     ]
   },
@@ -4041,7 +3556,6 @@ export const questions = [
     structure: [
       {
         name: 'What is Performance API and what is it used for?',
-        isChecked: false
       },
     ]
   },
@@ -4058,15 +3572,12 @@ export const questions = [
     structure: [
       {
         name: 'What is Web Animations API and what is it used for?',
-        isChecked: false
       },
       {
         name: 'How to use Web Animations API to create animations in web applications?',
-        isChecked: false
       },
       {
         name: 'Which outdated techniques has the Web Animations API replaced?',
-        isChecked: false
       }
     ]
   },
@@ -4083,15 +3594,12 @@ export const questions = [
     structure: [
       {
         name: 'What is Web Speech API and what is it used for?',
-        isChecked: false
       },
       {
         name: 'How to use Web Speech API for speech recognition and synthesis in web applications?',
-        isChecked: false
       },
       {
         name: 'Which similar APIs are available for working with voice?',
-        isChecked: false
       }
     ]
   },
@@ -4108,11 +3616,9 @@ export const questions = [
     structure: [
       {
         name: 'What is Web Bluetooth API and what is it used for?',
-        isChecked: false
       },
       {
         name: 'How to use Web Bluetooth API to interact with Bluetooth devices in web applications?',
-        isChecked: false
       }
     ]
   },
@@ -4129,11 +3635,9 @@ export const questions = [
     structure: [
       {
         name: 'What is requestAnimationFrame and what is it used for?',
-        isChecked: false
       },
       {
         name: 'How to use requestAnimationFrame to optimize animations in web applications?',
-        isChecked: false
       }
     ]
   },
@@ -4150,11 +3654,9 @@ export const questions = [
     structure: [
       {
         name: 'What is requestIdleCallback and what is it used for?',
-        isChecked: false
       },
       {
         name: 'How to use requestIdleCallback to optimize task execution in web applications?',
-        isChecked: false
       }
     ]
   },
@@ -4171,7 +3673,6 @@ export const questions = [
     structure: [
       {
         name: 'What is queueMicrotask and what is it used for?',
-        isChecked: false
       },
     ]
   }

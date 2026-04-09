@@ -9,7 +9,7 @@ export interface Question {
 
 export interface Step {
   name: string;
-  isChecked: boolean;
+  isChecked?: boolean;
 }
 
 export interface Results {
