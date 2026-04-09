@@ -15,8 +15,8 @@ export class ProfileService {
 
   private _getDefaultProfile(): Profile {
     const defaultProfile: Profile = {
-      username: 'JS_FOX',
-      avatarUrl: 'assets/js_fox.jpeg',
+      username: 'JS_CODE_MASTER',
+      avatarUrl: 'assets/avatar.jpeg',
     };
 
     return defaultProfile;
