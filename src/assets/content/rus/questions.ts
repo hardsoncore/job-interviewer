@@ -174,41 +174,61 @@ export const questions = [
   },
   {
     id: 6,
-    name: 'Приоритет стилей. Каскадность.',
-    answer: 'assets/content/rus/answers/6-Prioritet-stilej-Kaskadnost.md',
+    name: 'Как браузер парсит CSS и строит стили под капотом? Токенизация, парсинг (Right-to-Left)',
+    answer: 'assets/content/rus/answers/6-Kak-brayuzer-parsit-CSS.md',
     tags: [
-      'css'
+      'css',
+      'markup',
+      'browser'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Специфичность селекторов',
+        name: 'Токенизация CSS: как браузер разбивает код на токены',
         isChecked: false
       },
       {
-        name: 'Порядок объявления',
+        name: 'Архитектура парсинга CSS в браузере',
         isChecked: false
       },
       {
-        name: '!important',
+        name: 'Right-to-Left парсинг и его преимущества',
         isChecked: false
       },
       {
-        name: 'Источник стилей',
+        name: 'Как парсинг CSS влияет на рендеринг страницы',
+        isChecked: false
+      },
+      {
+        name: 'Ошибки в CSS и как браузер их обрабатывает',
+        isChecked: false
+      },
+      {
+        name: 'Оптимизации парсинга CSS в современных браузерах',
+        isChecked: false
+      },
+      {
+        name: 'Блокировка рендера и этапы Layout, Paint, Composite',
         isChecked: false
       }
     ]
   },
   {
     id: 7,
-    name: '“Вес” селекторов CSS',
-    answer: 'assets/content/rus/answers/7-“Ves”-selektorov-CSS.md',
+    name: 'Приоритет стилей в CSS: как работает Каскадность и как считается "вес" селекторов.',
+    answer: 'assets/content/rus/answers/7-Prioritet-stiley-v-CSS.md',
     tags: [
       'markup',
-      'CSS'
+      'CSS',
+      'browser',
+      'Styles specificity'
     ],
     category: 'Markup',
     structure: [
+      {
+        name: 'Каскадность в CSS: как браузер определяет, какие стили применять',
+        isChecked: false
+      },
       {
         name: '!important',
         isChecked: false
@@ -526,63 +546,94 @@ export const questions = [
   },
   {
     id: 19,
-    name: 'Сброс стилей и \"нормализация\" (Reset VS Normalize). Их различия.',
-    answer: 'assets/content/rus/answers/19-Sbros-stilej-i-normalizatsiya-Reset-VS-Normalize-Ih-razlichiya.md',
+    name: 'Относительная размерность в CSS: управление контекстом и вопросы доступности (a11y)',
+    answer: 'assets/content/rus/answers/19-Otnositelnaya-razmernost-i-a11y.md',
     tags: [
       'markup',
-      'CSS'
+      'CSS',
+      'a11y'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Сброс стилей (Reset) - что это?',
+        name: 'Относительные единицы измерения (em, rem, %, vw, vh) и их преимущества',
         isChecked: false
       },
       {
-        name: 'Нормализация (Normalize) - что это?',
+        name: 'Как относительные единицы помогают в адаптивной верстке',
         isChecked: false
       },
       {
-        name: 'Основные отличия между сбросом стилей и нормализацией',
+        name: 'Влияние относительных единиц на доступность (a11y) и удобство использования',
+        isChecked: false
+      },
+      {
+        name: 'Архитектура адаптивных величин: контекст вычисления, наследование и масштабируемость',
         isChecked: false
       }
     ]
   },
   {
     id: 20,
-    name: 'Единицы измерения (em, rem, %, px, vh, vw)',
-    answer: 'assets/content/rus/answers/20-Edinitsy-izmereniya-em-rem-px-vh-vw.md',
+    name: 'Движки браузера. Какие существуют современные движки и в чем их отличия?',
+    answer: 'assets/content/rus/answers/20-Dvizhki-brauzera.md',
     tags: [
-      'markup',
-      'CSS'
+      'JavaScript',
+      'JS mechanics',
+      'browser'
     ],
-    category: 'Markup',
+    category: 'JavaScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Что такое движок браузера и его роль в работе веб-страниц',
+        isChecked: false
+      },
+      {
+        name: 'Современные движки браузера: V8 (Chrome, Edge), SpiderMonkey (Firefox), JavaScriptCore (Safari)',
+        isChecked: false
+      },
+      {
+        name: 'Основные отличия между движками и их оптимизации',
         isChecked: false
       }
     ]
   },
   {
     id: 21,
-    name: 'Порядок подключения ресурсов. Скрипты в head, скрипты в конце body. В чем разница.',
-    answer: 'assets/content/rus/answers/21-Poryadok-podklyucheniya-resursov-Skripty-v-head-skripty-v-kontse-body-V-chem-raznitsa.md',
+    name: 'Парсинг и компиляция JS: как движок читает и оптимизирует код',
+    answer: 'assets/content/rus/answers/21-Kak-dvizhki-JS-parsyat-i-optimiziruyut-kod.md',
     tags: [
-      'markup',
-      'CSS'
+      'JavaScript',
+      'JS mechanics',
+      'browser'
     ],
-    category: 'Markup',
+    category: 'JavaScript',
     structure: [
       {
-        name: 'Порядок подключения ресурсов (скрипты в head, скрипты в конце body)',
+        name: 'Как работает JS-движок',
+        isChecked: false
+      },
+      {
+        name: 'Парсинг JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Интерпретация (Ignition)',
+        isChecked: false
+      },
+      {
+        name: 'JIT-компиляция и Оптимизация (Turbofan)',
+        isChecked: false
+      },
+      {
+        name: 'Деоптимизация (Bailout)',
         isChecked: false
       }
     ]
   },
   {
     id: 22,
-    name: 'Способы подключить JS на страницу',
+    name: 'Способы подключить JS на страницу. Какую роль играет порядок подключения ресурсов (в head и в конце body).',
     answer: 'assets/content/rus/answers/22-Sposoby-podklyuchit-JS-na-stranitsu.md',
     tags: [
       'HTML',
@@ -674,16 +725,17 @@ export const questions = [
   },
   {
     id: 26,
-    name: 'Custom properties',
+    name: 'CSS Variables под капотом: наследование, область видимости и динамическая темизация через CSS Custom Properties',
     answer: 'assets/content/rus/answers/26-Custom-properties.md',
     tags: [
       'markup',
-      'CSS'
+      'CSS',
+      'CSS Variables'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Custom properties - что это?',
+        name: 'CSS Custom Properties - что это?',
         isChecked: false
       },
       {
@@ -693,24 +745,37 @@ export const questions = [
       {
         name: 'Главные отличия от переменных SASS/LESS',
         isChecked: false
+      },
+      {
+        name: 'Наследование и область видимости CSS Custom Properties',
+        isChecked: false
+      },
+      {
+        name: 'Динамическая темизация через CSS Custom Properties',
+        isChecked: false
       }
     ]
   },
   {
     id: 27,
-    name: 'Pixel-perfect',
-    answer: 'assets/content/rus/answers/27-Pixel-perfect.md',
+    name: 'Производительность анимаций и Критический путь рендеринга',
+    answer: 'assets/content/rus/answers/27-Proizvoditelnost-animatsiy-i-Kriticheskiy-put-renderinga.md',
     tags: [
-      'HTML',
+      'CSS',
       'markup',
-      'CSS'
+      'CSS performance',
+      'CSS animations'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Pixel-perfect - что это?',
+        name: 'Критический путь рендеринга (Critical Rendering Path) и его влияние на производительность анимаций',
         isChecked: false
-      }
+      },
+      {
+        name: 'Какие CSS-свойства вызывают Layout, Paint и Composite',
+        isChecked: false
+      },
     ]
   },
   {
@@ -3844,7 +3909,7 @@ export const questions = [
   },
   {
     id: 158,
-    name: 'Почему работа с DOM считается очень ресурсоемкой?',
+    name: 'Reflow и Repaint. Почему работа с DOM считается очень ресурсоемкой?',
     answer: 'assets/content/rus/answers/158-Pochemu-rabota-s-DOM-schitaetsya-ochen-resursoemkoj.md',
     tags: [
       'DOM',
@@ -4095,6 +4160,23 @@ export const questions = [
         name: 'Как использовать requestIdleCallback для оптимизации выполнения задач в веб-приложениях?',
         isChecked: false
       }
+    ]
+  },
+  {
+    id: 169,
+    name: 'queueMicrotask. Для чего нужен и как работает?',
+    answer: 'assets/content/rus/answers/169-queueMicrotask.md',
+    tags: [
+      'JavaScript',
+      'queueMicrotask',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'Что такое queueMicrotask и для чего он нужен?',
+        isChecked: false
+      },
     ]
   }
 ] as Question[];

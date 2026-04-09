@@ -174,41 +174,61 @@ export const questions = [
   },
   {
     id: 6,
-    name: 'CSS Priority. Cascade.',
-    answer: 'assets/content/eng/answers/6-CSS-Priority-Cascade.md',
+    name: 'How does the browser parse CSS and build styles under the hood? Tokenization, parsing (Right-to-Left)',
+    answer: 'assets/content/eng/answers/6-How-does-the-browser-parse-CSS-and-build-styles-under-the-hood.md',
     tags: [
-      'css'
+      'css',
+      'markup',
+      'browser'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Specificity of selectors',
+        name: 'CSS Tokenization: how the browser breaks code into tokens',
         isChecked: false
       },
       {
-        name: 'Order of declaration',
+        name: 'CSS Parsing Architecture in the Browser',
         isChecked: false
       },
       {
-        name: '!important',
+        name: 'Right-to-Left Parsing and Its Advantages',
         isChecked: false
       },
       {
-        name: 'Source of styles',
+        name: 'How CSS parsing affects page rendering',
+        isChecked: false
+      },
+      {
+        name: 'CSS errors and how the browser handles them',
+        isChecked: false
+      },
+      {
+        name: 'CSS parsing optimizations in modern browsers',
+        isChecked: false
+      },
+      {
+        name: 'Render blocking and the stages of Layout, Paint, Composite',
         isChecked: false
       }
     ]
   },
   {
     id: 7,
-    name: 'CSS Selector Weight',
-    answer: 'assets/content/eng/answers/7-CSS-Selector-Weight.md',
+    name: 'CSS Specificity: How Cascade Works and How Selector "Weight" is Calculated',
+    answer: 'assets/content/eng/answers/7-CSS-Specificity-How-Cascade-Works-and-How-Selector-Weight-is-Calculated.md',
     tags: [
       'markup',
-      'CSS'
+      'CSS',
+      'browser',
+      'Styles specificity'
     ],
     category: 'Markup',
     structure: [
+      {
+        name: 'Cascade in CSS: how the browser determines which styles to apply',
+        isChecked: false
+      },
       {
         name: '!important',
         isChecked: false
@@ -526,63 +546,94 @@ export const questions = [
   },
   {
     id: 19,
-    name: 'Reset and Normalize (Reset VS Normalize). Their differences.',
-    answer: 'assets/content/eng/answers/19-Reset-and-Normalize-Reset-VS-Normalize-Their-differences.md',
+    name: 'Relative units in CSS: managing context and accessibility (a11y)',
+    answer: 'assets/content/eng/answers/19-Relative-units-in-CSS.md',
     tags: [
       'markup',
-      'CSS'
+      'CSS',
+      'a11y'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Reset - what is it?',
+        name: 'Relative units (em, rem, %, vw, vh) and their advantages',
         isChecked: false
       },
       {
-        name: 'Normalize - what is it?',
+        name: 'How relative units help in responsive design',
         isChecked: false
       },
       {
-        name: 'Main differences between reset and normalize',
+        name: 'Impact of relative units on accessibility (a11y) and usability',
+        isChecked: false
+      },
+      {
+        name: 'Architecture of adaptive units: calculation context, inheritance, and scalability',
         isChecked: false
       }
     ]
   },
   {
     id: 20,
-    name: 'Units of measurement (em, rem, %, px, vh, vw)',
-    answer: 'assets/content/eng/answers/20-Units-of-measurement-em-rem-px-vh-vw.md',
+    name: 'Browser engines. What are the modern engines and their differences?',
+    answer: 'assets/content/eng/answers/20-Browser-engines.md',
     tags: [
-      'markup',
-      'CSS'
+      'JavaScript',
+      'JS mechanics',
+      'browser'
     ],
-    category: 'Markup',
+    category: 'JavaScript',
     structure: [
       {
-        name: 'HTML tags',
+        name: 'What is a browser engine and its role in web page rendering',
+        isChecked: false
+      },
+      {
+        name: 'Modern browser engines: V8 (Chrome, Edge), SpiderMonkey (Firefox), JavaScriptCore (Safari)',
+        isChecked: false
+      },
+      {
+        name: 'Main differences between engines and their optimizations',
         isChecked: false
       }
     ]
   },
   {
     id: 21,
-    name: 'Order of resource loading. Scripts in head, scripts at the end of body. What is the difference?',
-    answer: 'assets/content/eng/answers/21-Order-of-resource-loading-Scripts-in-head-scripts-at-the-end-of-body-What-is-the-difference.md',
+    name: 'Parsing and compiling JS: how the engine reads and optimizes code',
+    answer: 'assets/content/eng/answers/21-Parsing-and-compiling-JS.md',
     tags: [
-      'markup',
-      'CSS'
+      'JavaScript',
+      'JS mechanics',
+      'browser'
     ],
-    category: 'Markup',
+    category: 'JavaScript',
     structure: [
       {
-        name: 'Order of resource loading (scripts in head, scripts at the end of body)',
+        name: 'How the JS engine works',
+        isChecked: false
+      },
+      {
+        name: 'Parsing JavaScript',
+        isChecked: false
+      },
+      {
+        name: 'Interpretation (Ignition)',
+        isChecked: false
+      },
+      {
+        name: 'JIT compilation and Optimization (Turbofan)',
+        isChecked: false
+      },
+      {
+        name: 'Deoptimization (Bailout)',
         isChecked: false
       }
     ]
   },
   {
     id: 22,
-    name: 'Ways to include JS on a page',
+    name: 'Ways to include JS on a page. The role of resource loading order (in head and at the end of body).',
     answer: 'assets/content/eng/answers/22-Ways-to-include-JS-on-a-page.md',
     tags: [
       'HTML',
@@ -674,16 +725,17 @@ export const questions = [
   },
   {
     id: 26,
-    name: 'Custom properties',
+    name: 'CSS Variables under the hood: inheritance, scope, and dynamic theming through CSS Custom Properties',
     answer: 'assets/content/eng/answers/26-Custom-properties.md',
     tags: [
       'markup',
-      'CSS'
+      'CSS',
+      'CSS Variables'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Custom properties - what is it?',
+        name: 'CSS Custom Properties - what is it?',
         isChecked: false
       },
       {
@@ -693,24 +745,37 @@ export const questions = [
       {
         name: 'Main differences from SASS/LESS variables',
         isChecked: false
+      },
+      {
+        name: 'Inheritance and scope of CSS Custom Properties',
+        isChecked: false
+      },
+      {
+        name: 'Dynamic theming through CSS Custom Properties',
+        isChecked: false
       }
     ]
   },
   {
     id: 27,
-    name: 'Pixel-perfect',
-    answer: 'assets/content/eng/answers/27-Pixel-perfect.md',
+    name: 'Performance of animations and Critical Rendering Path',
+    answer: 'assets/content/eng/answers/27-Performance-of-animations-and-Critical-Rendering-Path.md',
     tags: [
-      'HTML',
+      'CSS',
       'markup',
-      'CSS'
+      'CSS performance',
+      'CSS animations'
     ],
     category: 'Markup',
     structure: [
       {
-        name: 'Pixel-perfect - what is it?',
+        name: 'Critical Rendering Path (CRP) and its impact on animation performance',
         isChecked: false
-      }
+      },
+      {
+        name: 'Which CSS properties trigger Layout, Paint, and Composite',
+        isChecked: false
+      },
     ]
   },
   {
@@ -3849,7 +3914,7 @@ export const questions = [
   },
   {
     id: 158,
-    name: 'Why is working with the DOM considered very resource-intensive?',
+    name: 'Reflow и Repaint. Why is working with the DOM considered very resource-intensive?',
     answer: 'assets/content/eng/answers/158-Why-working-with-DOM-is-resource-intensive.md',
     tags: [
       'DOM',
@@ -3895,6 +3960,228 @@ export const questions = [
         name: 'What is the difference between language types and specification types in Ecmascript?',
         isChecked: false
       }
+    ]
+  },
+  {
+    id: 160,
+    name: 'IntersectionObserver API. What is it and what is it used for?',
+    answer: 'assets/content/eng/answers/160-IntersectionObserver.md',
+    tags: [
+      'JavaScript',
+      'IntersectionObserver',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is IntersectionObserver API and what is it used for?',
+        isChecked: false
+      },
+      {
+        name: 'How to use IntersectionObserver API to optimize web application performance?',
+        isChecked: false
+      },
+      {
+        name: 'Which outdated techniques has the IntersectionObserver API replaced?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 161,
+    name: 'MutationObserver API. What is it and what is it used for?',
+    answer: 'assets/content/eng/answers/161-MutationObserver.md',
+    tags: [
+      'JavaScript',
+      'MutationObserver',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is MutationObserver API and what is it used for?',
+        isChecked: false
+      },
+      {
+        name: 'How to use MutationObserver API to track changes in the DOM?',
+        isChecked: false
+      },
+      {
+        name: 'Which outdated techniques has the MutationObserver API replaced?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 162,
+    name: 'ResizeObserver API. What is it and what is it used for?',
+    answer: 'assets/content/eng/answers/162-ResizeObserver.md',
+    tags: [
+      'JavaScript',
+      'ResizeObserver',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is ResizeObserver API and what is it used for?',
+        isChecked: false
+      },
+      {
+        name: 'How to use ResizeObserver API to track changes in the size of elements in the DOM?',
+        isChecked: false
+      },
+      {
+        name: 'Which outdated techniques has the ResizeObserver API replaced?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 163,
+    name: 'Performance API. What is it and what is it used for?',
+    answer: 'assets/content/eng/answers/163-PerformanceAPI.md',
+    tags: [
+      'JavaScript',
+      'Performance API',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is Performance API and what is it used for?',
+        isChecked: false
+      },
+    ]
+  },
+  {
+    id: 164,
+    name: 'Web Animations API. What is it and what is it used for?',
+    answer: 'assets/content/eng/answers/164-WebAnimationsAPI.md',
+    tags: [
+      'JavaScript',
+      'Web Animations API',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is Web Animations API and what is it used for?',
+        isChecked: false
+      },
+      {
+        name: 'How to use Web Animations API to create animations in web applications?',
+        isChecked: false
+      },
+      {
+        name: 'Which outdated techniques has the Web Animations API replaced?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 165,
+    name: 'Web Speech API. What is it and what is it used for?',
+    answer: 'assets/content/eng/answers/165-WebSpeechAPI.md',
+    tags: [
+      'JavaScript',
+      'Web Speech API',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is Web Speech API and what is it used for?',
+        isChecked: false
+      },
+      {
+        name: 'How to use Web Speech API for speech recognition and synthesis in web applications?',
+        isChecked: false
+      },
+      {
+        name: 'Which similar APIs are available for working with voice?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 166,
+    name: 'Web Bluetooth API. What is it and what is it used for?',
+    answer: 'assets/content/eng/answers/166-WebBluetoothAPI.md',
+    tags: [
+      'JavaScript',
+      'Web Bluetooth API',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is Web Bluetooth API and what is it used for?',
+        isChecked: false
+      },
+      {
+        name: 'How to use Web Bluetooth API to interact with Bluetooth devices in web applications?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 167,
+    name: 'requestAnimationFrame. What is it and what is it used for?',
+    answer: 'assets/content/eng/answers/167-requestAnimationFrame.md',
+    tags: [
+      'JavaScript',
+      'requestAnimationFrame',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is requestAnimationFrame and what is it used for?',
+        isChecked: false
+      },
+      {
+        name: 'How to use requestAnimationFrame to optimize animations in web applications?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 168,
+    name: 'requestIdleCallback. What is it and what is it used for?',
+    answer: 'assets/content/eng/answers/168-requestIdleCallback.md',
+    tags: [
+      'JavaScript',
+      'requestIdleCallback',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is requestIdleCallback and what is it used for?',
+        isChecked: false
+      },
+      {
+        name: 'How to use requestIdleCallback to optimize task execution in web applications?',
+        isChecked: false
+      }
+    ]
+  },
+  {
+    id: 169,
+    name: 'queueMicrotask. What is it and how does it work?',
+    answer: 'assets/content/eng/answers/169-queueMicrotask.md',
+    tags: [
+      'JavaScript',
+      'queueMicrotask',
+      'Web APIs'
+    ],
+    category: 'JavaScript',
+    structure: [
+      {
+        name: 'What is queueMicrotask and what is it used for?',
+        isChecked: false
+      },
     ]
   }
 ] as Question[];
