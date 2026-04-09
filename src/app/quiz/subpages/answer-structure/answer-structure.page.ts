@@ -79,7 +79,7 @@ export class AnswerStructurePage implements OnInit, OnDestroy {
 
     this.question.structure.forEach(step => step.isChecked && correctAnswers++);
 
-    return (correctAnswers / this.question.structure.length) * 100;
+    return Math.round(correctAnswers / this.question.structure.length * 100);
   }
 
   private _updateResults(correctness: number) {
