@@ -12,6 +12,7 @@ export const questions = [
       'browser'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Критический путь рендеринга',
@@ -46,6 +47,7 @@ export const questions = [
       'browser'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Critical Rendering Path (CRP)',
@@ -79,6 +81,7 @@ export const questions = [
       'markup'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Что такое этот тег DOCTYPE',
@@ -106,6 +109,7 @@ export const questions = [
       'markup'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Что такое семантическая вёрстка и зачем она нужна',
@@ -128,6 +132,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Подключение CSS через внешний файл стилей тегом link',
@@ -156,6 +161,7 @@ export const questions = [
       'browser'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Токенизация CSS: как браузер разбивает код на токены',
@@ -191,6 +197,7 @@ export const questions = [
       'Styles specificity'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Каскадность в CSS: как браузер определяет, какие стили применять',
@@ -224,6 +231,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Недостатки высокой специфичности',
@@ -245,6 +253,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: '>',
@@ -267,6 +276,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Псевдоклассы состояния (Интерактив)',
@@ -289,6 +299,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: ':disabled',
@@ -320,6 +331,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Что такое псевдоэлементы?',
@@ -348,6 +360,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'static',
@@ -376,6 +389,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Блочные элементы',
@@ -395,6 +409,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Горизонтальное центрирование',
@@ -414,6 +429,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Боксовая модель (Box Model)',
@@ -433,6 +449,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Что такое Flexbox',
@@ -455,6 +472,7 @@ export const questions = [
       'animations'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Что такое CSS анимации?',
@@ -477,6 +495,7 @@ export const questions = [
       'a11y'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Относительные единицы измерения (em, rem, %, vw, vh) и их преимущества',
@@ -502,6 +521,7 @@ export const questions = [
       'browser'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Что такое движок браузера и его роль в работе веб-страниц',
@@ -556,6 +576,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: '3 способа подключения JS на страницу',
@@ -572,6 +593,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Async',
@@ -594,6 +616,7 @@ export const questions = [
       'animations'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое SVG?',
@@ -613,6 +636,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Canvas - что это?',
@@ -638,6 +662,7 @@ export const questions = [
       'CSS Variables'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'CSS Custom Properties - что это?',
@@ -667,6 +692,7 @@ export const questions = [
       'CSS animations'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Критический путь рендеринга (Critical Rendering Path) и его влияние на производительность анимаций',
@@ -685,6 +711,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Пре- и пост- процессоры CSS - что это?',
@@ -704,6 +731,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Методология БЭМ - что это?',
@@ -725,6 +753,7 @@ export const questions = [
       'markup'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'HTML-шаблонизаторы/препроцессоры - что это?',
@@ -751,6 +780,7 @@ export const questions = [
       'DOM'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Какие типы узлов есть в DOM?',
@@ -772,6 +802,7 @@ export const questions = [
       'Data types'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: '7 примитивных типов данных',
@@ -793,6 +824,7 @@ export const questions = [
       'Data types'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Три основных типа преобразования',
@@ -810,6 +842,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Let, const и var - различия',
@@ -835,6 +868,7 @@ export const questions = [
       'functions'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Function Declaration (Объявление функции)',
@@ -860,6 +894,7 @@ export const questions = [
       'Structures'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Массив (Array)',
@@ -890,6 +925,7 @@ export const questions = [
       'Array'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'pop/push и shift/unshift, их различия',
@@ -949,6 +985,7 @@ export const questions = [
       'Generators'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Итераторы: Механика под капотом',
@@ -970,6 +1007,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Lexical Environment',
@@ -991,6 +1029,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Замыкание - что это и для чего нужно',
@@ -1012,6 +1051,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Garbage Collector',
@@ -1027,6 +1067,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Рекурсия - что это и для чего нужно',
@@ -1046,6 +1087,7 @@ export const questions = [
       'context'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Глобальный контекст и обычный вызов функции',
@@ -1068,6 +1110,7 @@ export const questions = [
       'context'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Неявная привязка (Implicit Binding)',
@@ -1091,6 +1134,7 @@ export const questions = [
       'closures'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Каррирование - что это и для чего нужно',
@@ -1114,6 +1158,7 @@ export const questions = [
       'closures'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Частичное применение (основано на каррировании)',
@@ -1133,6 +1178,7 @@ export const questions = [
       'functions'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Псевдомассив arguments',
@@ -1157,6 +1203,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Директива "use strict" - что это и для чего нужно',
@@ -1178,6 +1225,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Преобразование объектов: toString и valueOf',
@@ -1196,6 +1244,7 @@ export const questions = [
       'Browser mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Зачем нужен Event Loop',
@@ -1214,6 +1263,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Наследование в JavaScript',
@@ -1232,6 +1282,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: '__proto__ - что это?',
@@ -1247,6 +1298,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'F.prototype',
@@ -1264,6 +1316,7 @@ export const questions = [
       'Async'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Promise, в какой версии ES появился',
@@ -1293,6 +1346,7 @@ export const questions = [
       'Async'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Promise chaining',
@@ -1313,6 +1367,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Try - Catch - для чего нужно?',
@@ -1328,6 +1383,7 @@ export const questions = [
       'ES6'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: '11 основных нововведений в ES6',
@@ -1344,6 +1400,7 @@ export const questions = [
       'ES7'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Теги HTML',
@@ -1361,6 +1418,7 @@ export const questions = [
       'Async'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Эволюция асинхронного JS в ES8',
@@ -1387,6 +1445,7 @@ export const questions = [
       'Async'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Какую проблему решают',
@@ -1414,6 +1473,7 @@ export const questions = [
       'browser mechanics',
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Теги HTML',
@@ -1430,6 +1490,7 @@ export const questions = [
       'SessionStorage'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'LocalStorage',
@@ -1449,6 +1510,7 @@ export const questions = [
       'best-practice'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Зачем нужен code style и инструменты для его поддержания',
@@ -1473,6 +1535,7 @@ export const questions = [
       'immutable'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Теги HTML',
@@ -1488,6 +1551,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Реактивное программирование - что это?',
@@ -1508,6 +1572,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Observable - что это?',
@@ -1525,6 +1590,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Subject - что это?',
@@ -1545,6 +1611,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Специфика Subject',
@@ -1570,6 +1637,7 @@ export const questions = [
       'Async'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Zone.js - что это?',
@@ -1588,6 +1656,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Partial&lt;Type> (Частичный)',
@@ -1616,6 +1685,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Type Guards - typeof, in, instanceof, Custom Type Guards',
@@ -1634,6 +1704,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Enums (Перечисления)',
@@ -1667,6 +1738,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Class (Реализация)',
@@ -1688,6 +1760,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Generics (Обобщения) - какую проблему решают?',
@@ -1721,6 +1794,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'any',
@@ -1743,6 +1817,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'asObservable() - что это и для чего нужно?',
@@ -1764,6 +1839,7 @@ export const questions = [
       'ООП'
     ],
     category: 'programming',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Abstraction (Абстракция)',
@@ -1788,6 +1864,7 @@ export const questions = [
       'best-practice'
     ],
     category: 'programming',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Паттерны проектирования - что это и для чего нужны?',
@@ -1804,6 +1881,7 @@ export const questions = [
       'best-practice'
     ],
     category: 'programming',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Декоратор',
@@ -1820,6 +1898,7 @@ export const questions = [
       'ООП'
     ],
     category: 'programming',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Принципы SOLID - это',
@@ -1850,6 +1929,7 @@ export const questions = [
       'internet'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Теги HTML',
@@ -1866,6 +1946,7 @@ export const questions = [
       'markup'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Теги HTML',
@@ -1882,6 +1963,7 @@ export const questions = [
       'SQL'
     ],
     category: 'Databases',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'SELECT, FROM',
@@ -1915,6 +1997,7 @@ export const questions = [
       'Data Structures'
     ],
     category: 'Databases',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'JSON - что это и для чего нужно',
@@ -1934,6 +2017,7 @@ export const questions = [
       'authorization'
     ],
     category: 'General',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Аутентификация',
@@ -1953,6 +2037,7 @@ export const questions = [
       'Big O'
     ],
     category: 'Algorithms',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Пузырьковая сортировка (Bubble Sort)',
@@ -1981,6 +2066,7 @@ export const questions = [
       'Big O'
     ],
     category: 'Algorithms',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'O(1)',
@@ -2003,6 +2089,7 @@ export const questions = [
       'graphs'
     ],
     category: 'General',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Деревья',
@@ -2027,6 +2114,7 @@ export const questions = [
       'shadow DOM'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Shadow DOM - что это такое',
@@ -2050,6 +2138,7 @@ export const questions = [
       'React'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Virtual DOM - что это такое',
@@ -2072,6 +2161,7 @@ export const questions = [
       'reactive programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое RxJS',
@@ -2097,6 +2187,7 @@ export const questions = [
       'reactive programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'State management в Angular. NgRx, что это такое',
@@ -2119,6 +2210,7 @@ export const questions = [
       'Reactive Programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Signals в Angular, что это такое',
@@ -2138,6 +2230,7 @@ export const questions = [
       'Reactive Programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Computed',
@@ -2160,6 +2253,7 @@ export const questions = [
       'Reactive Programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'input(), output() и model() - что это',
@@ -2176,6 +2270,7 @@ export const questions = [
       'Architecture'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Концепция Standalone',
@@ -2196,6 +2291,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Функция inject()',
@@ -2220,6 +2316,7 @@ export const questions = [
       'Syntax'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Новый Control Flow',
@@ -2238,6 +2335,7 @@ export const questions = [
       'Change Detection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'ChangeDetectionStrategy.Default',
@@ -2259,6 +2357,7 @@ export const questions = [
       'Performance'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Deferrable Views',
@@ -2275,6 +2374,7 @@ export const questions = [
       'guards'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Functional Guards',
@@ -2291,6 +2391,7 @@ export const questions = [
       'interceptors'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Functional Interceptors',
@@ -2307,6 +2408,7 @@ export const questions = [
       'Hooks'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Lifecycle Hooks (Классические)',
@@ -2326,6 +2428,7 @@ export const questions = [
       'Vue 2'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Object.defineProperty - что это и для чего нужно?',
@@ -2354,6 +2457,7 @@ export const questions = [
       'Reactivity'
     ],
     category: '',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Реактивность в Vue 2',
@@ -2379,6 +2483,7 @@ export const questions = [
       'Abstract Classes'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Abstract Classes (Абстрактные классы)',
@@ -2404,6 +2509,7 @@ export const questions = [
       'Access Modifiers'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Protected (Модификатор доступа)',
@@ -2429,6 +2535,7 @@ export const questions = [
       'Console'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Console API (API консоли)',
@@ -2445,6 +2552,7 @@ export const questions = [
       'Pure Functions'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Pure Functions (Чистые функции) - что это и в чем их преимущества',
@@ -2461,6 +2569,7 @@ export const questions = [
       'Higher-Order Functions'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Higher-Order Functions (Функции высшего порядка) - что это и в чем их преимущества',
@@ -2477,6 +2586,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'mergeMap',
@@ -2502,6 +2612,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'combineLatest',
@@ -2536,6 +2647,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'of',
@@ -2564,6 +2676,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'filter',
@@ -2592,6 +2705,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'tap',
@@ -2621,6 +2735,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'map',
@@ -2645,6 +2760,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Element Injector (или NodeInjector) - что это такое',
@@ -2666,6 +2782,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Иерархия DI в Angular',
@@ -2684,6 +2801,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Провайдеры в Angular - что это такое',
@@ -2706,6 +2824,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Сервисы в Angular - что это такое',
@@ -2728,6 +2847,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Паттерн Singleton (Одиночка) - что это такое',
@@ -2746,6 +2866,7 @@ export const questions = [
       'Directives'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Структурные директивы в Angular',
@@ -2764,6 +2885,7 @@ export const questions = [
       'Pipes'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Чистые пайпы в Angular',
@@ -2783,6 +2905,7 @@ export const questions = [
       'ContentChild'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'ViewChild в Angular',
@@ -2805,6 +2928,7 @@ export const questions = [
       'Reflect'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Proxy в JavaScript',
@@ -2829,6 +2953,7 @@ export const questions = [
       'Memory Leaks'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое утечки памяти в контексте веб-приложений и почему это важно',
@@ -2854,6 +2979,7 @@ export const questions = [
       'Service Workers'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Web Workers и Service Workers в контексте веб-приложений',
@@ -2880,6 +3006,7 @@ export const questions = [
       'Options API'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Composition API и Options API в Vue.js',
@@ -2902,6 +3029,7 @@ export const questions = [
       'Script Setup'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое setup() и для чего он нужен в Vue.js',
@@ -2927,6 +3055,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое ref и reactive в Vue.js',
@@ -2946,6 +3075,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое toValue и toRaw в Vue.js',
@@ -2965,6 +3095,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое watch и watchEffect в Vue.js',
@@ -2984,6 +3115,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое computed в Vue.js',
@@ -3003,6 +3135,7 @@ export const questions = [
       'Data Transfer'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Какие способы передачи данных между компонентами во Vue.js существуют',
@@ -3028,6 +3161,7 @@ export const questions = [
       'Slots'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое слоты в Vue.js',
@@ -3047,6 +3181,7 @@ export const questions = [
       'Teleport'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Teleport в Vue.js',
@@ -3066,6 +3201,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Как работает реактивность в Vue 3',
@@ -3088,6 +3224,7 @@ export const questions = [
       'Fragments'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Фрагменты (Fragments) во Vue 3',
@@ -3107,6 +3244,7 @@ export const questions = [
       'Custom Directives'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое кастомные директивы (Custom Directives) во Vue 3',
@@ -3126,6 +3264,7 @@ export const questions = [
       'Pinia'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Почему экосистема перешла на Pinia',
@@ -3145,6 +3284,7 @@ export const questions = [
       'Lifecycle Hooks'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Как изменились хуки жизненного цикла в Vue 3',
@@ -3164,6 +3304,7 @@ export const questions = [
       'Composable'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Composable в Vue.js',
@@ -3189,6 +3330,7 @@ export const questions = [
       'Suspense'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Как работает встроенный компонент <Suspense>',
@@ -3208,6 +3350,7 @@ export const questions = [
       'ShallowRef'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Когда и зачем следует использовать shallowRef и shallowReactive',
@@ -3227,6 +3370,7 @@ export const questions = [
       'DefineModel'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое defineModel и как он упрощает двустороннюю привязку данных',
@@ -3247,6 +3391,7 @@ export const questions = [
       'ToRefs'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое toRef и toRefs',
@@ -3266,6 +3411,7 @@ export const questions = [
       'Vue Router'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Vue Router',
@@ -3284,6 +3430,7 @@ export const questions = [
       'Same-Origin Policy'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'HTTP/HTTPS: методы, заголовки, кеширование и безопасность',
@@ -3301,6 +3448,7 @@ export const questions = [
       'Same-Origin Policy'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Same-Origin Policy и CORS',
@@ -3316,6 +3464,7 @@ export const questions = [
       'cookies',
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое cookies и для чего они нужны?',
@@ -3336,6 +3485,7 @@ export const questions = [
       'Same-Origin Policy'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Как браузеры обеспечивают безопасность cookies при обмене данными между разными источниками?',
@@ -3355,6 +3505,7 @@ export const questions = [
       'cross-site'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое XSS-атаки и как они работают',
@@ -3374,6 +3525,7 @@ export const questions = [
       'cross-site'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое CSRF-атаки и как они работают',
@@ -3392,6 +3544,7 @@ export const questions = [
       'SQL Injection'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое SQL-инъекции и как защититься от них?',
@@ -3408,6 +3561,7 @@ export const questions = [
       'TLS'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое SSL/TLS и как они обеспечивают безопасность данных при передаче по сети?',
@@ -3424,6 +3578,7 @@ export const questions = [
       'authorization'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое OAuth 2.0',
@@ -3440,6 +3595,7 @@ export const questions = [
       'authentication'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое JWT и как он используется для аутентификации и передачи информации между клиентом и сервером?',
@@ -3456,6 +3612,7 @@ export const questions = [
       'web development'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'DOM — это Web API, а не часть JavaScript',
@@ -3478,6 +3635,7 @@ export const questions = [
       'types'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое типы языка Ecmascript?',
@@ -3500,6 +3658,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое IntersectionObserver API и для чего он нужен?',
@@ -3522,6 +3681,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое MutationObserver API и для чего он нужен?',
@@ -3544,6 +3704,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое ResizeObserver API и для чего он нужен?',
@@ -3566,6 +3727,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Performance API и для чего он нужен?',
@@ -3582,6 +3744,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Web Animations API и для чего он нужен?',
@@ -3604,6 +3767,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Web Speech API и для чего он нужен?',
@@ -3626,6 +3790,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое Web Bluetooth API и для чего он нужен?',
@@ -3645,6 +3810,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое requestAnimationFrame и для чего он нужен?',
@@ -3664,6 +3830,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое requestIdleCallback и для чего он нужен?',
@@ -3683,6 +3850,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Что такое queueMicrotask и для чего он нужен?',

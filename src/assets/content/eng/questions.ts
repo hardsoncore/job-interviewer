@@ -12,6 +12,7 @@ export const questions = [
       'browser'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Critical Rendering Path',
@@ -46,6 +47,7 @@ export const questions = [
       'browser'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Critical Rendering Path (CRP)',
@@ -79,6 +81,7 @@ export const questions = [
       'markup'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'What is this DOCTYPE tag',
@@ -106,6 +109,7 @@ export const questions = [
       'markup'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'What is semantic markup and why is it needed',
@@ -128,6 +132,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Including CSS through an external stylesheet using the link tag',
@@ -156,6 +161,7 @@ export const questions = [
       'browser'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'CSS Tokenization: how the browser breaks code into tokens',
@@ -191,6 +197,7 @@ export const questions = [
       'Styles specificity'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Cascade in CSS: how the browser determines which styles to apply',
@@ -224,6 +231,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Drawbacks of high specificity',
@@ -245,6 +253,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: '>',
@@ -267,6 +276,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'State pseudo-classes (Interactive)',
@@ -289,6 +299,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: ':disabled',
@@ -320,6 +331,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'What are pseudo-elements?',
@@ -348,6 +360,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'static',
@@ -376,6 +389,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Block elements',
@@ -395,6 +409,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Horizontal centering',
@@ -414,6 +429,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Box Model',
@@ -433,6 +449,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'What is Flexbox?',
@@ -455,6 +472,7 @@ export const questions = [
       'animations'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'What are CSS animations?',
@@ -477,6 +495,7 @@ export const questions = [
       'a11y'
     ],
     category: 'Markup',
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Relative units (em, rem, %, vw, vh) and their advantages',
@@ -502,6 +521,7 @@ export const questions = [
       'browser'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is a browser engine and its role in web page rendering',
@@ -556,6 +576,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: '3 ways to include JS on a page',
@@ -572,6 +593,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Async',
@@ -594,6 +616,7 @@ export const questions = [
       'animations'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is SVG?',
@@ -613,6 +636,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Canvas - what is it?',
@@ -638,6 +662,7 @@ export const questions = [
       'CSS Variables'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'CSS Custom Properties - what is it?',
@@ -667,6 +692,7 @@ export const questions = [
       'CSS animations'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Critical Rendering Path (CRP) and its impact on animation performance',
@@ -685,6 +711,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Pre- and post- CSS processors - what is it?',
@@ -704,6 +731,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'BEM Methodology - what is it?',
@@ -725,6 +753,7 @@ export const questions = [
       'markup'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'HTML template assets/content/engines/preprocessors - what is it?',
@@ -751,6 +780,7 @@ export const questions = [
       'DOM'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What types of nodes exist in the DOM?',
@@ -772,6 +802,7 @@ export const questions = [
       'Data types'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: '7 primitive data types',
@@ -793,6 +824,7 @@ export const questions = [
       'Data types'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Three main types of conversion',
@@ -810,6 +842,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Let, const and var - differences',
@@ -835,6 +868,7 @@ export const questions = [
       'functions'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Function Declaration',
@@ -860,6 +894,7 @@ export const questions = [
       'Structures'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Array',
@@ -890,6 +925,7 @@ export const questions = [
       'Array'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'pop/push and shift/unshift, their differences',
@@ -949,6 +985,7 @@ export const questions = [
       'Generators'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Iterators: Mechanics under the hood',
@@ -970,6 +1007,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Lexical Environment',
@@ -991,6 +1029,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Closure - what it is and why it is needed',
@@ -1012,6 +1051,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Garbage Collector',
@@ -1027,6 +1067,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Recursion - what it is and why it is needed',
@@ -1046,6 +1087,7 @@ export const questions = [
       'context'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Global context and regular function call',
@@ -1068,6 +1110,7 @@ export const questions = [
       'context'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Implicit Binding',
@@ -1091,6 +1134,7 @@ export const questions = [
       'closures'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Currying - what it is and why it is needed',
@@ -1114,6 +1158,7 @@ export const questions = [
       'closures'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Partial Application (based on currying)',
@@ -1133,6 +1178,7 @@ export const questions = [
       'functions'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Arguments object',
@@ -1157,6 +1203,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: '"use strict" directive - what it is and why it is needed',
@@ -1178,6 +1225,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Object conversion: toString and valueOf',
@@ -1196,6 +1244,7 @@ export const questions = [
       'Browser mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Why do we need the Event Loop?',
@@ -1214,6 +1263,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Inheritance in JavaScript',
@@ -1232,6 +1282,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: '__proto__ - what is it?',
@@ -1247,6 +1298,7 @@ export const questions = [
       'JS mechanics'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'F.prototype',
@@ -1264,6 +1316,7 @@ export const questions = [
       'Async'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is a Promise, in which version of ES did it appear',
@@ -1293,6 +1346,7 @@ export const questions = [
       'Async'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Promise chaining',
@@ -1313,6 +1367,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Try - Catch - what is it for?',
@@ -1328,6 +1383,7 @@ export const questions = [
       'ES6'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: '11 main features of ES6',
@@ -1344,6 +1400,7 @@ export const questions = [
       'ES7'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'HTML tags',
@@ -1361,6 +1418,7 @@ export const questions = [
       'Async'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Evolution of asynchronous JS in ES8',
@@ -1387,6 +1445,7 @@ export const questions = [
       'Async'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What problem do they solve?',
@@ -1414,6 +1473,7 @@ export const questions = [
       'browser mechanics'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'HTML tags',
@@ -1430,6 +1490,7 @@ export const questions = [
       'SessionStorage'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'LocalStorage',
@@ -1449,6 +1510,7 @@ export const questions = [
       'best-practice'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Why do we need code style and tools to maintain it?',
@@ -1473,6 +1535,7 @@ export const questions = [
       'immutable'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'HTML tags',
@@ -1488,6 +1551,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Reactive programming - what is it?',
@@ -1508,6 +1572,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Observable - what is it?',
@@ -1525,6 +1590,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Subject - what is it?',
@@ -1545,6 +1611,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Subject specifics',
@@ -1570,6 +1637,7 @@ export const questions = [
       'Async'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Zone.js - what is it?',
@@ -1588,6 +1656,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Partial&lt;Type>',
@@ -1616,6 +1685,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Type Guards - typeof, in, instanceof, Custom Type Guards',
@@ -1634,6 +1704,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Enums ',
@@ -1667,6 +1738,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Class (Implementation)',
@@ -1688,6 +1760,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Generics - what problem do they solve?',
@@ -1721,6 +1794,7 @@ export const questions = [
       'Typization'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'any',
@@ -1743,6 +1817,7 @@ export const questions = [
       'RxJs'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'asObservable() - what it is and why it is needed?',
@@ -1764,6 +1839,7 @@ export const questions = [
       'OOP'
     ],
     category: 'programming',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Abstraction',
@@ -1788,6 +1864,7 @@ export const questions = [
       'best-practice'
     ],
     category: 'programming',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Design Patterns - what they are and why they are needed?',
@@ -1804,6 +1881,7 @@ export const questions = [
       'best-practice'
     ],
     category: 'programming',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Decorator',
@@ -1820,6 +1898,7 @@ export const questions = [
       'OOP'
     ],
     category: 'programming',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'SOLID Principles - what they are and why they are needed',
@@ -1850,6 +1929,7 @@ export const questions = [
       'internet'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'HTML tags',
@@ -1866,6 +1946,7 @@ export const questions = [
       'markup'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'HTML tags',
@@ -1882,6 +1963,7 @@ export const questions = [
       'SQL'
     ],
     category: 'Databases',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'SELECT, FROM',
@@ -1915,6 +1997,7 @@ export const questions = [
       'Data Structures'
     ],
     category: 'Databases',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'JSON - what it is and why it is needed',
@@ -1934,6 +2017,7 @@ export const questions = [
       'authorization'
     ],
     category: 'General',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Authentication',
@@ -1953,6 +2037,7 @@ export const questions = [
       'Big O'
     ],
     category: 'Algorithms',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Bubble Sort',
@@ -1981,6 +2066,7 @@ export const questions = [
       'Big O'
     ],
     category: 'Algorithms',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'O(1)',
@@ -2003,6 +2089,7 @@ export const questions = [
       'graphs'
     ],
     category: 'General',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Trees',
@@ -2027,6 +2114,7 @@ export const questions = [
       'shadow DOM'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Shadow DOM - what it is',
@@ -2050,6 +2138,7 @@ export const questions = [
       'React'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Virtual DOM - what it is',
@@ -2072,6 +2161,7 @@ export const questions = [
       'reactive programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is RxJS',
@@ -2097,6 +2187,7 @@ export const questions = [
       'reactive programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'State management in Angular. NgRx, what it is',
@@ -2119,6 +2210,7 @@ export const questions = [
       'Reactive Programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Signals in Angular, what it is',
@@ -2138,6 +2230,7 @@ export const questions = [
       'Reactive Programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Computed',
@@ -2160,6 +2253,7 @@ export const questions = [
       'Reactive Programming'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'input(), output() and model() - what it is',
@@ -2176,6 +2270,7 @@ export const questions = [
       'Architecture'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Standalone Concept',
@@ -2196,6 +2291,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'inject() function',
@@ -2220,6 +2316,7 @@ export const questions = [
       'Syntax'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'New Control Flow',
@@ -2238,6 +2335,7 @@ export const questions = [
       'Change Detection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'ChangeDetectionStrategy.Default',
@@ -2259,6 +2357,7 @@ export const questions = [
       'Performance'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Deferrable Views',
@@ -2275,6 +2374,7 @@ export const questions = [
       'guards'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Functional Guards',
@@ -2291,6 +2391,7 @@ export const questions = [
       'interceptors'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Functional Interceptors',
@@ -2307,6 +2408,7 @@ export const questions = [
       'Hooks'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Lifecycle Hooks (Classic)',
@@ -2326,6 +2428,7 @@ export const questions = [
       'Vue 2'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Object.defineProperty - what it is and what it is for?',
@@ -2354,6 +2457,7 @@ export const questions = [
       'Reactivity'
     ],
     category: '',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Reactivity in Vue 2',
@@ -2380,6 +2484,7 @@ export const questions = [
       'Abstract Classes'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Abstract Classes - what they are and why they are needed?',
@@ -2405,6 +2510,7 @@ export const questions = [
       'Access Modifiers'
     ],
     category: QuestionCategories.typescript,
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Protected (Access Modifier)',
@@ -2430,6 +2536,7 @@ export const questions = [
       'Console'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Console API - what it is and why it is needed?',
@@ -2446,6 +2553,7 @@ export const questions = [
       'Pure Functions'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Pure Functions - what they are and their advantages',
@@ -2462,6 +2570,7 @@ export const questions = [
       'Higher-Order Functions'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Higher-Order Functions - what they are and their advantages',
@@ -2478,6 +2587,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'mergeMap',
@@ -2503,6 +2613,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'combineLatest',
@@ -2537,6 +2648,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'of',
@@ -2565,6 +2677,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'filter',
@@ -2593,6 +2706,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'tap',
@@ -2622,6 +2736,7 @@ export const questions = [
       'Operators'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'map',
@@ -2646,6 +2761,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Element Injector (or NodeInjector) - what is it',
@@ -2667,6 +2783,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'DI Hierarchy in Angular',
@@ -2685,6 +2802,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Providers in Angular - what is it',
@@ -2707,6 +2825,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Services in Angular - what is it',
@@ -2729,6 +2848,7 @@ export const questions = [
       'Dependency Injection'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Singleton Pattern - what is it',
@@ -2747,6 +2867,7 @@ export const questions = [
       'Directives'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Structural directives in Angular',
@@ -2765,6 +2886,7 @@ export const questions = [
       'Pipes'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Pure pipes in Angular',
@@ -2784,6 +2906,7 @@ export const questions = [
       'ContentChild'
     ],
     category: 'Angular',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'ViewChild in Angular',
@@ -2806,6 +2929,7 @@ export const questions = [
       'Reflect'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Proxy in JavaScript',
@@ -2830,6 +2954,7 @@ export const questions = [
       'Memory Leaks'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are memory leaks in the context of web applications and why it is important',
@@ -2855,6 +2980,7 @@ export const questions = [
       'Service Workers'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are Web Workers and Service Workers in the context of web applications',
@@ -2881,6 +3007,7 @@ export const questions = [
       'Options API'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is Composition API and Options API in Vue.js',
@@ -2903,6 +3030,7 @@ export const questions = [
       'Script Setup'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is setup() and why it is needed in Vue.js',
@@ -2928,6 +3056,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is ref and reactive in Vue.js',
@@ -2947,6 +3076,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is toValue and toRaw in Vue.js',
@@ -2966,6 +3096,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is watch and watchEffect in Vue.js',
@@ -2985,6 +3116,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is computed in Vue.js',
@@ -3004,6 +3136,7 @@ export const questions = [
       'Data Transfer'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are the ways to transfer data between components in Vue.js',
@@ -3029,6 +3162,7 @@ export const questions = [
       'Slots'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are slots in Vue.js',
@@ -3048,6 +3182,7 @@ export const questions = [
       'Teleport'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is Teleport in Vue.js',
@@ -3067,6 +3202,7 @@ export const questions = [
       'Reactivity'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'How does reactivity work in Vue 3',
@@ -3089,6 +3225,7 @@ export const questions = [
       'Fragments'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are Fragments in Vue 3',
@@ -3108,6 +3245,7 @@ export const questions = [
       'Custom Directives'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are custom directives (Custom Directives) in Vue 3',
@@ -3127,6 +3265,7 @@ export const questions = [
       'Pinia'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Why did the ecosystem switch to Pinia',
@@ -3146,6 +3285,7 @@ export const questions = [
       'Lifecycle Hooks'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'How have lifecycle hooks changed in Vue 3',
@@ -3165,6 +3305,7 @@ export const questions = [
       'Composable'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is a Composable in Vue.js',
@@ -3190,6 +3331,7 @@ export const questions = [
       'Suspense'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'How does the built-in <Suspense> component work',
@@ -3209,6 +3351,7 @@ export const questions = [
       'ShallowRef'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'When and why should you use shallowRef and shallowReactive',
@@ -3228,6 +3371,7 @@ export const questions = [
       'DefineModel'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is defineModel and how does it simplify two-way data binding',
@@ -3248,6 +3392,7 @@ export const questions = [
       'ToRefs'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is toRef and toRefs',
@@ -3267,6 +3412,7 @@ export const questions = [
       'Vue Router'
     ],
     category: 'Vue.js',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is Vue Router',
@@ -3285,6 +3431,7 @@ export const questions = [
       'Same-Origin Policy'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'HTTP/HTTPS: methods, headers, caching, and security',
@@ -3302,6 +3449,7 @@ export const questions = [
       'Same-Origin Policy'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'Same-Origin Policy and CORS',
@@ -3317,6 +3465,7 @@ export const questions = [
       'cookies',
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are cookies and what are they used for?',
@@ -3337,6 +3486,7 @@ export const questions = [
       'Same-Origin Policy'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'How do browsers ensure the security of cookies when exchanging data between different origins?',
@@ -3356,6 +3506,7 @@ export const questions = [
       'cross-site'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are XSS attacks and how do they work',
@@ -3375,6 +3526,7 @@ export const questions = [
       'cross-site'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are CSRF attacks and how do they work',
@@ -3393,6 +3545,7 @@ export const questions = [
       'SQL Injection'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are SQL injections and how do they work?',
@@ -3409,6 +3562,7 @@ export const questions = [
       'TLS'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are SSL/TLS and how do they ensure data security during transmission?',
@@ -3425,6 +3579,7 @@ export const questions = [
       'authorization'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is OAuth 2.0',
@@ -3441,6 +3596,7 @@ export const questions = [
       'authentication'
     ],
     category: 'Web Security',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is JWT and how is it used for authentication and information exchange between client and server?',
@@ -3457,6 +3613,7 @@ export const questions = [
       'web development'
     ],
     category: 'Markup',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'DOM - Web API, not part of JavaScript',
@@ -3479,6 +3636,7 @@ export const questions = [
       'types'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What are Ecmascript language types?',
@@ -3501,6 +3659,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is IntersectionObserver API and what is it used for?',
@@ -3523,6 +3682,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is MutationObserver API and what is it used for?',
@@ -3545,6 +3705,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is ResizeObserver API and what is it used for?',
@@ -3567,6 +3728,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is Performance API and what is it used for?',
@@ -3583,6 +3745,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is Web Animations API and what is it used for?',
@@ -3605,6 +3768,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is Web Speech API and what is it used for?',
@@ -3627,6 +3791,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is Web Bluetooth API and what is it used for?',
@@ -3646,6 +3811,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is requestAnimationFrame and what is it used for?',
@@ -3665,6 +3831,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is requestIdleCallback and what is it used for?',
@@ -3684,6 +3851,7 @@ export const questions = [
       'Web APIs'
     ],
     category: 'JavaScript',
+    level: QuestionLevels.middle,
     structure: [
       {
         name: 'What is queueMicrotask and what is it used for?',
