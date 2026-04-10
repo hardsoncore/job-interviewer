@@ -75,11 +75,11 @@
 </p>
 
 <p>
-  <strong>var:</strong> The engine finds the variable, records its name in the Environment Record, and immediately initializes it with the value undefined.
+  <strong>var:</strong> The engine finds the variable, records its name in the Environment Record, and immediately initializes it with the value <code>undefined</code>.
 </p>
 
 <p>
-  <strong>let and const:</strong> The engine finds them and adds their names to the Environment Record, but does not initialize them. The specification strictly states: accessing an uninitialized binding must throw a ReferenceError. This state (from the beginning of the block to the line of declaration) is called the Temporal Dead Zone (TDZ).
+  <strong>let and const:</strong> The engine finds them and adds their names to the Environment Record, but does not initialize them. The specification strictly states: accessing an uninitialized binding must throw a <code>ReferenceError</code>. This state (from the beginning of the block to the line of declaration) is called the Temporal Dead Zone (TDZ).
 </p>
 
 <h3>Variable Assignment</h3>
@@ -88,7 +88,7 @@
 </p>
 
 <p>
-  When you write <code>a = 10</code>, the engine doesn't just take and put 10 into a. Under the hood, a complex process takes place:
+  When you write <code>a = 10</code>, the engine doesn't just take and put <code>10</code> into <code>a</code>. Under the hood, a complex process takes place:
 </p>
 
 <p>
@@ -96,17 +96,17 @@
 </p>
 
 <p>
-  1. <strong>Base value:</strong> The Lexical Environment in which this variable was found (or the object, if it is obj.a).
+  1. <strong>Base value:</strong> The Lexical Environment in which this variable was found (or the object, if it is <code>obj.a</code>).
 </p>
 <p>
-  2. <strong>Referenced name:</strong> The string "a".
+  2. <strong>Referenced name:</strong> The string <code>"a"</code>.
 </p>
 <p>
-  3. <strong>Strict reference:</strong> A boolean value (true if we are in 'use strict').
+  3. <strong>Strict reference:</strong> A boolean value (<code>true</code> if we are in <code>'use strict'</code>).
 </p>
 
 <p>
-  Then the engine calls the internal method PutValue(V, W) (where V is our Reference, and W is the value 10).
+  Then the engine calls the internal method <code>PutValue(V, W)</code> (where <code>V</code> is our Reference, and <code>W</code> is the value <code>10</code>).
 </p>
 
 <p>
@@ -114,9 +114,9 @@
 </p>
 
 <p>
-  In strict mode ('use strict'), a ReferenceError is thrown: a is not defined.
+  In strict mode (<code>'use strict'</code>), a <code>ReferenceError</code> is thrown: <code>a is not defined</code>.
 </p>
 
 <p>
-  In non-strict mode, the engine silently creates a global variable a in the window/global object. (It is precisely the specification and the PutValue method that describe this unpleasant language bug from the past).
+  In non-strict mode, the engine silently creates a global variable <code>a</code> in the <code>window</code>/<code>global</code> object. (It is precisely the specification and the <code>PutValue</code> method that describe this unpleasant language bug from the past).
 </p>

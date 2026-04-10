@@ -75,11 +75,11 @@
 </p>
 
 <p>
-  <strong>var:</strong> Рушій знаходить змінну, записує її ім'я в Environment Record і негайно ініціалізує її значенням undefined.
+  <strong>var:</strong> Рушій знаходить змінну, записує її ім'я в Environment Record і негайно ініціалізує її значенням <code>undefined</code>.
 </p>
 
 <p>
-  <strong>let та const:</strong> Рушій знаходить їх і додає імена в Environment Record, але не ініціалізує їх. Специфікація суворо каже: доступ до неініціалізованої прив'язки має викликати ReferenceError. Цей стан (від початку блоку до рядка оголошення) називається Temporal Dead Zone (TDZ).
+  <strong>let та const:</strong> Рушій знаходить їх і додає імена в Environment Record, але не ініціалізує їх. Специфікація суворо каже: доступ до неініціалізованої прив'язки має викликати <code>ReferenceError</code>. Цей стан (від початку блоку до рядка оголошення) називається Temporal Dead Zone (TDZ).
 </p>
 
 <h3>Присвоєння змінних</h3>
@@ -88,7 +88,7 @@
 </p>
 
 <p>
-  Коли ти пишеш <code>a = 10</code>, рушій не просто бере і кладе 10 в a. Під капотом відбувається складний процес:
+  Коли ти пишеш <code>a = 10</code>, рушій не просто бере і кладе <code>10</code> в <code>a</code>. Під капотом відбувається складний процес:
 </p>
 
 <p>
@@ -96,27 +96,27 @@
 </p>
 
 <p>
-  1. <strong>Base value:</strong> Лексичне оточення, в якому знайшлася ця змінна (або об'єкт, якщо це obj.a).
+  1. <strong>Base value:</strong> Лексичне оточення, в якому знайшлася ця змінна (або об'єкт, якщо це <code>obj.a</code>).
 </p>
 <p>
-  2. <strong>Referenced name:</strong> Рядок "a".
+  2. <strong>Referenced name:</strong> Рядок <code>"a"</code>.
 </p>
 <p>
-  3. <strong>Strict reference:</strong> Булеве значення (true, якщо ми в 'use strict').
-</p>
-
-<p>
-  Потім рушій викликає внутрішній метод PutValue(V, W) (де V — це наш Reference, а W — значення 10).
+  3. <strong>Strict reference:</strong> Булеве значення (<code>true</code>, якщо ми в <code>'use strict'</code>).
 </p>
 
 <p>
-  Метод PutValue дивиться на Reference. Якщо Base value не існує (наприклад, змінна ніде не оголошена), поведінка розгалужується:
+  Потім рушій викликає внутрішній метод <code>PutValue(V, W)</code> (де <code>V</code> — це наш Reference, а <code>W</code> — значення <code>10</code>).
 </p>
 
 <p>
-  У строгому режимі ('use strict') викидається помилка ReferenceError: a is not defined.
+  Метод <code>PutValue</code> дивиться на Reference. Якщо Base value не існує (наприклад, змінна ніде не оголошена), поведінка розгалужується:
 </p>
 
 <p>
-  У нестрогому режимі рушій мовчки створює глобальну змінну a в об'єкті window/global. (Саме специфікація і метод PutValue описують цей неприємний баг мови з минулого).
+  У строгому режимі (<code>'use strict'</code>) викидається помилка <code>ReferenceError: a is not defined</code>.
+</p>
+
+<p>
+  У нестрогому режимі рушій мовчки створює глобальну змінну <code>a</code> в об'єкті <code>window</code>/<code>global</code>. (Саме специфікація і метод <code>PutValue</code> описують цей неприємний баг мови з минулого).
 </p>

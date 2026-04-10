@@ -75,11 +75,11 @@
 </p>
 
 <p>
-  <strong>var:</strong> Движок находит переменную, записывает её имя в Environment Record и немедленно инициализирует её значением undefined.
+  <strong>var:</strong> Движок находит переменную, записывает её имя в Environment Record и немедленно инициализирует её значением <code>undefined</code>.
 </p>
 
 <p>
-  <strong>let и const:</strong> Движок находит их и добавляет имена в Environment Record, но не инициализирует их. Спецификация строго говорит: доступ к неинициализированной привязке должен вызывать ReferenceError. Это состояние (от начала блока до строчки объявления) называется Temporal Dead Zone (TDZ).
+  <strong>let и const:</strong> Движок находит их и добавляет имена в Environment Record, но не инициализирует их. Спецификация строго говорит: доступ к неинициализированной привязке должен вызывать <code>ReferenceError</code>. Это состояние (от начала блока до строчки объявления) называется Temporal Dead Zone (TDZ).
 </p>
 
 <h3>Присвоение переменных</h3>
@@ -88,7 +88,7 @@
 </p>
 
 <p>
-  Когда ты пишешь <code>a = 10</code>, движок не просто берет и кладет 10 в a. Под капотом происходит сложный процесс:
+  Когда ты пишешь <code>a = 10</code>, движок не просто берет и кладет <code>10</code> в <code>a</code>. Под капотом происходит сложный процесс:
 </p>
 
 <p>
@@ -96,27 +96,27 @@
 </p>
 
 <p>
-  1. <strong>Base value:</strong> Лексическое окружение, в котором нашлась эта переменная (или объект, если это obj.a).
+  1. <strong>Base value:</strong> Лексическое окружение, в котором нашлась эта переменная (или объект, если это <code>obj.a</code>).
 </p>
 <p>
-  2. <strong>Referenced name:</strong> Строка "a".
+  2. <strong>Referenced name:</strong> Строка <code>"a"</code>.
 </p>
 <p>
-  3. <strong>Strict reference:</strong> Булево значение (true, если мы в 'use strict').
-</p>
-
-<p>
-  Затем движок вызывает внутренний метод PutValue(V, W) (где V — это наш Reference, а W — значение 10).
+  3. <strong>Strict reference:</strong> Булево значение (<code>true</code>, если мы в <code>'use strict'</code>).
 </p>
 
 <p>
-  Метод PutValue смотрит на Reference. Если Base value не существует (например, переменная нигде не объявлена), поведение ветвится:
+  Затем движок вызывает внутренний метод <code>PutValue(V, W)</code> (где <code>V</code> — это наш Reference, а <code>W</code> — значение <code>10</code>).
 </p>
 
 <p>
-  В строгом режиме ('use strict') выбрасывается ошибка ReferenceError: a is not defined.
+  Метод <code>PutValue</code> смотрит на Reference. Если Base value не существует (например, переменная нигде не объявлена), поведение ветвится:
 </p>
 
 <p>
-  В нестрогом режиме движок молча создает глобальную переменную a в объекте window/global. (Именно спецификация и метод PutValue описывают этот неприятный баг языка из прошлого).
+  В строгом режиме (<code>'use strict'</code>) выбрасывается ошибка <code>ReferenceError: a is not defined</code>.
+</p>
+
+<p>
+  В нестрогом режиме движок молча создает глобальную переменную <code>a</code> в объекте <code>window</code>/<code>global</code>. (Именно спецификация и метод <code>PutValue</code> описывают этот неприятный баг языка из прошлого).
 </p>
