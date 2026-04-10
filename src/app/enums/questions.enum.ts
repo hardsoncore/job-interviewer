@@ -5,7 +5,7 @@ export enum QuestionLevels {
 }
 
 export enum QuestionCategories {
-  javaScript = 'JavaScript',
+  javascript = 'JavaScript',
   html = 'HTML',
   css = 'CSS',
   angular = 'Angular',

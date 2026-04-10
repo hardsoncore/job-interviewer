@@ -1,3 +1,4 @@
+import { QuestionCategories, QuestionLevels } from 'src/app/enums/questions.enum';
 import { Question } from 'src/app/models/question.model';
 
 export const questions = [
@@ -522,22 +523,26 @@ export const questions = [
       'JS mechanics',
       'browser'
     ],
-    category: 'JavaScript',
+    category: QuestionCategories.javascript,
+    level: QuestionLevels.senior,
     structure: [
       {
-        name: 'Как работает JS-движок',
+        name: 'Современные JS-движки используют гибридный подход: интерпретация и JIT-компиляция',
       },
       {
-        name: 'Парсинг JavaScript',
+        name: 'Парсинг JavaScript и построение AST',
       },
       {
-        name: 'Интерпретация (Ignition)',
+        name: 'Интерпретация',
       },
       {
-        name: 'JIT-компиляция и Оптимизация (Turbofan)',
+        name: 'JIT-компиляция',
       },
       {
-        name: 'Деоптимизация (Bailout)',
+        name: 'Оптимизация (Turbofan) и Деоптимизация (Bailout)',
+      },
+      {
+        name: 'Как писать код, который будет хорошо оптимизироваться движком',
       }
     ]
   },
