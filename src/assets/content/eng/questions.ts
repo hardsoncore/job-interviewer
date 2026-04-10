@@ -832,10 +832,16 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Function declaration',
+        name: 'Function Declaration',
       },
       {
-        name: 'Function expression',
+        name: 'Function Expression',
+      },
+      {
+        name: 'Parsing mechanics at the engine level: how the engine handles these constructs',
+      },
+      {
+        name: 'When to use Function Declaration and when to use Function Expression',
       }
     ]
   },

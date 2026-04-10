@@ -108,12 +108,19 @@
 
 <p>Function Expressions, on the other hand, are not processed at this stage. The engine only sees the variable declaration (e.g., <code>const sum = ...</code> or <code>var sum = ...</code>).</p>
 
+<h4>Phase 2: Execution Phase (Фаза виконання)</h4>
+<p>The engine starts executing the code line by line (top to bottom).</p>
+
+<p><strong>FD:</strong> The engine simply skips the lines with Function Declarations, as they have already been processed and loaded into memory during the first phase.</p>
+
+<p><strong>FE:</strong> When the execution flow reaches the line with <code>const sum = function() {}</code>, the expression evaluation occurs. Only at this microsecond does the engine create the Function Object in the heap and store the reference to it in the variable <code>sum</code>.</p>
+
 <h3>Difference at the Language Grammar Level (AST)</h3>
 <p>In the ECMAScript specification, these are two fundamentally different syntactic constructs:</p>
 
 <p><strong>Statement:</strong> A Function Declaration is a statement. It performs an action (registers a function in the environment) but does not return a value. It cannot be passed as an argument or assigned directly to a variable.</p>
 
-<p><strong>Expression:</strong> A Function Expression is part of an expression. An expression in JS is any piece of code that returns a value. The engine evaluates the FE and returns a value — the function itself (an object in memory), which we can then assign to a variable, pass to setTimeout, or use in a closure.</p>
+<p><strong>Expression:</strong> A Function Expression is part of an expression. An expression in JS is any piece of code that returns a value. The engine evaluates the FE and returns a value — the function itself (an object in memory), which we can then assign to a variable, pass to <code>setTimeout</code>, or use in a closure.</p>
 
 <p>A classic senior-level example for understanding grammar:</p>
 

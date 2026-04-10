@@ -833,11 +833,17 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Function Declaration',
+        name: 'Function Declaration (Оголошення функції)',
       },
       {
-        name: 'Function Expression',
+        name: 'Function Expression (Функціональний вираз)',
       },
+      {
+        name: 'Механіка парсингу на рівні движка: як движок обробляє ці конструкції',
+      },
+      {
+        name: 'Коли варто використовувати Function Declaration, а коли Function Expression',
+      }
     ]
   },
   {

@@ -832,7 +832,16 @@ export const questions = [
     category: 'JavaScript',
     structure: [
       {
-        name: 'Теги HTML',
+        name: 'Function Declaration (Объявление функции)',
+      },
+      {
+        name: 'Function Expression (Функциональное выражение)',
+      },
+      {
+        name: 'Механика парсинга на уровне движка: как движок обрабатывает эти конструкции',
+      },
+      {
+        name: 'Когда стоит использовать Function Declaration, а когда Function Expression',
       }
     ]
   },
