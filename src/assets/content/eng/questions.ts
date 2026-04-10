@@ -1487,7 +1487,7 @@ export const questions = [
       'TypeScript',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Reactive programming - what is it?',
@@ -1507,7 +1507,7 @@ export const questions = [
       'Async',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Observable - what is it?',
@@ -1524,10 +1524,13 @@ export const questions = [
       'Async',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Subject - what is it?',
+      },
+      {
+        name: 'Types of Subject: Subject, BehaviorSubject, ReplaySubject, AsyncSubject',
       }
     ]
   },
@@ -1541,7 +1544,7 @@ export const questions = [
       'Async',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Subject specifics',
@@ -1584,7 +1587,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Partial&lt;Type>',
@@ -1612,7 +1615,7 @@ export const questions = [
       'TS mechanics',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Type Guards - typeof, in, instanceof, Custom Type Guards',
@@ -1630,7 +1633,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Enums ',
@@ -1663,7 +1666,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Class (Implementation)',
@@ -1684,7 +1687,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Generics - what problem do they solve?',
@@ -1717,7 +1720,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'any',
@@ -1739,7 +1742,7 @@ export const questions = [
       'Angular',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'asObservable() - what it is and why it is needed?',
@@ -2376,7 +2379,7 @@ export const questions = [
       'OOP',
       'Abstract Classes'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Abstract Classes - what they are and why they are needed?',
@@ -2401,7 +2404,7 @@ export const questions = [
       'OOP',
       'Access Modifiers'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Protected (Access Modifier)',

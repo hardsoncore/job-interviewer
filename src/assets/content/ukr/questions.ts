@@ -1488,7 +1488,7 @@ export const questions = [
       'TypeScript',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Реактивне програмування - що це?',
@@ -1508,7 +1508,7 @@ export const questions = [
       'Async',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Observable - що це?',
@@ -1525,7 +1525,7 @@ export const questions = [
       'Async',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Subject - що це?',
@@ -1542,7 +1542,7 @@ export const questions = [
       'Async',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Специфіка Subject',
@@ -1585,7 +1585,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Partial&lt;Type> (Частковий)',
@@ -1613,7 +1613,7 @@ export const questions = [
       'TS mechanics',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Type Guards - typeof, in, instanceof, Custom Type Guards',
@@ -1631,7 +1631,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Enums (Перерахування)',
@@ -1664,7 +1664,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Class (Реалізація)',
@@ -1685,7 +1685,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Generics (Узагальнення) - яку проблему вирішують?',
@@ -1718,7 +1718,7 @@ export const questions = [
       'TypeScript',
       'Typization'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'any',
@@ -1740,7 +1740,7 @@ export const questions = [
       'Angular',
       'RxJs'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'asObservable() - що це і для чого потрібно?',
@@ -2376,7 +2376,7 @@ export const questions = [
       'OOP',
       'Abstract Classes'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Abstract Classes (Абстрактні класи)',
@@ -2401,7 +2401,7 @@ export const questions = [
       'OOP',
       'Access Modifiers'
     ],
-    category: 'TypeScript',
+    category: QuestionCategories.typescript,
     structure: [
       {
         name: 'Protected (Модифікатор доступу)',
