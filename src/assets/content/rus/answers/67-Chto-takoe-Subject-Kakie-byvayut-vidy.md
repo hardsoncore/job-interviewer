@@ -11,20 +11,20 @@
 </p>
 
 <p>
-  Объекты RxJS Subject реализуют принцип работы событий, поддерживая возможность регистрировать неограниченное
+  Объекты RxJS <code>Subject</code> реализуют принцип работы событий, поддерживая возможность регистрировать неограниченное
   количество обработчиков отправляемых ими данных.
 </p>
 
 <p>
-  Рассмотрим пример.
+  Рассмотрим пример:
 </p>
 
 <code class="code">
-  const sbj = new Subject<number>();
+  const sbj = new Subject&lt;number>();
 
-  sbj.subscribe((vl) => console.log('1st: ${ vl }'));
+  sbj.subscribe((vl) => console.log(`1st: ${ vl }`));
   sbj.next(3);
-  sbj.subscribe((vl) => console.log('2nd: ${ vl }'));
+  sbj.subscribe((vl) => console.log(`2nd: ${ vl }`));
   sbj.next(9);
 
   /*
@@ -37,9 +37,10 @@
 </code>
 
 <p>
-  Создание происходит с помощью <code>new Subject()</code>. Далее регистрируются обработчики вызовом метода
-  <code>subscribe()</code>, принимающего подобно обычному <code>Observable</code> три функции:
-  <code>next()</code>, <code>error()</code> и <code>complete()</code>.
+  Создание нового объекта <code>Subject</code> происходит с помощью <code>new Subject()</code>, принимающего подобно обычному <code>Observable</code> три функции: <code>next()</code>, <code>error()</code> и <code>complete()</code>.
+  <br>
+  Далее регистрируются обработчики вызовом метода
+  <code>subscribe()</code>
 </p>
 
 <p>
@@ -77,10 +78,10 @@
 </p>
 
 <code class="code">
-  const sbj = new BehaviorSubject<number>(5);
+  const sbj = new BehaviorSubject&lt;number&gt;(5);
 
-  sbj.subscribe((vl) => console.log('1st: ${ vl }'));
-  sbj.subscribe((vl) => console.log('2nd: ${ vl }'));
+  sbj.subscribe((vl) => console.log(`1st: ${ vl }`));
+  sbj.subscribe((vl) => console.log(`2nd: ${ vl }`));
   sbj.next(7);
 
   /*
@@ -109,12 +110,12 @@
 
   sbj.next(5);
 
-  sbj.subscribe((vl) => console.log('1st: ${ vl }'));
+  sbj.subscribe((vl) => console.log(`1st: ${ vl }`));
 
   sbj.next(6);
   sbj.next(7);
 
-  sbj.subscribe((vl) => console.log('2nd: ${ vl }'));
+  sbj.subscribe((vl) => console.log(`2nd: ${ vl }`));
 
   /*
   Результат  в консоли:
@@ -142,7 +143,7 @@
 <code class="code">
   const sbj = new AsyncSubject();
 
-  sbj.subscribe((vl) => console.log('Async: ${ vl }'));
+  sbj.subscribe((vl) => console.log(`Async: ${ vl }`));
 
   sbj.next(7);
   sbj.next(8);
@@ -156,4 +157,3 @@
   Async: 9
   */
 </code>
-    
