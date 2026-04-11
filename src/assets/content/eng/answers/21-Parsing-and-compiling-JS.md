@@ -37,6 +37,8 @@
   <strong>Interpretation</strong> is the process of step-by-step execution of bytecode without its prior compilation into native machine code.
   <br><br>
   The main goal of this stage is to start the application as quickly as possible. The engine does not need to spend precious time on deep compilation and optimization of the entire script for the page to start responding to user actions.
+  <br><br>
+  If we draw an analogy, the interpretation process is like a synchronous translator. It stands next to you and translates each of your phrases into Chinese in real-time during the conversation.
 </p>
 
 <p>
@@ -45,6 +47,8 @@
 
 <p class="info info--blue">
   <strong>Compilation</strong> is the process of translating a program from a human-readable programming language (e.g., JS, Rust, C++) into a language that the computer's processor understands (machine code, consisting of zeros and ones).
+  <br><br>
+  Continuing the analogy, the compilation process is like a translator who has already translated all the phrases in advance, so they can be quickly spoken later.
 </p>
 
 <p>
