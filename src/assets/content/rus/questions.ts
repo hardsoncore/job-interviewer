@@ -576,7 +576,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'Markup',
-    level: QuestionLevels.middle,
+    level: QuestionLevels.junior,
     structure: [
       {
         name: '3 способа подключения JS на страницу',
@@ -585,7 +585,7 @@ export const questions = [
   },
   {
     id: 23,
-    name: 'Атрибуты defer и async у тега script',
+    name: 'В чём разница между атрибутами async и defer у тега <script>?',
     answer: 'assets/content/rus/answers/23-Atributy-defer-i-async-u-tega-script.md',
     tags: [
       'HTML',
@@ -593,7 +593,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'Markup',
-    level: QuestionLevels.middle,
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Async',
@@ -608,7 +608,7 @@ export const questions = [
   },
   {
     id: 24,
-    name: 'SVG. Анимации svg',
+    name: 'Работа с SVG. Какие существуют способы анимировать SVG?',
     answer: 'assets/content/rus/answers/24-SVG-Animatsii-svg.md',
     tags: [
       'SVG',
@@ -616,19 +616,22 @@ export const questions = [
       'animations'
     ],
     category: 'Markup',
-    level: QuestionLevels.middle,
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Что такое SVG?',
       },
       {
         name: 'Ключевые особенности SVG',
+      },
+      {
+        name: 'Способы анимации SVG: CSS анимации, SMIL, JavaScript',
       }
     ]
   },
   {
     id: 25,
-    name: 'Canvas. Что это и зачем нужен?',
+    name: 'Что такое HTML5 Canvas и для каких задач он применяется?',
     answer: 'assets/content/rus/answers/25-Canvas-Chto-eto-i-zachem-nuzhen.md',
     tags: [
       'HTML',
@@ -636,7 +639,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
-    level: QuestionLevels.middle,
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Canvas - что это?',
@@ -648,7 +651,10 @@ export const questions = [
         name: 'Основные сферы применения',
       },
       {
-        name: 'Преимущества Canvas',
+        name: 'Преимущества и недостатки Canvas',
+      },
+      {
+        name: 'В каких случаях для рендеринга лучше выбрать Canvas, а не DOM или SVG?',
       }
     ]
   },
@@ -704,7 +710,7 @@ export const questions = [
   },
   {
     id: 28,
-    name: 'Пре- и пост- процессоры CSS. Опыт работы с ними',
+    name: 'Пре- и пост- процессоры CSS. Опыт работы с ними. Актуальность',
     answer: 'assets/content/rus/answers/28-Pre--i-post--protsessory-CSS-Opyt-raboty-s-nimi.md',
     tags: [
       'markup',

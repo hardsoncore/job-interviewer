@@ -576,7 +576,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'Markup',
-    level: QuestionLevels.middle,
+    level: QuestionLevels.junior,
     structure: [
       {
         name: '3 ways to include JS on a page',
@@ -585,7 +585,7 @@ export const questions = [
   },
   {
     id: 23,
-    name: 'Defer and async attributes on the script tag',
+    name: 'What is the difference between the async and defer attributes on the <script> tag?',
     answer: 'assets/content/eng/answers/23-Defer-and-async-attributes-on-the-script-tag.md',
     tags: [
       'HTML',
@@ -593,7 +593,7 @@ export const questions = [
       'JavaScript'
     ],
     category: 'Markup',
-    level: QuestionLevels.middle,
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Async',
@@ -608,7 +608,7 @@ export const questions = [
   },
   {
     id: 24,
-    name: 'SVG. SVG animations',
+    name: 'Working with SVG. What are the ways to animate SVG?',
     answer: 'assets/content/eng/answers/24-SVG-Animations.md',
     tags: [
       'SVG',
@@ -616,19 +616,22 @@ export const questions = [
       'animations'
     ],
     category: 'Markup',
-    level: QuestionLevels.middle,
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'What is SVG?',
       },
       {
         name: 'Key features of SVG',
+      },
+      {
+        name: 'Ways to animate SVG: CSS animations, SMIL, JavaScript',
       }
     ]
   },
   {
     id: 25,
-    name: 'Canvas. What is it and why is it needed?',
+    name: 'What is HTML5 Canvas and what are its use cases?',
     answer: 'assets/content/eng/answers/25-Canvas-What-is-it-and-why-is-it-needed.md',
     tags: [
       'HTML',
@@ -636,7 +639,7 @@ export const questions = [
       'CSS'
     ],
     category: 'Markup',
-    level: QuestionLevels.middle,
+    level: QuestionLevels.junior,
     structure: [
       {
         name: 'Canvas - what is it?',
@@ -648,7 +651,10 @@ export const questions = [
         name: 'Main areas of application',
       },
       {
-        name: 'Advantages of Canvas',
+        name: 'Advantages and disadvantages of Canvas',
+      },
+      {
+        name: 'In which cases is it better to choose Canvas for rendering, rather than DOM or SVG?',
       }
     ]
   },
@@ -704,7 +710,7 @@ export const questions = [
   },
   {
     id: 28,
-    name: 'Pre- and post- CSS processors. Experience with them',
+    name: 'Pre- and post- CSS processors. Experience with them. Relevance',
     answer: 'assets/content/eng/answers/28-Pre--and-post--CSS-processors-Experience-with-them.md',
     tags: [
       'markup',
