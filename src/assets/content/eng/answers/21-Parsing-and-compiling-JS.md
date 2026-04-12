@@ -6,29 +6,36 @@
 
 <h3>1. Parsing (From text to structure)</h3>
 
-<p class="info info--blue">
-  To speed up page loading, the engine does not parse functions that haven't been called yet. The <strong>Pre-parser</strong> just runs through them, checking basic syntax, and the full AST is built only when the function is called.
+<p>
+  Before the code starts executing, the engine (e.g., V8) needs to transform it from plain text into an internal structure. This stage is strictly divided into two phases:
 </p>
 
 <p>
-  Before the code starts executing, the engine needs to read and understand it. This stage is divided into two phases:
-</p>
-<p>
-  1.1. <strong>Lexical analysis (Tokenization):</strong> The code is broken down into the smallest meaningful units — tokens (keywords, operators, brackets).
+  1.1. <strong>Lexical analysis (Tokenization):</strong> The engine goes through the code and breaks it down into the smallest meaningful units — tokens. Spaces and comments are discarded. Even at this stage, the script can fail if it encounters an absolutely invalid character (e.g., an invisible special formatting character).
 </p>
 
 <code class="code">
   const a = 5;
-  // Tokens: const, a, =, 5, ;
+  // Tokens: Keyword(const), Identifier(a), Punctuator(=), Number(5), Punctuator(;)
 
   function greet(name) {
     return `Hello, ${name}!`;
   }
-  // Tokens: function, greet, (, name, ), {, return, `Hello, ${name}!`, }
+  // Tokens: Keyword(function), Identifier(greet), Punctuator(()), Identifier(name),
+  // Punctuator()), Punctuator({), Keyword(return), Template(`Hello, ${name}!`), Punctuator(})
 </code>
 
 <p>
-  1.2. <strong>Syntax analysis (Parsing):</strong> An AST (Abstract Syntax Tree) is built from the tokens — a tree-like representation of the code's logic.
+  1.2. <strong>Parsing and error checking:</strong> From the flat list of tokens, an <strong>AST (Abstract Syntax Tree)</strong> is built — a tree that shows the logic and scope.
+  <br><br>
+  During the construction of this tree, strict grammar checking (SyntaxError) occurs. If the tokens are not arranged according to the language rules (missing bracket, typo in syntax), the parser will not be able to build an AST node, will immediately stop working, and will throw an error. Code with a syntax error will not even reach the execution stage.
+</p>
+
+<p>
+  <strong>Performance optimization (choosing the parsing approach): Lazy vs Eager Parsing</strong><br>
+  Building a full AST is a resource-intensive process. To avoid blocking the browser when loading large scripts, the engine uses two approaches:<br><br>
+  • <strong>Lazy Parsing/Pre-parsing:</strong> Applied to functions that are not yet called. The engine does not build the AST but only quickly scans the tokens for basic syntax errors and remembers the function boundaries. Full parsing will occur only when the function is called.<br>
+  • <strong>Eager Parsing:</strong> Applied to code that needs to be executed immediately (global code, IIFE). A full AST is built for it right away.
 </p>
 
 <h3>2. Interpretation (Fast program start)</h3>
