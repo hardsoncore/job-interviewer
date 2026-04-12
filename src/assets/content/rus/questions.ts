@@ -246,7 +246,7 @@ export const questions = [
   },
   {
     id: 9,
-    name: 'Селекторы: > + ~',
+    name: 'В чём разница между CSS-комбинаторами >, + и ~ ?',
     answer: 'assets/content/rus/answers/9-Selektory-+-~.md',
     tags: [
       'markup',
@@ -268,7 +268,7 @@ export const questions = [
   },
   {
     id: 10,
-    name: 'Псевдоклассы элементов',
+    name: 'Псевдоклассы элементов (псевдоклассы состояния, структурные псевдоклассы и продвинутые селекторы Modern CSS), Псевдоклассы форм',
     answer: 'assets/content/rus/answers/10-Psevdoklassy-elementov.md',
     tags: [
       'HTML',
@@ -286,45 +286,16 @@ export const questions = [
       },
       {
         name: 'Продвинутые селекторы (Modern CSS)',
+      },
+      {
+        name: 'Псевдоклассы форм',
       }
     ]
   },
   {
     id: 11,
-    name: 'Псевдоклассы форм',
-    answer: 'assets/content/rus/answers/11-Psevdoklassy-form.md',
-    tags: [
-      'HTML',
-      'markup',
-      'CSS'
-    ],
-    category: 'Markup',
-    level: QuestionLevels.junior,
-    structure: [
-      {
-        name: ':disabled',
-      },
-      {
-        name: ':required',
-      },
-      {
-        name: ':invalid',
-      },
-      {
-        name: ':valid',
-      },
-      {
-        name: ':checked',
-      },
-      {
-        name: ':placeholder-shown',
-      },
-    ]
-  },
-  {
-    id: 12,
-    name: 'Псевдоэлементы',
-    answer: 'assets/content/rus/answers/12-Psevdoelementy.md',
+    name: 'Псевдоэлементы (генерируемый контент, текстовые, интерфейсные, продвинутые). Как они работают и для чего нужны?',
+    answer: 'assets/content/rus/answers/11-Psevdoelementy.md',
     tags: [
       'HTML',
       'markup',
@@ -347,6 +318,38 @@ export const questions = [
       },
       {
         name: 'Продвинутые (::backdrop, ::file-selector-button)',
+      }
+    ]
+  },
+  {
+    id: 12,
+    name: 'Resource Hints (preload, prefetch, preconnect): В чем разница между ними на уровне сетевого стека браузера?',
+    answer: 'assets/content/rus/answers/11-Resource-Hints.md',
+    tags: [
+      'HTML',
+      'markup',
+      'browser',
+    ],
+    category: 'Markup',
+    level: QuestionLevels.middle,
+    structure: [
+      {
+        name: 'Что такое Resource Hints и зачем они нужны?',
+      },
+      {
+        name: 'Preload',
+      },
+      {
+        name: 'Prefetch',
+      },
+      {
+        name: 'Preconnect',
+      },
+      {
+        name: 'Как браузер обрабатывает эти Resource Hints на уровне сетевого стека',
+      },
+      {
+        name: 'Как неправильное использование preload может навредить First Contentful Paint (FCP) и заблокировать основной поток?',
       }
     ]
   },
