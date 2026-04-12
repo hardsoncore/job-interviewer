@@ -246,7 +246,7 @@ export const questions = [
   },
   {
     id: 9,
-    name: 'Selectors: > + ~',
+    name: 'What is the difference between CSS combinators >, + and ~ ?',
     answer: 'assets/content/eng/answers/9-Selectors-+-~.md',
     tags: [
       'markup',
@@ -268,7 +268,7 @@ export const questions = [
   },
   {
     id: 10,
-    name: 'Element Pseudo-classes',
+    name: 'Pseudo-classes of elements (state pseudo-classes, structural, and advanced selectors Modern CSS), Form pseudo-classes',
     answer: 'assets/content/eng/answers/10-Element-Pseudo-classes.md',
     tags: [
       'HTML',
@@ -286,45 +286,16 @@ export const questions = [
       },
       {
         name: 'Advanced selectors (Modern CSS)',
+      },
+      {
+        name: 'Form pseudo-classes',
       }
     ]
   },
   {
     id: 11,
-    name: 'Form Pseudo-classes',
-    answer: 'assets/content/eng/answers/11-Form-Pseudo-classes.md',
-    tags: [
-      'HTML',
-      'markup',
-      'CSS'
-    ],
-    category: 'Markup',
-    level: QuestionLevels.junior,
-    structure: [
-      {
-        name: ':disabled',
-      },
-      {
-        name: ':required',
-      },
-      {
-        name: ':invalid',
-      },
-      {
-        name: ':valid',
-      },
-      {
-        name: ':checked',
-      },
-      {
-        name: ':placeholder-shown',
-      },
-    ]
-  },
-  {
-    id: 12,
-    name: 'Pseudo-elements',
-    answer: 'assets/content/eng/answers/12-Pseudo-elements.md',
+    name: 'Pseudo-elements (generated content, text, interface, advanced). How they work and what they are for?',
+    answer: 'assets/content/eng/answers/11-Pseudo-elements.md',
     tags: [
       'HTML',
       'markup',
@@ -347,6 +318,38 @@ export const questions = [
       },
       {
         name: 'Advanced (::backdrop, ::file-selector-button)',
+      }
+    ]
+  },
+  {
+    id: 12,
+    name: 'Resource Hints (preload, prefetch, preconnect): What is the difference between them at the browser network stack level?',
+    answer: 'assets/content/eng/answers/12-Resource-Hints.md',
+    tags: [
+      'HTML',
+      'markup',
+      'browser',
+    ],
+    category: 'Markup',
+    level: QuestionLevels.middle,
+    structure: [
+      {
+        name: 'What are Resource Hints and why are they needed?',
+      },
+      {
+        name: 'Preload',
+      },
+      {
+        name: 'Prefetch',
+      },
+      {
+        name: 'Preconnect',
+      },
+      {
+        name: 'How does the browser handle these Resource Hints at the network stack level?',
+      },
+      {
+        name: 'How incorrect use of preload can harm First Contentful Paint (FCP) and block the main thread?',
       }
     ]
   },
