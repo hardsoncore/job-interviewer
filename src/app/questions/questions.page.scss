@@ -1,7 +1,7 @@
 .question {
   margin-bottom: .5rem;
   border-radius: 5px;
-  border: 1px solid var(--ion-color-medium);
+  border: 1px solid rgba(var(--ion-color-medium-rgb), 0.3);
 }
 
 @media (max-width: 768px) {
