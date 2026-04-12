@@ -20,12 +20,12 @@
   --ion-color-secondary-tint: #c7987c;
 
   /** tertiary — "Fresh Sage" **/
-  --ion-color-tertiary: #7f9a76;
-  --ion-color-tertiary-rgb: 127, 154, 118;
+  --ion-color-tertiary: #7d769a;
+  --ion-color-tertiary-rgb: 125, 118, 154;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #708868;
-  --ion-color-tertiary-tint: #8ca484;
+  --ion-color-tertiary-shade: #6e6987;
+  --ion-color-tertiary-tint: #8a84a4;
 
   /** success — "Vintage Leaf" **/
   --ion-color-success: #769a74;
@@ -96,12 +96,12 @@
     --ion-color-secondary-tint: #c89983;
 
     /** tertiary — "Lively Sage" **/
-    --ion-color-tertiary: #9db07e;
-    --ion-color-tertiary-rgb: 157, 176, 126;
+    --ion-color-tertiary: #8d7eb0;
+    --ion-color-tertiary-rgb: 141, 126, 176;
     --ion-color-tertiary-contrast: #1a1b1e;
     --ion-color-tertiary-contrast-rgb: 26, 27, 30;
-    --ion-color-tertiary-shade: #8a9b6f;
-    --ion-color-tertiary-tint: #a6b88b;
+    --ion-color-tertiary-shade: #7e6fa0;
+    --ion-color-tertiary-tint: #9a8ac0;
 
     /** success — "Spring Moss" **/
     --ion-color-success: #88a685;
@@ -191,6 +191,9 @@
     /* List containers */
     --ion-card-background: #222327;
     /* Cards */
+
+    --ion-tab-bar-background: inherit;
+    --ion-toolbar-background: inherit;
   }
 
   /* Retro-style modal settings */
