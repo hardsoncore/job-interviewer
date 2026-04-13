@@ -4,10 +4,11 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-green.svg?style=flat-square)
 ![Content Focus](https://img.shields.io/badge/Contributions-Content_Focused-blue.svg?style=flat-square)
 
-<!-- <p align="center">
+<p align="center">
   <img src="src/assets/readme.jpeg" alt="Демонстрация образовательной платформы" width="600" />
-</p> -->
+</p>
 
+<!--
 ```text
       ██╗███████╗    ██╗███╗   ██╗████████╗███████╗██████╗ ██╗   ██╗██╗███████╗██╗    ██╗███████╗██████╗ 
       ██║██╔════╝    ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗██║   ██║██║██╔════╝██║    ██║██╔════╝██╔══██╗
@@ -18,6 +19,7 @@
 
 The interview preparation tool for frontend engineers mastering JavaScript, Typescript, browser internals etc.
 ```
+-->
 
 <br>
 
