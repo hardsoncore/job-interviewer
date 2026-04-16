@@ -17,11 +17,11 @@
 }
 
 .tags-list {
-  font-size: .9rem;
   list-style: none;
   padding: 0;
 
   & ion-badge {
+    font-size: .9rem;
     font-weight: 500;
     border-radius: 4px;
   }
