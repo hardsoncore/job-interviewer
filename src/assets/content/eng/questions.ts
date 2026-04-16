@@ -534,6 +534,12 @@ export const questions = [
       },
       {
         name: 'Main differences between engines and their optimizations',
+      },
+      {
+        name: 'How the choice of engine affects the performance and compatibility of web applications',
+      },
+      {
+        name: 'How to classify browsers by the type of engine usage (Engine creators, Custom UI, System wrappers)',
       }
     ]
   },
