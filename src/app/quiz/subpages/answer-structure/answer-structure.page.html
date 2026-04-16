@@ -1,24 +1,39 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Answer for question №{{ question?.id }}</ion-title>
+    <ion-title>Answer structure for question №{{ question?.id }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="container">
-    <h1 class="content">{{ question?.name }}</h1>
+    <h1 class="content">
+      {{ question?.name }}
+      <ion-icon id="hover-trigger" class="question-icon" name="information-circle-outline"></ion-icon>
+    </h1>
 
-    <ion-list>
-      <ion-item *ngFor="let step of question?.structure">
-        <ion-label>{{ step?.name }}</ion-label>
-        <ion-checkbox [(ngModel)]="step.isChecked" slot="end" color="success"></ion-checkbox>
-      </ion-item>
-    </ion-list>
+    <ion-popover trigger="hover-trigger" triggerAction="click">
+        <ng-template>
+          <ion-content class="ion-padding">Select the points you covered in your answer - this helps indicate how complete your response was.</ion-content>
+        </ng-template>
+      </ion-popover>
+
+    <br>
+    <br>
+
+    <ion-item
+      *ngFor="let step of question?.structure"
+      class="step"
+      lines="none"
+      detail="false"
+    >
+      <ion-label>{{ step?.name }}</ion-label>
+      <ion-checkbox [(ngModel)]="step.isChecked" slot="end" color="success"></ion-checkbox>
+    </ion-item>
 
     <br>
 
     <ion-button (click)="saveResult()" color="tertiary" fill="outline" expand="block" size="large">
-      Save result
+      Save your answer progress
     </ion-button>
   </div>
 </ion-content>

@@ -1,3 +1,16 @@
 ion-button {
   margin: 1rem;
 }
+
+.step {
+  margin-bottom: .5rem;
+  border: 1px solid rgba(var(--ion-color-medium-rgb), 0.3);
+  border-radius: 4px;
+}
+
+.question-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--ion-color-primary);
+  vertical-align: middle;
+}
