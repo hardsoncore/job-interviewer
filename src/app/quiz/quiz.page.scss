@@ -1,16 +1,33 @@
 .container {
   margin-top: 2rem;
 }
-.tags {
+
+.question {
+  border: 1px solid rgba(var(--ion-color-medium-rgb), 0.3);
+
+  & .question__id {
+    font-size: .9rem;
+    font-weight: 500;
+  }
+
+  & .question__name {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.tags-list {
+  font-size: .9rem;
   list-style: none;
   padding: 0;
 
+  & ion-badge {
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
   & li {
     display: inline-block;
-
-    & ion-badge {
-      font-size: 1rem;
-    }
 
     &:nth-child(n) {
       margin-right: .5rem;
@@ -42,8 +59,8 @@
   }
 }
 
-@media (min-width: 768px) {
-  .header * {
+@media (max-width: 768px) {
+  .question__name {
     font-size: 1.8rem !important;
   }
 }

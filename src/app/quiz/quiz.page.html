@@ -14,12 +14,12 @@
   </ion-header>
 
   <div class="container">
-    <ion-card (click)="visitTheoryPage()">
+    <ion-card class="question" (click)="visitTheoryPage()">
       <ion-card-header *ngIf="question" class="header">
-        <ion-card-subtitle>
+        <ion-card-subtitle class="question__id">
           Question №{{ question.id }}
         </ion-card-subtitle>
-        <ion-card-title>{{ question.name }}</ion-card-title>
+        <ion-card-title class="question__name">{{ question.name }}</ion-card-title>
       </ion-card-header>
       <!-- skeleton -->
       <ion-card-header *ngIf="!question">
@@ -39,7 +39,7 @@
       </ion-card-header>
 
       <ion-card-content *ngIf="question">
-        <ul class="tags">
+        <ul class="tags-list">
           <li *ngFor="let tag of question.tags">
             <ion-badge color="warning">{{ tag }}</ion-badge>
           </li>
@@ -47,7 +47,7 @@
       </ion-card-content>
       <!-- skeleton -->
       <ion-card-content *ngIf="!question">
-        <ul class="tags">
+        <ul class="tags-list">
           <li>
             <ion-badge color="warning">
               <ion-skeleton-text style="width: 10vw; max-width: 50px;" animated></ion-skeleton-text>
