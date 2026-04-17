@@ -3871,5 +3871,50 @@ export const questions = [
         name: 'Что такое queueMicrotask и для чего он нужен?',
       },
     ]
+  },
+  {
+    id: 170,
+    name: 'Скрытые классы (Hidden Classes) и Inline Caching. Как движки JavaScript оптимизируют выполнение кода?',
+    answer: 'assets/content/rus/answers/170-HiddenClasses.md',
+    tags: [
+      'JavaScript',
+      'Hidden Classes',
+      'Inline Caching',
+      'Performance',
+      'V8',
+      'Optimization'
+    ],
+    category: 'JavaScript',
+    level: QuestionLevels.senior,
+    structure: [
+      {
+        name: 'Что такое скрытые классы (Hidden Classes) и как они помогают оптимизировать выполнение кода в JavaScript?',
+      },
+      {
+        name: 'Что такое Inline Caching и как оно улучшает производительность JavaScript?',
+      }
+    ]
+  },
+  {
+    id: 171,
+    name: 'Композитные слои (Composite Layers) и GPU. Как браузеры используют GPU для рендеринга веб-страниц?',
+    answer: 'assets/content/rus/answers/171-CompositeLayers.md',
+    tags: [
+      'JavaScript',
+      'Composite Layers',
+      'GPU',
+      'Performance',
+      'Rendering'
+    ],
+    category: 'JavaScript',
+    level: QuestionLevels.senior,
+    structure: [
+      {
+        name: 'Что такое композитные слои (Composite Layers) и как они помогают оптимизировать рендеринг веб-страниц?',
+      },
+      {
+        name: 'Как браузеры используют GPU для рендеринга веб-страниц и какие преимущества это дает?',
+      }
+    ]
   }
 ] as Question[];

@@ -3872,5 +3872,50 @@ export const questions = [
         name: 'What is queueMicrotask and what is it used for?',
       },
     ]
+  },
+  {
+    id: 170,
+    name: 'Hidden Classes and Inline Caching. How do JavaScript engines optimize code execution?',
+    answer: 'assets/content/eng/answers/170-HiddenClasses.md',
+    tags: [
+      'JavaScript',
+      'Hidden Classes',
+      'Inline Caching',
+      'Performance',
+      'V8',
+      'Optimization'
+    ],
+    category: 'JavaScript',
+    level: QuestionLevels.senior,
+    structure: [
+      {
+        name: 'What are Hidden Classes and how do they help optimize code execution in JavaScript?',
+      },
+      {
+        name: 'What is Inline Caching and how does it improve JavaScript performance?',
+      }
+    ]
+  },
+  {
+    id: 171,
+    name: 'Composite Layers and GPU. How do browsers use GPU for rendering web pages?',
+    answer: 'assets/content/eng/answers/171-CompositeLayers.md',
+    tags: [
+      'JavaScript',
+      'Composite Layers',
+      'GPU',
+      'Performance',
+      'Rendering'
+    ],
+    category: 'JavaScript',
+    level: QuestionLevels.senior,
+    structure: [
+      {
+        name: 'What are Composite Layers and how do they help optimize web page rendering?',
+      },
+      {
+        name: 'How do browsers use GPU for rendering web pages and what benefits does it provide?',
+      }
+    ]
   }
 ] as Question[];
