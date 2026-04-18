@@ -11,11 +11,37 @@
       <pre class="pre-text" [innerHTML]="question?.answer"></pre>
     </section>
 
-    <ion-button (click)="submitAnswer()" color="tertiary" fill="outline" expand="block" size="large">Check Answer</ion-button>
+    <ion-button
+      (click)="submitAnswer()"
+      color="tertiary"
+      fill="outline"
+      expand="block"
+      size="large"
+    >
+      Check Answer
+    </ion-button>
 
     <div class="navigation-buttons">
-      <ion-button (click)="goToPrevQuestion()" [disabled]="isFirstQuestion()" color="danger" fill="outline" expand="block" size="large">< Prev</ion-button>
-      <ion-button (click)="goToNextQuestion()" [disabled]="isLastQuestion()" color="success" fill="outline" expand="block" size="large">Next ></ion-button>
+      <ion-button
+        (click)="goToPrevQuestion()"
+        [disabled]="isFirstQuestion()"
+        color="danger"
+        fill="outline"
+        expand="block"
+        size="large"
+      >
+        < Prev
+      </ion-button>
+      <ion-button
+        (click)="goToNextQuestion()"
+        [disabled]="isLastQuestion()"
+        color="success"
+        fill="outline"
+        expand="block"
+        size="large"
+      >
+        Next >
+      </ion-button>
     </div>
   </div>
 </ion-content>
